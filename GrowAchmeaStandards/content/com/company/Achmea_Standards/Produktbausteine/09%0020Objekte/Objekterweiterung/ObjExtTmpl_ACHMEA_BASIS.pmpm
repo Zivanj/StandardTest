@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000JWD0000AM8" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::09%0020Objekte::Objekterweiterung</pm:namespace>
+  <pm:name>ObjExtTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000LWD0000AM8" pmid="LWD0000AM8">
+      <pm:name>ObjExtTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000JWD0000AM8" pmid="JWD0000AM8" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ObjExtTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000EWD0000AM8">com::company::Achmea_Standards::Produktbausteine::09%0020Objekte::Objekterweiterung::ObjErwVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT00000001I40000SPM">com::company::TechnischesSchema::Produktbausteintypen::Objekterweiterung</pm:type>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ObjExtTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

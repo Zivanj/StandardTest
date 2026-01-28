@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="3LGFU0IL5GTDJ4F6DRBT8PGJAH" sortkey="0" structural="true">
+  <pm:namespace>com::company</pm:namespace>
+  <pm:name>Achmea_Standards</pm:name>
+</pm:package>

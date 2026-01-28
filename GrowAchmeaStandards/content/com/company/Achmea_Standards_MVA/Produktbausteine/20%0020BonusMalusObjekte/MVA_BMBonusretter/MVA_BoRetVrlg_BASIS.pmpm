@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000C4H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Produktbausteine::20%0020BonusMalusObjekte::MVA_BMBonusretter</pm:namespace>
+  <pm:name>MVA_BoRetVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000E4H0000T76" pmid="E4H0000T76">
+      <pm:name>MVA_BoRetVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000C4H0000T76" pmid="C4H0000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>MVA_BoRetVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT0000000A3N4000MVA">com::company::TechnischesSchema::Produktbausteintypen::MVA_BMBonusretter</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="76LMGVS3N3PD04BO8OVBK5D2KH" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:notice encoding="none"><![CDATA[Das Attribut "Bezeichnung" definiert den fachlichen Namen des Produktbausteins 
+und ist maximal 50 Zeichen lang. Bei jedem Produktbaustein muss dieses 
+Attribut vorhanden und gefüllt sein. Der Name erscheint in der 
+FS-PM-Benutzeroberfläche.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="1B89KOSMK6EDN4NCKDKCL31QHI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="S3538RBSITDTM43JPJ56TAGBGL" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:notice encoding="none"><![CDATA[Das Attribut "KurzBezeichnung" definiert einen fachlichen Kurzbezeichner, der den 
+Produktbaustein über alle Produktbausteine eindeutig identifiziert. Dieses Attribut 
+muss an allen R/3-relevanten Bausteinen vorhanden sein. 
+Es darf maximal 16 Zeichen lang sein. Der Wert des Attributs "KurzBezeichnung" 
+darf keine Sonderzeichen ausser dem Unterstrich enthalten und kann case-sensitiv 
+definiert werden. Das Attribut ist an den Bausteinen gepflegt und wird über 
+einen PSV-Import dem SAP-System bekannt gemacht. Auf Keinen Fall darf der 
+Wert dieses Attributes bei einem bestehenden Baustein geändert werden.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="OJKK7QO2OHG4B4RLOO32A234IV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:notice encoding="none"><![CDATA[Das Attribut "LOB_cd" definiert die "Lines of Business" und gibt an, welcher Sparte 
+bzw. welchem Hauptversicherungszweig der Baustein zugeordnet ist.
+Folgende Werte sind gültig: BASIS, LL (Leben) , LP (SHU), LM (KFZ), LG (Gesundheit), 
+MV (Motor Vehicle,KFZAddOn).]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">MV</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="PO9C092O9L9S441E7VE40IF6D1" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="0CI8DDO6BR8CP4IOLSAP3P7QGL" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:notice encoding="none"><![CDATA[Das Attribut "RefModell_Suffix" definiert die Basis- oder sparten-spezifische 
+Erweiterungsklasse im Referenzmodell und referenziert, somit auf eine 
+Tabelle in einem externen, operativen System. Die Referenzklassen haben 
+unterschiedliche Endungen. Das Suffix "_BASIS" steht für Basistabelle. 
+Das Suffix "_LL" steht für Leben-spezifische Erweiterung der Basistabelle. 
+Die Suffixe "_LP", "_LM" und "_LG" stehen für SHU-spezifische, KFZ-spezifische 
+und GKV-spezifische Erweiterung der Basistabelle. Das Attribut wird für 
+Konsistenzprüfungen benötigt und wirkt unterstützend für das Compile PlugIn.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">MV</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>MVA_BoRetVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

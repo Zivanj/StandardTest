@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000009B51000AM8" isnullable="false" nrdims="0" pmid="9B51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_AblaufVertrag</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+berechnet die Leistung bei Ablauf des Vertrags
+siehe: FS-PM Leben FK VT-Schnittstelle
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+vtm_AblaufVertrag				Verkaufsprodukt
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprod
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_AblaufVertrag
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+			  
+//Attribute Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variablen
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{			
+	this.Methodenschluessel = SNTMETHODE_ABLAUF_VERTRAG
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+	
+	loop (this,pathVkprod)
+	{
+		rc = pathVkprod.vtm_SchnittstellenCheck.exec [extRoot = this]
+	
+		rc = pathVkprod.vtm_AblaufVertrag.exec
+					[ extRoot = this
+					]
+					
+		rc = pathVkprod.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]
+	}	     
+	
+	Res = RC_OK
+}
+else
+	Res = RC_NOK
+
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="boolean" dataversion="2012" final="false" guid="ZZZPM3FORM000000W382000SPM" isnullable="false" nrdims="0" pmid="W382000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Plausis</pm:namespace>
+  <pm:name>cm_Check_RegelPruefGruppe</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Formel zur Prüfung, ob eine Plausibiltät gemäß Aufrufparameter sPruefgruppe und sRegelgruppe
+relevant ist.
+
+In einer Schleife über alle Tafeleinträge der dem Merkmal PlausiTyp.PruefRegelgruppe zugeordneten
+Tafel wird geprüft, ob ein Tafeleintrag mit den Aufrufparameter sRegelgruppe und sPruefgruppe übereinstimmt oder 
+ein Tafeleintrag "ALLE" ist. Falls ja, dann ist die Plausibiltät gemäß Pruef- und Regelgruppe relevant.
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+sBenutzergruppe		string		Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+keine
+        
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+
+//Externe Objekte
+extern object extPlausi
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+data string RegelPruefGruppe[*,*]
+
+//Objekte
+
+//interne Variablen
+int Laenge = 0
+int i = 0
+bool PlausiIsRelevant = FALSE
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+Laenge = Limit(extPlausi.RegelPruefGruppe, 1)
+for(i=0, i<Laenge, i++)
+{
+	if((sRegelgruppe == extPlausi.RegelPruefGruppe(i, 0) || extPlausi.RegelPruefGruppe(i, 0)== "ALLE")&&
+			(sPruefgruppe == extPlausi.RegelPruefGruppe(i, 1) ||
+			extPlausi.RegelPruefGruppe(i, 1)== "ALLE"))
+	{
+		PlausiIsRelevant = TRUE
+		break
+	}
+}
+	
+Res = PlausiIsRelevant 
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

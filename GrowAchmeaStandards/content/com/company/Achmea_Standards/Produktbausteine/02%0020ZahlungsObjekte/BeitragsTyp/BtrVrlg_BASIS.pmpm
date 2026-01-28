@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000BX30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte::BeitragsTyp</pm:namespace>
+  <pm:name>BtrVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000DX30000T76" pmid="DX30000T76">
+      <pm:name>BtrVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000BX30000T76" pmid="BX30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>BtrVrlg_BASIS</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="en-US">PremTmpl_BASIS</pm:stringval>
+          </pm:label>
+          <pm:type guid="ZZZPM3PMT0000000DNC0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BeitragsTyp</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="UABD2SRRCK9CP4NREASG6P9B0C" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Description</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="4B0O1FHP089L049RLBATNJAL86" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">IdentificationAttr</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="6LIKPE08MJESF4CNQV3J076KCV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ShortDescription</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="RGKI1I4S6H6L34QCPC9P8LLE9O" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="43UEHE2NUN4SH4R3FQN7V4VLPH" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ProductModuleId</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="PM9PT1J2FK15V4C3KQP39VCK0A" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="O0SMFKI3GL0CH4JAAUF8LBG6HA" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Beginn</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Start date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Beginn</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Beginn" definiert den Beitragszahlungsbeginn.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Beginn" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PREMBEGB_DT".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="O1BNM6QU0AVCI4CT2M2IOBN9PC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>BruttoBeitrag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Gross premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">BruttoBeitrag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Bruttozahlbeitrag" ist der ratierliche Beitrag ohne 
+    Gewinnverrechnung und Sofortüberschuss mit Zuschlägen und 
+    Nachlässen. Dieses ist der dem Kunden garantierte Beitrag.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Bruttozahlbeitrag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „GROSSPREMIUMB_AM".
+
+
+
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="5OVD7BV0RPC5N4DLKUT2FDO9M5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Ende</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">End date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ende</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Ende" definiert das Beitragszahlungsende.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Ende" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PREMENDB_DT".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="RNBD95UOGFKDB4UU4SJPMDOJE7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Hauptfaelligkeit</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Main due date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Hauptfaelligkeit</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Hauptfälligkeit" wird standardmäßig durch den Beginn-
+    monat definiert. Wenn die Versicherungsdauer nicht ganzjaehrig ist, 
+    nimmt man den Ablaufmonat. Ausserdem ist es der Aufsetzpunkt 
+    für den Zahlungsrhythmus. 
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Hauptfaelligkeit" wird gemappt und persistiert.
+    (Ab Release 2.0)
+    Der SAP-Feldname hat die Bezeichnung „MAINMATURITY_DT".
+]]></pm:notice>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="6NTM4G1JLCND940ERV34FTBTP7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>JahresBruttoBeitrag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Annual gross premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">JahresBruttoBeitrag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "JahresBruttoBeitrag" enthält die zu zahlenden 
+    Bruttoprämie für ein Jahr.
+
+    Jahresbruttoprämie = (Bruttoprämie je Zahlungsrhythmus )*  Zahlungsrhythmus 
+    Jahresbruttoprämie = 100 Euro monatlich * 12 Monate = 1200 Euro jährlich. 
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „JahresBruttoBeitrag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „ANNUALPREMB_VL".
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TK2TK8NE0VNS74M8NBOPTES2E4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>JahresZahlbeitragNachSteuern</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Annual premium after tax</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">JahresZahlbeitragNachSteuern</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "JahresZahlbeitragNachSteuern" enthält die zu zahlende
+    Inkassoprämie nach Steuern für ein Jahr.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „JahresZahlbeitragNachSteuern" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „ANNPREMAFTTAX_AM".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TAGIL8S63IH4R4IGR6GQCCCKPK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>JahresZahlbeitragVorSteuern</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Annual premium before tax</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">JahresZahlbeitragVorSteuern</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "JahresZahlbeitragVorSteuern" enthält die zu zahlende
+    Inkassoprämie vor Steuern für ein Jahr.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „JahresZahlbeitragVorSteuern" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „ANNPREMBEFTAX_AM".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0B18DFIF9CVSP4QUJ5SJURF313" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Ratenzuschlag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Instalment supplement</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ratenzuschlag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Ratenzuschlag" ist vom Typ float und berechnet den
+    Ratenzahlungszuschlag gemäß Zahlweise. Der Betrag wird ratierlich 
+    ausgewiesen. Der ratierliche Bruttobeitrag berechnet sich wie folgt:
+
+    BruttoBeitrag (rat) = Tarifbeitrag2 (rat) + Ratenzuschlag (rat)
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Ratenzuschlag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „RATESUPPB_AM".
+    Das SAP-Datenelement hat die Bezeichnung „/MSG/ABD_RATESUPPB_AM".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TTLSS271VJDSP46TCDER9DFPN8" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Sicherheitszuschlag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Safety margin</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Sicherheitszuschlag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Sicherheitszuschlag.
+
+Gemapped: JA         Persistent: JA
+]]></pm:notice>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="QVUGR45B4GVKJ4VCCHQLLNDG8V" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Steuer</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Tax</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Steuer</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Betrag der zu zahlenden Steuer pro Produkt. 
+Belegung: Summe der Werte der Merkmale SteuerAbgabenBetrag 
+aus den auf gleicher Ebene hängenden SteuerAbgabeTypen 
+(ohne ZuzahlungSteuer-Typ). Plausi: Wert >= 0  
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="URS62CED497L545SUP07U3SMHV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Tarifbeitrag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Risk premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Tarifbeitrag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Tarifbeitrag" ist vom Typ float und berechnet den 
+    Basisbeitrag auf Jahresbasis.
+    Abhängig vom Merkmal "BeitragManuellKnz" wird diesem Merkmal 
+    entweder der maschinelle oder der manuelle Basisbeitrag zugeordnet. 
+
+    Die Berechnung des Tarifbeitrags wird in der Regel wie folgt be-
+    rechnet:
+
+    1.) Tarifbeitrag = Versicherungssumme * Basisprämienfaktor 
+          (maschinell)
+    2.) Tarifbeitrag = Versicherungssumme * Basisprämienfaktor 
+          (manuell)
+    3.) Tarifbeitrag = Basisprämie (maschinell)
+    4.) Tarifbeitrag = Basisprämie (manuell)
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Tarifbeitrag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „CALCPREMB_AM".
+    Das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_CALCPREMB_AM".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="UF90CQR4IBRKC4SFGAGUCPT6UM" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Waehrung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Currency</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Währung</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Waehrung" definiert die Währung, in der alle Prämien- und 
+    Leistungsfelder des Geschäftsobjekts Antrag (bzw. Vertrag) geführt werden.
+
+ msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Waehrung" wird nicht gemappt und nicht persistiert.
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000A1H0000SPM">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Waehrung_BASIS_S</pm:table>
+                      <pm:column guid="67KBSE9P9A1DV4ECA1E68DRFVQ">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">EUR</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="1VFO90FAS6P4D45EU5HK9NQO66" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Zahlbeitrag</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Client premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Zahlbeitrag</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Zahlbeitrag" definiert die Inkassoprämie lt. Zahlweise 
+    nach Steuern (= Inkassoprämie vor Steuern + Versicherungssteuer-
+    betrag).
+
+Verwendung
+    Die Inkassoprämie laut Zahlungsrhythmus nach Steuern ist der tatsächliche 
+    Betrag inklusive der anfallenden Steuern, der periodisch (Intervall ent-
+    sprechend dem gewählten Zahlungsrhythmus ) vom Prämienzahler zu 
+    entrichten ist.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Zahlbeitrag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PREMAFTERTAX_AM".
+    Das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_PREMAFTERTAX_AM". 
+
+Gültige Werte: Einschränkung aufgrund Feldlänge im FSPM
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.99999999999999E12</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="PGKMUUQ2GBGLL4NMCJ2Q223LF7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ZahlbeitragVorSteuern</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Client premium before tax</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">ZahlbeitragVorSteuern</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "ZahlbeitragVorSteuern" ist vom Typ float und berechnet 
+    den ratierlichen Zahlbeitrag vor Steuern. Die Berechnung ist wie folgt:
+
+    Für Leben:
+    ZahlbeitragVorSteuern (rat) = BruttoBeitrag (rat) + 
+                                                     Sofortueberschuss (rat)
+
+    Für SHU und KFZ:
+    ZahlbeitragVorSteuern (rat) = BruttoBeitrag (rat)
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „ZahlbeitragVorSteuern" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PREMBEFORETAX_AM".
+    Das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_PREMBEFORETAX_AM".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>9.9999999999E8</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UICCOG0KH2RC44J4QLUJF82U5J" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Zahlungsrhythmus</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Payment frequenty</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Zahlungsrhythmus" gibt das Intervall an, für das 
+    eine Prämie bezahlt wird. Der Zahlungsrhythmus ist definiert durch:
+
+    (0)       einmalige Zahlung
+    (1)       jaehrliche Zahlung
+    (2)       halbjaehrliche Zahlung
+    (4)       vierteljaehrliche Zahlung
+    (12 )    monatliche Zahlung
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Zahlungsrhythmus" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PAYFRQ_CD".
+    Das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_PAYMENTFREQ_VL".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000IX30000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Zahlungsrhythmus_BASIS_S</pm:table>
+                      <pm:column guid="RJI05JF4BT6LH4CHD9L1JJBEK1">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="0NKM0SDKPGG4V49NH606UN3UMO" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ZahlungsrhythmusBeginn</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "ZahlungsrhythmusBeginn" definiert den Beginn der Beitragszahlungen.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „ZahlungsrhythmusBeginn" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „PAYFRQBEG_DT".
+    Das SAP-Datenelement hat die Bezeichnung ]]></pm:notice>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000EX30000T76" readonly="false" sortkey="0">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000000FX30000T76" readonly="false" sortkey="1">
+                  <pm:name>Ausgabe</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>BruttoBeitrag</pm:attribute>
+                    <pm:attribute>JahresBruttoBeitrag</pm:attribute>
+                    <pm:attribute>JahresZahlbeitragNachSteuern</pm:attribute>
+                    <pm:attribute>JahresZahlbeitragVorSteuern</pm:attribute>
+                    <pm:attribute>Ratenzuschlag</pm:attribute>
+                    <pm:attribute>Sicherheitszuschlag</pm:attribute>
+                    <pm:attribute>Steuer</pm:attribute>
+                    <pm:attribute>Tarifbeitrag</pm:attribute>
+                    <pm:attribute>ZahlbeitragVorSteuern</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000000HX30000T76" readonly="false" sortkey="2">
+                  <pm:name>Eingabe</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Beginn</pm:attribute>
+                    <pm:attribute>Ende</pm:attribute>
+                    <pm:attribute>Hauptfaelligkeit</pm:attribute>
+                    <pm:attribute>Waehrung</pm:attribute>
+                    <pm:attribute>Zahlbeitrag</pm:attribute>
+                    <pm:attribute>Zahlungsrhythmus</pm:attribute>
+                    <pm:attribute>ZahlungsrhythmusBeginn</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0PSCUUV9CQ0DP4A05UJVV6SQH7" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000S040000T76" sortkey="0">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>BtrVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000I900000AZZ" abstract="false" final="false" pmid="I900000AZZ" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>msg_tech_SKB_Extension</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="Q4SP83M49MAD9456GFNND9GBTK" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>classname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="5EK1D8SI238DO45JRASUCKNHFF" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>propertyname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="0QEVT42Q4V1LE4KOTBGNK9FL6J" sortkey="0">
+    <pm:name>PK_msg_tech_SKB_Extension</pm:name>
+    <pm:columns>
+      <pm:column>classname</pm:column>
+      <pm:column>propertyname</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">BedingungsTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BedingungsTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarproduktbuendel_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ErweiterungsTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ErweiterungsTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Objekterweiterung_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Objekterweiterung_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Objekterweiterung_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Objekterweiterung_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VersichertesObjektTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AdressTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AdressTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">ConditionCharacter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ConditionValid</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CoverageCombination</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InsuredSumVariantSingleValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsuredSumVariant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ActivityPremiumCalculation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NumberOfCoverages</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Branch</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CompanyActivityCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IsMainActivity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SBICode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SectorCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BrandIsRest</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BrandIsSelfMade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxGrossTurnoverExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxGrossTurnoverWLExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfBuildings</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfBuildingsOrange</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfEmployees</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfRentedUnits</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfMembers</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfStudents</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxNumberOfTenants</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxObjectAcceptanceValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxObjectAcceptanceValueOrange</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxOperatingProfitLastYearInclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxPostalCodeCapital</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxReconstructionValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxSeatingCapacity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxVSU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxWeight</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaxWeightRed</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumExternalClaimFreeYears</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumMass</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumMassVehicleOrange</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumMassVehicleRed</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumObjectAcceptanceValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MaximumObjectValuePurpleRisk</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinAgeForOldtimer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinDamageFreeYears</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinDriverAge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinGrossTurnoverExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfBuildings</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfEmployees</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfRentedUnits</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfMembers</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfStudents</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinNumberOfTenants</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinObjectAge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinOperatingProfitLastYearInclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinPostalCodeCapital</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinReconstructionValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinimumDeductableRed</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinimumDeductibleAmount</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinimumRegistrationDateCoC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">OrangeRiskActivityCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TXLabel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UnknownFuelType</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UsageMinDamageFreeYears</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TotalNumberOfMembers</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TotalObjectsGrossTurnoverExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TotalObjectsNumberOfEmployees</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TotalOperatingProfitLastYearInclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Urbanisation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DeductableWAM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_PropositionTables</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ActivityPremiumCalculation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AverageReplacementValueMaterial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GrossTurnoverExclTaxTotal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LegalForm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">OperatingProfitLastYearTotal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RegistrationDateCoC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector1</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GrossTurnoverWLExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector2</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector3</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector4</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector5</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector6</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sector7</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TXLabel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AcceptanceChecked</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CoverageCombination</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TariffFlow</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BuildingUsage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TotalBEMObjectsGrossTurnoverExclTax</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TemporaryPremiumWGL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TempRiskSalaryWGL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Recalculate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DeductiblePeriodDays</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DeductiblePeriodDerived</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CoveragePercentageFirstYearDerived</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TandC_Code</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RenewedIndicator</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SwapSBI</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SBI_Original</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HailArea</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">WindArea</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CommissionValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TargetPremiumPercentage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TargetPremiumAmount</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

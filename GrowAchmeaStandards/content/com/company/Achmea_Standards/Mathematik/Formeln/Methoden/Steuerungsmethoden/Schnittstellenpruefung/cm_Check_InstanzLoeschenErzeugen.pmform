@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000006ZG0000T76" isnullable="false" nrdims="0" pmid="6ZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden::Schnittstellenpruefung</pm:namespace>
+  <pm:name>cm_Check_InstanzLoeschenErzeugen</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Prüfung, ob eine Instanz bei einem Schnittstellenmethodenaufruf angelegt bzw. gelöscht werden darf. 
+Hierzu muß das Hauptachsenobjekt der Ebene angegeben werden, auf der die entsprechende Instanz angelegt bzw. gelöscht werden soll 
+sowie die Klasse des anzulegenden bzw. zu löschenden Objektes.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+sKlasse string     Aufrufparameter
+iLoeschenErzeugen  Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+
+//Externe Objekte
+extern Object extRoot
+extern Object extHAObj
+
+//Versicherungstechnische Methoden
+
+//Objekte
+
+//Attribute, Merkmale
+data int KnzSchnittstelleCheck
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variable
+int h_Ebene
+int h_KnzNeu
+int h_KnzLoeschen
+int h_KnzSchnittstelleCheck
+int h_Eintraege
+int h_LoeschenErzeugen
+int h_Methodenschluessel
+string h_Klasse
+string h_TabellenName
+string h_HAObjKlasse
+
+bool h_result
+
+pmproductmodule HAObject
+
+
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+//Beispiele für den Aufruf
+/*
+rc = iCheckInstanzErzeugenLoeschen[extRoot = extRoot, 
+														sKlasse = sKlasse, 
+														extHAObj = extHAObj,
+														iLoeschenErzeugen = ENTITAET_ERZEUGEN]
+
+
+rc = iCheckInstanzErzeugenLoeschen[extRoot = extRoot, 
+														sKlasse = sKlasse, 
+														extHAObj = extHAObj,
+														iLoeschenErzeugen = ENTITAET_LOESCHEN]
+*/
+
+if(extRoot.MethodenschluesselOriginal != 0) 
+{
+	h_Methodenschluessel = extRoot.MethodenschluesselOriginal
+}
+else
+{		
+	h_Methodenschluessel = extRoot.Methodenschluessel
+}
+
+h_KnzSchnittstelleCheck = extRoot.KnzSchnittstelleCheck
+
+//Falls kein Schnittstellencheck durchgeführt werden soll, Prüfung nicht durchführen
+if (h_KnzSchnittstelleCheck != SCHNITTSTELLE_CHECK_KEIN)
+{
+	//Klasse der Instanz, die gelöscht oder angelegt werden soll
+	h_Klasse = sKlasse
+	HAObject = new pmproductmodule( extHAObj )
+	h_HAObjKlasse = HAObject.sClassName
+	h_LoeschenErzeugen = iLoeschenErzeugen
+
+	switch (h_HAObjKlasse)
+	{
+		case OKLASSE_PRODUKT:
+			h_Ebene = EBENE_PRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTBUENDEL:
+			h_Ebene = EBENE_ELEMTARPRODUKTBUENDEL
+			break
+		case OKLASSE_ELEMENTARPRODUKT:
+			h_Ebene = EBENE_ELEMENTARPRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTSCHEIBE:
+			h_Ebene = EBENE_ELEMENTARPRODUKTSCHEIBE
+			break
+		case OKLASSE_DECKUNGSTYP:
+			h_Ebene = EBENE_DECKUNGSTYP
+			break
+		default:
+			Error_fachlich = true
+			sNachrichtenklasse = MSG_ERRORCLASS
+			ErrorVar1 = h_HAObjKlasse
+			ErrorVar2 = ""
+			ErrorVar3 = ""
+			ErrorVar4 = ""
+			error.text = BASIS_TEXT_ERR_KEIN_HAUPTACHSENOBJEKT
+			error(BASIS_FORM_ERR_KEIN_HAUPTACHSENOBJEKT)
+			return(BASIS_FORM_ERR_KEIN_HAUPTACHSENOBJEKT)
+			break
+	}
+
+	//Falls das zu erzeugende Kindobjekt Teil der Hauptachse ist muß
+	//die richtige Ebene gewählt werden.
+	switch (h_Klasse)
+	{
+		case OKLASSE_PRODUKT:
+			h_Ebene = EBENE_PRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTBUENDEL:
+			h_Ebene = EBENE_ELEMTARPRODUKTBUENDEL
+			break
+		case OKLASSE_ELEMENTARPRODUKT:
+			h_Ebene = EBENE_ELEMENTARPRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTSCHEIBE:
+			h_Ebene = EBENE_ELEMENTARPRODUKTSCHEIBE
+			break
+		case OKLASSE_DECKUNGSTYP:
+			h_Ebene = EBENE_DECKUNGSTYP
+			break
+		default:
+			break
+	}
+
+
+	//Ermittle die zu Methodenschluessel passende Tabelle
+	h_TabellenName = sTabellenName[extRoot = extRoot, iEbene = h_Ebene]
+	h_Eintraege = TableByName(h_TabellenName, structSchnittstellenpruefung).*.count					
+									[iMethodenschluessel == h_Methodenschluessel
+									,iEbene == h_Ebene
+									,sKlasse == h_Klasse
+									]
+
+	//Falls die Klasse ist nicht gemappt ist darf sie beliebig geloescht und erzeugt werden
+	if (h_Eintraege == 0)
+	{
+		h_KnzNeu = 1
+		h_KnzLoeschen = 1
+	}	
+	else if(h_Eintraege == 1)
+	{	
+		//Darf diese Instanz neu angelegt oder gelöscht werden?
+		h_KnzNeu = TableByName(h_TabellenName, structSchnittstellenpruefung).iNew						
+									[iMethodenschluessel == h_Methodenschluessel
+									,iEbene == h_Ebene
+									,sKlasse == h_Klasse
+									](0)
+		h_KnzLoeschen = TableByName(h_TabellenName, structSchnittstellenpruefung).iDeleted						
+									[iMethodenschluessel == h_Methodenschluessel
+									,iEbene == h_Ebene
+									,sKlasse == h_Klasse
+									](0)
+	}
+	else
+	{
+		Error_fachlich = true
+		sNachrichtenklasse = MSG_ERRORCLASS
+		ErrorVar1 = h_TabellenName
+		ErrorVar2 = ToString(h_Eintraege)
+		ErrorVar3 = "iEbene"
+		ErrorVar4 = "sKlasse"
+		error.text = BASIS_TEXT_ERR_TABELLENSELEKTION
+		error(BASIS_FORM_ERR_TABELLENSELEKTION)
+		return(BASIS_FORM_ERR_TABELLENSELEKTION)
+	}
+
+	if (h_LoeschenErzeugen == ENTITAET_ERZEUGEN && h_KnzNeu == 1)
+	{
+		h_result = TRUE
+	}
+	else if (h_LoeschenErzeugen == ENTITAET_LOESCHEN && h_KnzLoeschen == 1)
+	{
+		h_result = TRUE
+	}
+	else
+		h_result = FALSE
+}
+//Falls keine Prüfung durchgeführt werden soll
+else
+	h_result = TRUE
+
+if (h_result == FALSE)
+{
+	Error_fachlich = true
+	sNachrichtenklasse = MSG_ERRORCLASS
+	ErrorVar1 = ToString(h_Methodenschluessel)
+	ErrorVar2 = h_Klasse
+	ErrorVar3 = ToString(h_Ebene)
+	ErrorVar4 = ""
+	error.text = BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_OUT
+	error(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_OUT)
+	return(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_OUT)
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

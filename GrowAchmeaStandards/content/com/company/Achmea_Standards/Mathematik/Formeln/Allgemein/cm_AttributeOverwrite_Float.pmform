@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM000000AZG0000T76" isnullable="false" nrdims="0" pmid="AZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Allgemein</pm:namespace>
+  <pm:name>cm_AttributeOverwrite_Float</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Methode soll als Platzhalter in einer Vorlage dienen.
+Sie muss bei jedem einzelnen Objekt ueberschrieben werden.
+Geschieht dies nicht, wird ein Fehler ausgeloest
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+Error_fachlich = TRUE
+sNachrichtenklasse = MSG_ERRORCLASS
+
+ErrorVar1 = GetObjectName( this ) 
+
+error.text = BASIS_TEXT_ERR_MERKMALSFUNKTION_NICHT_UEBERSCHRIEBEN
+error(BASIS_FORM_ERR_MERKMALSFUNKTION_NICHT_UEBERSCHRIEBEN)
+return(BASIS_FORM_ERR_MERKMALSFUNKTION_NICHT_UEBERSCHRIEBEN)
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

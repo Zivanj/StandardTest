@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000RXA0000SPB" abstract="false" final="false" pmid="RXA0000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_LVSTATUS_BASIS_S</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="53KNIMHA75B4R4B7HGF8UPLRV2" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="68F0DI7JJJJKK4RUUAOL9IVPKA" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="RSSTMNTGRRJSC4CD3BP7S8P59G" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="4GV0IHL8KUG4M4KVTJJCJ3TK4U" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="5BUM5NNAVHIL844QRKRG6F4EDO" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="387FA929EU14245UR4EC3GV0U5" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="06GJBO3B972DS4O2F7VHBKVI4U" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="18892C7L2BCS5412UUPBSO0TJ6" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="04NL013AP3DKO4HJ8NH2T77KNO" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="U0LLDE4H1VUS346O4PNJBET7FP" sortkey="0">
+    <pm:name>PK_InTab_Az_LVSTATUS_BASIS_S</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+
+Diese Tabelle definiert alle gültigen Aufzählungswerte für das Merkmal
+"LVSTATUS". 
+Typ und Nummernbereich:
+S	60 - 90
+NUMC2
+
+
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>4</pm:integerval>
+        <pm:integerval>5</pm:integerval>
+        <pm:integerval>6</pm:integerval>
+        <pm:integerval>7</pm:integerval>
+        <pm:integerval>8</pm:integerval>
+        <pm:integerval>9</pm:integerval>
+        <pm:integerval>10</pm:integerval>
+        <pm:integerval>11</pm:integerval>
+        <pm:integerval>12</pm:integerval>
+        <pm:integerval>13</pm:integerval>
+        <pm:integerval>14</pm:integerval>
+        <pm:integerval>15</pm:integerval>
+        <pm:integerval>16</pm:integerval>
+        <pm:integerval>17</pm:integerval>
+        <pm:integerval>18</pm:integerval>
+        <pm:integerval>19</pm:integerval>
+        <pm:integerval>30</pm:integerval>
+        <pm:integerval>31</pm:integerval>
+        <pm:integerval>32</pm:integerval>
+        <pm:integerval>99</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">nicht definiert</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienpflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienbefreit durch Leistung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Garantiezeit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Leibrente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung ausgezahlte Garantie Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung ausgezahlte Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Einmalbeitrag</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Garantiezeit Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Leibrente Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung TodVP Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung TodVP Garantie Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei nach Leistungsfall</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gesamte Versicherungsdauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienpflichtig leistungspflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Umwandlung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rohbau</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rohbau Kostenfrei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">vor Beginn</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">any</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Not Defined</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt by Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable Guarantee Period</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Rate Annuity Compensable Life Annty</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Benefit Paid-Out Guarantee Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Benefit Disbursement Guarantee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt / One-Time Premium</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Compensable Guarantee Period Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Compensable Life Annuity Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Permium Exempt Benefit Death IP Guarantee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Benefit Death Ins.Pers.Guar.Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt After Benefit Case</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Total Insurance Duration</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Obligation Compensable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Conversion to Premium-Free Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure, Cost-Free</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Before Start</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Any</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">niet gedefinieerd</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Behoudens Premies</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde bij Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Garantie periode met Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde vergoedbare op lijfrente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prem.Vrijgestelde Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Bonus met Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Benefit Garantie Bonus Betaald</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde uitkering Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde One-Time Premie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde / Op basis van tarief</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde compensabele Garantie Bonus Periode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-vrijgestelde compensabele lijfrente Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde Benefit Death IP-Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prem.Exmpt Benef.Death Ins.Pers.Guar.Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Na Claim</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Totaal Verzekeringen Duur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Verplichting, vergoedbare</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Conversion</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structuur, Kosteloos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voor aanvang</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Alle</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">nicht definiert</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienpflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienbefreit durch Leistung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Garantiezeit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Leibrente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung ausgezahlte Garantie Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung ausgezahlte Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Einmalbeitrag</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Garantiezeit Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei leistungspflichtig Leibrente Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung TodVP Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Leistung TodVP Garantie Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei nach Leistungsfall</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gesamte Versicherungsdauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienpflichtig leistungspflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienfrei Umwandlung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rohbau</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rohbau Kostenfrei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">vor Beginn</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Any</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Not Defined</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt by Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable Guarantee Period</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Rate Annuity Compensable Life Annty</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Compensable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Benefit Paid-Out Guarantee Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Benefit Disbursement Guarantee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt / One-Time Premium</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Compensable Guarantee Period Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt Compensable Life Annuity Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Permium Exempt Benefit Death IP Guarantee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Exempt Benefit Death Ins.Pers.Guar.Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium-Exempt After Benefit Case</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Total Insurance Duration</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Obligation Compensable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Conversion to Premium-Free Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure, Cost-Free</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Before Start</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Any</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">niet gedefinieerd</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Behoudens Premies</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde bij Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Garantie periode met Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde vergoedbare op lijfrente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prem.Vrijgestelde Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Bonus met Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde Benefit Obligation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Benefit Garantie Bonus Betaald</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde uitkering Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde One-Time Premie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde / Op basis van tarief</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde compensabele Garantie Bonus Periode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-vrijgestelde compensabele lijfrente Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Vrijgestelde Benefit Death IP-Garantie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prem.Exmpt Benef.Death Ins.Pers.Guar.Bonus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Na Claim</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Totaal Verzekeringen Duur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie Verplichting, vergoedbare</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premie-Vrijgestelde Conversion</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Structuur, Kosteloos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voor aanvang</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Alle</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

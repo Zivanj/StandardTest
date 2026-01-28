@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="ZZZPM3CC000000009Z30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeitszuordnung</pm:namespace>
+  <pm:name>Abhaengigkeitszuordnung_Standard</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000BZ30000T76" pmid="BZ30000T76">
+      <pm:name>Abhaengigkeitszuordnung_Standard</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="ZZZPM3PM000000009Z30000T76" pmid="9Z30000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>Abhaengigkeitszuordnung_Standard</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000I3H0000T76">com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeitszuordnung::DepAssTmpl_ACHMEA_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000BZ60000SPB">com::company::TechnischesSchema::Produktbausteintypen::Abhaengigkeitszuordnung</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="mlstring" final="false" guid="OCR0AR4KFTG464MFNURTVFCM59" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:mlstringval>
+                      <pm:stringval encoding="none" culture="de-DE">Abhaengigkeitszuordnung</pm:stringval>
+                      <pm:stringval encoding="none" culture="en-US">Dependency Assignment</pm:stringval>
+                      <pm:stringval encoding="none" culture="nl-NL">Afhankelijkheid Toewijzing</pm:stringval>
+                    </pm:mlstringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="mlstring" final="false" guid="3SJ40U0FTF2C24LSPA263QFGMT" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:mlstringval>
+                      <pm:stringval encoding="none" culture="de-DE">ABHZUORDNUNG</pm:stringval>
+                      <pm:stringval encoding="none" culture="en-US">ABHZUORDNUNG</pm:stringval>
+                      <pm:stringval encoding="none" culture="nl-NL">ABHZUORDNUNG</pm:stringval>
+                    </pm:mlstringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>Abhaengigkeitszuordnung_Standard</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

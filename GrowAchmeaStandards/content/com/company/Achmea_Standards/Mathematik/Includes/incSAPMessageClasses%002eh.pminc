@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000MCC0000AM9" pmid="MCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPMessageClasses.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// SAP-Standard classes
+
+#define MSG_ERRORCLASS		"/PM0/ABR_PM_ERRORS"
+#define MSG_PLAUSIBILITYCLASS	"/PM0/ABR_PM_PLAUSIS"]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

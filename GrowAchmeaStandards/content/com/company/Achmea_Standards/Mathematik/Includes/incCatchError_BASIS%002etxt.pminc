@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000DCC0000AM9" pmid="DCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incCatchError_BASIS.txt</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[}
+catch( pmexception MyExc, __PMQErrorExceptionLabel__ )
+{  
+	string	ls_Markname 
+	string	ls_InstanceName = tostring(getobjectid(this))
+	
+	// Prüfung, ob von der vorherigen Formel ein Fehler gesetzt
+	// wurde und somit deren Berechnung beendet wurde
+
+	// Da kein Fehler gefunden wurde, ist er in dieser Formel
+	// passiert und muß daher mit einer Message vermerkt werden.
+	// Wenn es sich dabei um einen abgefangenen Fehler handelt,
+	// ist Error_fachlich = TRUE
+	if (GetNextMessage(MSG_ERRORMAILBOX) == NULL)
+	{	
+	   string sFehlernummer;
+	   string sFehlertext;
+		if (Error_fachlich == TRUE)
+		{
+			sFehlernummer = tostring(error);
+			sFehlertext = error.text;
+			if (StrLen(MarkName) > 0)
+				ls_Markname = MarkName	// Set object property given in call of errormessage
+		   	if (StrLen(InstanceName) > 0)
+				ls_InstanceName = InstanceName	// Set objectname given in call of errormessage
+		}
+      else
+      {
+			int		iCurrentErrortextFragment = 0,
+					iCurrentErrortextVar = 0;	
+			string	sErrortextPart = "",
+					sErrortextFragments[*],
+					sErrortextVars[4];
+					
+			// Bei technischem Fehler soll der Text des msg.pm
+			// als Fehlertext genommen werden, der in error.text 
+			// definiert wurde. Da alle technischen Fehler zu-
+			// nächst als solche markiert werden, ist die Fehler-
+			// nummer konstant. Die eigentliche Fehlerbeschrei-
+			// bung wird aufgeteilt auf die vier Variablen.
+			sErrortextFragments = strsplit(error.text, " ");
+			while (iCurrentErrortextFragment < (limit(sErrortextFragments)))
+			{
+				if ((strlen(sErrortextPart) + strlen(sErrortextFragments(iCurrentErrortextFragment)))<50){
+					sErrortextPart = tostring(sErrortextPart, " ",trim(sErrortextFragments(iCurrentErrortextFragment)));
+					iCurrentErrortextFragment = iCurrentErrortextFragment + 1;
+				}
+				else
+				{
+					sErrortextVars(iCurrentErrortextVar) = sErrortextPart;
+					sErrortextPart = "";
+					iCurrentErrortextVar = iCurrentErrortextVar + 1;
+				}					
+			}
+			sErrortextVars(iCurrentErrortextVar) = sErrortextPart;
+			sFehlernummer = tostring(BASIS_FORM_ERR_TECHNISCHERFEHLER);
+			sFehlertext = BASIS_TEXT_ERR_TECHNISCHERFEHLER;
+			ErrorVar1 = sErrortextVars(0);
+			ErrorVar2 = sErrortextVars(1);
+			ErrorVar3 = sErrortextVars(2);
+			ErrorVar4 = sErrortextVars(3);
+		}
+		h_rc = c_SetVTMessage
+				[sLevel = "E"
+				,sNummer = sFehlernummer 
+				,sVar1 = ErrorVar1 
+				,sVar2 = ErrorVar2
+				,sVar3 = ErrorVar3
+				,sVar4 = ErrorVar4
+				,sInstanceName = tostring(getobjectid(this))
+				,sProductModuleID = tostring(getobjectbasename(this)," (",getobjectbaseid(this),")")
+	  			,sMarkName = MarkName
+				,sKlasse = sNachrichtenklasse 
+				,sTextIntern = sFehlertext ]; 
+	}
+		
+	// Da im Fehlerfall nicht mehr terminiert wird, muß nachfolgend
+	// vermerkt werden, in welcher Formel der Fehler passiert ist.
+	// Dies geschieht in Form einer Trace-Mailbox, in der für jede
+	// durchlaufende Formel auf dem Weg nach oben zurück zur Schnitt-
+	// stellenmethode ein Eintrag generiert wird. So erhält man einen
+	// Formelaufrufbaum.
+	
+	int LaufendeErrorNr = 1;
+	message trace_message;
+	while(GetNextMessage (MSG_TRACEMAILBOX) != NULL)
+	    LaufendeErrorNr = LaufendeErrorNr + 1; 
+	trace_message = createmessage(MSG_TRACEMAILBOX, LaufendeErrorNr);
+	renamemessage(trace_message, GetMessageFormula(trace_message));
+	
+	// Sofern die Fehlerbearbeitung nicht an der Schnittstellen-
+	// methode passiert, soll der Fehler an aufrufende Formel
+	// weitergereicht werden. Ansonsten soll die Konstante für
+	// RC_NOK zurückgegeben werden, damit der
+	// Aufruf weich beendet wird.
+	
+	if(interface_method != TRUE){
+		error(error);
+		return(error);
+	}
+   else
+		return(RC_NOK);
+}
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

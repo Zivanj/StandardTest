@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000ICC0000AM9" pmid="ICC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormClasses_BASIS.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_FORM_CLASSES_BASIS_H_INCLUDED
+#define INC_FORM_CLASSES_BASIS_H_INCLUDED
+ 
+/*===================================================================*/
+/* Objekt-Klassen                                           */
+/*===================================================================*/
+#define OKLASSE_ALLE									"Alle"
+#define OKLASSE_BASISKLASSE						"Basisklasse"
+#define OKLASSE_HISTORYROOTTYP					"HistoryRootTyp"
+#define OKLASSE_VERKAUFSPRODUKT					"Verkaufsprodukt"
+#define OKLASSE_PRODUKT							   "Produkt"
+#define OKLASSE_PRODUKTBUENDEL					"Produktbuendel"
+#define OKLASSE_ELEMENTARPRODUKT				   "Elementarprodukt"
+#define OKLASSE_ELEMENTARPRODUKTBUENDEL		"Elementarproduktbuendel"
+#define OKLASSE_DYNAMIK							   "Dynamik"
+#define OKLASSE_SHIFTSWITCH						"ShiftSwitch"
+#define OKLASSE_FONDSVERTEILUNG					"Fondsverteilung"
+#define OKLASSE_FONDSVERTEILUNGSIMULATION		"FondsverteilungSimulation"
+#define OKLASSE_FONDS							   "Fonds"
+#define OKLASSE_FONDSAUSSCHUETTUNG				"FondsAusschuettung"
+#define OKLASSE_FONDSKURSART					   "FondsKursart"
+#define OKLASSE_FONDSUMSTELLUNG					"FondsUmstellung"
+#define OKLASSE_FONDSKURS						   "FondsKurs"
+#define OKLASSE_FONDSZUORDNUNG					"FondsZuordnung"
+#define OKLASSE_FONDSAUSGABEZUSCHLAG			"FondsAusgabezuschlag"
+#define OKLASSE_GARANTIEWERTE					   "Garantiewerte"
+#define OKLASSE_LEISTUNGSERMITTLUNG				"Leistungsermittlung"
+#define OKLASSE_ELEMENTARPRODUKTSCHEIBE		"Elementarproduktscheibe"
+#define OKLASSE_KONTOSCHLUSSUEBERSCHUSS		"KontoSchlussueberschuss"
+#define OKLASSE_KONTOUEBERSCHUSSVERWENDUNG	"KontoUeberschussverwendung"
+#define OKLASSE_KONTOUEBERSCHUSSZUTEILUNG		"KontoUeberschusszuteilung"
+#define OKLASSE_KONTOKAPITALERTRAGSSTEUER		"KontoKapitalertragssteuer"
+#define OKLASSE_KONTOFONDSANTEILE				"KontoFondsanteile"
+#define OKLASSE_KONTOBILANZWERTE				   "KontoBilanzwerte"
+#define OKLASSE_BEWBESTAND						   "BewBestand"
+#define OKLASSE_BEWPRAEMIENZERLEGUNG			"BewPraemienzerlegung"
+#define OKLASSE_BEWSCHLUSSUEBERSCHUSSZUTEILUNG	"BewSchlussueberschusszuteilung"
+#define OKLASSE_BEWSTICHTAG						"BewStichtag"
+#define OKLASSE_BEWUEBERSCHUSSVERWENDUNG		"BewUeberschussverwendung"
+#define OKLASSE_BEWVERZANS						   "BewVerzAns"
+#define OKLASSE_BEWFONDSANTEILE					"BewFondsanteile"
+#define OKLASSE_BEWLEISTUNGSWERTE				"BewLeistungswerte"
+#define OKLASSE_BEWUEBERSCHUSSZUTEILUNG		"BewUeberschusszuteilung"
+#define OKLASSE_BEWBILANZWERTE				   "BewBilanzwerte"
+#define OKLASSE_DECKUNGSTYP						"DeckungsTyp"
+#define OKLASSE_AUSSCHEIDEORDNUNGTYP			"AusscheideordnungTyp"
+#define OKLASSE_BEDINGUNGSTYP					   "BedingungsTyp"
+#define OKLASSE_BEITRAGSTYP						"BeitragsTyp"
+#define OKLASSE_EREIGNISTYP						"EreignisTyp"
+#define OKLASSE_GEFAHRTYP						   "GefahrTyp"
+#define OKLASSE_LEISTUNGTYP						"LeistungTyp"
+#define OKLASSE_NACHWEISTYP						"NachweisTyp"
+#define OKLASSE_NEBENVERSICHERUNGTYP			"NebenversicherungTyp"
+#define OKLASSE_RISIKOTYP						   "RisikoTyp"
+#define OKLASSE_SCHADENTYP						   "SchadenTyp"
+#define OKLASSE_TARIFIERUNGTYP					"TarifierungTyp"
+#define OKLASSE_TRANSAKTIONSGEBUEHR				"Transaktionsgebuehr"
+#define OKLASSE_URSACHETYP						   "UrsacheTyp"
+#define OKLASSE_VERSICHERTESOBJEKTTYP			"VersichertesObjektTyp"
+#define OKLASSE_ZUSCHLAGNACHLASSTYP				"ZuschlagNachlassTyp"
+#define OKLASSE_GRUPPENTYP						   "GruppenTyp"
+#define OKLASSE_KARENZZEITTYP					   "KarenzzeitTyp"
+#define OKLASSE_LEISTUNGSEINSCHRAENKUNGSTYP	"LeistungseinschraenkungsTyp"
+#define OKLASSE_SELBSTBEHALTTYP					"SelbstbehaltTyp"
+#define OKLASSE_WARTEZEITTYP					   "WartezeitTyp"
+#define OKLASSE_ABRECHNUNGSVERBANDTYP			"AbrechnungsverbandTyp"
+#define OKLASSE_GEWINNVERBANDTYP				   "GewinnverbandTyp"
+#define OKLASSE_LEISTUNGSSPEKTRUMTYP			"LeistungsSpektrumTyp"
+#define OKLASSE_UEBERSCHUSSANTEILTYP			"UeberschussAnteilTyp"
+#define OKLASSE_UEBERSCHUSSBUENDELTYP			"UeberschussbuendelTyp"
+#define OKLASSE_UEBERSCHUSSTYP					"UeberschussTyp"
+#define OKLASSE_UEBERSCHUSSVERWENDUNGSTYP		"UeberschussVerwendungsTyp"
+#define OKLASSE_OBJEKTTYP						   "ObjektTyp"
+#define OKLASSE_ZWISCHENWERTTYP					"ZwischenwertTyp"
+#define OKLASSE_KONTOEINZEL					   "KontoEinzel"
+#define OKLASSE_BEWEINZEL					      "BewEinzel"
+#define OKLASSE_PLAUSITYP						   "PlausiTyp"
+#define OKLASSE_PLAUSIPARAMETERTYP				"PlausiParameterTyp"
+#define OKLASSE_MODELLRECHNUNGSWERT				"ModellrechnungswertTyp"
+#define OKLASSE_PRAEMIENSTEUERTYP				"PraemienSteuerTyp"
+#define OKLASSE_PRAEMIENSTEUERARTTYP			"PraemienSteuerArtTyp"
+#define OKLASSE_ZUWEISUNGFONDS					"ZuweisungFonds"
+#define OKLASSE_SHIFTSWITCHHEADER				"ShiftSwitchHeader"
+#define OKLASSE_ABRECHNUNGSTYP					"AbrechnungsTyp"
+#define OKLASSE_ADRESSTYP							"AdressTyp" 
+#define OKLASSE_FOERDERTYP					      "FoerderTyp"
+#define OKLASSE_OBJEKTERWEITERUNG				"Objekterweiterung"
+#define OKLASSE_LIMIT								"Limit"
+
+
+
+/*===================================================================*/
+#endif /* #ifndef INC_FORM_CLASSES_BASIS_H_INCLUDED */
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

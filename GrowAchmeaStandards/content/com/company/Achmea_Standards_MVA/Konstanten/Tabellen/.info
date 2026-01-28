@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="QB4ID8LC65C5A4QBHDE4K6V0DG" sortkey="330" structural="false">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Konstanten</pm:namespace>
+  <pm:name>Tabellen</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tabellen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tables</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Tabellen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tables</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>externaltable</pm:objecttype>
+    <pm:objecttype>internaltable</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="ZZZPM3FOL0000000A672000MVA" sortkey="0" structural="false">
+      <pm:name>Az</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3ITAB000000O473000MVA">MVA_InTab_Az_Berechnunsbezug_BASIS_E</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000M473000MVA">MVA_InTab_Az_SelbstbehaltArt_BASIS_E</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000L473000MVA">MVA_InTab_Az_SelbstbehaltTyp_BASIS_E</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000S672000MVA">MVA_InTab_Az_ZuNa_BerechnungsArt_BASIS_E</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

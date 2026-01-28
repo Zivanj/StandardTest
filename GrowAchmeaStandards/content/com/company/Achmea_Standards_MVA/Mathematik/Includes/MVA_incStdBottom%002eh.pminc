@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC00000000CC0000AM9" pmid="0CC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Includes</pm:namespace>
+  <pm:name>MVA_incStdBottom.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[Das Include enthält weitere Includes, die standardmässig für jede Formel verwendet sollen (z.B. für das Fehlerhandling)
+Es muss am Ende einer Formel stehen.
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef MVA_INC_STD_BOTTOM_H_INCLUDED
+
+#define MVA_INC_STD_BOTTOM_H_INCLUDED
+
+/*********************************************************************/
+/* insert further includes                                                       */
+/*********************************************************************/
+#import "incStdBottom_BASIS.h"
+//#import "MVA_incStdBottom_BASIS.h" // aus MVA_Produktbibliothek_Basis
+
+#endif /* #ifndef MVA_INC_STD_BOTTOM_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="012C55UMTISTI4H6RM7GGUTIDU" sortkey="430" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::ActuarialPractice::Attributes</pm:namespace>
+  <pm:name>Elp</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>formula</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

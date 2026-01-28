@@ -1,0 +1,9 @@
+AdditionalProjectSettings.dynamicRelationRule=all
+AdditionalProjectSettings.useSeparateTableData=true
+GeneralSettings.cRuntimeValidationScope=allData
+GeneralSettings.rootPackage=com\:\:company
+GeneralSettings.supportedCRuntimeVersion=3.4.11.0
+GeneralSettings.useCRuntimeSupport=true
+GeneralSettings.useLegacyMode=true
+M10CompilerSettings.useStrictBooleans=false
+eclipse.preferences.version=1

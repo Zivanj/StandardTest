@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FOL0000000Q1H0000T76" sortkey="440" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::ActuarialPractice::Attributes::SProd</pm:namespace>
+  <pm:name>Factor</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>function</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000Z900000AM8" isnullable="false" nrdims="0" pmid="Z900000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_PlausisCheck_Default</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Schnittstellenmethode zur Durchführung der produktabhängigen Plausibilitäten:
+
+Zuerst wird geprüft, ob die übergebene Benutzergruppe sBenutzergruppe innerhalb des msg.PM bekannt ist.
+Falls nicht, wird eine Fehlermeldung ausgegeben und die Bearbeitung bricht ab.
+
+In einer Schleife über alle Neu-Verkaufsprodukte wird dort die Methode
+Verkaufsprodukt.vtm_Plausis_Check aufgerufen.
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+sPruefgruppe			string		Aufrufparameter
+sBenutzergruppe		string		Aufrufparameter
+sRegelgruppe			string		Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+vtm_Plausis_Check		Verkaufsprodukt 
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+extern path pathVkprodNeu
+
+//Externe Objekte
+extern object extRoot 
+
+//Versicherungstechnische Methoden
+data int vtm_Plausis_Check
+
+//Attribute Merkmale
+data int Methodenschluessel
+data string Geschaeftsprozess
+
+//Objekte
+
+//interne Variablen
+string lsBenutzergruppe[*]
+boolean lb_bAcceptanceCheck = false
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{
+
+	this.Methodenschluessel = SNTMETHODE_PLAUSIS_CHECK
+	
+	lsBenutzergruppe = InTab_Benutzergruppe_BASIS_E.Benutzergruppe[ Benutzergruppe == sBenutzergruppe ]
+	if ( Arraysize ( lsBenutzergruppe ) == 0 ) 
+	{
+		Error_fachlich = TRUE
+		sNachrichtenklasse = MSG_ERRORCLASS
+		ErrorVar1 = sBenutzergruppe
+		error.text = BASIS_TEXT_ERR_BENUTZERGRUPPE_FALSCH
+		error( BASIS_FORM_ERR_BENUTZERGRUPPE_FALSCH )
+		return( BASIS_FORM_ERR_BENUTZERGRUPPE_FALSCH )
+	}
+	
+	if (!exists(this.Geschaeftsprozess))
+		lb_bAcceptanceCheck   = FALSE
+	else
+	{
+		switch( this.Geschaeftsprozess )
+		{
+		    case "A1":	lb_bAcceptanceCheck  = TRUE 	// Change Only Accptance Exl Premium Calculation Incl TermsConditions
+		    break
+		    case "A2":	lb_bAcceptanceCheck  = TRUE 	// Change Incl Acceptance Incl Premium Calculation Incl TermsConditions
+		    break
+		    case "N1":	lb_bAcceptanceCheck  = TRUE 	// NewBusiness Only Accptance Exl Premium Calculation Incl TermsConditions
+		    break
+		    case "N2":	lb_bAcceptanceCheck  = TRUE 	// NewBusiness Incl Acceptance Incl Premium Calculation Incl TermsConditions
+		    break
+
+		    default:
+		    //"N3"	--> NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"N"	--> NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"A3"	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"A"	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+		    lb_bAcceptanceCheck   = FALSE
+		}
+	}
+			
+	loop(this, pathVkprodNeu)
+	{
+		rc = pathVkprodNeu.vtm_Plausis_Check.exec 
+				[extRoot = this
+				,sPruefgruppe    = sPruefgruppe
+      			,sRegelgruppe    = sRegelgruppe
+      			,sBenutzergruppe = sBenutzergruppe
+      			,bQuoteSelectionEnabled = false
+	      		,bAcceptanceCheck = lb_bAcceptanceCheck
+				]
+	}
+ Res = RC_OK
+}
+else
+	Res = RC_NOK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

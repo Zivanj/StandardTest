@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC0000000032H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarproduktbuendel</pm:namespace>
+  <pm:name>ElpbTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV000000052H0000T76" pmid="52H0000T76">
+      <pm:name>ElpbTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM0000000032H0000T76" pmid="32H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ElpbTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000OW30000T76">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarproduktbuendel::ElpbuendVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT00000006QH0000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarproduktbuendel</pm:type>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000F900000AM8" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000000G900000AM8" readonly="false" sortkey="1">
+                  <pm:name>Contract Data</pm:name>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ElpbTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000SCC0000AM9" pmid="SCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incStdMethods_BASIS.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[/*===================================================================*/
+/* includes                                                          */
+/*===================================================================*/
+#ifndef INC_STD_METHODS_BASIS_H_INCLUDED
+#define INC_STD_METHODS_BASIS_H_INCLUDED
+
+#import "incStd_BASIS.h"
+
+#include "incSAPFormClasses_BASIS.h"
+
+/*===================================================================*/
+/* insert further includes                                           */
+/*===================================================================*/
+
+#define OUT_ON_FALSE  {if (rc != RC_OK) return (rc)}
+
+#define RC_REFRESH       {if (h_rc != RC_OK) rc = h_rc}
+
+#define RC_RETURN       {if (h_rc != RC_OK) return (rc = h_rc)}
+
+//added for indexing and acceptance checks during renewal process (Geschaeftsprozess = RNWL)
+//#define RENEWAL "RNWL" NOT YET!!!
+
+#endif /* #ifndef INC_STD_METHODS_BASIS_H_INCLUDED */
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

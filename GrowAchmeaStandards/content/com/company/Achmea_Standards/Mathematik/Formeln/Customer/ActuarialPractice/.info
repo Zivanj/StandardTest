@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="1Q89IOQ5ELSTS4NIP7F17LAO2U" sortkey="430" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer</pm:namespace>
+  <pm:name>ActuarialPractice</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>formula</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000PE51000AM8" isnullable="false" nrdims="0" pmid="PE51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Interest</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">cm_Root_Zinsen</pm:stringval>
+  </pm:label>
+  <pm:notice encoding="none"><![CDATA[
+Business description:
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+// External paths
+extern path pathSProd
+
+// External objects
+extern object extRoot
+
+// Technical insurance methods
+data int tim_Interest
+data int vtm_UMBENENNEN_fuer_FSPM
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+// Objects
+
+// Attributes, characteristics
+data int UmbenennenUnterdruecken
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+// Internal variables
+
+/* *******************************************************************  Processing                                                         ******************************************************************* */
+
+
+//  Indicate that this method is an interface method
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{
+	this.Methodenschluessel = TIM_INTEREST
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+
+	loop (this,pathSProd)
+	{
+		rc = pathSProd.vtm_SchnittstellenCheck.exec [extRoot = this]
+
+		rc = pathSProd.tim_Interest.exec
+							[ extRoot 			= this
+							]
+
+		rc = pathSProd.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]
+	}
+
+	if (this.UmbenennenUnterdruecken == 0)
+	{
+		rc = this.vtm_UMBENENNEN_fuer_FSPM.exec
+	}
+
+	Res = rc
+}
+else
+	Res = RC_NOK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

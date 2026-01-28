@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="TCBM8Q5KMAIKO4UT8R2PIBB6IH" sortkey="275" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte</pm:namespace>
+  <pm:name>Elementarproduktbuendel</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">ElementaryProductBundle (Elpb)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">ElementaryProductBundle (Elpb)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT00000006QH0000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarproduktbuendel</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="ULNHG7J4OF6KT4QP3SJ5OE3NCO" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT00000006QH0000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarproduktbuendel</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC0000000032H0000T76">ElpbTmpl_ACHMEA_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC00000000OW30000T76">ElpbuendVrlg_BASIS</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

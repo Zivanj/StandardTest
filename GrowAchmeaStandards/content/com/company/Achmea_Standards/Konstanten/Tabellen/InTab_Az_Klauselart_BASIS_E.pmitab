@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000WR00000SPB" abstract="false" final="false" pmid="WR00000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Klauselart_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="OIAIT2KDRBDDJ446ARTQTLK04O" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="QSB18IV2S665343RS25TTLVUQU" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="2HQFE5B9JD2LD4756UPSQ6J0PI" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0FS0QGO6LS2KM4P274R8EU7CBF" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="O5EB1CSJBA6CK4SLDF2NFGCJA6" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0BIAB20V4VG524I2JJ2E1C4FGE" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="P4N684HKREFTS48RND9T4FCN4F" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="4F5NBG64A0SLL4F30V7DNF10B9" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="O686N4FPBM4TP4KIDHFFS422LM" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="O7MPQCFVA8ICB4OE5ENRGT4NPU" sortkey="0">
+    <pm:name>PK_InTab_Az_Klauselart_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+In der Spalte key in dieser Tabelle sind die Klauselarten über alle Sparten hinterlegt. 
+Typ und Nummernbereich:
+E	100 - 999
+NUMC3 (NUMC4 im FS-PM, aber NUMC3 im CM)
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>4</pm:integerval>
+        <pm:integerval>5</pm:integerval>
+        <pm:integerval>6</pm:integerval>
+        <pm:integerval>7</pm:integerval>
+        <pm:integerval>100</pm:integerval>
+        <pm:integerval>101</pm:integerval>
+        <pm:integerval>102</pm:integerval>
+        <pm:integerval>103</pm:integerval>
+        <pm:integerval>104</pm:integerval>
+        <pm:integerval>105</pm:integerval>
+        <pm:integerval>106</pm:integerval>
+        <pm:integerval>107</pm:integerval>
+        <pm:integerval>108</pm:integerval>
+        <pm:integerval>110</pm:integerval>
+        <pm:integerval>111</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>113</pm:integerval>
+        <pm:integerval>114</pm:integerval>
+        <pm:integerval>115</pm:integerval>
+        <pm:integerval>116</pm:integerval>
+        <pm:integerval>117</pm:integerval>
+        <pm:integerval>118</pm:integerval>
+        <pm:integerval>119</pm:integerval>
+        <pm:integerval>120</pm:integerval>
+        <pm:integerval>121</pm:integerval>
+        <pm:integerval>122</pm:integerval>
+        <pm:integerval>123</pm:integerval>
+        <pm:integerval>124</pm:integerval>
+        <pm:integerval>125</pm:integerval>
+        <pm:integerval>126</pm:integerval>
+        <pm:integerval>127</pm:integerval>
+        <pm:integerval>128</pm:integerval>
+        <pm:integerval>129</pm:integerval>
+        <pm:integerval>130</pm:integerval>
+        <pm:integerval>131</pm:integerval>
+        <pm:integerval>132</pm:integerval>
+        <pm:integerval>133</pm:integerval>
+        <pm:integerval>134</pm:integerval>
+        <pm:integerval>135</pm:integerval>
+        <pm:integerval>136</pm:integerval>
+        <pm:integerval>137</pm:integerval>
+        <pm:integerval>138</pm:integerval>
+        <pm:integerval>139</pm:integerval>
+        <pm:integerval>140</pm:integerval>
+        <pm:integerval>141</pm:integerval>
+        <pm:integerval>142</pm:integerval>
+        <pm:integerval>143</pm:integerval>
+        <pm:integerval>144</pm:integerval>
+        <pm:integerval>145</pm:integerval>
+        <pm:integerval>146</pm:integerval>
+        <pm:integerval>147</pm:integerval>
+        <pm:integerval>148</pm:integerval>
+        <pm:integerval>149</pm:integerval>
+        <pm:integerval>150</pm:integerval>
+        <pm:integerval>151</pm:integerval>
+        <pm:integerval>152</pm:integerval>
+        <pm:integerval>153</pm:integerval>
+        <pm:integerval>154</pm:integerval>
+        <pm:integerval>155</pm:integerval>
+        <pm:integerval>156</pm:integerval>
+        <pm:integerval>157</pm:integerval>
+        <pm:integerval>158</pm:integerval>
+        <pm:integerval>159</pm:integerval>
+        <pm:integerval>160</pm:integerval>
+        <pm:integerval>161</pm:integerval>
+        <pm:integerval>162</pm:integerval>
+        <pm:integerval>163</pm:integerval>
+        <pm:integerval>164</pm:integerval>
+        <pm:integerval>165</pm:integerval>
+        <pm:integerval>166</pm:integerval>
+        <pm:integerval>167</pm:integerval>
+        <pm:integerval>168</pm:integerval>
+        <pm:integerval>169</pm:integerval>
+        <pm:integerval>170</pm:integerval>
+        <pm:integerval>171</pm:integerval>
+        <pm:integerval>172</pm:integerval>
+        <pm:integerval>173</pm:integerval>
+        <pm:integerval>174</pm:integerval>
+        <pm:integerval>175</pm:integerval>
+        <pm:integerval>176</pm:integerval>
+        <pm:integerval>177</pm:integerval>
+        <pm:integerval>178</pm:integerval>
+        <pm:integerval>179</pm:integerval>
+        <pm:integerval>180</pm:integerval>
+        <pm:integerval>181</pm:integerval>
+        <pm:integerval>182</pm:integerval>
+        <pm:integerval>183</pm:integerval>
+        <pm:integerval>184</pm:integerval>
+        <pm:integerval>185</pm:integerval>
+        <pm:integerval>186</pm:integerval>
+        <pm:integerval>187</pm:integerval>
+        <pm:integerval>188</pm:integerval>
+        <pm:integerval>189</pm:integerval>
+        <pm:integerval>190</pm:integerval>
+        <pm:integerval>191</pm:integerval>
+        <pm:integerval>192</pm:integerval>
+        <pm:integerval>193</pm:integerval>
+        <pm:integerval>194</pm:integerval>
+        <pm:integerval>195</pm:integerval>
+        <pm:integerval>196</pm:integerval>
+        <pm:integerval>197</pm:integerval>
+        <pm:integerval>198</pm:integerval>
+        <pm:integerval>199</pm:integerval>
+        <pm:integerval>200</pm:integerval>
+        <pm:integerval>201</pm:integerval>
+        <pm:integerval>202</pm:integerval>
+        <pm:integerval>203</pm:integerval>
+        <pm:integerval>204</pm:integerval>
+        <pm:integerval>205</pm:integerval>
+        <pm:integerval>206</pm:integerval>
+        <pm:integerval>207</pm:integerval>
+        <pm:integerval>208</pm:integerval>
+        <pm:integerval>209</pm:integerval>
+        <pm:integerval>210</pm:integerval>
+        <pm:integerval>211</pm:integerval>
+        <pm:integerval>500</pm:integerval>
+        <pm:integerval>501</pm:integerval>
+        <pm:integerval>502</pm:integerval>
+        <pm:integerval>503</pm:integerval>
+        <pm:integerval>504</pm:integerval>
+        <pm:integerval>505</pm:integerval>
+        <pm:integerval>506</pm:integerval>
+        <pm:integerval>507</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuelle Vereinbarung Ausschluss</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuelle Vereinbarung Einschluss</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Allgemeine Vertragsbedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Besondere Vereinbarung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sonderbedingung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Domänenspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produktspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risikospezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Labelspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Track & Trace Klausel]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Selbstbehalt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Werkstattnetzwerk Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geschäftsreise Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kündigungsgarantie Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Erweit. Wiederbesch.-swertvereinb.  Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hochwertige Gueter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Funkenfänger Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Charter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Ketten & Schlösser Klausel]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finanzierung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Abgedecktes Gebiet Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beschränkung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemeinder Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kein Motornummer Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektrische Installation erfüllt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Besitzer Interest Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Klausel ändern</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Laderaum Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Catering Prävention Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nach der Inspektion Klausel Lackschaeden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Feuer Gefährliche Arbeit Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel Sengen und Versengen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lager Vertragsklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel Pflichten Leerstand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dellen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Feueralarm Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mitversicherung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Abfallbehandlung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigenanteil Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vollvariablen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oldtimer Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fahreralter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geräteausfall Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausnahmeklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Buchwert Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tilt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spezial MwSt. Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-Kumulierung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personenverkehr Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kunden Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Braten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prävention Anhänger Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Parades Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Planwagenfahrten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Erhöhte Selbstbehalt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Teillieferungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deklarationspflicht Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung CBA Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung Avero Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung IPO Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung anderswo Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausschluss Artikel Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Situ Stapel Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausschliessen von Ramm Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ohne Beiträge häufen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Begrenzte Deckung Klausel Spundwand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drainage Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aushub Fundament Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sicherheits Anforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse  SCM Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse  SCM Klausel Variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Interner Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Versandkosten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bearbeitung Versicherte Sachen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transportation Consignment Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Überbetriebliche Transportation Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identification Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Garantie gegen Unterversicherung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Frei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nebentätigkeit Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klasse 4 oder höher Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Obligatorische Klasse 4 oder höher Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Treiber Städte Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prävention Anforderungen Diebstahl Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandschutz Anforderungen Standardklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diebstahlschutz Standardanforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chassis nur Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Impressum Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lackieranlagen-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Laderaum Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reinigungsunternehmen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel bedürfen Moped Diebstahl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Massnahmen nach einer Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leerstandsmanagement Verpflichtungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kabotage Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ausgelagert Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transportbedingungen AVVV 2006 Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">verschiedenen Verkehrsträger Bedingungsklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Präventionsarbeit Material Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">unlizenzierte Quad / Trike Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wohnwagen und Zelte Schäden Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">privaten Gebrauch Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Traktor Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glätte Control Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schäden Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Planwagenfahrten date Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandschutzanforderungen oben Standardklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diebstahl über Standard-Anforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">selbstfahrenden Arbeitsmitteln durch Klausel abgedeckt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Handelsbestand abgedeckt Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Provinzspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MVF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MCV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ACV</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Exclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individual Agreement (Exclusion)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individual Agreement Inclusion</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">General Contract Conditions</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Condition</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Condition</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Domain Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Product Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Risk Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Label Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Track & Trace Clause]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deductible Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Repair Network Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Travel Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cancellation Guarantee Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Extension Replacement Value Agreement Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Valuable Contents Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spark Catcher Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Charter Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Chains & Locks Clause]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Financing Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Coverage Area Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Limitation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-Owner Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Enginenumber Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrical Installation Requirement Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ownwers Interest Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Indication Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery charging room Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hospitality prevention Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spray painting Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Hazardous Activities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clause Scorch and Singe</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Storage Contract Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clause Obligations Vacant Buildings</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dent Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Call System Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-Insurance Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Waste treatment Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Contribution clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Variable clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oldtimer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Driver Age Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">System Breakdown Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exemption Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bookvalue Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Overturn Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special VAT Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-cumulation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Passenger transport Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Customer Exclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fryer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Trailer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Parades Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wagontrips Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Raised deductible clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Partial deliveries Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reporting obligation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability CBA Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability Avero Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability IPO Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability elsewhere Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion artikel Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Groundformed piles Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion of piling Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion of inserting dam-walls Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Restricted coverage dam-walls Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drainage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excavation foundation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class SCM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class SCM variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Internal Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Return Shipments</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Revision Insured Business</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Consignment</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Intercompany Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identification Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Warranty Against Underinsurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Free</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Additional company activities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security class 4 or higher Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security class 4 required Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drivers in large cities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Motor Theft Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Prevention Standard Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Standard Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excluding Client Chassis Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reservation Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Paint Spraying Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Charging Room Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cleaning / Car Wash Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Moped Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Post-Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Obligations Secured Vacant Buildings Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabotage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Outsourced Transport Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Conditions AVVV 2006 Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Different Transport Conditions Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security Motorized Landbased Equipment Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unlicensed Quad / Trike Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Damage Caravan / Tents Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Private Use Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tractor Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Winter Maintenance Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excluded Damage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wagontrips Date Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Prevention Requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Motorized Landbased Equipment Covered Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dealer Stock Transport Covered Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Province Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MVF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MCV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ACV</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Uitsluitingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Insluitingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuele bepaling uitsluiting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuele bepaling insluiting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Algemene contractvoorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bijzondere bepaling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bijzondere voorwaarde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Domein Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Product Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risico Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Label Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voertuigvolgsysteem</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigen risico</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schadesturing Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zakenreis Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Annuleringsgarantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitbreiding Nieuwwaardegarantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Attractieve Bezittingen Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vonkenvanger Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chartervaart</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beveiliging (Kettingen en sloten)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Financiering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dekkingsgebied Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beperking</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mede-eigenaar Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspectie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geen motornummer Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrische installatie voldoet clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigenaarsbelang Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule voorbehoud inspectie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Acculaadruimte clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Horeca preventie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Na inspectie Lakspuiten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandgevaarlijke werkzaamheden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule zengen en schroeien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Stallingscontract clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule Verplichtingen Leegstand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rietclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandmeldinstallatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-assurantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventieclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afvalbehandelingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigen bijdrage clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Volledig vrije clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klassieker clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leeftijd bestuurder clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitval Apparatuur Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitzondering clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boekwaarde clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kantelen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afwijkende BTW clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-cumulatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personenvervoer clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klant uitsluiting clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Frituur clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie aanhanger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Optochten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huifkartochten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verhoogd eigen risico clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deelleveringen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meldingsplicht clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid CBA clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid Avero clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid IPO clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid elders clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiting artikel clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Grondgevormde palen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiten van heiwerk clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiten van inbrengen damwanden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beperkte dekking damwanden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bemaling clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ontgraving fundering clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beveiligingseisen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse SCM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse SCM variabel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Intern Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Retourzendingen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bewerking Verzekerde Zaken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Consignatie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Interbedrijf Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identificatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Garantie tegen Onderverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrij</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nevenactiviteiten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klasse 4 of hoger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verplichte klasse 4 of hoger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chauffeurs grote steden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie eisen diefstal clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandpreventie Eisen Standard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen Standard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluitend Chassis Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voorbehoud Inspectie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lakspuiten Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Acculaadruimte Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Poetsbedrijf Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen BromfietsClausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">maatregelen na inspectie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verplichtingen Leegstand met beheer clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabotage Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitbesteed Vervoer Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vervoers Condities AVVV 2006 Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afwijkende Vervoersconditie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie Werkmaterieel clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongekentekende Quad / Trike clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schade caravans en tenten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Particulier gebruik clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tractor clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gladheidsbestrijding clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiting schade clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huifkartochten Datum clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandpreventie Eisen Bovenstandaard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen Bovenstandaard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zelfrijdend Werkmateriaal Gedekt Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Handelsvoorraad Transport Gedekt Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Provincie Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MVF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MWV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MCV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ACV</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuelle Vereinbarung Ausschluss</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuelle Vereinbarung Einschluss</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Allgemeine Vertragsbedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Besondere Vereinbarung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sonderbedingung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Domänenspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produktspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risikospezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Labelspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Track & Trace Klausel]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Selbstbehalt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Werkstattnetzwerk Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geschäftsreise Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kündigungsgarantie Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Erweiterung Wiederbeschaffungswertvereinbarung  Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hochwertige Gueter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Funkenfänger Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Charter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Ketten & Schlösser Klausel]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finanzierung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Abgedecktes Gebiet Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beschränkung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemeinder Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kein Motornummer Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektrische Installation erfüllt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Besitzer Interest Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Klausel ändern</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Laderaum Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Catering Prävention Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nach der Inspektion Klausel Lakspuiten</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Feuer Gefährliche Arbeit Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel Sengen und Versengen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Stalling Vertragsklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel Pflichten Leerstand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reed Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Feueralarm Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mitversicherung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Abfallbehandlung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigenanteil Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vollvariablen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klassisch Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fahrer Alter Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geräteausfall Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausnahmeklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Buchwert Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tilt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unterschiedliche MwSt.-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-Kumulierung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personenverkehr Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kunden Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Braten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prävention Anhänger Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Parades Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Planwagenfahrten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Erhöhte Selbstbehalt Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Teillieferungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deklarationspflicht Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung CBA Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung Avero Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung IPO Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftung anderswo Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausschluss Artikel Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Situ Stapel Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ausschliessen von Ramm Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ohne Beiträge häufen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Begrenzte Deckung Klausel Spundwand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drainage Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aushub Fundament Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sicherheits Anforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse  SCM Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Einbruch Risikoklasse  SCM Klausel Variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Interner Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Versandkosten Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bearbeitung Versicherte Sachen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transportation Consignment Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Überbetriebliche Transportation Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identification Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Garantie gegen Unterversicherung Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Frei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nebentätigkeit Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klasse 4 oder höher Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Obligatorische Klasse 4 oder höher Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Treiber Städte Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prävention Anforderungen Diebstahl Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandschutz Anforderungen Standardklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diebstahlschutz Standardanforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chassis nur Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Impressum Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lackieranlagen-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Laderaum Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reinigungsunternehmen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klausel bedürfen Moped Diebstahl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Massnahmen nach einer Inspektion Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leerstandsmanagement Verpflichtungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kabotage Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ausgelagert Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transportbedingungen AVVV 2006 Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">verschiedenen Verkehrsträger Bedingungsklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Präventionsarbeit Material Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">unlizenzierte Quad / Trike Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wohnwagen und Zelte Schäden Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">privaten Gebrauch Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Traktor Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glätte Control Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schäden Ausschlussklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Planwagenfahrten date Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandschutzanforderungen oben Standardklausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diebstahl über Standard-Anforderungen Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">selbstfahrenden Arbeitsmitteln durch Klausel abgedeckt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Handelsbestand abgedeckt Transport Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Provinzspezifische Bedingungen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatische festen Text-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatische festen Text-Klausel mit automatischer abgeleitete Variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Freitext-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manuelle festen Text-Klausel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manuelle festen Text-Klausel mit fakultativ freien Text</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manuelle festen Text-Klausel mit variabler zu füllen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manuelle festen Text-Klausel mit aenderbare variabler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatische festen Text-Klausel mit aenderbare variabler</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Exclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individual Agreement (Exclusion)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individual Agreement Inclusion</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">General Contract Conditions</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Condition</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Condition</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Domain Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Product Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Risk Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Label Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Track & Trace Clause]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deductible Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Repair Network Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Travel Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cancellation Guarantee Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Extension Replacement Value Agreement Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Valuable Contents Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spark Catcher Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Charter Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Chains & Locks Clause]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Financing Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Coverage Area Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Limitation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-Owner Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Enginenumber Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrical Installation Requirement Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ownwers Interest Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspection Indication Claus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery charging room clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hospitality prevention clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spray painting clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Hazardous Activities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clause Scorch and Singe</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Storage Contract Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clause Obligations Vacant Buildings</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dent Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Call System Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-Insurance Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Waste treatment Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Contribution clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Variable clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oldtimer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Driver Age Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">System Breakdown Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exemption Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bookvalue Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Overturn Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special VAT Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-cumulation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Passenger transport Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Customer Exclusion Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fryer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Trailer Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Parades Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wagontrips Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Raised deductible clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Partial deliveries Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reporting obligation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability CBA Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability Avero Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability IPO Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability elsewhere Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion artikel Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Groundformed piles Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion of piling Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Exclusion of inserting dam-walls Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Restricted coverage dam-walls Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drainage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excavation foundation Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class SCM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burglary Risk Class SCM variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Internal Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Return Shipments</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Revision Insured Business</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Consignment</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Intercompany Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identification Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Warranty Against Underinsurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Free</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Additional company activities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security class 4 or higher Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security class 4 required Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drivers in large cities Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prevention Motor Theft Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Prevention Standard Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Standard Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excluding Client Chassis Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reservation Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Paint Spraying Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Battery Charging Room Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cleaning / Car Wash Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Moped Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Post-Inspection Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Obligations Secured Vacant Buildings Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabotage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Outsourced Transport Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Conditions AVVV 2006 Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Different Transport Conditions Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Security Motorized Landbased Equipment Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unlicensed Quad / Trike Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Damage Caravan / Tents Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Private Use Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tractor Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Winter Maintenance Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excluded Damage Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wagontrips Date Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fire Prevention Requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Theft Prevention Requirements Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Motorized Landbased Equipment Covered Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dealer Stock Transport Covered Clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Province Specific Terms & Conditions]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text with automatic derived variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Free text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text and optional free text</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text with variable to fill</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text with changeable variable(s)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text with changeable variable(s)</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Uitsluitingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Insluitingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuele bepaling uitsluiting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Individuele bepaling insluiting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Algemene contractvoorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bijzondere bepaling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bijzondere voorwaarde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Domein Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Product Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risico Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Label Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voertuigvolgsysteem</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigen risico</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schadesturing Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zakenreis Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Annuleringsgarantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitbreiding Nieuwwaardegarantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Attractieve Bezittingen Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vonkenvanger Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chartervaart</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beveiliging (Kettingen en sloten)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Financiering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dekkingsgebied Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beperking</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mede-eigenaar Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inspectie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geen motornummer Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrische installatie voldoet clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigenaarsbelang Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule voorbehoud inspectie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Acculaadruimte clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Horeca preventie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Na inspectie Lakspuiten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandgevaarlijke werkzaamheden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule zengen en schroeien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprinkler clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Stallingscontract clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Clausule Verplichtingen Leegstand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rietclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandmeldinstallatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Co-assurantie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventieclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afvalbehandelingsclausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eigen bijdrage clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Volledig vrije clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klassieker clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leeftijd bestuurder clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitval Apparatuur Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitzondering clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boekwaarde clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kantelen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afwijkende BTW clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Anti-cumulatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personenvervoer clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klant uitsluiting clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Frituur clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie aanhanger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Optochten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huifkartochten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verhoogd eigen risico clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boekwaarde clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deelopleveringen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid CBA clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid Avero clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid IPO clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid elders clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiting artikel clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Grondgevormde palen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiten van heiwerk clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiten van inbrengen damwanden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beperkte dekking damwanden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bemaling clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ontgraving fundering clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beveiligingseisen clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse SCM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inbraakrisicoklasse SCM variabel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Intern Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Retourzendingen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bewerking Verzekerde Zaken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Transport Consignatie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Interbedrijf Transport</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Identificatie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Garantie tegen Onderverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrij</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nevenactiviteiten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klasse 4 of hoger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verplichte klasse 4 of hoger clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chauffeurs grote steden clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie eisen diefstal clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandpreventie Eisen Standard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen Standard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluitend Chassis Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Voorbehoud Inspectie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tuning Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lakspuiten Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Acculaadruimte Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Poetsbedrijf Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen BromfietsClausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">maatregelen na inspectie clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verplichtingen Leegstand met beheer clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabotage Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitbesteed Vervoer Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vervoers Condities AVVV 2006 Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afwijkende Cervoersconditie Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Preventie Werkmaterieel clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongekentekende Quad / Trike clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schade caravans en tenten clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Particulier gebruik clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tractor clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gladheidsbestrijding clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitsluiting schade clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huifkartochten Datum clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brandpreventie Eisen Bovenstandaard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diefstalpreventie Eisen Bovenstandaard Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zelfrijdend Werkmateriaal Gedekt Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Handelsvoorraad Transport Gedekt Clausule</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Provincie Specifieke Voorwaarden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text with automatic derived variable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Free text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text clause</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text and optional free text</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text with variable to fill</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Manual fixed text with changeable variable(s)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Automatic fixed text with changeable variable(s)</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000Q9B1000SPM" isnullable="false" nrdims="0" pmid="Q9B1000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::Vkprod</pm:namespace>
+  <pm:name>cm_Vkprod_Tarifierung</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Neugeschäft - Schnittstelle am Verkaufsprodukt  
+Auslesen von Änderungsdatum und Änderungdatum2, Aufruf der Methode am Produkt (siehe unten).
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine	
+		 
+Verwendete Methoden mit Name/Klasse:
+vtm_Tarifierung				Produkt
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathProdBasis
+extern path pathProd
+
+//Externe Objekte
+extern Object extRoot
+extern Object extVkprod
+
+//Versicherungstechnische Methoden
+data int vtm_Tarifierung
+
+//Objekte
+
+//Attribute Merkmale
+data date Aenderungsdatum
+data date Beginn
+data int Status
+data string VertragsNr
+
+//interne Variablen
+bool l_bVertragsNrGefunden = FALSE
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+loop( this, pathProdBasis )
+{
+    // Falls ein Bündel eine Ebene tiefer hängt, Methode an
+    // Bündel aufrufen  
+    if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL )
+    {
+		loop (pathProdBasis, pathProd) //am Vertrag
+		{
+   		if (pathProd.VertragsNr != extRoot.VertragsNr &&
+			    extRoot.VertragsNr != VERTRAGSNR_NICHT_BELEGT )
+   		{
+      		continue
+  			}
+	
+			l_bVertragsNrGefunden = TRUE
+		}
+		rc = pathProdBasis.vtm_Tarifierung.exec //Methode am Bündel aufrufen
+            [ extRoot	 = extRoot
+            , extVkprod	 = this
+            ]
+	
+    }
+    else // Es handelt sich um ein Produkt
+    {
+        if( pathProdBasis.VertragsNr != extRoot.VertragsNr
+        &&	extRoot.VertragsNr != VERTRAGSNR_NICHT_BELEGT )
+        {
+            continue
+        }
+        
+        l_bVertragsNrGefunden = TRUE
+        
+        // Falls Vertrag storniert, keine Bearbeitung
+        if( pathProdBasis.Status == TECHN_STATUS_STORNIERT )
+        {
+            continue
+        }
+        
+        if( exists( pathProdBasis.vtm_Tarifierung, * ) )
+        {
+            if( pathProdBasis.Aenderungsdatum != pathProdBasis.Beginn )
+            {
+                Error_fachlich = TRUE
+                sNachrichtenklasse = MSG_ERRORCLASS
+                ErrorVar1 = GetObjectName( this )
+                ErrorVar2 = ToString( pathProdBasis.Aenderungsdatum )
+                ErrorVar3 = ToString( pathProdBasis.Beginn )
+                
+                error.text = BASIS_TEXT_ERR_AENDERUNGSDATUM_UNGLEICH_BEGINN
+                error( BASIS_FORM_ERR_AENDERUNGSDATUM_UNGLEICH_BEGINN )
+                return( BASIS_FORM_ERR_AENDERUNGSDATUM_UNGLEICH_BEGINN )
+            }
+            
+            rc = pathProdBasis.vtm_Tarifierung.exec
+            [ extRoot = extRoot
+            , extVkprod = this
+            ]
+            
+        }
+  
+
+
+// Wenn Vertrag nicht gefunden wird erfolgt eine Fehlermeldung
+
+if ( l_bVertragsNrGefunden == FALSE )
+{
+    Error_fachlich = TRUE
+    sNachrichtenklasse = MSG_ERRORCLASS
+    ErrorVar1 = extRoot.VertragsNr
+    
+    error.text = BASIS_TEXT_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN
+    error( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+    return( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+}
+  }
+}
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

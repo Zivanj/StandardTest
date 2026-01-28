@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000D040000T76" isnullable="false" nrdims="0" pmid="D040000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden::Schnittstellenpruefung</pm:namespace>
+  <pm:name>cm_Schnittstelle_Check_BASIS</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Prüfung, ob eine Instanz am Vertrag als Input zu einem gegebenen Methodenaufruf zulässig ist oder nicht, ggf. automatische Entfernung derselben.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+iEbene  integer   Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+vtm_Schnittstelle_Check     - Alle Klassen, zu denen eine Beziehung existiert und die gemappt sind
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+
+//Externe Objekte
+extern Object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_SchnittstellenCheck
+
+//Objekte
+
+//Attribute, Merkmale
+data int KnzSchnittstelleCheck
+data int Methodenschluessel
+data int KnzSimulation
+data int MethodenschluesselOriginal
+//interne Variable
+int i
+int h_Anz
+int h_Ebene
+int h_InputJaNein[*]
+int h_KnzSchnittstelleCheck
+bool h_TabelleGelesen
+string ObjKlasse
+string h_thisKlasse
+string h_prefix
+string h_TabellenName
+int h_Methodenschluessel
+path h_path
+
+pmproductmodule Quelle
+pmproductmodule Ziel
+pmproductrelation Relation
+
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+h_KnzSchnittstelleCheck = extRoot.KnzSchnittstelleCheck
+
+//Falls kein Schnittstellencheck durchgeführt werden soll, abbrechen
+if (h_KnzSchnittstelleCheck == SCHNITTSTELLE_CHECK_KEIN)
+{
+	Res = RC_OK
+	return
+}
+
+if (exists(this.KnzSimulation))
+{
+	if (this.KnzSimulation == 1)
+	{
+		Res = RC_OK
+		return
+	}
+}
+
+h_TabelleGelesen = FALSE
+h_prefix = "/TO:/PK:/OT:"
+
+if(extRoot.MethodenschluesselOriginal != 0) 
+{
+	h_Methodenschluessel = extRoot.MethodenschluesselOriginal
+}
+else
+{		
+	h_Methodenschluessel = extRoot.Methodenschluessel
+}
+
+Quelle = new pmproductmodule( this )
+
+h_thisKlasse = Quelle.sClassName
+
+//Ermitteln der Anzahl der Vorwärtsbeziehungen
+h_Anz = Quelle.ForwardRelationList.iLength
+
+//Ermittle alle möglichen Kinderobjekte
+for (i=0, i<h_Anz, i++)
+{ 
+	Relation = Quelle.ForwardRelationList.GetAt( i )
+	Ziel   = Relation.TargetProductModule
+	ObjKlasse = Ziel.sClassName
+	
+	//Falls in der Hauptachse eine Ebene weiter nach unten gegangen wurde
+	switch (ObjKlasse)
+	{
+		case OKLASSE_PRODUKT:
+			h_Ebene = EBENE_PRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTBUENDEL:
+			h_Ebene = EBENE_ELEMTARPRODUKTBUENDEL
+			break
+		case OKLASSE_ELEMENTARPRODUKT:
+			h_Ebene = EBENE_ELEMENTARPRODUKT
+			break
+		case OKLASSE_ELEMENTARPRODUKTSCHEIBE:
+			h_Ebene = EBENE_ELEMENTARPRODUKTSCHEIBE
+			break
+		case OKLASSE_DECKUNGSTYP:
+			h_Ebene = EBENE_DECKUNGSTYP
+			break
+		default:
+			h_Ebene = iEbene
+			break
+	}
+	
+	
+	h_path = ToString(h_prefix,ObjKlasse)
+
+	//Es können nur gemappte Klassen übergeben werden
+	loop(this, h_path)
+	{
+		//Ermittle die zu Methodenschluessel passende Tabelle falls noch nicht geschehen
+		if (h_TabelleGelesen == FALSE)
+		{
+			h_TabellenName = sTabellenName
+			h_TabelleGelesen = TRUE
+		}
+
+		//Gehört diese Klasse zum Input oder nicht? 
+		h_InputJaNein = TableByName(h_TabellenName, structSchnittstellenpruefung).iIn						
+								[iMethodenschluessel == h_Methodenschluessel
+								,iEbene == h_Ebene
+								,sKlasse == ObjKlasse
+								]
+
+		// Falls kein Eintrag gefunden wurde Fehlermedung ausgeben.
+		if ( Limit(h_InputJaNein) != 1)
+		{
+			Error_fachlich = true
+			sNachrichtenklasse = MSG_ERRORCLASS
+			ErrorVar1 = ToString(extRoot.Methodenschluessel)
+			ErrorVar2 = ObjKlasse
+			ErrorVar3 = ToString(h_Ebene)
+			ErrorVar4 = h_TabellenName
+			error.text = BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_KEIN_EINTRAG		
+			error(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_KEIN_EINTRAG)
+			return(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_KEIN_EINTRAG)
+		}
+
+
+
+		//Falls Objekte dieser Klasse nicht zum Input gehören, Fehlermeldung ausgeben oder löschen
+		if (h_InputJaNein(0) == 0)
+		{
+			if(h_KnzSchnittstelleCheck == SCHNITTSTELLE_CHECK_AUTO)
+			{ 
+				delete(h_path)
+			}
+			else if (h_KnzSchnittstelleCheck == SCHNITTSTELLE_CHECK_ERROR)
+			{
+				Error_fachlich = true
+				sNachrichtenklasse = MSG_ERRORCLASS
+				ErrorVar1 = ToString(h_Methodenschluessel)
+				ErrorVar2 = ObjKlasse
+				ErrorVar3 = ToString(h_Ebene)
+				ErrorVar4 = ""
+				error.text = BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_IN
+				error(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_IN)
+				return(BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_IN)
+			}
+		}
+		//Falls Objekte dieser Klasse zum Input gehören, prüfe an Kindobjekten; 
+		//da im Input nur gemappte Klassen vorhanden sein dürfen, muss jede gemappte Klasse über die
+		//entsprechende Methode verfügen.
+	 	else
+		{
+			rc = h_path.vtm_SchnittstellenCheck.exec
+									[iEbene = h_Ebene, 
+					 				 extRoot = extRoot]
+		}
+	}
+} 
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

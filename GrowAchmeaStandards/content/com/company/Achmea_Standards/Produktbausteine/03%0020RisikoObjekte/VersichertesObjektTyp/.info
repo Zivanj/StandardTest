@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="RD8INA3BRPKDQ4ERRGMFAH7G8P" sortkey="1000" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::03%0020RisikoObjekte</pm:namespace>
+  <pm:name>VersichertesObjektTyp</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">InsuredObjectType (InsOb)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">InsuredObjectType (InsOb)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT0000000V140000SPM">com::company::TechnischesSchema::Produktbausteintypen::VersichertesObjektTyp</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="2US4JAUC41FLP4KD2FMCVQ95KE" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT0000000V140000SPM">com::company::TechnischesSchema::Produktbausteintypen::VersichertesObjektTyp</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC00000000X2H0000T76">InsObTmpl_ACHMEA_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC000000001Y30000T76">VObjVrlg_BASIS</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

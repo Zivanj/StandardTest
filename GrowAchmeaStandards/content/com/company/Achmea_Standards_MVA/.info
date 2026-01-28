@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="SUQRK5374QCTD4Q4CO3H2T4SK8" sortkey="0" structural="true">
+  <pm:namespace>com::company</pm:namespace>
+  <pm:name>Achmea_Standards_MVA</pm:name>
+  <pm:notice encoding="none"><![CDATA[Selected items from MVA_Produktbibliothek_Basis of the AutoAddon
+]]></pm:notice>
+</pm:package>

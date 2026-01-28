@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC0000000090H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Verkaufsprodukt</pm:namespace>
+  <pm:name>SProdTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000B0H0000T76" pmid="B0H0000T76">
+      <pm:name>SProdTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM0000000090H0000T76" pmid="90H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>SProdTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000XV30000T76">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Verkaufsprodukt::VkprodVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000LN70000SPM">com::company::TechnischesSchema::Produktbausteintypen::Verkaufsprodukt</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="integer" final="false" guid="6AT7GHD4GGTDB4S9T2C8HI9CBR" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>MitversicherungsRelevant</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000036M10000SPB" readonly="false" sortkey="none">
+              <pm:name>Bestandssteuernde_Attribute</pm:name>
+              <pm:extends/>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000037M10000SPB" readonly="false" sortkey="none">
+                  <pm:name>Allg_Klassifizierungen</pm:name>
+                  <pm:extends/>
+                  <pm:attributes>
+                    <pm:attribute>MitversicherungsRelevant</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="UR5RAN9OFHA4S43SE0HQMRB243" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>InTab_PropositionCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">TableReference for proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">This InTab attribute steers what table is to be used for deriving the Proposition Costs factor</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">NULL</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="R0JDP6OPHLTDK4TQH6NF7LVNMI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>InTab_SupplementForDiscounts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">TableReference for supplement for discounts</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">This InTab attribute steers what table is to be used for deriving the Supplement For Discount factor</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">NULL</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="integer" final="false" guid="TQMD12B89SFK64R5EQR3JSAIJJ" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>Vertriebsweg</pm:name>
+              <pm:extends/>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000FYZ0000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_DistributionChannel</pm:table>
+                      <pm:column guid="0I7TNI4D9FGTU4P6T948RNS61J">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000004C0H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000003M7H0000T76" readonly="false" sortkey="1">
+                  <pm:name>Contract Data</pm:name>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000001K7H0000T76" readonly="false" sortkey="2">
+                  <pm:name>Product Data</pm:name>
+                  <pm:folders>
+                    <pm:folder guid="ZZZPM3FOL0000001O7H0000T76" readonly="false" sortkey="3">
+                      <pm:name>Tables</pm:name>
+                      <pm:attributes>
+                        <pm:attribute>InTab_PropositionCosts</pm:attribute>
+                        <pm:attribute>InTab_SupplementForDiscounts</pm:attribute>
+                      </pm:attributes>
+                    </pm:folder>
+                  </pm:folders>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000005EW30000T76" readonly="false" sortkey="none">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:extends/>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000004IW30000T76" readonly="false" sortkey="none">
+                  <pm:name>Vertragsdaten</pm:name>
+                  <pm:extends/>
+                  <pm:attributes>
+                    <pm:attribute>Vertriebsweg</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="OMEB5G6VAJBDS4NIVGQ7VCEBGB" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_PreOfferingCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000TFI0000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::SalesProduct::fm_SProd_PreOfferingCheck</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000TFI0000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::SalesProduct::fm_SProd_PreOfferingCheck</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000UFI0000AM8" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:methods>
+                <pm:method>vtm_PreOfferingCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>SProdTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

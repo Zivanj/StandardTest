@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000R900000AM8" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::HistoryRootTyp</pm:namespace>
+  <pm:name>HistTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000T900000AM8" pmid="T900000AM8">
+      <pm:name>HistTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000R900000AM8" pmid="R900000AM8" sealed="false" sortkey="none" visibility="none">
+          <pm:name>HistTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000UV30000T76">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::HistoryRootTyp::HistVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:notice encoding="none"></pm:notice>
+          <pm:type guid="ZZZPM3PMT0000000J6F0000SPM">com::company::TechnischesSchema::Produktbausteintypen::HistoryRootTyp</pm:type>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="QNM7LB9F2EQLK4KM6AOMU94NGE" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_AcceptanceCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000DA00000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Acceptance_Check</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000DA00000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Acceptance_Check</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprodNeu</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4KHOLUUARBG5Q4QDTUHTOGITNA" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_CommercialChange</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000JB51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_CommercialChange</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000JB51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_CommercialChange</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProdOld</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_AltVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="5FCL6AALQVOCK4Q4FK5EJKMP6A" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_MonthlyUpdate</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000TI51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_MonthlyUpdate</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000TI51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_MonthlyUpdate</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProdOld</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_AltVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UNA9MCGNKFL5S4QKN0T9QA75FL" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_NonCommercialChange</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000KB51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_NonCommercialChange</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000KB51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_NonCommercialChange</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProdOld</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_AltVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="1393ANO0F2OSR4E7UL9V1V9MU7" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_PlausisCheck_Quotation</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000Y900000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PlausisCheck_Quotation</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000Y900000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PlausisCheck_Quotation</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprodNeu</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0BHGSKO98HP4K4OKPO5478BHJ1" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_PreOfferingCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000SFI0000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PreOfferingCheck</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000SFI0000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PreOfferingCheck</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="595GATJCSO7CR43UEM7MDN70E6" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Quotation</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000K900000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Quotation</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000K900000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Quotation</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="RGQ24EMOHSE524PGEDSJPN4OOB" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Rebalancing</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000RI51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Rebalancing</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000RI51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Rebalancing</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProdOld</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_AltVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4NU07MKAF6STC429QU273JBMO6" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Recalculation</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000LB51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Recalculation</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000LB51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Recalculation</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathSProdOld</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_AltVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="PG02COE9SMB4E4ATT0AADNJFVQ" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none">
+              <pm:name>vtm_AenderungVertrag</pm:name>
+              <pm:extends/>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000Q900000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_ChangeContract</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000H600000SPB">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::HistoryRoot::fm_Root_AenderungVertrag</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000Q900000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_ChangeContract</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="TAEL79SFVEHD14HLREO19TNI2F" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none">
+              <pm:name>vtm_Plausis_Check</pm:name>
+              <pm:extends/>
+              <pm:defaultfunction guid="ZZZPM3FUNC0000000A00000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PlausisCheck_Default</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC0000000A00000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_PlausisCheck_Default</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprodNeu</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/RT:"HistoryRootTyp_NeuVerkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2CFLOPN4EJATT45EM8QLH3H1N9" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none">
+              <pm:name>vtm_Tarifierung</pm:name>
+              <pm:extends/>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000P900000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Rating</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC0000000240000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::HistoryRoot::fm_Root_Tarifierung</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000P900000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Customer::InterfaceMethods::HistoryRoot::fm_Root_Rating</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="ONHJOUR3IMAKK42VC7RL06UODL" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none">
+              <pm:name>vtm_Veranlagung</pm:name>
+              <pm:extends/>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000PI51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::HistoryRoot::fm_Root_Veranlagung</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000PI51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::HistoryRoot::fm_Root_Veranlagung</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathVkprod</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"Verkaufsprodukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000U900000AM8" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:methods>
+                <pm:method>vtm_AcceptanceCheck</pm:method>
+                <pm:method>vtm_CommercialChange</pm:method>
+                <pm:method>vtm_MonthlyUpdate</pm:method>
+                <pm:method>vtm_NonCommercialChange</pm:method>
+                <pm:method>vtm_PlausisCheck_Quotation</pm:method>
+                <pm:method>vtm_PreOfferingCheck</pm:method>
+                <pm:method>vtm_Quotation</pm:method>
+                <pm:method>vtm_Rebalancing</pm:method>
+                <pm:method>vtm_Recalculation</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000001Y140000T76" sortkey="none">
+              <pm:name>Schnittstellenmethoden</pm:name>
+              <pm:extends/>
+              <pm:methods>
+                <pm:method>vtm_AenderungVertrag</pm:method>
+                <pm:method>vtm_Plausis_Check</pm:method>
+                <pm:method>vtm_Tarifierung</pm:method>
+                <pm:method>vtm_Veranlagung</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>HistTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

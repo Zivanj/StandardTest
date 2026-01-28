@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="ZZZPM3CC000000005Z30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeit</pm:namespace>
+  <pm:name>Abhaengigkeit_Standard</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV00000007Z30000T76" pmid="7Z30000T76">
+      <pm:name>Abhaengigkeit_Standard</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="ZZZPM3PM000000005Z30000T76" pmid="5Z30000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>Abhaengigkeit_Standard</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000F3H0000T76">com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeit::DepTmpl_ACHMEA_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT00000004Z60000SPB">com::company::TechnischesSchema::Produktbausteintypen::Abhaengigkeit</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="mlstring" final="false" guid="6VGTP2VGUCETS4GOF9DLR8FFDB" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:mlstringval>
+                      <pm:stringval encoding="none" culture="de-DE">Abhaengigkeit Standard</pm:stringval>
+                      <pm:stringval encoding="none" culture="en-US">Dependency Standard</pm:stringval>
+                      <pm:stringval encoding="none" culture="nl-NL">Afhankelijkheid Standard</pm:stringval>
+                    </pm:mlstringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="mlstring" final="false" guid="P58EUL66333DD43A1I6Q56RHTM" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:mlstringval>
+                      <pm:stringval encoding="none" culture="de-DE">DEPENDENCY</pm:stringval>
+                      <pm:stringval encoding="none" culture="en-US">DEPENDENCY</pm:stringval>
+                      <pm:stringval encoding="none" culture="nl-NL">DEPENDENCY</pm:stringval>
+                    </pm:mlstringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="integer" final="false" guid="P0FSROT6MLF5J49B77LCAVKGO8" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>Abhaengigkeitstyp</pm:name>
+              <pm:extends/>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB0000008Z30000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Abhaengigkeitstyp_BASIS_E</pm:table>
+                      <pm:column guid="UABMLA7GBDL56453IDQ6M78L53">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000020Z30000T76" readonly="false" sortkey="none">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:extends/>
+              <pm:attributes>
+                <pm:attribute>Abhaengigkeitstyp</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="false" final="false" guid="ZZZPM3PMREL00000CZ30000T76" inner="false" pmid="CZ30000T76" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Abhaengigkeitszuordnung_Standard</pm:name>
+              <pm:type guid="ZZZPM3PMTREL0000CZ60000SPB">Abhaengigkeit_Abhaengigkeitszuordnung</pm:type>
+              <pm:target guid="ZZZPM3CC000000009Z30000T76">com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeitszuordnung::Abhaengigkeitszuordnung_Standard</pm:target>
+              <pm:reversedirection>
+                <pm:name>Abhaengigkeit_Standard_rev</pm:name>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>Abhaengigkeit_Standard</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

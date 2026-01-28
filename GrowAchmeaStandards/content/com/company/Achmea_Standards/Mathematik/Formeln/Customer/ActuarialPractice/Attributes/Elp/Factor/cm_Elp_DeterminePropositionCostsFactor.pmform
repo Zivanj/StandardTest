@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM000000O8H0000T76" isnullable="false" nrdims="0" pmid="O8H0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::ActuarialPractice::Attributes::Elp::Factor</pm:namespace>
+  <pm:name>cm_Elp_DeterminePropositionCostsFactor</pm:name>
+  <pm:notice encoding="none"><![CDATA[
+Description:
+Returns the appropriate Proposition Cost factor for a product - elementary product combination.
+Its one of the cost factors in proposition premium determination.
+Technical the factor is selected from table InTab_Rating_CAU_COSTS_PropositionCosts attached to Sales Product attribute InTab_PropositionCosts. The selected factor
+is depending  on the change date, the rating codes of the elementary product and the respective product.
+
+
+Result:
+float
+
+Input parameters:
+dChangeDate  		Contract start or renewal date of the overlying product 
+sRatingCodeProd 		The rating code of the respective product
+sRatingCodeElp 	The rating code of the respective elementary product
+
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h"
+
+// External paths
+
+// External objects
+extern object extVkprod
+// Local objects
+
+// Methods
+
+// Object attributes
+data string InTab_PropositionCosts
+
+// Local variables
+struct_SProd_Rating_Factor FactorList [*]
+
+/**********************************************/
+/****************** Processing ****************/
+/**********************************************/
+
+if(extVkprod.InTab_PropositionCosts != TABLE_NOT_DEFINED){
+	FactorList = TableByName(extVkprod.InTab_PropositionCosts,struct_SProd_Rating_Factor)[VALID_FROM 		<= dChangeDate &&
+                                              		 								VALID_TO 		>= dChangeDate &&
+                                              		 								PROD_RATING_CODE == sRatingCodeProd &&
+                                              		 								ELP_RATING_CODE == sRatingCodeElp]
+	Res = FactorList(0).FACTOR 
+}
+else{
+
+	ERRORMESSAGE_ACHMEA( FORM_ERR_ACHMEA_TABLE_NOT_DEFINED
+	, "InTab_PropositionCosts"
+	, ""
+	, ""
+	, "" )
+
+}
+                                         
+                                              
+#import "incStdMethodsBottom_ACHMEA.h"
+
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

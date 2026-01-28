@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000OCC0000AM9" pmid="OCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormPlausiCodes_BASIS.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef STDINC_SAP_FORMPLAUSICODES_BASIS_H_INCLUDED
+#define STDINC_SAP_FORMPLAUSICODES_BASIS_H_INCLUDED
+
+/*===================================================================*/
+/* insert further includes                                           */
+/*===================================================================*/
+#include "incSAPFormPlausiCodes_BASIS_1.h"
+/*===================================================================*/
+#endif ]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

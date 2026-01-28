@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000DJ51000AM8" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::15%0020Erweiterung::ErweiterungsTyp</pm:namespace>
+  <pm:name>ExtTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000FJ51000AM8" pmid="FJ51000AM8">
+      <pm:name>ExtTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000DJ51000AM8" pmid="DJ51000AM8" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ExtTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000L551000AM8">com::company::Achmea_Standards::Produktbausteine::15%0020Erweiterung::ErweiterungsTyp::ErwVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT00000001130000SPB">com::company::TechnischesSchema::Produktbausteintypen::ErweiterungsTyp</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="U3OQCC5D0104B4NE9AHTVJPFNJ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ExtTyp</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000HJ51000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_ExtensionType</pm:table>
+                      <pm:column guid="RI4U91A02PEKP4NI2VDJ2TCR78">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000GJ51000AM8" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:attributes>
+                <pm:attribute>ExtTyp</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:contractattributefolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ExtTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

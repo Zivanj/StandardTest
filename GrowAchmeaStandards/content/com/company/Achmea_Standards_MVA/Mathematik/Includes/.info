@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="59CU6QURESBSK40UIL8T60IF6H" sortkey="450" structural="false">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik</pm:namespace>
+  <pm:name>Includes</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Includes</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Includes</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Includes</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Includes</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>include</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="ZZZPM3FOL0000000ZV10000MVA" sortkey="0" structural="false">
+      <pm:name>MVA_FormErrorCodes</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000UBC0000AM9">MVA_incFormErrorCodes.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL00000000W10000MVA" sortkey="0" structural="false">
+      <pm:name>MVA_PlausiCodes</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000VBC0000AM9">MVA_incPlausiCodes.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000TQF0000MVA" sortkey="0" structural="false">
+      <pm:name>MVA_Sonstiges</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000WBC0000AM9">MVA_incFormClasses.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000XBC0000AM9">MVA_incFormCodes.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000YBC0000AM9">MVA_incMessageClasses.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000CQ10000T77" sortkey="0" structural="false">
+      <pm:name>MVA_Standard</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000ZBC0000AM9">MVA_incStd.h</pm:object>
+        <pm:object guid="ZZZPM3INC00000000CC0000AM9">MVA_incStdBottom.h</pm:object>
+        <pm:object guid="ZZZPM3INC00000001CC0000AM9">MVA_incStdMethods.h</pm:object>
+        <pm:object guid="ZZZPM3INC00000002CC0000AM9">MVA_incStdMethodsBottom.h</pm:object>
+        <pm:object guid="ZZZPM3INC00000003CC0000AM9">MVA_incStdPlausis.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

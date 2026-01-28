@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000AJD2000AM9" pmid="AJD2000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incKeysInterfaceMethods_ACHMEA.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_SAP_FORMCODES_CUSTOM_H_INCLUDED
+#define INC_SAP_FORMCODES_CUSTOM_H_INCLUDED
+
+// Keys for re-used standard interface methods
+#define METHOD_NEWBUSINESS					110010
+#define METHOD_EXPIRY						210060
+#define METHOD_TERMINATION					410040
+#define METHOD_DEATH						410050
+
+// Keys for new custom interface methods
+#define METHOD_RECALCULATION				910010
+#define METHOD_QUOTATION					920010
+#define METHOD_CHANGEQUOTATION				920020 // only internally re-routed (process ID)
+#define METHOD_COMMERCIALCHANGE				930010
+#define METHOD_NONCOMMERCIALCHANGE			930020
+#define METHOD_REBALANCING					910020
+#define METHOD_MONTHLYUPDATE				910030
+
+#endif /* #ifndef INC_SAP_FORMCODES_CUSTOM_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

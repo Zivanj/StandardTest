@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000OW30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarproduktbuendel</pm:namespace>
+  <pm:name>ElpbuendVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000QW30000T76" pmid="QW30000T76">
+      <pm:name>ElpbuendVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000OW30000T76" pmid="OW30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>ElpbuendVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT00000006QH0000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarproduktbuendel</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="0SNLHOH3CB4C34KSNV9U44HE9J" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut „Bezeichnung" definiert den fachlichen Namen des Produktbausteins
+     und ist maximal 50 Zeichen lang. 
+     Bei jedem Produktbaustein muss dieses Attribut vorhanden und gefüllt sein. 
+     Der Name erscheint in der FS-PM-Benutzeroberfläche.
+   
+msg.PM / FSPM-Schnittstelle
+      Das Attribut "Bezeichnung" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="RJKRGS55OR1524OAFH4BJ794OP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">IdentificationAttr</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="7N1T8IIIKQ1D94OPMKVS4I10LJ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut "KurzBezeichnung" definiert einen fachlichen Kurzbezeichner, der
+     den Produktbaustein über alle Produktbausteine eindeutig identifiziert.
+
+Verwendung
+     Dieses Attribut muss an allen R/3-relevanten Bausteinen vorhanden sein. 
+     Es darf maximal 16 Zeichen lang sein. Der Wert des Attributs "KurzBezeichnung"
+     darf keine Sonderzeichen ausser dem Unterstrich enthalten und kann case-sensitiv 
+     definiert werden.
+     Das Attribut ist an den Bausteinen gepflegt und wird über einen PSV-Import 
+     dem SAP-System bekannt gemacht. Auf keinen Fall darf der Wert dieses 
+     Attributes bei einem bestehenden Baustein geändert werden.
+ 
+msg.PM / FSPM-Schnittstelle
+     Das Attribut "KurzBezeichnung" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="PQUTMJMR1JG5J4474DDSIL0UML" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "LOB_cd" definiert die "Lines of Business" und gibt an, 
+    welcher Sparte bzw. welchem Hauptversicherungszweig der Baustein zu-
+    geordnet ist. 
+
+Verwendung
+    Folgende Werte sind gültig: BASIS, LL, LP, LM, LG
+	       LL = Leben
+	       LP = Sach, Haft, Unfall (SHU)
+	       LM = KFZ
+ 	       LG = Gesundheit
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Attribut "LOB-cd" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="5FBDUHPR25RCS40TBNFOBA28B5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ProductModuleId</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="QFMGMHSOGPBDT4KPDL9J9GMMRT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RatingCode</pm:name>
+              <pm:notice encoding="none"><![CDATA[RatingCode is filled with an abbreviation of the ElementaryProductBundle concerned.
+It can be used for deriving premiums, terms & conditions, plausi's etc.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="3HSTA6ISLR4KS4394QBKNSJ8CC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "RefModell_Suffix" definiert die Basis- oder sparten-
+    spezifische Erweiterungsklasse im Referenzmodell und referenziert
+    somit auf eine Tabelle in einem externen, operativen System.
+
+
+Verwendung
+    Das Referenzmodell bildet ein externes Datensystem ab und beschreibt das Datenmodell, 
+    auf dem ein operatives System aufbaut. Die Referenzklassen werden aus dem externen,
+    operativen System exportiert und in die PM.Designer-Umgebung importiert.
+    Die Referenzklassen haben unterschiedliche Endungen.
+    Das Suffix "_BASIS" steht für Basistabelle. Das Suffix "_LL" steht für Leben-
+    spezifische Erweiterung der Basistablle. Die Suffixe "_LP", "_LM" und "_LG"
+    stehen für SHU-spezifische, KFZ-spezifische und GKV-spezifische Erweiterung
+    der Basistabelle.
+    Das Attribut wird für Konsistenzprüfungen benötigt und wirkt unterstützend für das
+    Compile PlugIn.
+
+    Das Attribut „RefModell_Suffix" gibt an, ob der Produktbaustein nur relevante 
+    Merkmale aus der verwendeten Basis-Vorlage oder auch zusätzliche relevante 
+    spartenspezifische Merkmale enthält.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="O8EEBL4SMTQDC4BGVEHDVMH35L" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Reihenfolge</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>999</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL000000177H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:attributes>
+                <pm:attribute>RatingCode</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL00000015FI0000AM8" readonly="false" sortkey="1">
+              <pm:name>Bestandssteuernde_Attribute</pm:name>
+              <pm:attributes>
+                <pm:attribute>Reihenfolge</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="0IT9TI5HBEUL744JV5DUTL1HFG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Generationsermittlungsdatum</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Generation determination date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Generationsermittlungsdatum</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+ Das Generationsermittlungsdatum ist dasjenige Datum, aus dem bei Anlegen
+ des Bausteins die Generation bestimmt wurde. Es wird verwendet zum Anlegen der richtigen Generation
+ von internen/gemappten Objekten innerhalb des msg.PM.
+
+
+msg.PM/ FSPM Schnittstelle:
+Das Merkmal ist gemappt.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29991231</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0DNHMMBC1DV5M4PR0BMTPBPOU4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VDZ_Knz</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Indicator temporary cover note</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Kennzeichen vorläufiger Deckungszusage</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "VDZ_Knz" definiert, ob der Vertrag mit vorläufiger Deckungszusage
+    (VDZ) vorliegt oder nicht. Mögliche Ausprägungen:
+
+    (0)	Ohne VDZ (mit Plausiprüfung)
+    (1)	Mit VDZ und Vollständigkeitsprüfung (mit Plausiprüfung)
+    (2)	Mit VDZ ohne Vollständigkeitsprüfung (ohne Plausiprüfung)
+
+Verwendung
+    Die VDZ wird immer dann verwendet, wenn noch nicht alle Risikomerkmale
+    eines Versicherten Objektes bzw. alle zur Policierung notwendigen Daten 
+    bekannt oder erfaßt sind.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „VDZ_Knz" wird gemappt und persistiert. Der SAP-Feldname 
+    hat die Bezeichnung „ICC_CD", das SAP-Datenelement hat die 
+    Bezeichnung „/MSG/ABD_ICC_CD".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="7CIOMQPBJ3FCU42MOL2GBU47LJ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VertragsteilbuendelNr</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Coverage bundle number</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Vertragsteilbündelnummer</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Das Merkmal dient der eindeutigen 
+Identifikation eines Vertragsteilbündels innerhalb eines Vertrages.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000RW30000T76" readonly="false" sortkey="0">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000000TW30000T76" readonly="false" sortkey="1">
+                  <pm:name>Vertragsdaten</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Generationsermittlungsdatum</pm:attribute>
+                    <pm:attribute>VDZ_Knz</pm:attribute>
+                    <pm:attribute>VertragsteilbuendelNr</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="RCKFHKBF2664E4P1P2LIT5BNCP" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL00000009040000T76" sortkey="0">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ElpbuendVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

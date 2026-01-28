@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC0000000033H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::10%0020PolicenObjekte::BedingungsTyp</pm:namespace>
+  <pm:name>ConTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV000000053H0000T76" pmid="53H0000T76">
+      <pm:name>ConTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM0000000033H0000T76" pmid="33H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ConTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC000000009Y30000T76">com::company::Achmea_Standards::Produktbausteine::10%0020PolicenObjekte::BedingungsTyp::BedVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000EBB0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BedingungsTyp</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="integer" final="false" guid="6D2VN1335B44U443EM87S4KUL3" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>BearbeitungsKnz</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>4</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="UFS8M4RUCRS4D49J9AB96DE9KB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Beginn</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Start date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Beginn</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Beginn" beschreibt den zeitlichen Beginn des
+    Versicherungszeitraumes und leitet sich aus dem zugeordneten
+    Hauptachsenobjekt der jeweiligen Ebene (Verkaufsprodukt, 
+    Produkt, Elementarprodukt, Versicherbares Objekt) ab.
+
+msg.PM / FSPM-Schnittstelle
+  Das Merkmal „Beginn" wird weder gemappt noch persistiert.
+
+ ]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="RA5T2SGLDAFLF4NSFLGQ880Q5T" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Ende</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">End date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ende</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Ende" beschreibt das zeitliche Ende des 
+    Versicherungszeitraumes und leitet sich aus dem zugeordneten
+    Hauptachsenobjekt der jeweiligen Ebene (Verkaufsprodukt, 
+    Produkt, Elementarprodukt, Versicherbares Objekt) ab. 
+
+msg.PM / FSPM-Schnittstelle
+  Das Merkmal „Ende" wird nicht gemappt und persistiert.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="0RVTIMI45QBLL4ODQI3PRD1SSP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>InTab_Derivation_ClauseNr</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">TableReference for derivation of clause number</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">This InTab attribute steers what table is to be used for deriving the clausenumber</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">NULL</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="TEHKAP6Q89KTG4VI6PRFEI9GIP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ModelNr</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Model number</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">The unique identifier of the condition.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>20</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000001CY30000T76" readonly="false" sortkey="none">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:extends/>
+              <pm:attributes>
+                <pm:attribute>Beginn</pm:attribute>
+                <pm:attribute>Ende</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL000000058H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000008A00000AM8" readonly="false" sortkey="1">
+                  <pm:name>Contract Data</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>ModelNr</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL000000068H0000T76" readonly="false" sortkey="2">
+                  <pm:name>Product Data</pm:name>
+                  <pm:folders>
+                    <pm:folder guid="ZZZPM3FOL000000078H0000T76" readonly="false" sortkey="3">
+                      <pm:name>Tables</pm:name>
+                      <pm:attributes>
+                        <pm:attribute>InTab_Derivation_ClauseNr</pm:attribute>
+                      </pm:attributes>
+                    </pm:folder>
+                  </pm:folders>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="S6H7UJBDQJ2SH44G88V7SBC0FK" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_PruefeEinschluss</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000M5E0000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000M5E0000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3DCI5KIBFHI5A43SNU7502G1H0" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SetValues</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000M5E0000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000M5E0000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000Y7H0000T76" sortkey="1">
+              <pm:name>Customer</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SetValues</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000000X7H0000T76" sortkey="0">
+              <pm:name>Steuerungsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_PruefeEinschluss</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ConTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="PB34ITGD22OS04KMRFP9SL0M1F" sortkey="430" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden</pm:namespace>
+  <pm:name>HistoryRoot</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>formula</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

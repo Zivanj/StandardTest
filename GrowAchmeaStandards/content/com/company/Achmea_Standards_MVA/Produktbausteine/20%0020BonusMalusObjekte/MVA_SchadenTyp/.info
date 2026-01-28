@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="S23G65QM3FKKB4GBOT60E0J224" sortkey="100" structural="false">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Produktbausteine::20%0020BonusMalusObjekte</pm:namespace>
+  <pm:name>MVA_SchadenTyp</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">DamageType (Dam)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">DamageType (Dam)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT0000000S2N4000MVA">com::company::TechnischesSchema::Produktbausteintypen::MVA_SchadenTyp</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="0PP84NPFUAL504FSI2NSKSJBJC" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT0000000S2N4000MVA">com::company::TechnischesSchema::Produktbausteintypen::MVA_SchadenTyp</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC00000000F4H0000T76">MVA_SchadVrlg_BASIS</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

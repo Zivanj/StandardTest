@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000CCC0000AM9" pmid="CCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incCatchErrorMessage_BASIS.txt</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[}
+catch( pmexception MyExc, __PMQErrorExceptionLabel__ )
+{      
+	if(interface_method != TRUE)
+	{
+		error(error)
+		return(error)
+	}
+	else
+		return(RC_NOK)
+}
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

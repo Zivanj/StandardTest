@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000BB51000AM8" isnullable="false" nrdims="0" pmid="BB51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Rueckkauf</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+berechnet die Leistung bei Rückkauf
+siehe: FS-PM Leben FK VT-Schnittstelle
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+vtm_Rueckkauf     				Neues Verkaufsprodukt
+vtm_UMBENENNEN_Fuer_FSPM		HistoryRootTyp
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprodAlt
+extern path pathVkprodNeu
+
+//Externe Objekte
+extern object extRoot
+extern object extVkprodAlt
+
+//Versicherungstechnische Methoden
+data int vtm_Rueckkauf
+data int vtm_UMBENENNEN_fuer_FSPM
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+			  
+//Objekte
+object objAlt
+object objNeu 
+
+//Attribute Merkmale
+data int UmbenennenUnterdruecken
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+
+if (bErrorFound == FALSE)
+{			
+	this.Methodenschluessel = SNTMETHODE_RUECKKAUF	
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+	
+	loop (this,pathVkprodNeu)
+	{
+		objNeu = pathVkprodNeu
+		rc = objNeu.vtm_SchnittstellenCheck.exec [extRoot = this]
+	}
+	
+	loop (this,pathVkprodAlt)
+	{
+		objAlt = pathVkprodAlt
+		rc = objAlt.vtm_SchnittstellenCheck.exec [extRoot = this]
+	}
+	
+	rc = objNeu.vtm_Rueckkauf.exec
+				[ extRoot = this
+				, extVkprodAlt = objAlt
+				]
+	     
+	if (this.UmbenennenUnterdruecken == 0)
+	{
+		rc = this.vtm_UMBENENNEN_fuer_FSPM.exec
+	}
+	
+	rc = objNeu.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]
+	
+	Res = RC_OK
+}
+else
+	Res = RC_NOK	
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

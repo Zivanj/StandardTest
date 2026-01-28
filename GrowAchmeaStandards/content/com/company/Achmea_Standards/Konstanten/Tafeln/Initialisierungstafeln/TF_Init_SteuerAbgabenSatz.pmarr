@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:array xmlns:pm="http://www.msg.de/msgpm/data/2011" datatype="float" dataversion="1912" guid="ZZZPM3ARR00000006S00000SPB" isnullable="false" nrdims="2" abstract="false" final="false" pmid="6S00000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tafeln::Initialisierungstafeln</pm:namespace>
+  <pm:name>TF_Init_SteuerAbgabenSatz</pm:name>
+  <pm:value>
+    <pm:dimentries>
+      <pm:dimentry>1</pm:dimentry>
+      <pm:dimentry>3</pm:dimentry>
+    </pm:dimentries>
+    <pm:floatvals>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+    </pm:floatvals>
+  </pm:value>
+  <pm:notice encoding="none"><![CDATA[ 
+]]></pm:notice>
+</pm:array>

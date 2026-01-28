@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="boolean" dataversion="2012" final="false" guid="ZZZPM3FORM000000WF32000SPM" isnullable="false" nrdims="0" pmid="WF32000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Plausis</pm:namespace>
+  <pm:name>cm_Check_PlausiIsRelevant</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Formel zur Prüfung, ob eine Plausibiltät gemäß Aufrufparameter sBenutzergruppe, sRegelgruppe 
+und sPruefgruppe relevant ist.
+
+Zuerst wird geprüft via bCheckBenutzergruppe, ob die Plausibilität gemäß sBenutzergruppe relevant ist.
+Falls nicht, wird an die Aufrufumgebung FALSE zurückgegeben und die Formel wird verlassen.
+
+Danach wird via bCheckPruefRegelGruppe gerprüft, ob die Plausibilität gemäß sPruefgruppe und 
+sRegelgruppe relevant ist. Falls nicht, wird an die Aufrufumgebung FALSE zurückgegeben und die 
+Formel wird verlassen.
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+sBenutzergruppe		string		Aufrufparameter
+sPruefgruppe			string		Aufrufparameter
+sRegelgruppe			string		Aufrufparameter
+bCheckBenutzergruppe		bool		Funktionsbelegung
+bCheckPruefRegelGruppe 	bool		Funktionsbelegung
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+
+//Externe Objekte
+extern object extPlausi	
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+
+//Objekte
+
+//interne Variablen
+bool PlausiIsRelevant = TRUE
+		,BenutzergruppeIsRelevant = FALSE
+		,RegelPruefGruppeIsRelevant = FALSE
+		
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+BenutzergruppeIsRelevant = bCheckBenutzergruppe
+							[extPlausi = extPlausi
+							,sBenutzergruppe = sBenutzergruppe
+							]
+if(BenutzergruppeIsRelevant == FALSE)
+{
+	PlausiIsRelevant = FALSE
+	Res = PlausiIsRelevant 
+	return
+}
+RegelPruefGruppeIsRelevant = bCheckRegelPruefGruppe
+							[extPlausi = extPlausi
+							,sRegelgruppe = sRegelgruppe
+							,sPruefgruppe = sPruefgruppe
+							]
+if(RegelPruefGruppeIsRelevant == FALSE)
+{
+	PlausiIsRelevant = FALSE
+	Res = PlausiIsRelevant 
+	return
+}
+
+Res = PlausiIsRelevant 
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

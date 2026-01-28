@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000X2H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::03%0020RisikoObjekte::VersichertesObjektTyp</pm:namespace>
+  <pm:name>InsObTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000Z2H0000T76" pmid="Z2H0000T76">
+      <pm:name>InsObTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000X2H0000T76" pmid="X2H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>InsObTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC000000001Y30000T76">com::company::Achmea_Standards::Produktbausteine::03%0020RisikoObjekte::VersichertesObjektTyp::VObjVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000V140000SPM">com::company::TechnischesSchema::Produktbausteintypen::VersichertesObjektTyp</pm:type>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>InsObTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

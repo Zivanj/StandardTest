@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC000000IZG0000T76" pmid="IZG0000T76" abstract="false" cachesize="unbounded" cachingmode="local" datatype="integer" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein</pm:namespace>
+  <pm:name>fm_RC_OK</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM0000009ZG0000T76">com::company::Achmea_Standards::Mathematik::Formeln::Allgemein::c_RC_OK</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+</pm:function>

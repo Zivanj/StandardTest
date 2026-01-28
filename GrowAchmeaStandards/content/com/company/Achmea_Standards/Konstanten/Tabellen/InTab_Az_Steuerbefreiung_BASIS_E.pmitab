@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000YW30000T76" abstract="false" final="false" pmid="YW30000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Steuerbefreiung_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="5H9TIA1JR27C24SP8VB2BLO53V" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SU6A29P24SKDK473LL4IHV4ES9" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0RU3QO5NP46414UMHGLR1OICIA" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="2U48Q43BQ9DD04PUVM05KI1U0K" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="47EFLSVP9COKF40CQ4A2PTIL45" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="20H2EFJV7LMKT46JUHCP9VTNTB" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="UVMITUDNURCTR4U7UL6DTNQN17" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="009KE6BB07CK349JFN32U0MVNG" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="0NEH07O15MGSN49UNO9RBLROBC" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="7GT5HBPGCTQKJ422L2TK6O8K13" sortkey="0">
+    <pm:name>PK_InTab_Az_Steuerbefreiung_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Steuerbefreiungsarten
+Typ und Nummernbereich:
+E	9*
+NUMC3
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>4</pm:integerval>
+        <pm:integerval>5</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Keine Angaben</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerpflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit durch Leistungsfall</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit durch Beteiligung</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">No Entries</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax-Exempt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Subj.to Taxation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax Waiver with Benefit Case</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax Waiver Due to Participation</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Geen gegevens</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belastingplichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting vanwege uitkering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting vanwege deelneming</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Keine Angaben</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerpflichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit durch Leistungsfall</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steuerbefreit durch Beteiligung</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">No Entries</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax-Exempt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Subj.to Taxation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax Waiver with Benefit Case</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tax Waiver Due to Participation</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Geen gegevens</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belastingplichtig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting vanwege uitkering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vrijgesteld van belasting vanwege deelneming</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

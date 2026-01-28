@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB00000080A0000AMA" abstract="false" final="false" pmid="80A0000AMA" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>msg_tech_LK_Extension</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="5RN8AOQK4DULA4SACI2UUC2R13" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>classname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="5SH551PG7N9LO4BGRCLJ5VPJLE" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>propertyname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="3M62E8NFJ32LI4QO6M2L29K222" sortkey="0">
+    <pm:name>PK_msg_tech_LK_Extension</pm:name>
+    <pm:columns>
+      <pm:column>classname</pm:column>
+      <pm:column>propertyname</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Produkt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BedingungsTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TarifierungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TarifierungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ErweiterungsTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarproduktscheibe_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarproduktscheibe_LL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AusscheideordnungTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LL</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">RatingCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IsPremiumVersionDate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SupplementForDiscountsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PropositionCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_PropositionCosts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_SupplementForDiscounts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RatingCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Version</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ValidTo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ValidFrom</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MortalityTable_MaleSmoker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MortalityTable_MaleNonsmoker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MortalityTable_FemaleSmoker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MortalityTable_FemaleNonsmoker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Base_RiskPremiumTable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Derivation_ClauseNr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Table</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Base_RiskPremiumTable</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfInsuredObjects_Max</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfInsuredObjects_Min</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BeginDate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfElps_Max</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfElps_Min</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfProds_Max</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NrOfProds_Min</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AdministrationCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HandlingCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InterestFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ReturnOnProductionFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ProjectedPropAndProdCosts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">OffsetAge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RiskEntitlement_OLD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RiskEntitlementFinal_OLD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klim0</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klim1</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klim2</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Klim3</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">EmployeeTimeRemaining</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

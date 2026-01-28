@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000BCC0000AM9" pmid="BCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incStd_ACHMEA.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_STD_ACHMEA_H_INCLUDED
+#define INC_STD_ACHMEA_H_INCLUDED
+
+/*********************************************************************/
+/* insert further includes                                                       */
+/*********************************************************************/
+#import "incStd_BASIS.h"
+#include "incACHMEAFormErrorCodes.h"
+#include "incACHMEAFormVariousCodes.h"
+
+/*===================================================================*/
+/* interne Variablen                                                                                                          */
+/*===================================================================*/
+
+#define TABLE_DUMMY_VALUE -1
+#define TABLE_NOT_DEFINED "NULL"
+#define TABLE_NOT_ASSIGNED "NOT_ASSIGNED"
+
+/* SELECTIVITY */
+#define SELECTIVITY_NOT_DEFINED 0
+#define SELECTIVITY_MANDATORY 1
+#define SELECTIVITY_NOT_SELECTABLE 2
+#define SELECTIVITY_PRESELECTED 3
+#define SELECTIVITY_SELECTABLE 4
+
+//added for indexing and acceptance checks during renewal process (Geschaeftsprozess = RNWL)
+// #define RENEWAL "RNWL" NOT YET!!!
+
+#endif /* #ifndef INC_STD_ACHMEA_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

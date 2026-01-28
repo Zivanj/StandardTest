@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000ZZG0000T76" abstract="false" final="false" pmid="ZZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Beruf_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="0EOA06P1OBQL24A5GLJ1QNH4RV" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="43MNJ932QQAS64N16K0G9Q3EPB" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SVKMPSLSR9KTG4MRAC27JP28I0" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="UURQ6CSFTMKC9497P2RONHLG6O" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="USVNRTB95MGK24SC857NTGPTGK" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SMDBA9FBK5TSB45CO4O6E09BF1" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SC1ECHP2HOEKC4V8BC8N6US3JH" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="1IIHN2PLPSDCF484VR352TGELO" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>Gefahrengruppe</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="UFA858GIGCMSP4LDOQ79PKR3T8" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>DirektionsanfrageJN</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="RMHQ4VB2GN2LO450SI381N6K9T" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>Risikoart</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="T9R00CHU872LI4HAIFC3ND2UR3" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>ZuschlagJN</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="11DT5JRS1GPSH4OJ0FT0T3RA7U" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>TarifierbarKnz</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="integer" guid="UJ4U7NCFI0IC14124DIPE910PR" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>VersicherbarJN</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="6B46MIB1IG84544N2KF7K1CQ1E" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="SG6J4A0J3GVSR4GQVN1TH874I5" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="7PP2OGPR4CET04B1VRSICM6LT3" sortkey="0">
+    <pm:name>PK_InTab_Az_Beruf_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Die interne Tabelle "InTab_Az_Beruf_BASIS" definiert die für Unfall relevanten Berufe.
+Typ und Nummernbereich:
+E	1000 - 9999
+CHAR4
+
+
+
+
+
+
+
+
+
+
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">1</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">2</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">3</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">4</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">5</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">6</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">7</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">8</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">28</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">29</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">30</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">31</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">32</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">33</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">34</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">35</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">36</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">37</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">38</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">39</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">40</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">9</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">10</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">11</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">12</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">13</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">14</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">15</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">16</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">17</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">18</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">19</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">20</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">21</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">22</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">23</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">24</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">25</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">26</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">27</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0001</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0002</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0003</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0004</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0005</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">0006</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">kein Beruf, Kinder, Jugendliche</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berufssportler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateuersportler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter im Baugewerbe</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter im Stahlbau</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahnstreckenarbeiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bergarbeiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bergführer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dachdecker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Baggerführer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fleischer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glaser</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jäger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schiffbauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wachpersonal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artisten</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leibwächter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rennfahrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rennreiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taucher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierbändiger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tiepfleger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gerüster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hochspannunggselektriker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Holzfäller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Landwirt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reitlehrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schlachter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Skilehrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierärzte</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tischler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimmerer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mineure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechniker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">fliegendes Personal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sondereinheiten (Polizei, Grenzschutz)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tänzer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprengmeister</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprenggehilfe</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">kaufmännischer, verwaltender und aufsichtführender Tätigkeit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">körperlicher und handwerklicher Tätigkeit.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektriker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maschinenbauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter/in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meister/in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Techniker(in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Selbständige(r)</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Occupation, Children, Teenagers</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Professional Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateur Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker in Building Trade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker in Steel Bld Trade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Railtrack Worker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mountain Guide</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Roofer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excavator Operator</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glazier</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hunter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shipbuilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guard Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bodyguard</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Driver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Jockey</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tamer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Animal Keeper</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Scaffolder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">High Voltage Electrician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tree Feller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Farmer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riding Instructor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ski Instructor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Veterinarian</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabinet Maker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Carpenter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechnist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Flight Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Units (Police, Border Patrol)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dancer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blaster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blast Assistant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Office, Administrative, and Supervisory Activity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Physical and Skilled Manual Work</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mechanical Engineer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker(m/f)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Master Craftsman</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Technician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Self-Employed</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nee Beroep, Kinderen, Tieners</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Topsporter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateur Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeider in Building Trade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeider in Steel Bld Handel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Railtrack Worker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berggids</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dakdekker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Graafmachine Operator</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glazenmaker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hunter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Scheepsbouwer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guard Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bodyguard</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Autocoureur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Jockey</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Duiker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tamer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Veehouder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steigerbouwer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">High Voltage Elektricien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tree Feller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Farmer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riding Instructeur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ski Instructeur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dierenarts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meubelmaker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Carpenter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechniek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vliegend personeel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Speciale Eenheden (Politie, Grenspolitie)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dancer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blaster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blast Assistant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Employee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fysieke en Geschoolde handvaardigheid</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektricien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mechanical Engineer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Werknemer (m / v)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meester</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Technicus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zelfstandigen</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">kein Beruf, Kinder, Jugendliche</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berufssportler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateuersportler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter im Baugewerbe und Straßenbau</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter im Stahlbau</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahnstreckenarbeiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bergarbeiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bergführer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dachdecker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Baggerführer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fleischer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glaser</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jäger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schiffbauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wachpersonal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artisten</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leibwächter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rennfahrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rennreiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taucher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierbändiger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tiepfleger</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gerüster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hochspannunggselektriker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Holzfäller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Landwirt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reitlehrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schlachter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Skilehrer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierärzte</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tischler</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimmerer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mineure</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechniker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">fliegendes Personal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sondereinheiten (Polizei, Grenzschutz)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tänzer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprengmeister</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sprenggehilfe</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angestellte</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Handwerker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektriker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maschinenbauer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeiter/in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meister/in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Techniker(in</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Selbständige(r)</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Occupation, Children, Teenagers</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Professional Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateur Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker in Construction or Road Construction</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker in Steel Bld Trade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Railtrack Worker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mountain Guide</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Roofer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Excavator Operator</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glazier</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hunter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shipbuilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guard Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bodyguard</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Driver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Jockey</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Diver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tamer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Animal Keeper</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Scaffolder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">High Voltage Electrician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tree Feller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Farmer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riding Instructor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ski Instructor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Veterinarian</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cabinet Maker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Carpenter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechnist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Flight Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Special Units (Police, Border Patrol)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dancer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blaster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blast Assistant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Salaried Employees</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tradesman/Tradeswoman</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Electrician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mechanical Engineer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Worker(m/f)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Master Craftsman</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Technician</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Self-Employed</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Initial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nee Beroep, Kinderen, Tieners</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Topsporter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amateur Athlete</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeider in Building Trade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeider in Steel Bld Handel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Railtrack Worker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berggids</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dakdekker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Graafmachine Operator</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glazenmaker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hunter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Scheepsbouwer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guard Staff</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Artist</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bodyguard</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Autocoureur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Racing Jockey</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Duiker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tamer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Veehouder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Steigerbouwer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">High Voltage Elektricien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tree Feller</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Farmer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riding Instructeur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Butcher</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ski Instructeur</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dierenarts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meubelmaker</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Carpenter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Miner</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pyrotechniek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vliegend personeel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Speciale Eenheden (Politie, Grenspolitie)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dancer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blaster</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Blast Assistant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Employee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fysieke en Geschoolde handvaardigheid</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elektricien</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mechanical Engineer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Werknemer (m / v)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Meester</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Technicus</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zelfstandigen</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+        <pm:integerval>3</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>1</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

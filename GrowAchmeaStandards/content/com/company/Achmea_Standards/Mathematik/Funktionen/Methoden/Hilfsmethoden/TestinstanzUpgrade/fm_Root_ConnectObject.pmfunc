@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC0000009140000T76" pmid="9140000T76" abstract="false" cachesize="unbounded" cachingmode="disabled" datatype="integer" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Hilfsmethoden::TestinstanzUpgrade</pm:namespace>
+  <pm:name>fm_Root_ConnectObject</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM0000005140000T76">com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Hilfsmethoden::TestinstanzUpgrade::cm_Root_ConnectObject</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+</pm:function>

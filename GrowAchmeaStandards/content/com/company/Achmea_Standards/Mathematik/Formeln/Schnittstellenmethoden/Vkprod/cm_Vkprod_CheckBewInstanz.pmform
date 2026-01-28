@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM000000YB10000SPB" isnullable="false" nrdims="0" pmid="YB10000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::Vkprod</pm:namespace>
+  <pm:name>cm_Vkprod_CheckBewInstanz</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Objekte
+extern Object extRoot
+
+//Externe Pfade
+extern path pathProdBasis
+
+
+//Attribute Merkmale
+data int vtm_SchnittstellenCheckBewegungen
+data int KnzSchnittstelleCheck
+//Objekte
+
+
+//interne Variablen
+int h_KnzSchnittstelleCheck
+
+
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+h_KnzSchnittstelleCheck = extRoot.KnzSchnittstelleCheck
+
+// Schnittstellencheck wird nur durchgeführt, falls das Kennzeichen am Root gesetzt ist
+if (h_KnzSchnittstelleCheck != SCHNITTSTELLE_CHECK_KEIN)
+{
+	loop(this, pathProdBasis)
+	{
+		rc = pathProdBasis.vtm_SchnittstellenCheckBewegungen.exec
+								[extRoot = extRoot]
+	}
+} 
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

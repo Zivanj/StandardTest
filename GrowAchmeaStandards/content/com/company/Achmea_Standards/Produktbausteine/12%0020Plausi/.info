@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="0R0A4NU0G6ETU4PCOVO1CE1J4A" sortkey="510" structural="true">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine</pm:namespace>
+  <pm:name>12 Plausi</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

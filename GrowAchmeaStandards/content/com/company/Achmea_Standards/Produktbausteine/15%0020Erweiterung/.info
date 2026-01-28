@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="QKMT9KHOKO4SK46HGTG5FDMD5F" sortkey="510" structural="true">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine</pm:namespace>
+  <pm:name>15 Erweiterung</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

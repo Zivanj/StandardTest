@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000005140000T76" isnullable="false" nrdims="0" pmid="5140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Hilfsmethoden::TestinstanzUpgrade</pm:namespace>
+  <pm:name>cm_Root_ConnectObject</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+führt die Umebenennung von Testinstanzen durch
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprodAlt
+extern path pathVkprodNeu
+extern path pathProdNeu
+extern path pathProdAlt
+//Externe Objekte
+extern object extProdAlt
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_ConnectObject
+
+//Objekte
+object objAltProd	// Altes Verkaufsprodukt
+object objNeuProd	// Neues Verkaufsprodukt
+
+
+//interne Variablen
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+interface_method = FALSE
+
+loop ( this, pathVkprodAlt )
+{	
+	loop ( this, pathVkprodNeu )
+	{
+		loop(pathVkprodNeu, pathProdNeu )
+		{
+			objNeuProd = pathProdNeu
+			loop(pathVkprodAlt, pathProdAlt )
+			{
+				objAltProd = pathProdAlt
+				rc = objNeuProd.vtm_ConnectObject.exec
+								[extProdAlt	= objAltProd
+								,extRoot = this]
+			}
+		}
+	}
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

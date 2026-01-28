@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC000000001Y30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::03%0020RisikoObjekte::VersichertesObjektTyp</pm:namespace>
+  <pm:name>VObjVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV00000003Y30000T76" pmid="3Y30000T76">
+      <pm:name>VObjVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM000000001Y30000T76" pmid="1Y30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>VObjVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT0000000V140000SPM">com::company::TechnischesSchema::Produktbausteintypen::VersichertesObjektTyp</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="PRKGH7N1CIMC54LDFU9RT99COI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Description</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="USKS4QVEIV2C54AJTF69PT44QC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">IdentificationAttr</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="0D9KLEI6P085S4I6ILR40BF7LR" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ShortDescription</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="1JB205QOVMLKR4LGA6FU6K14NE" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="RNNM75RI0OQSC4JTEUKBVIRF1O" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ProductModuleId</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="4UTIP597VB0LT4QU5BT9T4B3OF" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="R2I63K50HOE534Q2I4QT50J8FD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VorerkrankungAusblenden</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000022FI0000AM8" readonly="false" sortkey="0">
+              <pm:name>Bestandssteuernde Attribute</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000023FI0000AM8" readonly="false" sortkey="1">
+                  <pm:name>Person</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>VorerkrankungAusblenden</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="TTAC4IB9FQRCV42GIQK0UTAQO5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ObjektNr</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Object number</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">ObjektNr</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+  Das Merkmal "ObjektNr" definiert die Objektnummer eines
+  Versicherten Objektes. Die Objektnummer dient zur Unterscheidung
+  mehrerer gleichartiger Objekte.
+
+msg.PM / FSPM-Schnittstelle
+  Das Merkmal „ObjektNr" wird gemappt und persistiert.
+  Der SAP-Feldname hat die Bezeichnung „INSOBJNR_TT",
+  das SAP-Datenelement hat die Bezeichnung „/MSG/ABD_INSOBJNR_TT".
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="SB3DLRNGIFBSB43I236L1MF1DK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Objektart</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Object type</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Objektart</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Objektart" beschreit die Art des Objektes.
+    Objektarten untergliedern die Objekttypen weiter. 
+    Die Einschränkung erfolgt über die interne Tabelle 
+    "InTab_Objektarten_LP". Mögliche Werte sind:
+
+    10004    Haushalt
+    20004    Wohngebäude
+    20005    Wohn- und Geschäftsgebäude
+    20006    Nebengebäude
+    30001    Hund
+    30002    Pferd
+    40001    PKW
+    50001    Person
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Objektart" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „OBJTYP_CD",
+    das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABU_OBJTYP_ID".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="7TKA3QIKID4LD48H8NDNU1VPP8" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Objekttyp</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Object category</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Objekttyp</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Objekttyp" ermöglicht die sachliche 
+    Typisierung von Objekten, wobei die weitere Untergliederung 
+    durch Objektarten erfolgt. Objekttyp und -art bestimmen
+    die genaue Ausprägung. 
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Objekttyp" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „OBJCAT_CD",
+    das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABU_OBJCAT_ID".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB0000006Y30000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Objekttyp_BASIS_E</pm:table>
+                      <pm:column guid="3M34K0BM7T3K746OAG8J4FB20C">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="OAVQDEDQDEALT4O3V2SKLA1S0S" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Status</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Status</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Status</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+   Das Merkmal "Status" gibt den Status des versicherten
+   Objektes an.
+    Die Einschränkung erfolgt über die interne Tabelle 
+   "InTab_Az_TechnischerStatus_BASIS". Mögliche Werte sind:
+
+    1 Aktiv
+    2 Storniert
+    3 Ruhend
+    11 Rohbau
+    12 Rohbau, kostenfrei
+    13 Rohbau, vor Beginn
+
+msg.PM / FSPM-Schnittstelle
+  Das Merkmal „Status" wird gemappt und persistiert.
+  Der SAP-Feldname hat die Bezeichnung „INSPERSSTAT_CD",
+  das SAP-Datenelement hat die Bezeichnung 
+  „/MSG/ABD_INSPERSSTAT_CD".
+]]></pm:notice>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="004P7BQKE2FS34VP877UA1MDQC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Update_obligatorisch_Knz</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Indicator update mandatory</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Update_obligatorisch_Knz</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Update_obligatorisch_Knz"  kann die Werte 0 oder 1 annehmen. Das Merkmal auf  0 zu setzen, 
+    ist nur dann sinnvoll, wenn das versicherte Objekt keine tarifierungsrelevanten Merkmale hat. 
+    Das Merkmal auf 1 zu setzen ist nur dann sinnvoll, wenn das versicherte Objekt tarifierungsrelevante Merkmale hat.  
+    Wenn das Merkmal auf  1 gesetzt wird, dann wird auf Asynchronität des versicherten Objektes 
+    (versicherte Objekt x an der Policy y nicht auf dem aktuellen Stand)  innerhalb einer Police geprüft.
+
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal "Update_obligatorisch_Knz"  ist  gemappt und persistiert.
+
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000005Y30000T76" readonly="false" sortkey="0">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:attributes>
+                <pm:attribute>ObjektNr</pm:attribute>
+                <pm:attribute>Objektart</pm:attribute>
+                <pm:attribute>Objekttyp</pm:attribute>
+                <pm:attribute>Status</pm:attribute>
+                <pm:attribute>Update_obligatorisch_Knz</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="748MJD09V7NKK405U9OKACM2ED" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Plausis_Check</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000M5E0000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000M5E0000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="756PJU7TL3VTL457B3C356ULOH" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL00000007140000T76" sortkey="1">
+              <pm:name>Hilfsmethods</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL00000006140000T76" sortkey="0">
+              <pm:name>Plausis</pm:name>
+              <pm:methods>
+                <pm:method>vtm_Plausis_Check</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>VObjVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

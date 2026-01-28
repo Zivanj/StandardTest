@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000ECC0000AM9" pmid="ECC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incErrorDefs_BASIS.txt</pm:name>
+  <pm:notice encoding="none"><![CDATA[Dieses Include beinhaltet Deklarationen und Vorbelegungen für das
+neue Errorhandling. ZeS, 28.04.2004
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// Definition globaler Konstanten
+
+#define		MSG_ERRORMAILBOX	"Errors"
+#define		MSG_PLAUSIBILITYMAILBOX	"Plausis"
+#define		MSG_TRACEMAILBOX "Trace"
+#define 	ERROR_SYMBOL "E"
+
+// interface_method zeigt, ob es sich bei der Formel um eine Schnitt-
+// stellenmethode handelt. Vorbelegung ist FALSE, also nein. Dieser Vari-
+// able MUSS an den Schnittstellenmethoden mit TRUE überschrieben werden!
+
+boolean interface_method = FALSE
+
+// Die vom gecatchten Error-Block erzeugten Messages können bis zu vier
+// Variablen enthalten. Diese Variablen werden im Formeltext gesetzt und
+// automatisch in der Message als ergänzende Informationen angezeigt.
+// Vorbelegt sind alle vier Variablen mit einem Leerstring.
+
+string 		ErrorVar1 = "",
+			ErrorVar2 = "",
+			ErrorVar3 = "",
+			ErrorVar4 = "",
+			sNachrichtenklasse = "",
+			InstanceName = "",
+			MarkName = "";
+			
+// Im SdtBottomInclude wird in der Errors-Mailbox geprüft, ob bereits eine 
+// Message erzeugt, also ein Fehler gemeldet wurde. Dafür wird nachfolgende 
+// Variable benötigt
+
+boolean bError = FALSE
+
+// Nachfolgend deklarierte Variable vermerkt, ob in der Errors-Mailbox noch
+// eine weitere Message existiert oder nicht. Zunächst wird davon ausge-
+// gangen, daß keine weitere Message existiert, daher wird der Wert mit
+// FALSE initialisiert
+
+boolean Error_fachlich = FALSE
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

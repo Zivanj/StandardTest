@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000TE32000SPM" isnullable="false" nrdims="0" pmid="TE32000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Plausis</pm:namespace>
+  <pm:name>cm_KomplettiereObjektbaum_Plausis</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Formel zur Erzeugung aller PlausiParameterTyp- und PlausiTyp-Instanzen auf einer Hautachsen-Ebene.
+
+Dazu wird ausgehend von einer Hauptachsen-Ebene in einer Schleife über 
+alle Vorwärtsbeziehungen geprüft, ob das Zielobjekt der Beziehung zur Klasse PlausiParametertyp
+gehört. Falls ja, dann wird die Instanz via iInstanzErzeugen angelegt. Dabei werden induktiv alle 
+weiteren, über eine Vorwärtsbeziehung definierten Instanzen von Produktbausteinen angelegt.  
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+iInstanzErzeugen 		integer			Funktionsbelegung
+
+Verwendete Methoden mit Name/Klasse:
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+			
+//Externe Objekte
+extern Object extParent
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+
+//Objekte
+
+//interne Variablen
+int    i
+int    h_Anz
+
+string RelName
+		,ObjKlasse
+		,ObjName
+
+pmproductmodule Quelle
+pmproductmodule Ziel
+pmproductrelation Relation
+
+/* ============================================= */
+/* Verarbeitung									  */
+/* ============================================= */
+
+Quelle = new pmproductmodule( this)
+
+//Ermitteln der Anzahl der Vorwärtsbeziehungen
+h_Anz = Quelle.ForwardRelationList.iLength
+
+for (i=0, i<h_Anz, i++)
+{
+	Relation = Null	
+
+	try
+	{
+		Relation  = Quelle.ForwardRelationList.GetAt( i )
+	}
+	catch(pmexception exc)
+	{
+	}	
+	
+	if (Relation != Null)
+	{
+		Ziel      = Relation.TargetProductModule
+		RelName   = Relation.sName
+		ObjKlasse = Ziel.sClassName
+		ObjName   = Ziel.sName
+  
+	  	if(ObjKlasse == OKLASSE_PLAUSIPARAMETERTYP)
+  		{
+   		rc = iInstanzErzeugen
+		  				[extParent = this
+						,sObjectClass = ObjKlasse 
+    					,sObjectName = ObjName 
+						,sRelName    = RelName
+						]
+	  	}
+	}
+} 
+		
+Res = RC_OK         
+    
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

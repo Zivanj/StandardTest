@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB0000005G00000AZZ" abstract="false" final="false" pmid="5G00000AZZ" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>msg_tech_SK_Extension</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="5EDHLM7GBH7KE4K7UPG4RTLMEM" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>classname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="U5T6HLAGFPHKU4PNAIVGKPQCPE" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>propertyname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="35KUPC99MRKTA45U8CLSR7MH4T" sortkey="0">
+    <pm:name>PK_msg_tech_SK_Extension</pm:name>
+    <pm:columns>
+      <pm:column>classname</pm:column>
+      <pm:column>propertyname</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkaufsprodukt_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkaufsprodukt_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkaufsprodukt_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PlausiParameterTyp</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Produkt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Elementarprodukt_LP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AdressTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkaufsprodukt_BASIS</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">MinPremiumVersionDate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ModelNr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InactiveAccRules</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MessageClassId</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MinTCVersionDate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SumAbsWert</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CurrentBMPercentage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_AdministrationCosts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_HandlingCosts</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Interest</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ReturnOnProduction</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_AcquisitionReduction</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_StartersDiscount</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_RetentionDiscount</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_LoyaltyDiscount</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AdministrationCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HandlingCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InterestFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PropositionCostsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ReturnOnProductionFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SupplementForDiscountsFactor</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Metropolitan</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InactiveConditions</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="5DHHIB7SJDPSG4700NLNUH0PT8" sortkey="50" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte</pm:namespace>
+  <pm:name>HistoryRootTyp</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">HistoryRootType (Hist)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">HistoryRootType (Hist)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT0000000J6F0000SPM">com::company::TechnischesSchema::Produktbausteintypen::HistoryRootTyp</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="5U1LV79A8DFLT4ED440DP3C2IK" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT0000000J6F0000SPM">com::company::TechnischesSchema::Produktbausteintypen::HistoryRootTyp</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC00000000R900000AM8">HistTmpl_ACHMEA_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC00000000UV30000T76">HistVrlg_BASIS</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

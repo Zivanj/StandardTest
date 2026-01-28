@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:variable xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="1912" final="false" guid="ZZZPM3VAR00000007GX0000SPM" isnullable="false" nrdims="0" pmid="7GX0000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Variablen</pm:namespace>
+  <pm:name>iUmbNeu</pm:name>
+  <pm:notice encoding="none"><![CDATA[Variable zur Belegung mit Formel
+cm_Umbenennen_nach_Neu
+]]></pm:notice>
+</pm:variable>

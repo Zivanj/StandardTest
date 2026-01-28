@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000LP00000SPB" abstract="false" final="false" pmid="LP00000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Tarifart_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="U04VF921IN6DK474G67BV9HQ01" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="4332NN3VRUIKA4B472E65OBRL2" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="56ECQEDIKT4C64RKFFOBLIPE2Q" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0LH8NET4CF15H42VO4C9KKP6NP" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="U63GH2EV2RAK144ENSL4H84PV9" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="S9HEQ9SGC70SG4DPF2JIFUI5F9" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="5OGAJ16V94P494D2481BKS61CR" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="1G2SOLHSU1DSM4VR0GH8IGEBTT" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="7JA6JK5MUBDKS43V9O16C1IHKQ" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="4MVVOULGD2KD145EKPGESRDRFG" sortkey="0">
+    <pm:name>PK_InTab_Az_Tarifart_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Tarifart
+Typ und Nummernbereich:
+E	30 000 - 39 999
+NUMC5
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>1001</pm:integerval>
+        <pm:integerval>1006</pm:integerval>
+        <pm:integerval>1008</pm:integerval>
+        <pm:integerval>1011</pm:integerval>
+        <pm:integerval>3004</pm:integerval>
+        <pm:integerval>5002</pm:integerval>
+        <pm:integerval>5004</pm:integerval>
+        <pm:integerval>9211</pm:integerval>
+        <pm:integerval>9431</pm:integerval>
+        <pm:integerval>9432</pm:integerval>
+        <pm:integerval>9911</pm:integerval>
+        <pm:integerval>9921</pm:integerval>
+        <pm:integerval>21000</pm:integerval>
+        <pm:integerval>21001</pm:integerval>
+        <pm:integerval>21003</pm:integerval>
+        <pm:integerval>21004</pm:integerval>
+        <pm:integerval>3660</pm:integerval>
+        <pm:integerval>3664</pm:integerval>
+        <pm:integerval>3661</pm:integerval>
+        <pm:integerval>3662</pm:integerval>
+        <pm:integerval>3663</pm:integerval>
+        <pm:integerval>3100</pm:integerval>
+        <pm:integerval>3103</pm:integerval>
+        <pm:integerval>3400</pm:integerval>
+        <pm:integerval>3401</pm:integerval>
+        <pm:integerval>3402</pm:integerval>
+        <pm:integerval>3403</pm:integerval>
+        <pm:integerval>3610</pm:integerval>
+        <pm:integerval>3611</pm:integerval>
+        <pm:integerval>3630</pm:integerval>
+        <pm:integerval>3640</pm:integerval>
+        <pm:integerval>3641</pm:integerval>
+        <pm:integerval>3670</pm:integerval>
+        <pm:integerval>3680</pm:integerval>
+        <pm:integerval>3690</pm:integerval>
+        <pm:integerval>3800</pm:integerval>
+        <pm:integerval>3801</pm:integerval>
+        <pm:integerval>3600</pm:integerval>
+        <pm:integerval>4000</pm:integerval>
+        <pm:integerval>4001</pm:integerval>
+        <pm:integerval>4002</pm:integerval>
+        <pm:integerval>4003</pm:integerval>
+        <pm:integerval>4004</pm:integerval>
+        <pm:integerval>4005</pm:integerval>
+        <pm:integerval>4006</pm:integerval>
+        <pm:integerval>4007</pm:integerval>
+        <pm:integerval>4008</pm:integerval>
+        <pm:integerval>4009</pm:integerval>
+        <pm:integerval>4010</pm:integerval>
+        <pm:integerval>4011</pm:integerval>
+        <pm:integerval>4012</pm:integerval>
+        <pm:integerval>4013</pm:integerval>
+        <pm:integerval>4014</pm:integerval>
+        <pm:integerval>4015</pm:integerval>
+        <pm:integerval>3420</pm:integerval>
+        <pm:integerval>3410</pm:integerval>
+        <pm:integerval>3230</pm:integerval>
+        <pm:integerval>3220</pm:integerval>
+        <pm:integerval>3210</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">nicht relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GemK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TFix</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TLst</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Erl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RisK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RenAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RenSof</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UZV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HRZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HeiV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prbfr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BuB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FLV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FdSpar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TZV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SGefAV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Grunddeckung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Fahrraddiebstahl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Gegenstände Kfz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Glasbruch</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Privathaftpflicht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Privathaftpflicht, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Invaliditaet</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Tod</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Rente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Tagegeld</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glas</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierhalterhaftpflicht, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Leitungswasser</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Sturm/Hagel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkehrsrechtschutz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtschutz, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reisegepäckversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebshaftpflichtversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betirebsunterbrechung ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IU-Platz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IU-Pauschal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Teilkasko</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vollkasko</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftpflicht</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Not Relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">OH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TFix</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PtBen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Completed</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risk</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deferred Annuity, Refund and Guarantee Period</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Immediate Annuity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Supl.Accident Ins.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SDAI</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Marriage Ins.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Waiver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ODSI CA</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ULI</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fund Saving</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SDB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">State Subsidized Pension Scheme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Basic Coverage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents/Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Bicycle Theft</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Vehicle</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Glass Breakage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personal Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personal Liability Insurance, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accident Disability</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accidental Death</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accident Annuity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Per Diem Accident Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bldg Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glass</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pet Owner's Liability / Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Storm/Hail</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Legal Insurance/Traffic Infractions</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Legal Expense Insurance, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Luggage Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial General Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial Bldg Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial Bldg Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comm. Bldg Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Burglary and Theft</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Burglary</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Burglary</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PA - Seat System</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PA Flat-Rate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Partially Comprehensive</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fully Comprehensive</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Niet relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GemV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TVast</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GedUitk</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bij leven</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RisK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RenPremGar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PensVerzDirect</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AVOV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ANPV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HuV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PremieVrijst</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AanvArbOngGelduitk</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FondsGemVerz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FdSpaar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AanvVerzBijOverl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">StaatGesteundePens</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, basisdekking</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, fietsdiefstal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, voorwerpen in motorrijtuig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, glasschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Persoonlijke aansprakelijkheidsverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Persoonlijke aansprakelijkheidsverzekering, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Invaliditeit door ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Overlijden door ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeidsongeschiktheidsuitkering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Daggeldvergoeding bij ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glas</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid voor dieren, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV storm/hagel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtsbijstand, verkeer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtsbijstand, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bagageverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële General Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Onderbreking Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Inbraak en diefstal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Inbraak</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Inbraak</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongevallen - Seat System</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongevallen Flat-Rate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gedeeltelijk Comprehensive</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Allesomvattend</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">nicht relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemischte Versicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemischte Vers. mit festem Auszahlungszeitpunkt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemischte Vers. mit Teilleistungen im Erlebensfall</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kapitalvers. auf den Erlebensfall mit Rückgewähr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risikokapitalvers. mit Umtauschrecht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aufgeschobene Rente, Rückgewähr und Garantiezeit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sofortbeginnende Rentenversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfallzusatzversicherung (UZV)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hinterbliebenenrentenzusatzversicherung (HRZ)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Heiratsversicherung (HeiV)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Prämienbefreiung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berufsunfähigkeitszusatzvers. Barrente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fonds Gemischte Versicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fonds Spar Versicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Todesfallzusatzversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Staatl. geförderte Altersvorsorge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Grunddeckung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Fahrraddiebstahl</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Gegenstände Kfz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haushalt Glasbruch</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Privathaftpflicht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Privathaftpflicht, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Invaliditaet</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Tod</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Rente</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Unfall Tagegeld</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebäude LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glas</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tierhalterhaftpflicht, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Leitungswasser</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VGV Sturm/Hagel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verkehrsrechtschutz</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtschutz, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Reisegepäckversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebshaftpflichtversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung Feuer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung Sturm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsgebäude LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebsunterbrechung LW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betriebseinrichtung ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vorräte ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Betirebsunterbrechung ED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Insassen Unfall-Platzsystem</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Insassen Unfall-Pauschalsystem</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Teilkaskoversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vollkaskoversicherung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haftpflichtversicherung</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Not Relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Combined Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Combined Insurance with Fixed Disbursement Date</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Combined Insurance with Partial Endowment Benefits</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Endowment Insurance with Premium Refund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risk Capital Insurance with Conversion Right</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Deferred Annuity with Prem.Refund & Guar.Period]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Annuity Insurance with Immed.Effect</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Supplementary Accident Insurance (SAI)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Survivor's Supplementary Pension Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Marriage Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premium Waiver</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Occup. Disability Suppl. Ins. Cash Annuity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fund Combined Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UL Pure Endowment</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Supplementary Death Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">State Subsidized Pension Scheme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Basic Coverage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents/Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Bicycle Theft</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Vehicle</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Home Contents Glass Breakage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personal Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Personal Liability Insurance, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accident Disability</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accidental Death</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Accident Annuity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Per Diem Accident Benefit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Building Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bldg Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glass</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pet Owner's Liability / Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CBI Storm/Hail</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Legal Insurance/Traffic Infractions</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Legal Expense Insurance, Multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Luggage Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial General Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial Bldg Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Fire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commercial Bldg Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comm. Bldg Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Water Damage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Plant and Equipment Burglary and Theft</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventory Burglary</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Interruption Burglary</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Passenger Accident - Seat System</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Passenger Accident Flat-Rate System</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Partially Comprehensive Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fully Comprehensive Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liability Insurance</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Niet relevant</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemengde verzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemengde verzekering met vast uitbetalingstijdstip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gemengde verzekering met gedeeltelijke uitkering bij leven</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kapitaalverzekering bij leven met premierestitutie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Risicokapitaalverzekering met conversierecht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uitgestelde rente, premierestitutie en garantietijd</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Direct ingaande pensioenverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aanvullende ongevallenverzekering (AVOV)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aanvullende nabestaandenpensioenverzekering (ANPV)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huwelijksverzekering (HuV)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Premievrijstelling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aanvullende arbeidsongeschiktheidsverzekering gelduitkering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fonds gemengde verzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fonds spaarverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aanvullende verzekering bij overlijden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Door de staat gesteunde pensioenvoorziening</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, basisdekking</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, fietsdiefstal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, voorwerpen in motorrijtuig</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Huishouden, glasschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Persoonlijke aansprakelijkheidsverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Persoonlijke aansprakelijkheidsverzekering, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Invaliditeit door ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Overlijden door ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arbeidsongeschiktheidsuitkering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Daggeldvergoeding bij ongeval</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gebouw, waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Glas</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid voor dieren, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GOV storm/hagel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtsbijstand, verkeer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rechtsbijstand, multiline</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bagageverzekering</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële General Liability Insurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Business Onderbreking Storm</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Commerciële Gebouw Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Waterschade</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Facility Inbraak en diefstal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Inventaris Inbraak</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bedrijfsonderbreking Inbraak</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongevallen - Seat System</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ongevallen Flat-Rate</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gedeeltelijk Comprehensive</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Allesomvattend</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aansprakelijkheid</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

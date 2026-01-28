@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000IB51000AM8" isnullable="false" nrdims="0" pmid="IB51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Recalculation</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+#include "incKeysInterfaceMethods_ACHMEA.h"
+
+// External Paths
+extern path pathSProd
+extern path pathSProdOld
+
+// External Objects
+extern object extRoot
+extern object extSProdOld
+
+// Methods
+data int vtm_Recalculation
+data int vtm_UMBENENNEN_fuer_FSPM
+
+// Internal Objects
+object objSProd
+object objSProdOld
+
+// Attributes
+uses productmodule ( "HistoryRootTyp", "Hist_FSPM_Standard" )
+
+// Internal Variables
+
+
+/*=============================================================================*/
+/* PROCESSING																   */
+/*=============================================================================*/
+
+// Mark this method as interface method
+interface_method = TRUE
+
+if ( bErrorFound == FALSE ) {
+
+	// Set method key			
+	this.Methodenschluessel = METHOD_RECALCULATION
+	this.MethodenschluesselOriginal = METHOD_RECALCULATION
+
+	// Get new state
+	loop ( this, pathSProd ) {
+		objSProd = pathSProd
+	}
+	
+	// Get old state
+	loop ( this, pathSProdOld ) {
+		objSProdOld = pathSProdOld
+	}
+	
+	// Further processing on level of sales product
+	rc = objSProd.vtm_Recalculation.exec
+						[ extRoot = this,
+						  extSProdOld = objSProdOld	]
+	
+	// Adjust names of instances and remove old state
+	if ( this.UmbenennenUnterdruecken == 0 ) {
+		rc = this.vtm_UMBENENNEN_fuer_FSPM.exec
+	}					  
+						  
+	Res = RC_OK
+	
+} else {
+
+	Res = RC_NOK
+
+}
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

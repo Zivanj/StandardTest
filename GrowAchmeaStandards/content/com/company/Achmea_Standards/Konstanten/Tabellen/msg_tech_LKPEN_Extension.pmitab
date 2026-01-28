@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000UZN0000AMA" abstract="false" final="false" pmid="UZN0000AMA" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>msg_tech_LKPEN_Extension</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="4NM155V0R75KE4AHFSB1UP8MV6" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>classname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="S81848OTCRJD94HUDLPUJF205R" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>propertyname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="0PU49EC72D3CN4H0RVJ6FTQ8KK" sortkey="0">
+    <pm:name>PK_msg_tech_LKPEN_Extension</pm:name>
+    <pm:columns>
+      <pm:column>classname</pm:column>
+      <pm:column>propertyname</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

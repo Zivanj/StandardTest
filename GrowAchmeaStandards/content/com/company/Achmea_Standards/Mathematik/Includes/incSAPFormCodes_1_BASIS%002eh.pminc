@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000JCC0000AM9" pmid="JCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormCodes_1_BASIS.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[  
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_FORM_CODES_1_BASIS_H_INCLUDED
+#define INC_FORM_CODES_1_BASIS_H_INCLUDED
+
+/*====================================================================*/
+/* Ja/Nein												                    */
+/*====================================================================*/
+
+#define JA                 "J"
+#define NEIN             "N"
+
+/*====================================================================*/
+/* Geschlecht								                              */
+/*====================================================================*/
+
+#define WEIBLICH		1
+#define MAENNLICH	2
+#define SAECHLICH	3
+
+/*====================================================================*/
+/* Zuschlagsarten                */
+/*====================================================================*/
+
+#define ZUSCHLAG     1 
+#define NACHLASS     2
+
+/*====================================================================*/
+/* Berechnungsart Zuschlaege        */ 
+/*====================================================================*/
+
+#define FESTBETRAG                                          1  // Festbetrag wird zur Zeit nicht benutzt
+#define PROZENT                                                 2
+#define PROMILLE                                                3
+
+/*====================================================================*/
+/* Steuerbefreiung                                                    */                                      
+/*====================================================================*/
+
+#define KEINE_ANGABE  			0
+#define STEUER_BEFREIT	 		1
+#define STEUER_PFLICHTIG	 	3
+#define STEUER_BEFREIT_DURCH_LEISTUNGSFALL  4
+#define STEUER_BEFREIT_DURCH_BETEILIGUNG		5
+
+/*====================================================================*/
+/* Index für Steuersatz bzw. Steuerbetrag-Tafel                                                    */                                      
+/*====================================================================*/
+#define IDX_UNTERGRENZE	 	0
+#define IDX_OBERGRENZE			1
+#define IDX_STEUERSATZ			2
+#define IDX_STEUERBETRAG		2
+
+/* Unbedingt anpassen, falls weitere Spalten hinzugefügt werden*/
+#define ANZ_SPALTEN_STEUERABGABENSATZ	3
+#define ANZ_SPALTEN_STEUERABGABENBETRAG	3
+/*====================================================================*/
+/* Versicherungstechnischer Status                   */
+/*====================================================================*/
+
+#define TECHN_STATUS_AKTIV                                   1
+#define TECHN_STATUS_STORNIERT                               2
+#define TECHN_STATUS_RUHEND                                  3
+
+/*====================================================================*/
+/* Root.VertragsNr                 */
+/*====================================================================*/
+
+#define VERTRAGSNR_NICHT_BELEGT												"-1"
+
+/*====================================================================*/
+/* Vertragsstatus                  */
+/*====================================================================*/
+
+// LV-Status Sparte LEBEN
+#define LVSTAT_REKURSIV                                          -1 // Wert fehlt in der LVStatus-Tabelle!
+//Der LVStatus 0 darf nicht verwendet werden
+#define LVSTAT_BEITRAGSPFLICHTIG                                  1
+#define LVSTAT_BEITRAGSBEFREIT_DURCH_LEISTUNG                     2
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG_GARANTIEZEIT       3
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG_LEIBRENTE          4
+#define LVSTAT_BEITRAGSFREI_BONUS                                 5
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG_BONUS              6
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG                    7
+#define LVSTAT_BEITRAGSFREI_LEISTUNG_AUSGEZAHLTE_GARANTIE_BONUS   8
+#define LVSTAT_BEITRAGSFREI_LEISTUNG_AUSGEZAHLTE_GARANTIE         9
+#define LVSTAT_BEITRAGSFREI_EINMALBEITRAG                        10
+#define LVSTAT_BEITRAGSFREI_TARIFLICH                            11
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG_GARANTIE_BONUS    12
+#define LVSTAT_BEITRAGSFREI_LEISTUNGSPFLICHTIG_LEIBRENTE_BONUS   13
+#define LVSTAT_BEITRAGSFREI_LEISTUNG_TODVP_GARANTIE	           14			  
+#define LVSTAT_BEITRAGSFREI_LEISTUNG_TODVP_GARANTIE_BONUS        15
+#define LVSTAT_BEITRAGSFREI_NACH_LEISTUNGSFALL                   16
+#define LVSTAT_VERSICHERUNGSDAUER                                17
+#define LVSTAT_BEITRAGSPFLICHTIG_LEISTUNGSPFLICHTIG				  18
+#define LVSTAT_BEITRAGSFREI_UMWANDLUNG                           19
+
+#define LVSTAT_NICHTBELEGT                                       99
+
+// Unbedingt beachten: Bei Definition eines neuen LV-Status in LEBEN ist 
+//	 ANZ_GUELTIGER_LVSTATUS um eins zu erhoehen
+#define ANZ_GUELTIGER_LVSTATUS		20
+//
+
+// LV-Status Sparte SHU
+#define LVSTAT_ROHBAU                                                   30
+#define LVSTAT_ROHBAU_KOSTENFREI                        31
+#define LVSTAT_VOR_BEGINN                        32
+
+/*====================================================================*/
+/* BeitragsArt
+/*====================================================================*/
+
+#define BTRART_NICHT_RELEVANT								0
+#define BTRART_LAUFEND                                     1
+#define BTRART_EINMALIG                                    2
+#define BTRART_EINLOESUNG 								3
+#define BTRART_ZUZAHLUNG 									4
+#define BTRART_FOERDERUNG   								6
+#define BTRART_ANRECHNUNG  7
+
+/*====================================================================*/
+/* Schnittstellenmethodenschluessel                                   */      
+/*====================================================================*/
+
+// Neugeschaeft/Migration
+#define SNTMETHODE_TARIFIERUNG											110010
+#define SNTMETHODE_MIGRATION												110020
+
+// Planmaessige Methoden
+#define SNTMETHODE_ABLAUF_AUFSCHUBZEIT									210010
+#define SNTMETHODE_ABLAUF_GARANTIEZEIT									210020
+#define SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG							210030
+#define SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG								210040
+#define SNTMETHODE_ABLAUF_RISIKOZUSCHLAG								210050
+#define SNTMETHODE_ABLAUF_VERTRAG										210060
+#define SNTMETHODE_ABLAUF_VERTRAGSTEIL									210070
+#define SNTMETHODE_DYNAMIK													210090
+#define SNTMETHODE_FONDS_AUSSCHUETTUNG									210100
+#define SNTMETHODE_FONDS_UMSTELLUNG										210110
+#define SNTMETHODE_VERANLAGUNG											210120
+#define SNTMETHODE_NEUE_ANPASSUNGSSTUFE								210130
+#define SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE				210140
+#define SNTMETHODE_TEILAUSZAHLUNG										210160
+#define SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG						210170
+#define SNTMETHODE_AENDERUNG_VERTRAG      					     	210200
+#define SNTMETHODE_PRAEMIENZERLEGUNG									210240
+#define SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG				210250
+#define SNTMETHODE_BILANZWERTE											210260
+#define SNTMETHODE_FONDS_VERZINSUNG										210290
+#define SNTMETHODE_INITIALISIERUNG_VERTRAG							210300
+#define SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG						210310
+#define SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG							210330
+#define SNTMETHODE_ABRECHNUNG_MELDEWERTE                       210340
+
+// Ausserplanmaessige Methoden
+#define SNTMETHODE_AENDERUNG_LEISTUNG									310010
+#define SNTMETHODE_BEITRAGSFREISTELLUNG								310020
+#define SNTMETHODE_ERHOEHUNG												310030
+#define SNTMETHODE_INKASSONEU												310040
+#define SNTMETHODE_KONSTRUKTIVNEU										310050
+#define SNTMETHODE_POLICENDARLEHEN										310060
+#define SNTMETHODE_SHIFT_SWITCH											310070
+#define SNTMETHODE_TEILRUECKKAUF											310080
+#define SNTMETHODE_UEBVERWENDUNG_AENDERN								310090
+#define SNTMETHODE_WIEDERINKRAFTSETZUNG								310100
+#define SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG				310110
+#define SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE				   310120
+#define SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER 	310130
+#define SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER		310140
+#define SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL							310150
+#define SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL							310160
+#define SNTMETHODE_ENTNAHME_GEBUEHREN							      310170
+#define SNTMETHODE_ABRECHNUNG					               		310180
+#define SNTMETHODE_ANRECHNUNG												310190
+#define SNTMETHODE_AENDERUNG_OPTIONSPHASE								310200
+#define SNTMETHODE_VERLAENGERUNGSOPTION								310210
+#define SNTMEHTODE_ANPASSUNG_AENDERN								310220
+ 
+// Leistung
+#define SNTMETHODE_BERUFSUNFAEHIGKEIT									410010
+#define SNTMETHODE_HEIRAT													410020
+#define SNTMETHODE_REAKTIVIERUNG											410030
+#define SNTMETHODE_RUECKKAUF												410040
+#define SNTMETHODE_TOD														410050
+#define SNTMETHODE_UNFALLTOD												410060
+#define SNTMETHODE_ARBEITSUNFAEHIGKEIT                         410070
+#define SNTMETHODE_BABYKARENZ                                  410080
+#define SNTMETHODE_FAMILIENHOSPIZKARENZ                        410090
+#define SNTMETHODE_LEISTUNGSBERECHNUNG		                     410100
+#define SNTMETHODE_STORNO										410110
+
+// Auskunft
+#define SNTMETHODE_AUSKUNFT												510010
+#define SNTMETHODE_FONDS_WERTSTAND										510030
+#define SNTMETHODE_MODELLRECHNUNG										510040
+#define SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME						510050
+#define SNTMETHODE_WERTSTAND												510060
+#define TIM_INTEREST											510070
+
+// Plausis
+#define SNTMETHODE_PLAUSIS_CHECK											600000
+
+/*==================================================================*/
+/* Status der versicherten Person                                   */
+/*==================================================================*/
+
+#define STATUS_VP_TOT		0
+#define STATUS_VP_LEBEND	1
+
+/*==================================================================*/
+/* Steuerarten fuer SHU und KFZ                                      */
+/*==================================================================*/
+
+#define STEUERART_VERSICHERUNGSSTEUER    	1
+#define STEUERART_FEUERSCHUTZSTEUER       2
+#define STEUERART_MOTORSTEUER             3
+#define STEUERART_KAPITALERTRAGSSTEUER  	30
+
+/*==================================================================*/
+/* Fortschreibungsart                                               */
+/*==================================================================*/
+
+#define FORTSCHREIBUNG_FIKTIV		1
+#define FORTSCHREIBUNG_REAL		2
+
+/*==================================================================*/
+/* Ebene der Hauptachse                                              */
+/*==================================================================*/
+#define EBENE_PRODUKT   3
+#define EBENE_ELEMTARPRODUKTBUENDEL 4
+#define EBENE_ELEMENTARPRODUKT   5
+#define EBENE_ELEMENTARPRODUKTSCHEIBE  6 
+#define EBENE_DECKUNGSTYP 7
+
+/*==================================================================*/
+/* KnzSchnittstelleCheck                                         */
+/*==================================================================*/
+#define SCHNITTSTELLE_CHECK_KEIN 0
+#define SCHNITTSTELLE_CHECK_AUTO 1
+#define SCHNITTSTELLE_CHECK_ERROR 2
+
+/*==================================================================*/
+/* Objektarten						                                      */
+/*==================================================================*/
+#define OBJEKTTYP_HAUSRAT         1
+#define OBJEKTTYP_GEBAEUDE        2
+#define OBJEKTTYP_TIER		       3
+#define OBJEKTTYP_KFZ		       4
+#define OBJEKTTYP_PERSON 	       5
+#define OBJEKTTYP_DEKLARATON      6
+#define OBJEKTTYP_VORRAETE        7
+#define OBJEKTTYP_LANDW_INVENTAR  8
+
+/*==================================================================*/
+/* Schnittstellendefinition                                       */
+/*==================================================================*/
+#define ENTITAET_ERZEUGEN 0
+#define ENTITAET_LOESCHEN 1
+
+/*==================================================================*/
+/* Highdate und Lowdate                                       */
+/*==================================================================*/
+#define HIGH_DATE				"99901231"
+#define LOW_DATE				"18000101"
+#define PM_HIGH_DATE            "29980322"
+
+/*==================================================================*/
+/* Abhaengigkeitstyp                                       */
+/*==================================================================*/
+#define BUENDELRABATT				1
+#define BUENDELRABATT_MANUELL		2
+/*====================================================================*/
+
+/*==================================================================*/
+/* ZuNaTyp                                       */
+/*==================================================================*/
+#define BUENDELUNGSRABATT				4
+/*====================================================================*/
+
+
+#endif /* #ifndef INC_FORM_CODES_1_BASIS_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

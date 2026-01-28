@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="5LV4CSN6T21LE4FDFJVQ3OG6GG" sortkey="330" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten</pm:namespace>
+  <pm:name>Tabellen</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tabellen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tables</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Tabellen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tables</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>externaltable</pm:objecttype>
+    <pm:objecttype>internaltable</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="ZZZPM3FOL0000000V0H0000T76" sortkey="0" structural="false">
+      <pm:name>Customer</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL0000000X0H0000T76" sortkey="0" structural="false">
+          <pm:name>Az</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3ITAB000000FYZ0000AM8">InTab_Az_DistributionChannel</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000HJ51000AM8">InTab_Az_ExtensionType</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000WR00000SPB">InTab_Az_Klauselart_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000GYG0000T76">InTab_Az_Label</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000K542000AM8">InTab_Az_PricingStrategyIndicator</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000ZFI0000AM8">InTab_Az_Selectability</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000E451000AM8" sortkey="0" structural="false">
+          <pm:name>Messages</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3ITAB000000F451000AM8">InTab_Messages_Error_ACHMEA</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects/>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL00000005W30000T76" sortkey="0" structural="false">
+      <pm:name>InTab</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL00000003W30000T76" sortkey="0" structural="false">
+          <pm:name>Az</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3ITAB0000008Z30000T76">InTab_Az_Abhaengigkeitstyp_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000007W30000T76">InTab_Az_Beitragsart_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000ZZG0000T76">InTab_Az_Beruf_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000WQ50000T76">InTab_Az_Boolean_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000GX30000T76">InTab_Az_Eintrittsalterberechnungsmethode_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000004W30000T76">InTab_Az_Fortschreibungsart_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB00000000H0000T76">InTab_Az_Geschlecht_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000008W30000T76">InTab_Az_KnzSchnittstelleCheck_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000RXA0000SPB">InTab_Az_LVSTATUS_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000C5K0000AM8">InTab_Az_LimitAngabe_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000D5K0000AM8">InTab_Az_LimitBezug_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000E5K0000AM8">InTab_Az_LimitTyp_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000BW30000T76">InTab_Az_Methodenschluessel_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000006Y30000T76">InTab_Az_Objekttyp_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000MW30000T76">InTab_Az_PRT_Variante_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000CW30000T76">InTab_Az_Risikoart_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000009W30000T76">InTab_Az_ShiftSwitch_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000NW30000T76">InTab_Az_Sparte_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000XX30000T76">InTab_Az_SteuerArt_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000YW30000T76">InTab_Az_Steuerbefreiung_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000LP00000SPB">InTab_Az_Tarifart_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000UW30000T76">InTab_Az_TechnischerStatus_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000P2L1000SPM">InTab_Az_Verlaengerungsvariante_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB0000000FI0000AM8">InTab_Az_Vertriebsweg_BASIS_C</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000AW30000T76">InTab_Az_Verzinsung_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000A1H0000SPM">InTab_Az_Waehrung_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000IX30000T76">InTab_Az_Zahlungsrhythmus_BASIS_S</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000NX30000T76">InTab_Az_ZuNaArt_BASIS_E</pm:object>
+            <pm:object guid="ZZZPM3ITAB000000PD00000SPM">InTab_Az_ZuNa_BerechnungsArt_BASIS_E</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL00000007YG0000T76" sortkey="0" structural="false">
+          <pm:name>Sonstige</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3ITAB000000U140000T76">InTab_Benutzergruppe_BASIS_E</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects/>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL00000002W30000T76" sortkey="0" structural="false">
+      <pm:name>Sonstige</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3ITAB0000005YG0000T76">msg_tech</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000SI60000AM9">msg_tech_BDS_Comm_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000HE10000T77">msg_tech_BDS_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000UZN0000AMA">msg_tech_LKPEN_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB00000080A0000AMA">msg_tech_LK_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB000000I900000AZZ">msg_tech_SKB_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB0000009C10000AMA">msg_tech_SKP_Extension</pm:object>
+        <pm:object guid="ZZZPM3ITAB0000005G00000AZZ">msg_tech_SK_Extension</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

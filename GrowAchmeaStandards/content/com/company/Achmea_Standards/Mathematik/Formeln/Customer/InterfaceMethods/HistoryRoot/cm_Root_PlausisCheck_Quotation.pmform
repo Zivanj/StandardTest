@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000X900000AM8" isnullable="false" nrdims="0" pmid="X900000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_PlausisCheck_Quotation</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="ignore"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h" 
+
+//Externe Pfade
+extern path pathVkprodNeu
+
+//Externe Objekte
+extern object extRoot 
+
+//Versicherungstechnische Methoden
+data int vtm_Plausis_Check
+
+//Attribute Merkmale
+data int Methodenschluessel
+
+//Objekte
+
+//interne Variablen
+string lsBenutzergruppe[*]
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{
+
+	this.Methodenschluessel = SNTMETHODE_PLAUSIS_CHECK
+	
+	lsBenutzergruppe = InTab_Benutzergruppe_BASIS_E.Benutzergruppe[ Benutzergruppe == sBenutzergruppe ]
+	if ( Arraysize ( lsBenutzergruppe ) == 0 ) 
+	{
+		Error_fachlich = TRUE
+		sNachrichtenklasse = MSG_ERRORCLASS
+		ErrorVar1 = sBenutzergruppe
+		error.text = BASIS_TEXT_ERR_BENUTZERGRUPPE_FALSCH
+		error( BASIS_FORM_ERR_BENUTZERGRUPPE_FALSCH )
+		return( BASIS_FORM_ERR_BENUTZERGRUPPE_FALSCH )
+	}
+
+	loop(this, pathVkprodNeu)
+	{
+		rc = pathVkprodNeu.vtm_Plausis_Check.exec 
+				[extRoot = this
+				,sPruefgruppe    = sPruefgruppe
+      			,sRegelgruppe    = sRegelgruppe
+      			,sBenutzergruppe = sBenutzergruppe,
+      			bQuoteSelectionEnabled = true,
+      			bAcceptanceCheck = false
+				]
+	}
+ Res = RC_OK
+}
+else
+	Res = RC_NOK
+
+#import "incStdMethodsBottom_ACHMEA.h"
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

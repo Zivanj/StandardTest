@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="ZZZPM3CC00000000DZ30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::HistoryRootTyp</pm:namespace>
+  <pm:name>Hist_FSPM_Standard</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000FZ30000T76" pmid="FZ30000T76">
+      <pm:name>Hist_FSPM_Standard</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="ZZZPM3PM00000000DZ30000T76" pmid="DZ30000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>Hist_FSPM_Standard</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000R900000AM8">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::HistoryRootTyp::HistTmpl_ACHMEA_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000J6F0000SPM">com::company::TechnischesSchema::Produktbausteintypen::HistoryRootTyp</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="string" final="false" guid="TI79MRFE041C34QU6Q48100R2U" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS_ROOT_1</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>Hist_FSPM_Standard</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000FCC0000AM9" pmid="FCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormErrorCodes_1_BASIS.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_FORM_ERROR_CODES_1_BASIS_INCLUDED
+#define INC_FORM_ERROR_CODES_1_BASIS_INCLUDED
+
+/*====================================================================*/
+/* insert exceptioncodes set by your formulas                         */
+/*====================================================================*/
+// Nummernkreis für Fehlernummern BASIS: 500-599; 990-999
+
+
+
+
+#define BASIS_FORM_ERR_DAUER_NEGATIV                     503
+#define BASIS_TEXT_ERR_DAUER_NEGATIV                     "Dauer negativ von: %1 bis %2 :"
+
+#define BASIS_FORM_ERR_ZUSCHLAGSART_FALSCH               504
+#define BASIS_TEXT_ERR_ZUSCHLAGSART_FALSCH               "Zuschlagsart falsch in %1 Zuschlagsart: %2"
+
+
+#define BASIS_FORM_ERR_METHODE_NICHT_UEBERSCHRIEBEN      507
+#define BASIS_TEXT_ERR_METHODE_NICHT_UEBERSCHRIEBEN      "Methode nicht ueberschrieben an: %1"
+
+#define BASIS_FORM_ERR_ZAHLUNGSRHYTHMUS                  508
+#define BASIS_TEXT_ERR_ZAHLUNGSRHYTHMUS                  "Zahlungsrhythmus %1 ist unzulaessig"
+
+#define BASIS_FORM_ERR_INSTANZ_ERZEUGUNG                 509
+#define BASIS_TEXT_ERR_INSTANZ_ERZEUGUNG                 "Instanz von Objekt %1 vom Typ %2 nicht erzeugbar"
+
+#define BASIS_FORM_ERR_INSTANZ_LOESCHEN                  510
+#define BASIS_TEXT_ERR_INSTANZ_LOESCHEN                  "Instanz von Objekt %1 vom Typ %2 konnte nicht gelöscht werden"
+
+#define BASIS_FORM_ERR_AENDERUNGSDATUM_UNGLEICH_BEGINN   511
+#define BASIS_TEXT_ERR_AENDERUNGSDATUM_UNGLEICH_BEGINN   "Neugeschaeft: Das Aenderungsdatum (%2) stimmt nicht mit dem Vertragsbeginn (%3) ueberein"
+
+#define BASIS_FORM_ERR_BENUTZERGRUPPE_FALSCH             512
+#define BASIS_TEXT_ERR_BENUTZERGRUPPE_FALSCH             "Die Benutzergruppe %1 ist im msg.PM nicht bekannt."
+
+#define BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN     513
+#define BASIS_TEXT_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN     "Der Vertrag mit der Vertragsnummer %1 konnte nicht gefunden werden."
+
+#define BASIS_FORM_ERR_PRAEMIENSTEUEROBJEKT_NICHT_GEFUNDEN		514
+#define BASIS_TEXT_ERR_PRAEMIENSTEUEROBJEKT_NICHT_GEFUNDEN	  "PraemienSteuer-Objekt auf Elp-Ebene fehlt."
+
+
+#define BASIS_FORM_ERR_EIGENSCHAFT_KAPITALBILDEND_NICHT_GEFUNDEN    516
+#define BASIS_TEXT_ERR_EIGENSCHAFT_KAPITALBILDEND_NICHT_GEFUNDEN 	  "Eigenschaft Kapitalbildend fuer Land/Elementarprodukt nicht gefunden."
+
+#define BASIS_FORM_ERR_STEUERBEFREIUNG_UNZULAESSIG			517
+#define BASIS_TEXT_ERR_STEUERBEFREIUNG_UNZULAESSIG 		"Die Belegung 0 für die Steuerabgabenbefreiung ist nicht zulässig."
+
+#define BASIS_FORM_ERR_MERKMALSFUNKTION_NICHT_UEBERSCHRIEBEN	    518
+#define BASIS_TEXT_ERR_MERKMALSFUNKTION_NICHT_UEBERSCHRIEBEN       "Merkmalsfunktion nicht ueberschrieben an (%1)."
+
+//Schnittstellenprüfung
+#define BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_IN  		519
+#define BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_IN 		"In Methode %1 dürfen Objekte der Klasse %2 nicht auf Ebene %3 vorhanden sein."
+
+#define BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_KEIN_EINTRAG 520
+#define BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_KEIN_EINTRAG "Keinen Eintrag zur Methode %1 , Klasse %2 , Ebene %3 in Tabelle %4 vorhanden."
+
+#define BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_KEINE_TABELLE	521
+#define BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_KEINE_TABELLE "Keine Schnittstellendefinition zur Methode %1 vorhanden."
+
+#define BASIS_FORM_ERR_KEIN_HAUPTACHSENOBJEKT	522
+#define BASIS_TEXT_ERR_KEIN_HAUPTACHSENOBJEKT "Die Klasse %1 ist kein Element der Hauptachse."
+
+#define BASIS_FORM_ERR_SCHNITTSTELLENPRUEFUNG_OUT 	523
+#define BASIS_TEXT_ERR_SCHNITTSTELLENPRUEFUNG_OUT "In Methode %1 dürfen Objekte der Klasse %2 nicht auf Ebene %3 gelöscht/angelegt werden."
+
+
+/* Allgemeine Fehlermeldung, falls nicht die erwartete Anzahl an
+	Zeilen aus einer Tabelle selektiert worden ist. */
+#define BASIS_FORM_ERR_TABELLENSELEKTION 525
+#define BASIS_TEXT_ERR_TABELLENSELEKTION "Aus Tabelle %1 wurde unerwartete Anzahl von Zeilen (%2) selektiert (Schlüssel %3, %4)."
+
+
+//Fehlende Bemessungsgrundlagen; Nummer darf nicht geändert werden!
+#define BASIS_FORM_ERR_FEHLENDE_BEMESSUNGSGRUNDLAGEN  998
+#define BASIS_TEXT_ERR_FEHLENDE_BEMESSUNGSGRUNDLAGEN "Bemessungsgrundlagen zu diesem Datum nicht vorhanden"
+
+//Allgemeiner Fehler
+#define BASIS_FORM_ERR_TECHNISCHERFEHLER    999
+#define BASIS_TEXT_ERR_TECHNISCHERFEHLER    "Technischer Fehler msg.pm: %1"
+
+#endif ]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

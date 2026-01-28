@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:variable xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1912" final="false" guid="ZZZPM3VAR0000000L0H0000T76" isnullable="false" nrdims="0" pmid="L0H0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Variablen</pm:namespace>
+  <pm:name>fDistributionLabelFactor</pm:name>
+</pm:variable>

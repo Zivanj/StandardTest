@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000VW30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarprodukt</pm:namespace>
+  <pm:name>ElpVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000XW30000T76" pmid="XW30000T76">
+      <pm:name>ElpVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000VW30000T76" pmid="VW30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>ElpVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT00000006Y90000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarprodukt</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="O1SE58K5L7JCM4AAUD7B92S0GP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AblaufdatumArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = gemaess Leistungsende der Hauptversicherung]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="P792GR8OUH5LM42F854F36I08F" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AnpassungsEinschluss</pm:name>
+              <pm:notice encoding="none"><![CDATA[Dient zur Steuerung des automatischen Einschlusses von 
+Anpassungen abhägig vom Prämientyp
+
+Ausprägungen: 
+
+0 = nicht relevant
+1 = Anpassungen bei Einmalprämie und bei laufender Prämie zulässig
+2 = Anpassungen nur bei Einmalprämie zulässig
+3 = Anpassungen nur bei laufender Prämie zulässig]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>3</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="R15CVP9K45S4E4CN4L11BFLOC7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AnzahlVO</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = kein VO zu hinterlegen
+2 = genau ein VO zu hinterlegen
+3 = beliebig viele VO zu hinterlegen]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2RFGPR01CCL5S4AMT04J4B8ABK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>BeitragszahlungsdauerArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[1 = Benutzerdefiniert
+2 = Vertragsteilende
+3 = Beitragszahlungsende Vertrag
+4 = Beitragszahlungsende HV
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>1</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>4</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>102</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>104</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="6LK72R4016TS2455464NVAVK30" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Description</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut „Bezeichnung" definiert den fachlichen Namen des Produktbausteins
+     und ist maximal 50 Zeichen lang. 
+     Bei jedem Produktbaustein muss dieses Attribut vorhanden und gefüllt sein. 
+     Der Name erscheint in der FS-PM-Benutzeroberfläche.
+   
+msg.PM / FSPM-Schnittstelle
+      Das Attribut "Bezeichnung" wird nicht gemappt und nicht persistiert.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="PC70FI8OAGNC44K5U8Q2Q4U9H3" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>EinmalpraemieZulaessigkeit</pm:name>
+              <pm:notice encoding="none"><![CDATA[Dient zur Steuerung, ob der Vertragsteil gegen
+Einmalprämie in einem Vertrag mit lfd. Prämie 
+zulässig ist
+
+Ausprägungen:
+
+0 =nicht relevant
+1 = Einmalprämie in Vertrag mit lfd. Prämie erlaubt]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0BERN73DDGL4M4V6OAJBL2L7A2" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>EndalterErmittlung</pm:name>
+              <pm:notice encoding="none"><![CDATA[Falls der Wert "3" verwendet wird, wird der Vorgabewert aus dem Merkmal "Endalter" verwendet.
+0 = nicht relevant
+1 = benutzerdefiniert
+2 = aus Versicherungsende
+3 = vorgegeben]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2ULSRH4UOURLO4ANFDAEKMBFDD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ErlaubtSubstitution</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">SubstitutionAllowed</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">ErlaubtSubstitution</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The attribute controls whether coverage is permitted to go into substitution phase
+Values:
+0 = Substitution not allowed
+1 = Substitution allowed]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="6AHRNLRCISBTG4F5MFCU5J8M8U" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>HatDeckungsVariante</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nein
+1 = ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UU5DJPOA74EC8415Q73VA5P3AM" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>HatFondsAnlage</pm:name>
+              <pm:notice encoding="none"><![CDATA[Kennzeichen, ob das Produkt Fonds enthält. Bei Ausprägung "2" hängt es von der Überschussverwendungsart ab. In diesem
+Fall wird vom Bestand auf das Merkmal "Ueberschusssystem_bpfl" bzw. auf "Uberschusssystem_prf" oder 
+"UeberschussystemRenten" ob Überschusssystem Fonds vorliegt.
+geprüft.
+0 = Nein
+1 = Ja
+2 = vertragsteilabhängig]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="TMQT26A9L2C5U4I17PLKUJ0D73" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">IdentificationAttr</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2HU8JIUQ2QK5B44K1NHI5HVR9D" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>IstHauptversicherung</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = Nein
+1 = Ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="022RKDG8U7DS44G410MAEKUN3K" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>IstPraemienbefreiung</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = Nein
+1=Ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="Q3HBG9PN49N544GIBA84ROLLVL" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>IstRohbauVersicherung</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = Nein
+1 = Ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="086R2C8K7HSL14PQ1KMG8GU8C6" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ShortDescription</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut "KurzBezeichnung" definiert einen fachlichen Kurzbezeichner, der
+     den Produktbaustein über alle Produktbausteine eindeutig identifiziert.
+
+Verwendung
+     Dieses Attribut muss an allen R/3-relevanten Bausteinen vorhanden sein. 
+     Es darf maximal 16 Zeichen lang sein. Der Wert des Attributs "KurzBezeichnung"
+     darf keine Sonderzeichen ausser dem Unterstrich enthalten und kann case-sensitiv 
+     definiert werden.
+     Das Attribut ist an den Bausteinen gepflegt und wird über einen PSV-Import 
+     dem SAP-System bekannt gemacht. Auf keinen Fall darf der Wert dieses 
+     Attributes bei einem bestehenden Baustein geändert werden.
+ 
+msg.PM / FSPM-Schnittstelle
+     Das Attribut "KurzBezeichnung" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="3ATV78666LLDK4TD3828U6RACR" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "LOB_cd" definiert die "Lines of Business" und gibt an, 
+    welcher Sparte bzw. welchem Hauptversicherungszweig der Baustein zu-
+    geordnet ist. 
+
+Verwendung
+    Folgende Werte sind gültig: BASIS, LL, LP, LM, LG
+	       LL = Leben
+	       LP = Sach, Haft, Unfall (SHU)
+	       LM = KFZ
+ 	       LG = Gesundheit
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Attribut "LOB-cd" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="55B70UG60CS4O40FPCNEEIBRI9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LeistungsbeginnArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 (nicht relevant)
+2 = Vertragsteilbeginn
+3 = Vertragsteilende]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2P992A4UTG8L24H85OERSTCBKK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LeistungsendeArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = benutzerdefiniert
+2 = Vertragsteilende
+3 = High Date
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>3</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>102</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>103</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4S74F2VSL5GD74CDMD9LQ6T86P" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>OptionsphaseArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = benutzerdefiniert
+2 = Abrufoption
+3 = einjährige Verlängerung
+4 = mehrjährige Verlängerung
+5 = nimmt an Verlängerungsoption HV teil]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>4</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>5</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="QCG5CJ3QRA3KM457U5VGP0FBFC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ProductModuleId</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="5LLANJUBHKB4V4KSRKJ714PRI4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RatingCode</pm:name>
+              <pm:notice encoding="none"><![CDATA[RatingCode is filled with an abbreviation of the ElementaryProduct concerned.
+It can be used for deriving premiums, terms & conditions, plausi's etc.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="RMD4RLCUB35ST4LEAN92HUF472" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "RefModell_Suffix" definiert die Basis- oder sparten-
+    spezifische Erweiterungsklasse im Referenzmodell und referenziert
+    somit auf eine Tabelle in einem externen, operativen System.
+
+
+Verwendung
+    Das Referenzmodell bildet ein externes Datensystem ab und beschreibt das Datenmodell, 
+    auf dem ein operatives System aufbaut. Die Referenzklassen werden aus dem externen,
+    operativen System exportiert und in die PM.Designer-Umgebung importiert.
+    Die Referenzklassen haben unterschiedliche Endungen.
+    Das Suffix "_BASIS" steht für Basistabelle. Das Suffix "_LL" steht für Leben-
+    spezifische Erweiterung der Basistablle. Die Suffixe "_LP", "_LM" und "_LG"
+    stehen für SHU-spezifische, KFZ-spezifische und GKV-spezifische Erweiterung
+    der Basistabelle.
+    Das Attribut wird für Konsistenzprüfungen benötigt und wirkt unterstützend für das
+    Compile PlugIn.
+
+    Das Attribut „RefModell_Suffix" gibt an, ob der Produktbaustein nur relevante 
+    Merkmale aus der verwendeten Basis-Vorlage oder auch zusätzliche relevante 
+    spartenspezifische Merkmale enthält.
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UBH9TNINFE4KN4MS4MEAH2IJIV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RegelVO</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = VO beliebig
+2 = Versicherte Person identisch mit Versicherungsnehmer
+3 = Versicherte Person identisch mit Prämienzahler
+4 = versicherte Person identisch mit versicherte Person Hauptversicherung
+102 = falls VO noch nicht existent dann Versicherte Person identisch mit Versicherungsnehmer
+103 = falls VO noch nicht existent dann versicherte Person identisch mit Prämienzahler 
+104 = falls VO noch nicht existent, dann versicherte Person identisch versicherte Person Hauptversicherung]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>2</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>4</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>102</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>104</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3B35T7S73GU4L4452J4O2RLA1K" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Reihenfolge</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>999</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4FN33BOSBHLDS483AAJI678Q01" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RentenTyp</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+2 = aufgeschobene Leibrente
+3 = sofortbeginnende Leibrente]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="OQQF3NOSIEEKM4VAAD50LCNSS3" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Rentengarantiedauer</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = benutzerdefiniert]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4T56T77HRJG5N47HRKMJNM3N6M" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RentenzahlungsweiseArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant 
+2 = vorschüssige Rentenzahlungen
+3 = nachschüssige Rentenzahlungen]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4A8FH5CGFMGLU48T3E7PJ9TFTA" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VSUVorbelegung</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = benutzerdefiniert
+2 = Objektwert
+3 = abgeleitet aus Objektattributen
+4 = abgeleitet aus anderen VSU
+5 = identische VSU am Vertragsteil]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>4</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>5</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="TPHLEDTIFUFL64ASRADOADF4PT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VersDauerArtEinmal</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+1 = benutzerdefiniert
+2 = Vertragsende
+102 = benutzerdefiniert, Vorbelegung Vertragsende]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>102</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>2</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="00J874JMFRF404QSATCH63E1J9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VersicherungsdauerArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[1 = benutzerdefiniert
+2 = Vertragsende
+3 = Beitragsende HV 
+4 = OBSOLET 
+5 = Beitragsende des Vertragteils
+6 =  OBSOLET
+7 = Prämienende Vertrag
+8 = High Date
+102 = benutzerdefiniert, Vorbelegung Vertragsende
+103= benutzerdefiniert, Vorbelegung Beitragsende HV
+104 = OBSOLET 
+105 = benutzerdefiniert, Vorbelegung Beitragsende des Vertragsteils
+106 =  OBSOLET
+107 = benutzerdefiniert, Vorbelegung Prämienende Vertrag
+108 = benutzerdefiniert, Vorbelegung High Date]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>1</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>8</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>102</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>108</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="7V25RHON0PTL541D0UOKVGU2AV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VersicherungssummeArt</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = nicht relevant
+2 = Versicherungssumme
+3 = Todesfall und Erlebensleistung
+4 = Mindesttodesfallsumme und Mindestrisikosumme
+5 = Rente- und Kapitalabfindung
+6 = Basissumme
+7 = Garantiesumme
+8 = Erlebensfallsumme
+9 = Todesfallsumme]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>4</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>5</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>6</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>7</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>8</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>9</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000001XZG0000T76" readonly="false" sortkey="8">
+              <pm:name>Customer</pm:name>
+              <pm:attributes>
+                <pm:attribute>RatingCode</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000001S5H0000T76" readonly="false" sortkey="0">
+              <pm:name>_MVA_Bestandssteuernde_Attribute</pm:name>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL00000018FI0000AM8" readonly="false" sortkey="1">
+              <pm:name>_MVA_Obsolet</pm:name>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL00000016U00000SPB" readonly="false" sortkey="2">
+              <pm:name>Bestandssteuernde_Attribute</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">InForce Attributes</pm:stringval>
+              </pm:label>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000001OU00000SPB" readonly="false" sortkey="5">
+                  <pm:name>Leistung</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>VSUVorbelegung</pm:attribute>
+                    <pm:attribute>VersicherungssummeArt</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL00000018U00000SPB" readonly="false" sortkey="3">
+                  <pm:name>Allg_Klassifizierungen</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AnpassungsEinschluss</pm:attribute>
+                    <pm:attribute>EinmalpraemieZulaessigkeit</pm:attribute>
+                    <pm:attribute>ErlaubtSubstitution</pm:attribute>
+                    <pm:attribute>HatDeckungsVariante</pm:attribute>
+                    <pm:attribute>HatFondsAnlage</pm:attribute>
+                    <pm:attribute>IstHauptversicherung</pm:attribute>
+                    <pm:attribute>IstPraemienbefreiung</pm:attribute>
+                    <pm:attribute>IstRohbauVersicherung</pm:attribute>
+                    <pm:attribute>Reihenfolge</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000001NU00000SPB" readonly="false" sortkey="7">
+                  <pm:name>Versichertes_Objekt</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AnzahlVO</pm:attribute>
+                    <pm:attribute>RegelVO</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000001DU00000SPB" readonly="false" sortkey="4">
+                  <pm:name>Dauernableitung</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AblaufdatumArt</pm:attribute>
+                    <pm:attribute>BeitragszahlungsdauerArt</pm:attribute>
+                    <pm:attribute>EndalterErmittlung</pm:attribute>
+                    <pm:attribute>LeistungsbeginnArt</pm:attribute>
+                    <pm:attribute>LeistungsendeArt</pm:attribute>
+                    <pm:attribute>OptionsphaseArt</pm:attribute>
+                    <pm:attribute>RentenTyp</pm:attribute>
+                    <pm:attribute>Rentengarantiedauer</pm:attribute>
+                    <pm:attribute>VersDauerArtEinmal</pm:attribute>
+                    <pm:attribute>VersicherungsdauerArt</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000001AU00000SPB" readonly="false" sortkey="6">
+                  <pm:name>Rentenzahlungen</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>RentenzahlungsweiseArt</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="SIN4RNE5N2FK74G8FO57CH4D4Q" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Beginn</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Start date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Beginn</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Beginn" gibt den Beginn des Vertragsteils an.
+
+Verwendung
+    Der Beginn des Vertragsteils wird im Format TT.MM.JJJJ eingegeben.
+    Ein Vertragsteil kann nach dem Vertrag beginnen, aber nicht vor dem 
+    Beginn des Vertrags. In den meisten Fällen fallen der Beginn des Vertrags 
+    und der Beginn des Vertragsteils zusammen.
+
+Abhängigkeiten
+    Je nach ausgewähltem Verkaufsprodukt werden untermonatliche 
+    Vertragsteilbeginne unterstützt.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Beginn" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „COVBEG_DT".
+    Das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_COVERAGEBEG_DT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="U2MB2O7R3U8LS4N5EO27O8RG44" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>DarlehenRelevantKnz</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">LoanRelevantFlag</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">DarlehenRelevantKnz</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Indicates, if the surrender value of a coverage should be considered, when calculating the maximum loan amount
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3CVL1RA81T9TG4L0CUI1ALMRUP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Eintrittsalterberechnungsmethode</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Calculation method starting age</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Eintrittsalterberechnungsmethode</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über das Merkmal wird gesteuert, welche 
+Eintrittsalterberechnungsmethode für das 
+Elementarprodukt verwendet wird.
+(Das Merkmal wird auch von FS-PM genutzt)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000GX30000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Eintrittsalterberechnungsmethode_BASIS_S</pm:table>
+                      <pm:column guid="URUK59L8K21C442DNGJ8UFLT6H">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="U76II6NH70OLP4VLAPAFTBEED4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Ende</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">End date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ende</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Ende" gibt das Ablaufdatum des Vertragsteils an. 
+    Das Vertragsteilende wird aus dem Versicherungsbeginn und der 
+    Versicherungsdauer ermittelt.
+
+Verwendung
+    Das Ende des Vertragsteiles wird im Format TT.MM.JJJJ eingegeben.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Ende" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „COVEND_DT".
+    Das SAP-Datenelement hat die Bezeichnung „/MSG/ABD_COVEND_DT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="TJ9HBD5NMIK594LUP9J4MB8C0C" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Generationsermittlungsdatum</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Generation determination date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Generationsermittlungsdatum</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+ Das Generationsermittlungsdatum ist dasjenige Datum, aus dem bei Anlegen
+ des Bausteins die Generation bestimmt wurde. Es wird verwendet zum Anlegen der richtigen Generation
+ von internen/gemappten Objekten innerhalb des msg.PM.
+
+
+msg.PM/ FSPM Schnittstelle:
+Das Merkmal ist gemappt.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="RHFP9LGSMENL04HFORB7BK79TA" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Kurzfristigkeit</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Indicator short term</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Kurzfristigkeit</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Dieses Merkmal kennzeichnet, ob es sich um einen kurzfristigen Vertragsteil handelt, d.h. ob dieser Vertragsteil im Vergleich zum
+Vertrag eine verkürzte Dauer hat. Dieses Kennzeichen muss im Bestandssystem gesetzt werden.
+
+msg.PM/FS-PM-Mapping:
+Das Merkmal ist gemappt und wird persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0TK3JHV91PG5V4PICBFB25LS1F" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LVStatus</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Status detail</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">LV Status</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "LVStatus" enthält den versicherungstechnischen 
+    Status des Elementarprodukts. Die Einschränkung erfolgt über die 
+    interne Tabelle InTab_Az_LVSTATUS_LP.
+    Ein Versicherungsvertrag kann während seiner Laufzeit seinen 
+    Charakter ändern. Er kann z. B. übergehen von einem prämien-
+    pflichtigen in einen prämienfreien Zustand.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal "LVStatus" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „COVSTAT_TT", 
+    das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_COVERAGESTAT_TT".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000RXA0000SPB">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_LVSTATUS_BASIS_S</pm:table>
+                      <pm:column guid="53KNIMHA75B4R4B7HGF8UPLRV2">key</pm:column>
+                      <pm:validvalues>
+                        <pm:entry>
+                          <pm:value>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:value>
+                        </pm:entry>
+                      </pm:validvalues>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="U6B3F4KG6G8SO4MDG218UNIKFD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Staffel_Progression</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Graduated progression</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Staffel Progression</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    In der Tarifierungslogik auf msg.PM Seite wird dieses Merkmal nicht verwendet.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal " Staffel_Progression " ist gemappt und persistiert. ]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="37COL3N4QTPC648RUO3KPPOE98" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Status</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Status</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Status</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Status" beschreibt den technischen Zustand eines Vertragsteils.
+    Die Einschränkung erfolgt über die interene Tabelle 
+    "InTab_Az_TechnischerStatus_BASIS". Die folgenden Aufzählungswerte sind 
+    gültig:
+
+    (1)    Aktiv
+    (2)    Storniert
+    (3)    Ruhend
+
+Verwendung
+    Ein Versicherungsvertrag kann während seiner Laufzeit seinen 
+    Charakter ändern. Er kann z. B. übergehen von einem aktiven 
+    in einen ruhenden Zustand.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Status" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „ACTINACTST_CD".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000UW30000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_TechnischerStatus_BASIS_S</pm:table>
+                      <pm:column guid="1QH5ND4MNE14N464JP478T2H1V">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3FE7M6SA2TF5M4QKT7MKDIVDH0" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Tarifart</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Tariff variant</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Tarifart</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Im Merkmal "Tarifart" ist die spartenübergreifende Tarifart hinterlegt. Die Merkmalsausprägungen sind dann in der Tabelle InTab_Az_Tarifart_BASIS_E  hinterlegt.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal "Tarifart"  ist gemappt und persistiert. ]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000LP00000SPB">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Tarifart_BASIS_E</pm:table>
+                      <pm:column guid="U04VF921IN6DK474G67BV9HQ01">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0C2UN8QJA9PKR48FUFNQAHIERB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VDZ_Knz</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Indicator temporary cover note</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Kennzeichen vorläufiger Deckungszusage</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "VDZ_Knz" definiert, ob der Vertrag mit vorläufiger Deckungszusage
+    (VDZ) vorliegt oder nicht. Mögliche Ausprägungen:
+
+    (0)	Ohne VDZ (mit Plausiprüfung)
+    (1)	Mit VDZ und Vollständigkeitsprüfung (mit Plausiprüfung)
+    (2)	Mit VDZ ohne Vollständigkeitsprüfung (ohne Plausiprüfung)
+
+Verwendung
+    Die VDZ wird immer dann verwendet, wenn noch nicht alle Risikomerkmale
+    eines Versicherten Objektes bzw. alle zur Policierung notwendigen Daten 
+    bekannt oder erfaßt sind.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „VDZ_Knz" wird gemappt und persistiert. Der SAP-Feldname 
+    hat die Bezeichnung „ICC_CD", das SAP-Datenelement hat die 
+    Bezeichnung „/MSG/ABD_ICC_CD".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="T3BNJ6758PV554FH71T0E8M5G7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Versicherungssteuersatz</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Insurance tax rate</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Versicherungssteuersatz</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">Der Versicherungssteuersatz an der Basisvorlage ist obsolet und kann gelöscht werden.</pm:notice>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2GB95LCC8NJT04GSIEGBOI9C8C" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Vertragsteilnummer</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Coverage number</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Vertragsteilnummer</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Das Merkmal dient der eindeutigen Identifikation eines Vertragsteiles in einem 
+(nicht notwendig vorhandenen) Vertragsteilbündel und  Vertrag.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="UPJC3B3BB99SB4VQVO2TKM64L2" isnullable="true" nrdims="2" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ZinsBetraege</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">InterestAmounts</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">ZinsBetraege</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The (multidimensional) characteristic is used to pass interest relevant information from FSPM to msg.PM, and back. In particular, it contains amounts on which interest is to be calculated, the relevant time period, and a reference to the relevant interest rates (which are passed separately on Root level). In addition, it can hold the calculated interest amount.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:array guid="ZZZPM3ARR0000000JD51000AM8">com::company::Achmea_Standards::Konstanten::Tafeln::Initialisierungstafeln::Init_InterestRates</pm:array>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000ZW30000T76" readonly="false" sortkey="1">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000000X30000T76" readonly="false" sortkey="2">
+                  <pm:name>Produktdaten</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Eintrittsalterberechnungsmethode</pm:attribute>
+                    <pm:attribute>Staffel_Progression</pm:attribute>
+                    <pm:attribute>Tarifart</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL00000001X30000T76" readonly="false" sortkey="3">
+                  <pm:name>Vertragsdaten</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Beginn</pm:attribute>
+                    <pm:attribute>DarlehenRelevantKnz</pm:attribute>
+                    <pm:attribute>Ende</pm:attribute>
+                    <pm:attribute>Generationsermittlungsdatum</pm:attribute>
+                    <pm:attribute>Kurzfristigkeit</pm:attribute>
+                    <pm:attribute>LVStatus</pm:attribute>
+                    <pm:attribute>Status</pm:attribute>
+                    <pm:attribute>VDZ_Knz</pm:attribute>
+                    <pm:attribute>Versicherungssteuersatz</pm:attribute>
+                    <pm:attribute>Vertragsteilnummer</pm:attribute>
+                    <pm:attribute>ZinsBetraege</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL000000026H0000T76" readonly="false" sortkey="0">
+              <pm:name>FS PM Auto Standard</pm:name>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="5FVO4C6MVR8TG4Q8EU2KI88SN4" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Plausis_Check</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000M5E0000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000M5E0000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="5NJQKN5CNQPKK4EQURE2I8TQQ4" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000L040000T76" sortkey="1">
+              <pm:name>Plausis</pm:name>
+              <pm:methods>
+                <pm:method>vtm_Plausis_Check</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000000K040000T76" sortkey="0">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ElpVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>
