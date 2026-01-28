@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC0000001ZG0000T76" pmid="1ZG0000T76" abstract="false" cachesize="unbounded" cachingmode="disabled" datatype="float" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod</pm:namespace>
+  <pm:name>fm_Vkprod_AenderungVertrag</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM0000000ZG0000T76">com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::Vkprod::cm_Vkprod_AenderungVertrag</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+</pm:function>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000SI60000AM9" abstract="false" final="false" pmid="SI60000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>msg_tech_BDS_Comm_Extension</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="6UGG9I0OKO2TD4MARUSB3D3ADT" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>classname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="3E9J4TI594L5S4C3SH0PRSA5DO" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>propertyname</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="2BT1C68BN1SKJ4TGBRLO9J0OQD" sortkey="0">
+    <pm:name>PK_msg_tech_BDS_Comm_Extension</pm:name>
+    <pm:columns>
+      <pm:column>classname</pm:column>
+      <pm:column>propertyname</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZuschlagNachlassTyp_BASIS</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">InTab_DeductibleAmount</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Activity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_MinimumContractDurationAndNoticePeriod</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_PostCodeRiskAddress</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Usage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Inhabited</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Construction</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_FirePrevention</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_WarrantyAgainstUnderInsurance</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_FundingInsured</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_SiteSafety</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Brand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_UsageType</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_MaximumMassVehicle</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Power</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ActivityObjectValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ActivityPostalCode</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ActivityVehicleAge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsureAsOldTimer</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsuredSumVariantOI</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsuredSumVariantSI</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_AreaOfOperation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_PolicyDuration</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_SeatingCapacity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_StandingCapacity</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_TripType</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ShuttleService</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_LegalAssistanceType</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_EuroStandard</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ValuationAgreementContarctAge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_BM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ElementaryProductCombnation</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Accessories</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_NumberOfFTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ReconstructionValue</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_TotalAssets</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Subsidiaries</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ResidenceAreaSubsidiaries</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_MergerOrAcquisitionLast5Years</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsuredSum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ActivityParticularUsage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_Submarket</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_TotalWeight</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_CertificateOfExemption</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_ActivityMilage</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">InTab_InsuredSumWorkRisk</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="5NTM5UVEKRRLF4N4KI1GPDG4NB" sortkey="510" structural="true">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Produktbausteine</pm:namespace>
+  <pm:name>13 Modellrechnung</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

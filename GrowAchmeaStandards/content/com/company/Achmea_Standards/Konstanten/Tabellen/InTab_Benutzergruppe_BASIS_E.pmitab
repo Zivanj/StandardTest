@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000U140000T76" abstract="false" final="false" pmid="U140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Benutzergruppe_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="047OEIDGQE8KJ43JJ7MS029MH4" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>Benutzergruppe</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="1KV3S98N6H8KC4I6RR1UI4O4IE" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>Kommentar</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="1JRDRB1U1OKTK4MG2I17BR1KOK" sortkey="0">
+    <pm:name>PK_InTab_Benutzergruppe_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>Benutzergruppe</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Zulässige Benutzergruppen
+
+Typ und Nummernbereich:
+E  	1000 - 9999
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Sachbearbeiter</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tarifexperte</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

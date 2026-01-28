@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000CYG0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Produkt</pm:namespace>
+  <pm:name>ProdTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000EYG0000T76" pmid="EYG0000T76">
+      <pm:name>ProdTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000CYG0000T76" pmid="CYG0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ProdTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000FW30000T76">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Produkt::ProdVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000LH90000SPM">com::company::TechnischesSchema::Produktbausteintypen::Produkt</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="UE545RLQ7CE5T45K8507PN1N07" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AcquisitionPremiumVersionDate</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3UB1SC4SDRMCD4G40N334EJSIR" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>CalcPremBeforeTaxWithoutDiscount</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000WQ50000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Boolean_BASIS_S</pm:table>
+                      <pm:column guid="SDH17NJ43OGKM4JC1NEN7DTJ7F">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="ON2RDAIPUE6CF4B5ERQB4H54GF" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>CurrentAcquisitionAdjustmentReductionYears</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="O5E26IMK3MKD943R1QMKVLU6L9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Label</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Label</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Label</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Defines under which label the product is sold. 
+This is functionally a proposition field, but as it is relevant for the production premium it is modelled here.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000GYG0000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Label</pm:table>
+                      <pm:column guid="120JCLQQ3SLT740MH6BMT1BILN">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="6FSGMBMHHOFSN45VAP99J2KR22" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PremiumVersionDate</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Prämien version datum</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Premium version date</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">This date is used within the calculation to select the correct premium factors from the value tables.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="SMUCGS88T17414DH70CN6U4U9A" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PricingStrategyIndicator</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000K542000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_PricingStrategyIndicator</pm:table>
+                      <pm:column guid="S76NA7CTQPASJ41269910OGJGJ">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UC7DTIH1HP84I4AF2G88D15GR6" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>SmartPricingIndicator</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000WQ50000T76">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Boolean_BASIS_S</pm:table>
+                      <pm:column guid="SDH17NJ43OGKM4JC1NEN7DTJ7F">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="300V4CAOU7E5I49GVAH1LVQDE9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>TermsConditionVersionDate</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Policenobjecte versions datum</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Terms and condition version date</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">This date is used within the calculation to derive the appropriate version of terms and conditions.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL000004237H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000041I7H0000T76" readonly="false" sortkey="2">
+                  <pm:name>Product Data</pm:name>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000001H7H0000T76" readonly="false" sortkey="1">
+                  <pm:name>Contract Data</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AcquisitionPremiumVersionDate</pm:attribute>
+                    <pm:attribute>CalcPremBeforeTaxWithoutDiscount</pm:attribute>
+                    <pm:attribute>CurrentAcquisitionAdjustmentReductionYears</pm:attribute>
+                    <pm:attribute>Label</pm:attribute>
+                    <pm:attribute>PremiumVersionDate</pm:attribute>
+                    <pm:attribute>PricingStrategyIndicator</pm:attribute>
+                    <pm:attribute>SmartPricingIndicator</pm:attribute>
+                    <pm:attribute>TermsConditionVersionDate</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="1LSGOIAGQ6R5O4ET9L64G20O7O" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_PreOfferingCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000IZG0000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_RC_OK</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000IZG0000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_RC_OK</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000002WFI0000AM8" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:methods>
+                <pm:method>vtm_PreOfferingCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ProdTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000XV30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Verkaufsprodukt</pm:namespace>
+  <pm:name>VkprodVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000ZV30000T76" pmid="ZV30000T76">
+      <pm:name>VkprodVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000XV30000T76" pmid="XV30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>VkprodVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT0000000LN70000SPM">com::company::TechnischesSchema::Produktbausteintypen::Verkaufsprodukt</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4KLH2T8A4MV5A48C4PBTLO1KDO" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AbleitungUhrzeit</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="SLR8IK7VUJU454ASMD7J3J7C54" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Beteiligung</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = Nein
+1 = Ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="P7SUU4A2G2KDR4RN8M70CE820K" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Description</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut „Bezeichnung“ definiert den fachlichen Namen des Produktbausteins
+     und ist maximal 50 Zeichen lang. 
+     Bei jedem Produktbaustein muss dieses Attribut vorhanden und gefüllt sein. 
+     Der Name erscheint in der FS-PM-Benutzeroberfläche.
+   
+msg.PM / FSPM-Schnittstelle
+      Das Attribut "Bezeichnung" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="2HLKMAC7P7JT147KMASFNQBL26" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">IdentificationAttr</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="7S804CLE1H0LP47BVT7D0OM3D0" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ShortDescription</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut "KurzBezeichnung" definiert einen fachlichen Kurzbezeichner, der
+     den Produktbaustein über alle Produktbausteine eindeutig identifiziert.
+
+Verwendung
+     Dieses Attribut muss an allen R/3-relevanten Bausteinen vorhanden sein. 
+     Es darf maximal 16 Zeichen lang sein. Der Wert des Attributs "KurzBezeichnung"
+     darf keine Sonderzeichen ausser dem Unterstrich enthalten und kann case-sensitiv 
+     definiert werden.
+     Das Attribut ist an den Bausteinen gepflegt und wird über einen PSV-Import 
+     dem SAP-System bekannt gemacht. Auf keinen Fall darf der Wert dieses 
+     Attributes bei einem bestehenden Baustein geändert werden.
+ 
+msg.PM / FSPM-Schnittstelle
+     Das Attribut "KurzBezeichnung" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="PV42SM2P7O1LB4O88FHSGQ6BJG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "LOB_cd" definiert die "Lines of Business" und gibt an, 
+    welcher Sparte bzw. welchem Hauptversicherungszweig der Baustein zu-
+    geordnet ist. 
+
+Verwendung
+    Folgende Werte sind gültig: BASIS, LL, LP, LM, LG
+	       LL = Leben
+	       LP = Sach, Haft, Unfall (SHU)
+	       LM = KFZ
+ 	       LG = Gesundheit
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Attribut "LOB-cd" wird nicht gemappt und nicht persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="TANN824VCAFC44IRVLUBQCF6CM" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>MitversicherungsRelevant</pm:name>
+              <pm:notice encoding="none"><![CDATA[0 = Nein
+1 = Ja]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="SU68QHPC20CT44DD9602L1BE3J" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PolicenendeArt</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="35HMLNK7EFOL24NJ7SD06HOIH2" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">ProductModuleId</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Über dieses Merkmal wir in FS-PM das Verhalten der Bausteine
+gesteuert. D.h. Bausteine, die die selbe Belegung dieses Attributs
+haben, haben das selbe Verhalten.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="5HPR9E8V0L1D248UQKCE5CD2J4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RatingCode</pm:name>
+              <pm:notice encoding="none"><![CDATA[RatingCode is filled with an abbreviation of the SalesProduct concerned.
+It can be used for deriving premiums, terms & conditions, plausi's etc.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="TU3DJOGAPBOLE4D1S60943DP55" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Attribut "RefModell_Suffix" definiert die Basis- oder sparten-
+    spezifische Erweiterungsklasse im Referenzmodell und referenziert
+    somit auf eine Tabelle in einem externen, operativen System.
+
+
+Verwendung
+    Das Referenzmodell bildet ein externes Datensystem ab und beschreibt das Datenmodell, 
+    auf dem ein operatives System aufbaut. Die Referenzklassen werden aus dem externen,
+    operativen System exportiert und in die PM.Designer-Umgebung importiert.
+    Die Referenzklassen haben unterschiedliche Endungen.
+    Das Suffix "_BASIS" steht für Basistabelle. Das Suffix "_LL" steht für Leben-
+    spezifische Erweiterung der Basistablle. Die Suffixe "_LP", "_LM" und "_LG"
+    stehen für SHU-spezifische, KFZ-spezifische und GKV-spezifische Erweiterung
+    der Basistabelle.
+    Das Attribut wird für Konsistenzprüfungen benötigt und wirkt unterstützend für das
+    Compile PlugIn.
+
+    Das Attribut „RefModell_Suffix“ gibt an, ob der Produktbaustein nur relevante 
+    Merkmale aus der verwendeten Basis-Vorlage oder auch zusätzliche relevante 
+    spartenspezifische Merkmale enthält.
+
+
+    Beispiel:
+
+    Die Referenzklasse für das SHU-spezifische Elementarprodukt lautet "Elementarprodukt_LP".
+    Wenn das so ist, muss der Attributwert für das "RefModell_Suffix" "LP" lauten.
+    Gibt es keine SHU-spezifische Referenzklasse (z. B. BedingungsTyp_BASIS ), dann lautet
+    das "RefModell_Suffix" "BASIS" 
+
+
+msg.PM / FSPM-Schnittstelle]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>9</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="S9GSTSQQSPL4D4GVD7K0LQTTUD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VDZ</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">CoverNote</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+     Das Attribut „VDZ" definiert die vorläufige Deckungszusage. 
+     Dieses Attribut sagt grundsätzlich aus, ob eine vorläufige Deckungszusage nicht möglich (=0) oder möglich (=1)  ist.  
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000046M10000SPB" readonly="false" sortkey="0">
+              <pm:name>Bestandssteuernde_Attribute</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">InForce Attributes</pm:stringval>
+              </pm:label>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000047M10000SPB" readonly="false" sortkey="1">
+                  <pm:name>Allg_Klassifizierungen</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Beteiligung</pm:attribute>
+                    <pm:attribute>MitversicherungsRelevant</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+              <pm:attributes>
+                <pm:attribute>AbleitungUhrzeit</pm:attribute>
+                <pm:attribute>PolicenendeArt</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL000000950H0000T76" readonly="false" sortkey="2">
+              <pm:name>Customer</pm:name>
+              <pm:attributes>
+                <pm:attribute>RatingCode</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="0H2HM91O40NDG4VUAP6AKGGO3O" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Aenderungsdatum</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Effective date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Aenderungsdatum</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Aenderungsdatum / Wirksamkeitsdatum
+    Gibt das Datum an, zu dem die im Zuge des Geschäftsprozesses getätigte 
+    Aktion wirksam wird.
+
+Verwendung
+    Bei Neugeschäft entspricht das Wirksamkeitsdatum dem Policenbeginn.
+
+Änderung und Auskunft
+    Bei Änderung oder Beauskunftung einer Police gibt das Wirksamkeitsdatum den 
+    Zeitpunkt an, zu dem eine gültige Version der Police gesucht wird. Bei Änderungen 
+    ist dies zugleich der Beginn der neuen Version.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Aenderungsdatum" wird nicht gemappt und nicht persistiert. Der SAP-Feldname hat die 
+    Bezeichnung „VALID_DT", das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_EFFECTIVE_DT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="UU0VQ9R039QD640RKUL7V34RIR" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Aenderungsdatum2</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Effective date 2</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Aenderungsdatum 2</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Änderungsdatum2" gibt das Endedatum für die Berechnung 
+    ab dem Änderungs-/Wirksamkeitsdatum an. 
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Aenderungsdatum2" wird nicht gemappt und nicht 
+    persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="OC0DLL6TJTDL6478L6G8F1PCK6" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Beginn</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Start date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Beginn</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Policenbeginn
+    Gibt das Datum des Policenbeginns an.
+
+Verwendung
+    Frühest möglicher Beginn aller Verträge, die der Police kann der Policenbeginn 
+    unterschiedliche Verwendungen aufweisen.
+    Die Auswahl der gültigen Verkaufsprodukte kann durch den Policenbeginn eingeschränkt 
+    werden. Das Datum des Policenbeginns wird automatisch von den Policenstammdaten 
+    übernommen. 
+
+Abhängigkeiten
+    Je nach ausgewähltem Verkaufsprodukt werden untermonatliche Policenbeginne unterstützt.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Beginn" wird nicht gemappt und nicht persistiert. Der SAP-Feldname hat die 
+    Bezeichnung "POLBEG_DT", das SAP-Datenelement hat die Bezeichnung 
+    "/MSG/ABD_POLBG_DT".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="OTF0KSAV8I9D54Q4BMQC2PB2J8" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Ende</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">End date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ende</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Policenende
+    Gibt das Datum an, an dem der Versicherungsvertrag endet.
+
+Verwendung
+    Das Policenende wird im Format TT.MM.JJJJ eingegeben. Es kann entweder direkt eingegeben werden oder 
+    wird vom System aus dem Versicherungsbeginn und der Versicherungsdauer ermittelt.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Ende" wird nicht gemappt und nicht persistiert. Der SAP-Feldname hat die 
+    Bezeichnung „POLEND_DT", das SAP-Datenelement hat die Bezeichnung 
+    „/MSG/ABD_POLEND_DT".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="QAF7TFBGEG6D841G85T74GK87F" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Generationsermittlungsdatum</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Generation determination date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Generationsermittlungsdatum</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+ Das Generationsermittlungsdatum ist dasjenige Datum, aus dem bei Anlegen
+ des Bausteins die Generation bestimmt wurde. Es wird verwendet zum Anlegen der richtigen Generation
+ von internen/gemappten Objekten innerhalb des msg.PM.
+
+
+msg.PM/ FSPM Schnittstelle:
+Das Merkmal ist gemappt.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="Q4FH8LO0R6JTB4IAKV60VN85OS" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>IstBeteiligungsPolice</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Kennzeichen beteiligungspolicen</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Indicator participating policy</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">Durch dieses Merkmal kann der VT mitgeteilt werden, daß es sich um eine Police handelt, die als Beteiligungsvertrag geführt wird.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="59466VPJEFJD241KGQ06RF7QEU" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>Verlaengerungsvariante</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Renewal variant</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Verlaengerungsvariante</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+   Das Merkmal "Verlaengerungsvariante" gibt die Verlängerungsvariante an.
+
+Verwendung
+   Die Verlängerungsvariante steuert die sogenannte Prolongation bei Sachverträgen, 
+   also die stillschweigende Verlängerung um eine vordefinierte Periode. 
+    Die Einschränkung erfolgt  über die interne Tabelle 
+    "InTab_Az_Verlaengerungsvariante_BASIS". Diese hat die folgenden 
+    Ausprägungen:
+
+          (0)   keine Verlängerung
+          (1)   vollständige Verlängerung
+
+    Auf der Ebene des Verkaufsproduktes ist dieses Merkmal obsolet.
+
+Abhängigkeiten
+   Durch Auswahl in der Wertehilfe nehmen alle steuerbaren Verträge an der Verlängerung teil.
+   Dies gilt für alle unteren Ebenen.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Verlaengerungsvariante" wird gemappt und persistiert. Der SAP-Feldname 
+    hat die Bezeichnung „EXTVARIA_CD", das SAP-Datenelement hat die 
+    Bezeichnung „/MSG/ABD_EXTVARIA_CD".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000P2L1000SPM">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Verlaengerungsvariante_BASIS_S</pm:table>
+                      <pm:column guid="Q5F8DHQBRC74A4N63OQ0VSPMNK">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2L34N7UEGR4K74KEQRLE915GOB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Vertriebsweg</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Distribution channel</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Vertriebsweg</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Der Vertriebsweg kennzeichnet den Kanal, über den die Police verkauft wurde.
+
+Das Merkmal ist gemappt und wird persistiert.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB0000000FI0000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Vertriebsweg_BASIS_C</pm:table>
+                      <pm:column guid="10QBQKN5UOH4C48ASRK9SV2IVD">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="79Q06J4NAENLJ4HAA0PIUU6R7D" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Waehrung</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Währung</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Currency</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Waehrung" gibt die Währung an, in der alle Prämien- und
+    Leistungsfelder geführt werden.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Waehrung" wird gemappt und persistiert. Der SAP-Feldname 
+    hat die Bezeichnung „CURRENCY_ID", das SAP-Datenelement hat die 
+    Bezeichnung „/MSG/ABD_CURRENCY_ID"]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000A1H0000SPM">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_Waehrung_BASIS_S</pm:table>
+                      <pm:column guid="67KBSE9P9A1DV4ECA1E68DRFVQ">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">EUR</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000006EW30000T76" readonly="false" sortkey="0">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000001JW30000T76" readonly="false" sortkey="1">
+                  <pm:name>Produktdaten</pm:name>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000005IW30000T76" readonly="false" sortkey="2">
+                  <pm:name>Vertragsdaten</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Aenderungsdatum</pm:attribute>
+                    <pm:attribute>Aenderungsdatum2</pm:attribute>
+                    <pm:attribute>Beginn</pm:attribute>
+                    <pm:attribute>Ende</pm:attribute>
+                    <pm:attribute>Generationsermittlungsdatum</pm:attribute>
+                    <pm:attribute>IstBeteiligungsPolice</pm:attribute>
+                    <pm:attribute>Verlaengerungsvariante</pm:attribute>
+                    <pm:attribute>Vertriebsweg</pm:attribute>
+                    <pm:attribute>Waehrung</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="4L0I9I3S4VPKG4IDJ09QQFI1OS" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>tim_ClaimSimulation</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000U506000MVA">com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::fm_Vkprod_Schadensimulation</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000U506000MVA">
+                    <pm:name>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::fm_Vkprod_Schadensimulation</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="UU7POSNQPP04542HOQOLOVQJCQ" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>tim_ClassificationBM</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000P4P4000MVA">com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::fm_Vkprod_StufungBM</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000P4P4000MVA">
+                    <pm:name>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::fm_Vkprod_StufungBM</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="O5KR2JSRS89SQ4SPMJF4PUMTVT" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>tim_Interest</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">vtm_Zinsen</pm:stringval>
+              </pm:label>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000SE51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_SProd_Interest</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000SE51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_SProd_Interest</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBase</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="OS6A4OEK6D4KS4N9CLAGQ3B0DP" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_AenderungVertrag</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC0000001ZG0000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_AenderungVertrag</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC0000001ZG0000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_AenderungVertrag</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="6K881PL6415SC4E70F4SUKLQSV" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_KonstruktivNeu</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000TB51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_KonstruktivNeu</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000TB51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_KonstruktivNeu</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasisAlt</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="O26T9R17HLO454J47U2V6E0DNV" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Migration</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000TG51000AM8">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Migration</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000TG51000AM8">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Migration</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasisAlt</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="0L03TG65C8QS54RRL542QO7L46" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Plausis_Check</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000YE32000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Plausis::Steuerung::fm_Vkprod_Plausis_Check</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000YE32000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Plausis::Steuerung::fm_Vkprod_Plausis_Check</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathPlausiPar</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"PlausiParameterTyp"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathPlausi</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"PlausiTyp"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="O9BIQBL1PO45645TDEBLQDDCN9" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Schadensimulation</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000IF51000AM8">com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219::fm_SProd_Root_ClaimSimulation</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000IF51000AM8">
+                    <pm:name>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219::fm_SProd_Root_ClaimSimulation</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathRoot</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"HistoryRootTyp"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="5DKAN6BMFLEK64EN2FP2F3VUG3" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000LC10000SPB">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_SchnittstellenCheck</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000LC10000SPB">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_SchnittstellenCheck</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="2RBA1O7QQPTTR4213UME8VSRBJ" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheckBewegungen</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000KC10000SPB">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_CheckBewInstanz</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000KC10000SPB">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_CheckBewInstanz</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7O2OUQ3TRKPTE4CVR5DOG51R1V" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Storno</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC0000003ZG0000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Storno</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC0000003ZG0000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Storno</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="SATF7RTDKAQKB42VQS6Q3DEJ99" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_StufungBM</pm:name>
+              <pm:notice encoding="none"><![CDATA[AUTO-219:
+for the moment the externally called vtm is still vtm_StufungsBM, instead of tim_Call_ClassificationBM (or its German counterpart in name), as the Satndard FS-PM code has hardcoded stuff in it ... mentioning vtm_StufungsBM
+This results in internally mapping this vtm_StufungsBM to fm_SProd_Root_ClassificationBM, and the old fm_Vkprod_StufungBM now being mapped to tim_ClassificationBM.]]></pm:notice>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000GF51000AM8">com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219::fm_SProd_Root_ClassificationBM</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000GF51000AM8">
+                    <pm:name>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219::fm_SProd_Root_ClassificationBM</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathRoot</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"HistoryRootTyp"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="P09PR6M2AN6KM4PDHA9CV1UA8E" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Tarifierung</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC0000008FB1000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Tarifierung</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC0000008FB1000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Schnittstellenmethoden::Vkprod::fm_Vkprod_Tarifierung</pm:name>
+                    <pm:parameters>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProdBasis</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                      <pm:parameter datatype="string" isnullable="false" nrdims="0" direction="in" isvariable="false">
+                        <pm:name>pathProd</pm:name>
+                        <pm:path><![CDATA[/TO:/PK:/OT:"BasisklasseProdukt"]]></pm:path>
+                      </pm:parameter>
+                    </pm:parameters>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000001HZ30000T76" sortkey="1">
+              <pm:name>Schnittstellenmethoden</pm:name>
+              <pm:methods>
+                <pm:method>tim_ClaimSimulation</pm:method>
+                <pm:method>tim_ClassificationBM</pm:method>
+                <pm:method>tim_Interest</pm:method>
+                <pm:method>vtm_AenderungVertrag</pm:method>
+                <pm:method>vtm_KonstruktivNeu</pm:method>
+                <pm:method>vtm_Migration</pm:method>
+                <pm:method>vtm_Plausis_Check</pm:method>
+                <pm:method>vtm_Schadensimulation</pm:method>
+                <pm:method>vtm_Storno</pm:method>
+                <pm:method>vtm_StufungBM</pm:method>
+                <pm:method>vtm_Tarifierung</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000001GZ30000T76" sortkey="0">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+                <pm:method>vtm_SchnittstellenCheckBewegungen</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="false" final="false" guid="ZZZPM3PMREL00000KZ30000T76" inner="false" pmid="KZ30000T76" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Abhaengigkeit_Standard</pm:name>
+              <pm:type guid="ZZZPM3PMTREL0000JZ60000SPB">Verkaufsprodukt_Abhaengigkeit</pm:type>
+              <pm:target guid="ZZZPM3CC000000005Z30000T76">com::company::Achmea_Standards::Produktbausteine::16%0020Abhaengigkeit::Abhaengigkeit::Abhaengigkeit_Standard</pm:target>
+              <pm:reversedirection>
+                <pm:name>VkprodVrlg_BASIS_rev</pm:name>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>VkprodVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

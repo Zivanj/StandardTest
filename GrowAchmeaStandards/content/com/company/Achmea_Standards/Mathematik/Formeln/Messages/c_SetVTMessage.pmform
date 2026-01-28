@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000005JG0000SPM" isnullable="false" nrdims="0" pmid="5JG0000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Messages</pm:namespace>
+  <pm:name>c_SetVTMessage</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+ 
+//Externe Pfade
+
+//Externe Objekte
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+data string Variable1
+data string Variable2
+data string Variable3
+data string Variable4
+data string Instanzname
+data string TextIntern
+data string ProductModuleID
+data string Nachrichtenklasse
+data string Merkmalsname
+data string Fehlerlevel
+data string Fehlernummer
+
+//Objekte
+
+//interne Variablen
+
+int LaufendeErrorNr = 1
+string ls_MarkName = ""
+
+message mesErrorMessage
+
+/*********************************************************************/
+/* Verarbeitung                                                        */
+/*********************************************************************/
+/* Get the last message number */
+
+while(GetNextMessage (MSG_ERRORMAILBOX) != NULL)
+    LaufendeErrorNr= LaufendeErrorNr+1
+		 
+/* Create the Error-Message */ 
+
+mesErrorMessage= CreateMessage(MSG_ERRORMAILBOX,LaufendeErrorNr)
+mesErrorMessage.Fehlerlevel = sLevel
+mesErrorMessage.Fehlernummer = sNummer
+
+try sKlasse_gesetzt 
+{
+	if (sKlasse == "")
+	{
+		mesErrorMessage.Nachrichtenklasse = MSG_ERRORCLASS	
+	}
+	else
+	{	
+		mesErrorMessage.Nachrichtenklasse = sKlasse
+	}
+}
+catch sKlasse_gesetzt
+{
+}
+
+try sMarkName{
+	ls_MarkName = sMarkName
+}
+catch(pmexception e, sMarkName){
+}
+
+mesErrorMessage.Variable1  = sVar1   
+mesErrorMessage.Variable2  = sVar2   
+mesErrorMessage.Variable3  = sVar3   
+mesErrorMessage.Variable4  = sVar4   
+mesErrorMessage.Instanzname = sInstanceName
+mesErrorMessage.ProductModuleID = sProductModuleID
+mesErrorMessage.Merkmalsname  = sMarkName
+mesErrorMessage.TextIntern = MakeString(sTextIntern, sVar1, sVar2, sVar3, sVar4)
+
+RenameMessage (mesErrorMessage, sTextIntern)
+     
+Res = RC_OK
+
+#import "incCatchErrorMessage_BASIS.txt"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

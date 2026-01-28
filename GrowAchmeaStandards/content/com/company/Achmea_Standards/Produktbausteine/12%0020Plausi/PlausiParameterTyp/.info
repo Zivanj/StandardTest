@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="SJC3U2VCHJECV4U94O2DDURJGI" sortkey="510" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::12%0020Plausi</pm:namespace>
+  <pm:name>PlausiParameterTyp</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">PlausiParameterType (PlausiPar)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">PlausiParameterType (PlausiPar)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT0000000WA32000SPM">com::company::TechnischesSchema::Produktbausteintypen::PlausiParameterTyp</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="7OPB5E6H699C64TVE92UM1E7T0" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT0000000WA32000SPM">com::company::TechnischesSchema::Produktbausteintypen::PlausiParameterTyp</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC0000000063H0000T76">PlausiParTmpl_ACHMEA_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC00000000MY30000T76">PlausiParameterTypVrlg_BASIS</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

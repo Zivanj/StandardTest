@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="RBL4201MTPH4T4KBU7UNTC70QT" sortkey="410" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik</pm:namespace>
+  <pm:name>Variablen</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Variablen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Variables</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Variablen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Variables</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>variable</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="ZZZPM3FOL0000000E0H0000T76" sortkey="0" structural="false">
+      <pm:name>Customer</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL0000000K0H0000T76" sortkey="0" structural="false">
+          <pm:name>CalculationFactors</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR0000000M0H0000T76">fBasePremium</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000L0H0000T76">fDistributionLabelFactor</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000N0H0000T76" sortkey="0" structural="false">
+          <pm:name>RiskFactors</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR0000000P0H0000T76">iDistributionLabel</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects>
+        <pm:object guid="ZZZPM3VAR0000000BA00000AM8">bAcceptanceCheck</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000L900000AM8">bQuoteSelectionEnabled</pm:object>
+        <pm:object guid="ZZZPM3VAR00000004410000T77">dChangeDate</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000WA00000AZZ">dDerivationDate</pm:object>
+        <pm:object guid="4KD2EQ63UCH2DB1908D2JIRQJA">iMaxCommission</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000H0H0000T76">sRatingCodeElp</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000G0H0000T76">sRatingCodeProd</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000F0H0000T76">sRatingCodeSProd</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000T140000T76" sortkey="0" structural="false">
+      <pm:name>Errorhandling</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3VAR0000000NAY0000SPM">bErrorFound</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000SZ30000T76" sortkey="0" structural="false">
+      <pm:name>Messages</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3VAR0000000HA50000T76">iErrorMessage</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000F010000SPB">sInstanceName</pm:object>
+        <pm:object guid="ZZZPM3VAR00000002FG0000SPM">sKlasse</pm:object>
+        <pm:object guid="ZZZPM3VAR00000003FG0000SPM">sLevel</pm:object>
+        <pm:object guid="ZZZPM3VAR00000002UA0000SPB">sMarkName</pm:object>
+        <pm:object guid="ZZZPM3VAR00000004FG0000SPM">sNummer</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000G010000SPB">sProductModuleID</pm:object>
+        <pm:object guid="ZZZPM3VAR00000005FG0000SPM">sTextIntern</pm:object>
+        <pm:object guid="ZZZPM3VAR00000006FG0000SPM">sVar1</pm:object>
+        <pm:object guid="ZZZPM3VAR00000007FG0000SPM">sVar2</pm:object>
+        <pm:object guid="ZZZPM3VAR00000008FG0000SPM">sVar3</pm:object>
+        <pm:object guid="ZZZPM3VAR00000009FG0000SPM">sVar4</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000QZ30000T76" sortkey="0" structural="false">
+      <pm:name>Methoden</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL00000004040000T76" sortkey="0" structural="false">
+          <pm:name>ErzeugeInstanz</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR0000000LPX0000SPM">iInstanzErzeugen</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000MPX0000SPM">sObjectClass</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000NPX0000SPM">sObjectName</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000OPX0000SPM">sRelName</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL00000005040000T76" sortkey="0" structural="false">
+          <pm:name>KomplettiereObjektbaum</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR0000000J851000SPM">iKomplettiereObjektbaum</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000RZ30000T76" sortkey="0" structural="false">
+          <pm:name>SchnittstellenCheck</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR00000002B50000T76">iCheckInstanzErzeugenLoeschen</pm:object>
+            <pm:object guid="ZZZPM3VAR00000003B50000T76">iDeleted</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000EV00000SPB">iEbene</pm:object>
+            <pm:object guid="ZZZPM3VAR00000009X00000SPB">iLoeschenErzeugen</pm:object>
+            <pm:object guid="ZZZPM3VAR00000008B50000T76">iNew</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000E040000T76">sTabellenName</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000T040000T76" sortkey="0" structural="false">
+          <pm:name>Umbenennen</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3VAR0000000UFX0000SPM">iLaenge</pm:object>
+            <pm:object guid="ZZZPM3VAR00000005GX0000SPM">iUmbAlt</pm:object>
+            <pm:object guid="ZZZPM3VAR00000007GX0000SPM">iUmbNeu</pm:object>
+            <pm:object guid="ZZZPM3VAR00000005110000SPB">iUmbenennen</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000VFX0000SPM">sKennungAlt</pm:object>
+            <pm:object guid="ZZZPM3VAR0000000IT81000SPM">sString</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects/>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL00000003040000T76" sortkey="0" structural="false">
+      <pm:name>Plausis</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3VAR0000000TF32000SPM">bCheckBenutzergruppe</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000VF32000SPM">bCheckRegelPruefGruppe</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000HF32000SPM">bPlausiRelevant</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000BFG0000SPM">sBenutzergruppe</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000HFG0000SPM">sPruefgruppe</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000JFG0000SPM">sRegelgruppe</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000C140000T76" sortkey="0" structural="false">
+      <pm:name>Sonstige</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3VAR0000000M210000SPB">bBerechneLeistung</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000ZS00000SPB">bCheck</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000T7V0000SPM">datAenderungsdatum</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000U7V0000SPM">datAenderungsdatum2</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000FEB0000SPM">iCheck</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000KUA0000SPB">iErmittleAnpassungswerte</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000H5X1000SPM">iLoescheBewegungen</pm:object>
+        <pm:object guid="ZZZPM3VAR0000000I200000SPB">sVertragsNr</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

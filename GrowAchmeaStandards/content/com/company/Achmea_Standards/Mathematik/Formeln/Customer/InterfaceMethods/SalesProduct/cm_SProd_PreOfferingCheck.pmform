@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000PFI0000AM8" isnullable="false" nrdims="0" pmid="PFI0000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::SalesProduct</pm:namespace>
+  <pm:name>cm_SProd_PreOfferingCheck</pm:name>
+  <pm:notice encoding="none"><![CDATA[Description:
+Interface method on the History Root  to run checks if e.g. Coverage(Bundles) can be offered
+In a loop on the Sales Product is SalesProduct.vtm_PreOfferingCheck called.
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+extern path pathProdBasis
+
+
+//Externe Objekte
+extern object extRoot
+		,extVkprod
+		
+//Versicherungstechnische Methoden
+data int vtm_PreOfferingCheck
+
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+
+loop( this, pathProdBasis )
+{
+	// If there is a bundle call Bundle a level lower
+
+   if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL )
+   {
+		rc = pathProdBasis.vtm_PreOfferingCheck.exec 
+		    	[extRoot = extRoot
+		    	,extVkprod = this
+		    	]
+
+   }
+   
+   else // It is a Product
+   {
+      // Doing the check on the Elementary Product(Bundle)
+	   rc = pathProdBasis.vtm_PreOfferingCheck.exec 
+		    [extRoot = extRoot
+		    ,extVkprod = this
+		    ]             
+   }
+}	
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_ACHMEA.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

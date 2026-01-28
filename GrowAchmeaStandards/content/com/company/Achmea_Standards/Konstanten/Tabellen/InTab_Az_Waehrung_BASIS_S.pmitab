@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000A1H0000SPM" abstract="false" final="false" pmid="A1H0000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Waehrung_BASIS_S</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="string" guid="67KBSE9P9A1DV4ECA1E68DRFVQ" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="228LBR4LTTMKD4V2DTB6SDTRCM" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SKP634P2KKGCL47PS2L9QRS4LO" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="7GGBH2MPMIU4P4V2GM79SRTKEP" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="1NRJGF4FL6DL34QEKGBOPBLMPD" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="76COJEK806UT84KJKO9PPU3SCA" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="PMHUHAMI3PG5C4KSM2DATRA1N1" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="12FMNRPQIN0S14IPUEIIF7P89R" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="71K8VQBNOVMLT44A8O8B19LHUC" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="UNKP6LLH77MK94EMQD980PJK24" sortkey="0">
+    <pm:name>PK_InTab_Az_Waehrung_BASIS_S</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Zulässige Währungen
+Typ und Nummernbereich:
+S
+CHAR3
+
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">ADP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AED</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AFA</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ALL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AMD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ANG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AON</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AOR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ARS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ATS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AUD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AWG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">AZM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BAM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BBD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BDT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BEF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BGN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BHD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BIF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BMD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BOB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BRL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BSD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BTN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BWP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BYB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BZD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CAD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CHF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CLP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CNY</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">COP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CRC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CUP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CVE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CYP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CZK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DEM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DEM3</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DJF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DKK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DOP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">DZD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ECS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">EEK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">EGP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ESP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ETB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">EUR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FIM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FJD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FKP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">FRF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GBP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GEL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GHC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GIP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GMD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GNF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GRD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GTQ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GWP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">GYD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HKD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HNL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HRK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HTG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">HUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IDR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IEP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ILS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">INR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IQD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IRR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ISK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ITL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">JMD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">JOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">JPY</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KES</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KGS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KHR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KMF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KPW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KRW</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KWD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KYD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KZT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LAK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LBP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LKR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LRD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LSL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LTL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LVL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">LYD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MAD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MDL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MGF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MKD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MMK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MNT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MOP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MRO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MTL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MUR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MVR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MWK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MXN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MYR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">MZM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NAD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NGN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NIO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NLG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NOK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NPR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">NZD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">OMR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PAB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PGK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PHP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PKR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PLN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">PYG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">QAR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RMB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ROL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RUB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RWF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SAR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SBD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SCR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SDP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SEK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SGD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SHP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SKK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SLL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SOS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SRG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">STD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SVC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SYP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SZL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">THB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TJR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TMM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TOP</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TPE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TRL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TTD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TWD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TZS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UAH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UGX</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">USD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">USDN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UYU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UZS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VEB</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VUV</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">WST</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XAF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XCD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XDS</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XOF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">XPF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">YER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">YUM</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZAR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZMK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZRN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZWD</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VAE Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ant. Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Neue Kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwanza Reajust.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arg. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Österr.Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Austr.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arub.Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aserb. Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Convert. Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bar. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belg.Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lew</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bdinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundi Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berm. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bru. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bah. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Weissruss.Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bel. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kan.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">F. Pac. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schweiz.Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chil. Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kol. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">C-R Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuban. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zypern Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tsch. Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deutsche Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) DEM 3N</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dschibuti Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dän.Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominik.Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ADinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Estn.Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ägy. Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nakfa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peseten</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finnische Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fid. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falkland Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franz.Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brit. Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibr. Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gui. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drachme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinea-Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyana-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">H.K.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rupiah</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Irisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schekel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Isl. Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaika-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordan-Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ken.Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Komoren-Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.K. Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">S.K. Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kaiman-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liban. Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri-Lanka-Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liber. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lux. Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libyscher Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mold. Lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Madagask. Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mazed.Denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malt. Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maur. Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malawi-Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mex. Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namibia Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cordoba Oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Norw.Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nep. Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.S.-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rial Omani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Neuer Sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kina</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Phil.Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pak. Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zloty</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kat. Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RMB Yuan</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rum. Lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russ. Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rua. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saudi. Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Salom.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sey. Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sud. Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schwed.Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sing.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St. Helena Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slow. Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som. Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sur. Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bhat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tad. Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkm. Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timor Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Türk. Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">T-u.T. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taiw. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uga. Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">US Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">US Dollar Intern</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Urug. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc  BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ostkar. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St.C. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">E.C.U.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jemen-Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Neue Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Simbabwe Dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">UAE Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.Ant.Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwanza Reajust.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arg. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Austr.Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Austr. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aruban Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Azeri Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Convert. Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bar. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belgian Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lev</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">BDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundi Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bermudan Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bru. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bah. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Beloruss.Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bel. Dollars</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Canadian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fr. Pac. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swiss Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chil. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Col. Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">C.R. Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cuban Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cyprus Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Czech Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">German Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Int.) DEM 3 Dec. Pts.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Djibouti Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Danish Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominican Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Alg. Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Est. Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Egpyt. Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nakfa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finnish Markka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fiji Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falkland Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">French Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brit. Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibraltar Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gui. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drachma</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinea Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyana Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">H.K.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rupiah</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Irish Punt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Scheckel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iraqi Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Isl. Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaican Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordanian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ken.Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comoros Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N. Korean Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">S.Korean Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cayman Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lebanese Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri Lankan Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liberian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lux. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libyan Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mold. Leu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Madagascan Fr.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maced. Denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malt. Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maur. Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malawi Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mex. Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namibian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cordoba Oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Norwegian Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nep. Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.Zeal.Dollars</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Omani Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kina</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Phil.Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pak. Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zloty</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Qat. Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yuan Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rom. Leu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russ. Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rwa. Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saudi. Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sol.Isl.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sey. Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sud. Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swedish Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sing.Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St.Helena Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slov. Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som. Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Surinam Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrian Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Baht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tad. Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkm. Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tunesian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timor Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turk. Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">T.+ T. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taiw. Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uga. Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">US Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">US Dollars Internal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Urug. Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Total</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">East Carib. Dollars</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St.C. Dollars</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">E.C.U.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yemeni Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimbabwean Dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VAE dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ant. gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nieuwe kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwanza reajust.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arg. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oostenr. schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Austr. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arub. gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Azerb. manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Convert. mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bar. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belg. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lew</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bdinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Berm. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bruneise dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bah. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wit-Russ. roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bel. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Can. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">F. Pac. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zwitserse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chil. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Col. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">C-R colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cubaanse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cypr. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tsj. kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Duitse mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) DEM 3N</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Djib. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deense kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominic. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ADinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Estl. kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Egypt. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nakfa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peseto</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finse mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fiji dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falkl. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brits pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibr. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guin. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Drachme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinese peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">H.K. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rupia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ierse pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shekel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IJsl. kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaic. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordaanse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ken. shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comorese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.K. won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Z.K. won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">KDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kaaimaneil. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liban. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri Lank. roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liber. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lux. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libische dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mold. lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malag. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maced. denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malt. lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maur. roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malaw. kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mex. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namib. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cordoba oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Noorse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nep. roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">N.Z. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Omaanse rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nieuwe sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kina</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Filip. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pak. roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zloty</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Qatarese riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">RMB yuan</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Roem. lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russ. roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rw. frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saoed. riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Salom. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sey. roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sud. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zweedse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sing. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sint-Hel. pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slow. kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Som. shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sur. gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrisch pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bhat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tad. roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkm. manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">TDinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timorese escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkse lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">T. en T. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Taiw. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oeg. shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VS dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">VS dollar intern</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Urug. peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA-frank BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oost-Car. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St.C. dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ECU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA-frank BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jemenitische rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nieuwe dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaïre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimbabw. dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Andorianische Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vereinigte Arabische Emirate Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Albanische Lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Armenische Dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Antilianische Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolanische neue Kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolanische Kwanza Reajustado</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Argentinische Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Österreichische Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Australien Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arubanische Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aserbaidschanische Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bosnia and Herzegovina Convertible Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Barbados-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bangladesch Taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belgische Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bulgarische Lew</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahrein-Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundi Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bermuda Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brunei Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brasilianische Real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahama Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bhutan Ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Botswanische Pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Weissrussische Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belize-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kanadische Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Französischer Franc (Pazifik Inseln)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schweizer Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chilenische Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinesischer Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kolumbianische Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Costa-Rica-Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kubanische Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kap-Verde-Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zypern Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tschechische Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deutsche Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) Deutsche Mark (3 Nachk.)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dschibuti Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dänische Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominikanische Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Algerische Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ecuadorianische Sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Estnische Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ägyptisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eritreische Nakfa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spanische Peseten</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Äthiopische Birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Europäischer Euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finnische Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fidschi-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falkland Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Französische Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Britische Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Georgisches Lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ghanesische Cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibralter Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gambanesische Dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinea Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Griechische Drachme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guatemalische Quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinea-Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyana-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hong Kong Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Honduranische Lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kroatische Kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haitianische Gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ungarischer Forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indonesische Rupiah</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Irisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Israelische Schekel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indian Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Irakische-Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iranische Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Isländische Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Italienische Lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaika-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordan-Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Japanische Yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kenianische Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kirgisische Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kambodschanische Riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Komoren-Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nordkoreanische Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Südkoreanische Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuwaitische Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kaiman-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kazachische Tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Laotische Kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libanesisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri-Lanka-Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liberianischer Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lesotische Loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Litauische Lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Luxembourgische Franken</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lettländische Lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libyscher Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Marokkanische Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Moldavische Lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Madagasker Frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mazedonische Denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Myanmar Kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mongolianische Tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Macauanische Pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauretanische Ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maltesische Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauritius Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maledivische Rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malawi-Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mexikanische Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malaysischer Ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mosambikanische Metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namibia Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nigerianische Naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nicaraguanische Cordoba Oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Niederländische Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Norwegische Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nepalesische Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Neuseeland-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rial Omani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Panamaische Balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peruanischer neuer Sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Papua-Neuguineische Kina</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Philippinische Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pakistanische Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Polnische Zloty (neu)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Portugiesische Escudos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Paraguayische Guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Katar-Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinesische RenMinBi Yuan</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rumänische Lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russische Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ruanda Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saudi Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Salomonen Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Seychellen Rupie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sudanesisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Schwedische Kronen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Singapur Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St. Helena Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slowenische Tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slowakische Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sierra Leone Leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Somalia Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Surinamische Gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Santomeische Dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">El Salvador-Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrisches Pfund</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swasiländische Lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Thailand Bhat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tadschikische Rubel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkmenische Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tunesischer Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tongaische Pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timor Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Türkische Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Trinidad-u. Tobago-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Neuer Taiwan-Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tansania-Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ukrainische Hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uganda Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">US Amerikanische Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) Amerikanische Dollar (5 Nachk.)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uruguy Peso (neu)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uzbekistan Sum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Venezolanische Bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vietnamesische Dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vanuatische Vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Samoanische Tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc  BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ostkaribischer Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St. Christopher Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Europäische Währungs Einheit (E.C.U.)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc  BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFP Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jemen-Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jugoslawische neue Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Südafrikanische Rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zambianische Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Simbabwe Dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Andoran Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">United Arab Emirates Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Albanian Lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Armenian Dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Antillean Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolan New Kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolan Kwanza Reajustado</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Argentine Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Austrian Schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Australian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Aruban Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Azerbaijan Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bosnia and Herzegovina Convertible Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Barbados Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bangladesh Taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belgian Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bulgarian Lev</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahrain Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundi Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bermudan Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brunei Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brazilian Real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahaman Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bhutan Ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Botswana Pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belorussian Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belize Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Canadian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">French Franc (Pacific Islands)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swiss Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chilean Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinese Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Colombian Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Costa Rica Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cuban Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cape Verde Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cyprus Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Czech Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">German Mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Internal) German Mark (3 dec.places)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Djibouti Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Danish Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominican Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Algerian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ecuadorian Sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Estonian Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Egyptian Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eritrean Nafka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spanish Peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ethiopian Birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">European Euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finnish Markka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fiji Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falkland Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">French Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">British Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Georgian Lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ghanian Cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibraltar Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gambian Dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinean Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Greek Drachma</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guatemalan Quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinea Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyana Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hong Kong Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Honduran Lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Croatian Kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haitian Gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hungarian Forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indonesian Rupiah</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Irish Punt</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Israeli Shekel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indian Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iraqi Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iranian Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iceland Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Italian Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaican Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordanian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Japanese Yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kenyan Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kyrgyzstan Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cambodian Riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comoros Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">North Korean Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">South Korean Won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kuwaiti Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cayman Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kazakstanian Tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Laotian Kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lebanese Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri Lankan Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liberian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lesotho Loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lithuanian Lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Luxembourg Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Latvian Lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libyan Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Moroccan Dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Moldavian Leu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Madagascan Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Macedonian Denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Myanmar Kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mongolian Tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Macao Pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauritanian Ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maltese Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauritian Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maldive Rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malawi Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mexican Pesos</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malaysian Ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mozambique Metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namibian Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nigerian Naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nicaraguan Cordoba Oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dutch Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Norwegian Krone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nepalese Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Zealand Dollars</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Omani Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Panamanian Balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peruvian New Sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Papua New Guinea Kina</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Philippine Peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pakistani Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Polish Zloty (new)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Portuguese Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Paraguayan Guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Qatari Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinese Yuan Renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Romanian Leu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russian Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rwandan Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saudi Riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Solomon Islands Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Seychelles Rupee</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sudanese Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swedish Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Singapore Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St.Helena Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slovenian Tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slovakian Krona</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sierra Leone Leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Somalian Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Surinam Guilder</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sao Tome / Principe Dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">El Salvador Colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrian Pound</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swaziland Lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Thailand Baht</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tajikistani Ruble</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkmenistani Manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tunisian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tongan Pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timor Escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkish Lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false"><![CDATA[Trinidad & Tobago Dollar]]></pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Taiwan Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tanzanian Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ukraine Hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ugandan Shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">United States Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Internal) United States Dollar (5 Dec.)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uruguayan Peso (new)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uzbekistan Som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Venezuelan Bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vietnamese Dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vanuatu Vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Samoan Tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">East Carribean Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St. Christopher Dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">European Currency Unit (E.C.U.)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA Franc BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFP Franc</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Yemeni Rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">New Yugoslavian Dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">South African Rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zambian Kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimbabwean Dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Andorrese peseta</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Verenigde Arabische Emiraten dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Afghani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Albanese lek</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Armeense dram</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Antiliaanse gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolese nieuwe kwanza</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Angolese kwanza reajustado</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Argentijnse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oostenrijkse schilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Australische dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Arubaanse gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Azerbeidzjaanse manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bosnië en Herzegovina convertible mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Barbadiaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bengalese taka</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belgische frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bulgaarse lew</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahreinse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Burundese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bermudaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bruneise dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Boliviano</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Braziliaanse real</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bahamaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Bhutaanse ngultrum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Botswaanse pula</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Wit-Russische roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Belizaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Canadese dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franse frank (Pacifische Eilanden)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zwitserse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chileense peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinese renminbi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Columbiaanse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Costa Ricaanse colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cubaanse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kaapverdische escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cypriotisch pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tsjechische kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Duitse mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) Duitse mark (3 cijfers na de komma)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Djiboutiaanse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Deense kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dominicaanse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Algerijnse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ecuadoraanse sucre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Estlandse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Egyptisch pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Eritrese nakfa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Spaanse peseto</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ethiopische birr</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Europese euro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Finse mark</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Fijische dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Falklands pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Franse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Brits pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Georgische lari</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ghanese cedi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gibraltarees pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Gambiaanse dalasi</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Griekse drachme</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guatemalaanse quetzal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guinese peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Guyaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hongkong dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hondurese lempira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kroatische kuna</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Haïtiaanse gourde</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Hongaarse forint</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indonesische rupia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Ierse pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Israëlische shekel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Indiase roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iraakse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Iraanse rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">IJslandse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Italiaanse lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jamaicaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jordaanse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Japanse yen</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Keniaanse shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kirgizische som</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Cambodjaanse riel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Comorese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Noord-Koreaanse won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zuid-Koreaanse won</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Koeweitse dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kaaimaneilandse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kazachse tenge</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Laotiaanse kip</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libanees pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sri Lankaanse roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Liberiaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Lesothaanse loti</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Litouwse lita</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Luxemburgse frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Letlandse lat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Libische dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Marokkaanse dirham</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Moldavische lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malagassische frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Macedonische denar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Myanmarese kyat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mongoolse tugrik</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Macause pataca</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauritaanse ouguiya</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maltese lire</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mauritiaanse roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maledivische rufiyaa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Malawische kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mexicaanse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Maleisische ringgit</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Mozambikaanse metical</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Namibische dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nigeriaanse naira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nicaraguaanse cordoba oro</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nederlandse gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Noorse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nepalese roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nieuw-Zeelandse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Omaanse rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Panamese balboa</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Peruaanse nieuwe sol</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Kina van Papoea-Nieuw-Guinea</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Filippijnse peso</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Pakistaanse roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Poolse zloty (nieuw)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Portugese escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Paraguayaanse guarani</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Qatarese riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Chinese renminbi yuan</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Roemeense lei</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Russische roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Rwandese frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Saoedische riyal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dollar Salomonseilanden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Seychelse roepie</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sudanees pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zweedse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Singaporese dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sint-Heleens pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sloveense tolar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Slowaakse kroon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Sierra Leoonse leone</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Somalische shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Surinaamse gulden</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Santomese dobra</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Salvadoraanse colon</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Syrisch pond</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Swazische lilangeni</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Thaise bhat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tadzjiekse roebel</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkmeense manat</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tunesische dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tongaanse pa'anga</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Timorese escudo</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Turkse lira</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Dollar Trinidad en Tobago</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Nieuwe Taiwanese dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Tanzaniaanse shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oekraïense hryvnia</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oegandese shilling</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Amerikaanse dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">(Intern) Amerikaanse dollar (5 cijfers na de komma)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Uruguayaanse peso (nieuw)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oezbeekse sum</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Venezolaanse bolivar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vietnamese dong</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Vanuatuaanse vatu</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Samoaanse tala</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA-frank BEAC</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Oost-Caribische dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">St. Christopher dollar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Europese valuta-eenheid (ECU)</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFA-frank BCEAO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">CFP-frank</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Jemenitische rial</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Joegoslavische nieuwe dinar</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zuid-Afrikaanse rand</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zambiaanse kwacha</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zaïre</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Zimbabwaanse dollar</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

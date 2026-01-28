@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000O900000AM8" isnullable="false" nrdims="0" pmid="O900000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_ChangeContract</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="ignore"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h"
+
+//Externe Pfade
+extern path pathVkprod
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_AenderungVertrag
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+data int tim_Interest
+
+//Objekte
+
+//Attribute, Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+data string Geschaeftsprozess
+
+//interne Variablen
+bool lb_Calculate  
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+
+if (bErrorFound == FALSE)
+{			
+	// Check context information. In special cases, a different method is performed.
+	// (Example: In the context of business transaction Reimplementation, an interest
+	// calculation is performed.)
+	this.Methodenschluessel = SNTMETHODE_AENDERUNG_VERTRAG	
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+		
+	if (!exists(this.Geschaeftsprozess))
+		lb_Calculate   = TRUE
+	else
+	{
+		switch ( this.Geschaeftsprozess )
+		{
+			case "N1":	lb_Calculate  = FALSE 	// NewBusiness Only Accptance Exl Premium Calculation Incl TermsConditions
+			break
+			case "A1":	lb_Calculate  = FALSE 	// Change Only Accptance Exl Premium Calculation Incl TermsConditions
+			break
+
+			default:
+			//"N3" 	-->	NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"N2"	--> NewBusiness Incl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"N" 	-->	NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"A3" 	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"A2"	--> Change Incl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"A" 	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+			lb_Calculate   = TRUE
+		}
+	}
+	
+	if ( lb_Calculate )	
+	{
+		loop ( this, pathVkprod )
+		{	
+			rc = pathVkprod.vtm_SchnittstellenCheck.exec [extRoot = this]
+			
+	     	rc = pathVkprod.vtm_AenderungVertrag.exec
+	   					[ extRoot		= this,
+	   					bQuoteSelectionEnabled = false
+	   					]
+	   					
+	   		rc = pathVkprod.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]
+	  	
+		}
+	}
+	
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+#import "incStdMethodsBottom_ACHMEA.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

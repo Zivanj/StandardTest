@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000Z140000T76" isnullable="false" nrdims="0" pmid="Z140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Tarifierung</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Durchführung Neugeschäft.
+siehe: FS-PM Leben FK VT-Schnittstelle
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+vtm_Tarifierung				Verkaufsprodukt
+vtm_UMBENENNEN_fuer_FSPM	History Root
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprod
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_Tarifierung
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+//Objekte
+
+//Attribute, Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variablen
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{			
+	this.Methodenschluessel = SNTMETHODE_TARIFIERUNG
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+		
+	loop ( this, pathVkprod )
+	{
+		rc = pathVkprod.vtm_SchnittstellenCheck.exec [extRoot = this]
+	
+		rc = pathVkprod.vtm_Tarifierung.exec
+						[ extRoot		= this
+						]
+						
+		rc = pathVkprod.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]					
+	}
+
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

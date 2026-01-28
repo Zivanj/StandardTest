@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="UHN1NCGD4V2LL4PJIT90F2CSV2" sortkey="450" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik</pm:namespace>
+  <pm:name>Includes</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Includes</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Includes</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Includes</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Includes</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>include</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="ZZZPM3FOL000000081H0000T76" sortkey="0" structural="false">
+      <pm:name>Customer</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL000000091H0000T76" sortkey="0" structural="false">
+          <pm:name>Achmea</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders>
+            <pm:folder guid="ZZZPM3FOL0000000U8H0000T76" sortkey="0" structural="false">
+              <pm:name>FormVariousCodes</pm:name>
+              <pm:objecttypes inherited="true"/>
+              <pm:objectfilters inherited="true"/>
+              <pm:folders/>
+              <pm:objects>
+                <pm:object guid="ZZZPM3INC00000004CC0000AM9">incACHMEAFormCodes.h</pm:object>
+                <pm:object guid="ZZZPM3INC0000000AJD2000AM9">incKeysInterfaceMethods_ACHMEA.h</pm:object>
+              </pm:objects>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000000G451000AM8" sortkey="0" structural="false">
+              <pm:name>Makros</pm:name>
+              <pm:objecttypes inherited="true"/>
+              <pm:objectfilters inherited="true"/>
+              <pm:folders/>
+              <pm:objects>
+                <pm:object guid="ZZZPM3INC00000005CC0000AM9">IncACHMEAMessageMakro.h</pm:object>
+              </pm:objects>
+            </pm:folder>
+          </pm:folders>
+          <pm:objects>
+            <pm:object guid="ZZZPM3INC00000006CC0000AM9">incACHMEAFormErrorCodes.h</pm:object>
+            <pm:object guid="ZZZPM3INC00000007CC0000AM9">incACHMEAFormVariousCodes.h</pm:object>
+            <pm:object guid="ZZZPM3INC00000008CC0000AM9">incStdBottom_ACHMEA.h</pm:object>
+            <pm:object guid="ZZZPM3INC00000009CC0000AM9">incStdMethodsBottom_ACHMEA.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000ACC0000AM9">incStdMethods_ACHMEA.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000BCC0000AM9">incStd_ACHMEA.h</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects/>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000UZ30000T76" sortkey="0" structural="false">
+      <pm:name>Errorhandling</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000CCC0000AM9">incCatchErrorMessage_BASIS.txt</pm:object>
+        <pm:object guid="ZZZPM3INC0000000DCC0000AM9">incCatchError_BASIS.txt</pm:object>
+        <pm:object guid="ZZZPM3INC0000000ECC0000AM9">incErrorDefs_BASIS.txt</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000FQ00000SPB" sortkey="0" structural="false">
+      <pm:name>SAP</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders>
+        <pm:folder guid="ZZZPM3FOL00000006N01000SPM" sortkey="0" structural="false">
+          <pm:name>FormErrorCodes</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3INC0000000FCC0000AM9">incSAPFormErrorCodes_1_BASIS.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000GCC0000AM9">incSAPFormErrorCodes_BASIS_Obsolet.h</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000JQ00000SPB" sortkey="0" structural="false">
+          <pm:name>FormPlausiCodes</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3INC0000000HCC0000AM9">incSAPFormPlausiCodes_BASIS_1.h</pm:object>
+          </pm:objects>
+        </pm:folder>
+        <pm:folder guid="ZZZPM3FOL0000000KQ00000SPB" sortkey="0" structural="false">
+          <pm:name>FormVariousCodes</pm:name>
+          <pm:objecttypes inherited="true"/>
+          <pm:objectfilters inherited="true"/>
+          <pm:folders/>
+          <pm:objects>
+            <pm:object guid="ZZZPM3INC0000000ICC0000AM9">incSAPFormClasses_BASIS.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000JCC0000AM9">incSAPFormCodes_1_BASIS.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000KCC0000AM9">incSAPFormCodes_Obsolete_BASIS.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000LCC0000AM9">incSAPMacros.h</pm:object>
+            <pm:object guid="ZZZPM3INC0000000MCC0000AM9">incSAPMessageClasses.h</pm:object>
+          </pm:objects>
+        </pm:folder>
+      </pm:folders>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000NCC0000AM9">incSAPFormErrorCodes_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000OCC0000AM9">incSAPFormPlausiCodes_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000PCC0000AM9">incSAPFormVariousCodes_BASIS.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+    <pm:folder guid="ZZZPM3FOL0000000TZ30000T76" sortkey="0" structural="false">
+      <pm:name>Standard</pm:name>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="true"/>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3INC0000000QCC0000AM9">incStdBottom_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000RCC0000AM9">incStdMethodsBottom_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000SCC0000AM9">incStdMethods_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000TCC0000AM9">incStdPlausis_BASIS.h</pm:object>
+        <pm:object guid="ZZZPM3INC0000000UCC0000AM9">incStd_BASIS.h</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

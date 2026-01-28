@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000KCC0000AM9" pmid="KCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormCodes_Obsolete_BASIS.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_FORM_CODES_OBSOLETE_BASIS_H_INCLUDED
+#define INC_FORM_CODES_OBSOLETE_BASIS_H_INCLUDED
+/*====================================================================*/
+
+// OBSOLETE RELEASE 4.0
+
+#define VERSSTEUER_BEFREIT	 	1
+#define VERSSTEUER_PFLICHTIG	 	3
+#define SNTMETHODE_BEARBEITUNGFONDSZEITRAUM 							210210
+#define SNTMETHODE_BEITRAGVERANLAGUNG 									210270 
+#define SNTMETHODE_ENTNAHMEPRAEMIEFONDSZV    						210280
+#define SNTMETHODE_ANS_GUTHABEN_VERZINSUNG							210080
+#define SNTMETHODE_UEBZUTEILUNG_VORSCHUESSIG							210180
+#define SNTMETHODE_UEBZUTEILUNG_NACHSCHUESSIG						210190
+#define SNTMETHODE_UEBVERWENDUNG											210170
+#define SNTMETHODE_SCHLUSSUEB_FORTSCHREIBUNG							210150
+#define SNTMETHODE_AUSKUNFT_BEITRAGSFREISTELLUNG					510020
+#define BTRART_PLAN   									5
+
+/*====================================================================*/
+#endif /* #ifndef INC_FORM_CODES_OBSOLETE_BASIS_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

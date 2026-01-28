@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC000000GF51000AM8" pmid="GF51000AM8" abstract="false" cachesize="unbounded" cachingmode="disabled" datatype="integer" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219</pm:namespace>
+  <pm:name>fm_SProd_Root_ClassificationBM</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM000000FF51000AM8">com::company::Achmea_Standards_MVA::Mathematik::Formeln::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219::cm_SProd_Root_ClassificationBM</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+  <pm:assignments>
+    <pm:assignment type="function">
+      <pm:descriptor datatype="boolean" isnullable="false" nrdims="0" guid="ZZZPM3VAR0000000NAY0000SPM">
+        <pm:name>com::company::Achmea_Standards::Mathematik::Variablen::bErrorFound</pm:name>
+      </pm:descriptor>
+      <pm:element guid="ZZZPM3FUNC000000X140000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::f_CheckForErrors</pm:element>
+    </pm:assignment>
+  </pm:assignments>
+</pm:function>

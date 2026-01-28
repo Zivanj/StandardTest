@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000HYG0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte::BeitragsTyp</pm:namespace>
+  <pm:name>PremTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000JYG0000T76" pmid="JYG0000T76">
+      <pm:name>PremTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000HYG0000T76" pmid="HYG0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>PremTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000BX30000T76">com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte::BeitragsTyp::BtrVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000DNC0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BeitragsTyp</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="PB9HFUB6TV1474M636BMCFLQ71" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AdministrationCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Administration costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Adminsitration Costs is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Administration Costs.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="5D1UCKD86BADE409V8GF5LF8RS" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommercialAdjustment</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Commercial adjustment</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Commercial adjustment</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Commercial adjustment is used to tailor the pure risk based risk premium to a client premium that is suitable for the proposition. Based on a number of commercial factor’s the production premium can be adjusted.
+
+For each product there are different commercial factor’s. 
+Based on these value’s the commercial adjustment is done by determining the commercial factor’s in the corresponding value tables as valid on version date.
+For each proposition there can be different commercial adjustment tables.  The values for the tables are set in corresponding attributes in the DiscountSurchargeType for the commercial adjustment per Sales Product.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="031BJ52MPM4LB4PHE0BONHF3Q3" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>DiscountBasePremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Discount base premium</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[This element is the Production Premium  corrected with mentioned factors;
+·	Proposition Costs & Supplement For Discounts 
+·	Commercial Adjustment 
+·	Conversion Discount 
+giving the Discount Base Premium. ]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="Q0UB4SQQ1E4SF4AGPHGSKFO1PT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>FactoryPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Production premium</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The Production Premium is calculated using the following steps, all defined and executed on Production level:
+Order	Step				Calculated from/with
+1	Loss (Average Claim Amount)	Risk Analysis
+2	Technical Risk Adjustment	Loss
+3	Risk Premium			Step 1 + Step 2
+4	Handling Costs			Risk Premium
+5	Interest			Risk Premium
+6	Administration Costs		Risk Premium
+7	Return on Production		Risk Premium
+8	Production Premium		Step 3 + … + Step 7
+
+In BDS the attribute ProductionPremium was mapped to the FS-PM attribute Factory Premium.
+Due to the new setup of the premiummodel, including introducing a new attribute at FS-PM named Production Premium, this field was introduced to handle the proper setup of BDS for now.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="T0G23HLHCGJL34CA8JR6BL089L" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>HandlingCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Handling costs</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Handling costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Handling Costs is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Handling Costs.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="1B60E5SAFLMLR4U2F9I1MISOLI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Interest</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Interest</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Interest is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Interest.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="QME7CU43KU1D94HBBA77PS6U0I" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Loss</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Loss</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">The derivation of the loss (average claim amount) per Elementary Product is done via a Single Value Table</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0OHRU400E38LT4N2A06BK3G24C" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>MarketPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Proposition premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Proposition prämie</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[This element is the Discount Base Premium corrected with mentioned discounts;
+•	Collectivity Discount 
+•	Action / Campaign Discount
+•	Payment Term Discount
+giving the Proposition Premium.
+
+In BDS the attribute PropositionPremium was mapped to the FS-PM attribute Market Premium.
+Due to the new setup of the premiummodel, including introducing a new attribute at FS-PM named Proposition Premium, this field was introduced to handle the proper setup of BDS for now.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="Q0OTH9BOEL8LB4Q13GT4D9B7M3" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PropositionCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="U2PMP59LIGHLD48QBM0RLSCKEN" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ReturnOnProduction</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Return on production</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Return on Production  is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Return on Production.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="PNAUD9PIPEGDU46EE0NFG4LU9S" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>SupplementForDiscounts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Supplement for discounts</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for SupplementForDiscounts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0F567H16NG0DD4DVMJGFNTAFNS" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>TechnicalRiskAdjustment</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Technical risk adjustment</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The technical risk adjustment is calculated by multiplying several rating factors.
+Some rating factors are currently used for every Elementary Product, whereas most are Product/Elementary Product specific.
+
+The following formula is used for the calculation:
+<Technical Risk Adjustment>	= CorrectionFactor (Distribution Label)
+				* CorrectionFactor (Deductible Amount), if applicable
+				* product/elementary product specific CorrectionFactor(s)
+				* <Client Risk Index>, if applicable
+				* <General Premium Index>
+				* <Loss>
+				- <Loss>
+
+The Client Risk Index and the General Premium Index are provided on Elementary Product.
+The correction factor of the deductible amount and the client risk index are applicable for almost all elementary products, but not for all.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000U6H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000000W6H0000T76" readonly="false" sortkey="1">
+                  <pm:name>Output</pm:name>
+                  <pm:folders>
+                    <pm:folder guid="ZZZPM3FOL0000000Y6H0000T76" readonly="false" sortkey="3">
+                      <pm:name>Proposition</pm:name>
+                      <pm:attributes>
+                        <pm:attribute>CommercialAdjustment</pm:attribute>
+                        <pm:attribute>DiscountBasePremium</pm:attribute>
+                        <pm:attribute>MarketPremium</pm:attribute>
+                        <pm:attribute>PropositionCosts</pm:attribute>
+                        <pm:attribute>SupplementForDiscounts</pm:attribute>
+                      </pm:attributes>
+                    </pm:folder>
+                    <pm:folder guid="ZZZPM3FOL0000000X6H0000T76" readonly="false" sortkey="2">
+                      <pm:name>Factory</pm:name>
+                      <pm:attributes>
+                        <pm:attribute>AdministrationCosts</pm:attribute>
+                        <pm:attribute>FactoryPremium</pm:attribute>
+                        <pm:attribute>HandlingCosts</pm:attribute>
+                        <pm:attribute>Interest</pm:attribute>
+                        <pm:attribute>Loss</pm:attribute>
+                        <pm:attribute>ReturnOnProduction</pm:attribute>
+                        <pm:attribute>TechnicalRiskAdjustment</pm:attribute>
+                      </pm:attributes>
+                    </pm:folder>
+                  </pm:folders>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PremTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

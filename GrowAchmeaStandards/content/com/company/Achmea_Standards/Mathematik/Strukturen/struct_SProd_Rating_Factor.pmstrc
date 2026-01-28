@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:structure xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3STRC000000J1H0000T76" pmid="J1H0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Strukturen</pm:namespace>
+  <pm:name>struct_SProd_Rating_Factor</pm:name>
+  <pm:fields>
+    <pm:field abstract="false" datatype="date" final="false" guid="0TN5EBD112RKK4AVTGHVLILFH3" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>VALID_FROM</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="date" final="false" guid="37AL9T0FUBE414A456LD9EVJ81" isnullable="false" nrdims="0" sealed="false" sortkey="1" visibility="content">
+      <pm:name>VALID_TO</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="string" final="false" guid="OOCD0TGEFCISV42PQLM3FTPFAK" isnullable="false" nrdims="0" sealed="false" sortkey="2" visibility="content">
+      <pm:name>PROD_RATING_CODE</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="string" final="false" guid="RTO2OT7EFHMCP4EBE00FGFFS4Q" isnullable="false" nrdims="0" sealed="false" sortkey="3" visibility="content">
+      <pm:name>ELP_RATING_CODE</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="float" final="false" guid="0MJ7FCCLPN2SU4VGCRP572JFU4" isnullable="false" nrdims="0" sealed="false" sortkey="4" visibility="content">
+      <pm:name>FACTOR</pm:name>
+    </pm:field>
+  </pm:fields>
+</pm:structure>

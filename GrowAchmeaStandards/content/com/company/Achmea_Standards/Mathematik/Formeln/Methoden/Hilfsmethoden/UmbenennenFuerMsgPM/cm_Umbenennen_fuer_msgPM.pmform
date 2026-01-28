@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000M140000T76" isnullable="false" nrdims="0" pmid="M140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Hilfsmethoden::UmbenennenFuerMsgPM</pm:namespace>
+  <pm:name>cm_Umbenennen_fuer_msgPM</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Führt die Umbenennung der Testinstanzen durch
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+iUmbenennen  integer   Funktionsbelegung
+sString   string   Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+
+// externe Objekte
+extern object extObj
+
+// Merkmale
+
+// Objekte
+
+//Interne Variablen
+int i
+int h_Anz
+string h_prefix
+string ObjKlasse
+path h_path
+
+pmproductmodule Quelle
+pmproductmodule Ziel
+pmproductrelation Relation
+
+/***********************************************************************/
+/* Verarbeitung                                                          */
+/***********************************************************************/
+
+//Umbenennen des Objektes
+setObjectName( extObj, toString ( sString, "Instanz von ", getObjectBaseName( extObj ) ) )
+
+// Ermittle Kindobjekte und führe Aufruf rekursiv durch
+h_prefix = "/TO:/PK:/OT:"
+
+Quelle = new pmproductmodule( extObj )
+
+//Ermitteln der Anzahl der Vorwärtsbeziehungen
+h_Anz = Quelle.ForwardRelationList.iLength
+
+//Für alle möglichen Vorwärtsbeziehungen
+for (i=0, i<h_Anz, i++)
+{ 
+	Relation = Null	
+
+	try
+	{
+		Relation  = Quelle.ForwardRelationList.GetAt( i )
+	}
+	catch(pmexception exc)
+	{
+	}	
+	
+	if (Relation != Null)
+	{
+		Ziel   = Relation.TargetProductModule
+		ObjKlasse = Ziel.sClassName
+
+		//Erstelle Pfadstring
+		h_path = ToString(h_prefix,ObjKlasse)
+
+		loop(extObj, h_path)
+		{
+			//Rekursiver Aufruf auf dem Kindobjekt
+			rc = iUmbenennen[extObj = h_path, sString = sString ]
+		}
+	}
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

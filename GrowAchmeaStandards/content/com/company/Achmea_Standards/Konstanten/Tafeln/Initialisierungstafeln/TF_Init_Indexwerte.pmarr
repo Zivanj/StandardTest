@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:array xmlns:pm="http://www.msg.de/msgpm/data/2011" datatype="float" dataversion="1912" guid="ZZZPM3ARR0000000QTA0000SPB" isnullable="false" nrdims="2" abstract="false" final="false" pmid="QTA0000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tafeln::Initialisierungstafeln</pm:namespace>
+  <pm:name>TF_Init_Indexwerte</pm:name>
+  <pm:value>
+    <pm:dimentries>
+      <pm:dimentry>1</pm:dimentry>
+      <pm:dimentry>6</pm:dimentry>
+    </pm:dimentries>
+    <pm:floatvals>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+    </pm:floatvals>
+  </pm:value>
+  <pm:notice encoding="none"><![CDATA[Aufbau der Tafel:
+Spalte 1: Indexart
+Spalte 2: Indexstufe
+Spalte 3: GültigVon
+Spalte 4: GültigBis
+Spalte 5: Indexwert
+Spalte 6: Steigerungswert
+
+]]></pm:notice>
+</pm:array>

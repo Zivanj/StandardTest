@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000PE32000SPM" isnullable="false" nrdims="0" pmid="PE32000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Plausis::Steuerung</pm:namespace>
+  <pm:name>cm_Vkprod_Plausis_Check</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Methode zur Durchführung der produktabhängigen Plausibilitäten auf Verkaufsprodukt-Ebene.
+
+Zuerst wird der Objektbaum auf Verkaufsprodukt-Ebene komplettiert via iKomplettiereObjektbaum: 
+Es werden die Instanzen zu Bausteinen der Klasse PlausiParameterTyp gemäß der definierten Beziehungen 
+Verkaufsprodukt-PlausiParameterTyp angelegt. Daneben werden alle Instanzen von 
+Bausteinen der Klasse PlausiTyp gemäß der definierten Beziehungen PlausiParameterTyp-PlausiTyp
+angelegt.
+
+Ausgehend vom Verkaufsprodukt wird in einer Schleife über PlausiTyp-Instanzen anhand der Parameter
+sBenutzergruppe, sPruefgruppe und sRegelgruppe geprüft, ob die Plausibilisierung durchzuführen
+ist. Falls ja, wird die Plausibilisierung via PlausiTyp.vtm_Plausis_Check durchgeführt.
+
+Nach Abarbeitung aller Plausibilitäten für das Verkaufsprodukt wird in einer Schleife über alle
+Produkte zuerst die Methode Produkt.vtm_Structure_Check zur Prüfung der strukturellen Korrektheit 
+der Hauptachsebene Produkt durchgeführt und anschließend die Plausibilisierung des Produktes
+durch Aufruf der Methode Produkt.vtm_Plausis_Check angestoßen. 
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+sPruefgruppe			string		Aufrufparameter
+sBenutzergruppe		string		Aufrufparameter
+sRegelgruppe			string		Aufrufparameter
+iKomplettiereObjektbaum	integer		Funktionsbelegung
+bPlausiRelevant		bool		Funktionsbelegung
+sLevel				string		Aufrufparameter/Funktionsbelegung
+
+Verwendete Methoden mit Name/Klasse:
+vtm_Plausis_Check		PlausiTyp/Produkt
+vtm_Structure_Check		Produkt
+                             
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+extern path pathProdBasis
+		,pathPlausiPar
+		,pathPlausi  
+
+//Externe Objekte
+extern object extRoot
+		,extVkprod
+		,extObjHauptachse
+		,extPlausi
+		,extPlausiPar 
+		
+//Versicherungstechnische Methoden
+data int vtm_Plausis_Check
+
+
+//Attribute Merkmale
+data int PlausisAnzeigen
+data string	VertragsNr
+data int IstBeteiligungsPolice
+
+//Objekte
+object objPlausiPar 
+
+//interne Variablen
+bool PlausiIsRelevant   
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+// bei Beteiligungspolice keine Prüfungen durchführen
+if (this.IstBeteiligungsPolice == 1)
+{
+	Res = RC_OK
+	return
+}
+
+// Erzeugen der Instanz von PlausiParameterTyp und aller Instanzen
+// von PlausiTyp
+rc = iKomplettiereObjektbaum
+
+loop(this, pathPlausiPar)
+{
+	loop(pathPlausiPar, pathPlausi)
+	{
+		// Pruefen, ob Plausi für Benutzergruppe, Pruefgruppe und Regelgruppe
+		// relevant ist
+		PlausiIsRelevant = bPlausiRelevant
+								[sBenutzergruppe = sBenutzergruppe
+								,sPruefgruppe = sPruefgruppe
+								,sRegelgruppe = sRegelgruppe
+								,extPlausi = pathPlausi
+								]
+		if(PlausiIsRelevant  == TRUE)
+		{
+			// Durchfuehrung der Plausibilisierung
+		    rc = pathPlausi.vtm_Plausis_Check
+						[extRoot = extRoot
+						,extVkprod = this
+						,extObjHauptachse = this
+						,extPlausiPar = pathPlausiPar
+						,sLevel = sLevel[extPlausi = pathPlausi
+										,sBenutzergruppe = sBenutzergruppe]
+						]
+			
+		}
+	}
+}
+
+loop( this, pathProdBasis )
+{
+	// Falls ein Bündel eine Ebene tiefer hängt, Methode an
+   // Bündel aufrufen  
+   if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL )
+   {
+		rc = pathProdBasis.vtm_Plausis_Check.exec 
+		    	[extRoot = extRoot
+		    	,extVkprod = this
+		    	,sPruefgruppe    = sPruefgruppe
+   		   ,sRegelgruppe    = sRegelgruppe
+   		   ,sBenutzergruppe = sBenutzergruppe
+		    	]
+
+   }
+   
+   else // Es handelt sich um ein Produkt
+   {
+   	if( pathProdBasis.VertragsNr != extRoot.VertragsNr
+        		&&	extRoot.VertragsNr != VERTRAGSNR_NICHT_BELEGT )
+      {
+         continue
+      }
+      // Durchfuehren der Plausibilisierung am Elementarprodukt
+	   rc = pathProdBasis.vtm_Plausis_Check.exec 
+		    [extRoot = extRoot
+		    ,extVkprod = this
+		    ,sPruefgruppe    = sPruefgruppe
+  	     	 ,sRegelgruppe    = sRegelgruppe
+   		 ,sBenutzergruppe = sBenutzergruppe
+		    ]             
+   }
+}	
+
+
+//	Loeschen der PlausiParameterTyp-Instanzen 
+//	sowie der PlausiTyp-Instanzen
+if(exists(extRoot.PlausisAnzeigen,*) && 
+	extRoot.PlausisAnzeigen == 0)
+{
+	loop(this, pathPlausiPar)
+	{
+		objPlausiPar = pathPlausiPar
+		deletetree(objPlausiPar)
+	}
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

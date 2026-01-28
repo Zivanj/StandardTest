@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000P2L1000SPM" abstract="false" final="false" pmid="P2L1000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Verlaengerungsvariante_BASIS_S</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="Q5F8DHQBRC74A4N63OQ0VSPMNK" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="Q1V12JQIS4ILM4T77DPV778BL7" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="PEJ9R268CJ9LD42SIJJFQAHV4B" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="3N0UJ2C4EP4K6442GOTF04DJ9N" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="7OCJF7I8URL5I4B9PN5ILPKUUR" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="76KBVSMAOLFCB41K9J1SKUV8V8" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="6K2O63R7VQ8564BG2H49G68MLM" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="PCRR285HGQE5V4A7O8TO4C946N" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="TKV66Q84DPN4Q42KH4PU82NCBA" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="30KLI70C0HVD04EVR15CJQK13T" sortkey="0">
+    <pm:name>PK_InTab_Az_Verlaengerungsvariante_BASIS_S</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Verlängerungsvarianten
+Typ und Nummernbereich:
+S
+NUMC3
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>0</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">vollständige Verlängerung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">keine Verlängerung</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Complete Renewal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Extension</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Volledige verlenging</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geen verlenging</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">vollständige Verlängerung</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">keine Verlängerung</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Complete Renewal</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Extension</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Volledige verlenging</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Geen verlenging</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

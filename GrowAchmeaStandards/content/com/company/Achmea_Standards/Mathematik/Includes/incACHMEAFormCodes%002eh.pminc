@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC00000004CC0000AM9" pmid="4CC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incACHMEAFormCodes.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[  
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef STDINC_ACHMEA_FORMCODES_H_INCLUDED
+#define STDINC_ACHMEA_FORMCODES_H_INCLUDED
+
+/*====================================================================*/
+/* Boolean (Az Table)									              */
+/*====================================================================*/
+
+#define NO             0
+#define YES            1
+
+/*====================================================================*/
+/* Schnittstellenmethodenschluessel                                   */      
+/*====================================================================*/
+
+// Quotation methode for interface check
+#define SNTMETHODE_QUOTATION			700000
+#define SNTMETHODE_PREOFFERING			700010
+
+
+#endif /* #ifndef STDINC_ACHMEA_FORMCODES_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

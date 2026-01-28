@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000UCC0000AM9" pmid="UCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incStd_BASIS.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[ZeS, 02.06.2004:
+
+Dieses Include ist das Standard-Top-Include aller Berechnungsformeln. 
+Hier enthaltene Definitionen, Deklarationen und Programmteile sind in 
+allen Berechnungsformeln enthalten!
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef STDINC_BASIS_H_INCLUDED
+
+#define STDINC_BASIS_H_INCLUDED
+
+#define RC_OK                                                      1
+#define RC_NOK                                                     0
+
+/*********************************************************************/
+/* insert further includes                                           */
+/*********************************************************************/
+#import "incErrorDefs_BASIS.txt" // Standard errorhandlung
+#include "incSAPMacros.h"
+#include "incSAPFormErrorCodes_BASIS.h"
+#include "incSAPFormVariousCodes_BASIS.h"
+#include "incSAPFormPlausiCodes_BASIS.h"
+
+/*********************************************************************/
+/* Deklarationen                                                     */
+/*********************************************************************/
+
+int rc = RC_OK
+int h_rc = 0
+
+try __PMQErrorExceptionLabel__
+{
+
+/*********************************************************************/
+#endif /* #ifndef STDINC_BASIS_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

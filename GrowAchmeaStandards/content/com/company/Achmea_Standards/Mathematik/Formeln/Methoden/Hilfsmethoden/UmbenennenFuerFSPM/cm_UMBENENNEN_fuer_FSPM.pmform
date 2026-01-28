@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000R040000T76" isnullable="false" nrdims="0" pmid="R040000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Hilfsmethoden::UmbenennenFuerFSPM</pm:namespace>
+  <pm:name>cm_UMBENENNEN_fuer_FSPM</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:  
+Löschen der Deckungen und Umbenennung der Objekte
+
+Die Schnittstelle zwischen dem Produktmanager und FS-PM soll die Objekte vom neuen
+und vom alten Verkaufsprodukt anhand der Namen unterscheiden können.
+Daher bekommen alle Objekte am alten Verkaufsprodukt das Präfix "OLDSTATE", und
+bei Objekten am neuen Verkaufsprodukt, die ein Präfix "OLDSTATE" besitzen, wird dieses
+aus dem Namen entfernt. Zusätzlich wird das gesamte alte Verkaufsprodukt gelöscht.
+Aufruf erfolgt in der Schnittstellenmethode.
+Kann durch das Merkmal UmbenennenUnterdruecken am Root-Objekt ausgeschaltet werden.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+vtm_loescheDeckungen			HistoryRootTyp
+
+Verwendete Formeln:
+cm_Umbenennen_nach_Alt
+cm_Umbenennen_nach_Neu
+
+Verwendete Funktionen:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+		
+//Externe Pfade
+extern path pathVkprodAlt
+extern path pathVkprodNeu
+extern path pathProd
+
+// externe Objekte
+extern object extObj
+
+// Versicherungstechnische Methoden
+data int vtm_umbenennen_alt_fuer_FSPM		
+data int vtm_umbenennen_neu_fuer_FSPM		
+
+
+// Objekte
+
+//Interne Variablen
+string h_KennungAlt
+int    h_l
+
+/*********************************************************************/
+/* Verarbeitung                                                       /
+/*********************************************************************/
+		
+
+// Umbenennen initialisieren
+h_KennungAlt = "OLDSTATE"
+h_l = StrLen(h_KennungAlt)
+
+// Umbenennen nach Alt
+loop (this, pathVkprodAlt)
+{
+	rc = iUmbAlt
+			[ extObj		= pathVkprodAlt
+			, sKennungAlt	= h_KennungAlt
+			, iLaenge		= h_l
+			]
+				
+	loop (pathVkprodAlt, pathProd)
+	{
+		if(exists(pathProd.vtm_umbenennen_alt_fuer_FSPM,*))
+		{
+			rc = pathProd.vtm_umbenennen_alt_fuer_FSPM.exec
+							[ sKennungAlt	= h_KennungAlt
+							, iLaenge		= h_l
+							]
+		}
+	}
+       
+	// Loeschen des "OLDSTATE"
+	deletetree(pathVkprodAlt)
+}
+   
+// Umbenennen nach Neu
+loop (this, pathVkprodNeu)
+{
+	rc = iUmbNeu
+			[ extObj		= pathVkprodNeu
+			, sKennungAlt	= h_KennungAlt
+			, iLaenge		= h_l
+			]
+			
+	loop (pathVkprodNeu, pathProd)
+	{
+		if(exists(pathProd.vtm_umbenennen_neu_fuer_FSPM,*))
+		{
+			rc = pathProd.vtm_umbenennen_neu_fuer_FSPM.exec
+								[ sKennungAlt	= h_KennungAlt
+								, iLaenge		= h_l
+								]
+		}
+	}
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

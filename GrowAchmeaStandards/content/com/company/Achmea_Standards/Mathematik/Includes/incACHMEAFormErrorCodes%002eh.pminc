@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC00000006CC0000AM9" pmid="6CC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incACHMEAFormErrorCodes.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef STDINC_ACMEA_FORMERRORCODES_H_INCLUDED
+#define STDINC_ACMEA_FORMERRORCODES_H_INCLUDED
+
+/*===================================================================*/
+/* insert exceptioncodes set by your formulas                        */
+/*===================================================================*/
+// Numberranges for error numbers Achmea Standard: 600- 699
+
+#define FORM_ERR_ACHMEA_SWITCH_CASE_DEFAULT 600
+#define FORM_ERR_ACHMEA_INPUT_MISSING 601
+#define FORM_ERR_ACHMEA_TABLE_SELECT_MULTIPLE_RESULTS 602
+#define FORM_ERR_ACHMEA_TABLE_SELECT_FAILED 603
+#define FORM_ERR_ACHMEA_TABLE_NOT_DEFINED 604
+
+
+/*===================================================================*/
+#endif /* #ifndef STDINC_ACHMEA_FORMERRORCODES_BDS_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

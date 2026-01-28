@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM000000QG51000AM8" isnullable="false" nrdims="0" pmid="QG51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Migration</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprodAlt
+extern path pathVkprodNeu
+
+//Externe Objekte
+extern object extRoot
+extern object extVkprodAlt
+
+//Versicherungstechnische Methoden
+data int vtm_Migration
+data int vtm_UMBENENNEN_fuer_FSPM
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+//Objekte
+object objAlt
+object objNeu
+
+//Attribute, Merkmale
+data int UmbenennenUnterdruecken
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variablen
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{			
+	this.Methodenschluessel = SNTMETHODE_MIGRATION
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+		
+	loop ( this, pathVkprodAlt )
+	{
+		objAlt = pathVkprodAlt
+		rc = objAlt.vtm_SchnittstellenCheck.exec [extRoot = this]
+	}
+		
+	loop ( this, pathVkprodNeu )
+	{
+		objNeu = pathVkprodNeu
+		rc = objNeu.vtm_SchnittstellenCheck.exec [extRoot = this]
+	}
+		
+	rc = objNeu.vtm_Migration.exec
+					[ extRoot		= this
+					, extVkprodAlt	= objAlt
+					]
+	
+	if (this.UmbenennenUnterdruecken == 0)
+	{
+		rc = this.vtm_UMBENENNEN_fuer_FSPM.exec
+	}
+	
+	rc = objNeu.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]
+	
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+#import "incStdMethodsBottom_BASIS.h"
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

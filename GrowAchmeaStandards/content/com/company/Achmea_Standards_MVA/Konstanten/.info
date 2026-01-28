@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="QSBJD4OU2285G4LAU04MCT65CA" sortkey="300" structural="true">
+  <pm:namespace>com::company::Achmea_Standards_MVA</pm:namespace>
+  <pm:name>Konstanten</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Konstanten</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Constants</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Konstanten</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Constants</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>array</pm:objecttype>
+    <pm:objecttype>enumeration</pm:objecttype>
+    <pm:objecttype>externaltable</pm:objecttype>
+    <pm:objecttype>internaltable</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

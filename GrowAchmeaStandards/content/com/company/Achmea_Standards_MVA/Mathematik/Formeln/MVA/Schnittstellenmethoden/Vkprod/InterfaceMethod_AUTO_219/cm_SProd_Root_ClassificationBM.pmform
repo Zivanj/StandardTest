@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000FF51000AM8" isnullable="false" nrdims="0" pmid="FF51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Formeln::MVA::Schnittstellenmethoden::Vkprod::InterfaceMethod_AUTO_219</pm:namespace>
+  <pm:name>cm_SProd_Root_ClassificationBM</pm:name>
+  <pm:notice encoding="none"><![CDATA[AUTO-219 The vtm_StufungBM is the interface method now! There for the internal call which is needed to go to 
+the functionality on the sales product (which was in the previous released called from the root is now called
+from te sales product level
+The vtm_StufungBM is not renamed because this method is hard coded in FSPM.
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// #import "incStdMethods_BASIS.h"
+#import "MVA_incStdMethods.h"
+
+//Externe Pfade
+extern path pathRoot
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int tim_ClassificationBM
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+//Objekte
+object ObjRootArray[]
+object ObjRoot
+
+//Attribute, Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variablen
+
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+ObjRootArray = getobjects( pathRoot )
+
+
+if ( ArraySize( ObjRootArray ) == 1 )
+{
+	ObjRoot = ObjRootArray(0)
+}
+else
+{
+	Res = RC_NOK
+}
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{			
+    ObjRoot.Methodenschluessel = SNTMETHODE_BM_UMSTUFUNG
+	ObjRoot.MethodenschluesselOriginal = ObjRoot.Methodenschluessel
+		
+	rc = this.vtm_SchnittstellenCheck.exec [extRoot = ObjRoot]
+	
+	/*
+	AUTO-219 The vtm_StufungBM is the interface method now! There for the internal call which is needed to go to 
+	the functionality on the sales product (which was in the previous released called from the root is now called
+	from te sales product level
+	The vtm_StufungBM is not renamed because this method is hard coded in FSPM.
+	*/
+	rc = this.tim_ClassificationBM.exec
+					[ 	extRoot		= ObjRoot
+					]
+					
+	rc = this.vtm_SchnittstellenCheckBewegungen.exec [extRoot = ObjRoot ]					
+
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+// #import "incStdMethodsBottom_BASIS.h"
+#import "MVA_incStdMethodsBottom.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

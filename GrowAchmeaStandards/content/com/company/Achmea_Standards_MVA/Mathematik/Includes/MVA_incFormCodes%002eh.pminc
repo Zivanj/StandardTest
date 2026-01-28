@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000XBC0000AM9" pmid="XBC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Includes</pm:namespace>
+  <pm:name>MVA_incFormCodes.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[Das Include enthält #define für feste Werte, die in den Formeln verwendet werden
+ und nicht zu den #define der anderen Includes zugeordnet werden können
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef MVA_INC_FORM_CODES_H_INCLUDED
+#define MVA_INC_FORM_CODES_H_INCLUDED
+
+/*========================================*/
+/* Datumsgrenzwerte                       */
+/*========================================*/
+
+#define MVA_HIGH_DATE		 "29980322"
+#define MVA_LOW_DATE		 "18000101"
+#define MVA_DATE_MS_ZUSCHLAG		 "19870101"
+
+/*===================================================*/
+/* Nachkommastellen für das Runden hier festlegen.                      */
+/*===================================================*/
+#define DEC						2
+
+/*========================================*/
+/* Initialwert bei diversen Tabellen                            */
+/*========================================*/
+
+#define KEINE_EINGABE	 0
+#define KEIN_SELBSTBEW_WOHNEIGENTUM	 1
+
+/*===================================================*/
+/* BearbeitungsKnz - Attribut in Zuschlag/Nachlass,Selbstbehalt...  */
+/*===================================================*/
+
+#define MANUELL_EINAUS_AENDERBAR                    1  
+#define MANUELL_EINAUS_NICHTAENDERBAR               2  
+#define NICHTMANUELL_AENDERBAR                      3  
+#define NICHTMANUELL_NICHTAENDERBAR                 4  
+
+/*====================================================================*/
+/* BeitragsArt
+/*====================================================================*/
+#define BTRART_BONUSRETTER          41
+#define BTRART_SCHADENERSATZ     42
+
+/*===================================================*/
+/* ProduktbausteinID - Attribut in Zuschlag/Nachlass,Selbstbehalt...  */
+/*===================================================*/
+
+#define ZUSCHLAG_WKZTARIFIERUNG                   " MV_ZuNa_25"  
+
+/*==================================================================*/
+/* Sonderrechnungsart                                               */
+/*==================================================================*/
+
+#define NORMAL		      1
+#define KURZTARIF		  13
+
+/*==================================*/
+/* Tarifgruppe                                                */
+/*==================================*/
+
+#define NORMALTARIF		1
+#define BEAMTENTARIF		2
+#define AGRARIERTARIF		3
+
+/*================================================*/
+/* Berechnungsart Zuschlaege                                                  */
+/*================================================*/
+
+//#define FESTBETRAG       1    Basis
+//#define PROZENT          2    Basis
+//#define PROMILLE         3    Basis
+#define FAKTORSATZ          4
+
+/*=================================================*/
+/* ZuNa Typ                                                                                 */
+/*=================================================*/
+
+#define FREIERZUSCHLAG       8 
+#define FREIERNACHLASS      11 
+
+/*=================================================*/
+/* Objektart                                                                                  */
+/*=================================================*/
+#define PKW                                         44410
+#define KRAD                                       44411 
+#define LKW                                         44412 
+#define ZUGMASCHINE                      44413
+#define ANHAENGER                          44414
+#define BUS                                          44415
+#define SONDERFAHRZEUG              44416
+#define KURZZEITKENNZEICHEN     44419
+
+/*=================================================*/
+/* Deckungsart                                                                             */
+/*=================================================*/
+
+#define DECKUNGSART_INVALID         50
+#define DECKUNGSART_TOD             51
+#define DECKUNGSART_KHT             52
+#define DECKUNGSART_HEILKOSTEN      53
+#define DECKUNGSART_PERSONENKOSTEN  54
+
+
+
+/*=================================================*/
+/* Tarifart                                                                                      */
+/*=================================================*/
+
+#define HAFTPFLICHT                 3210
+#define VOLLKASKO                   3220
+#define TEILKASKO                   3230
+#define INSASSEN_UNFALL             3240
+#define INSASSEN_UNFALL_PAUSCHAL     3410
+#define INSASSEN_UNFALL_PLATZ        3420
+
+/*=========================================*/
+/* Bezug in ZuNa                                                         */
+/*=========================================*/
+
+#define TARIFBEITRAG            	            1	
+#define TARIFGRUNDBEITRAG           	2	
+#define TARIFBEITRAG2                           3	
+#define ZAHLBEITRAG                                4
+#define JAHRESTARIFBEITRAG2               5
+
+/*=========================================*/
+/* Kennzeichenart                                                        */
+/*=========================================*/
+
+#define STANDARD 					1	
+#define GRUEN				 							2		
+#define BEHOERDE				 	3		
+#define HISTORIKER				4		
+#define KURZZEIT      		5
+#define AUSFUHR			      		6
+#define ROT																7					
+#define ROTOLD										8				
+#define NATO														9				
+#define VERSKZ					 					10		
+#define SAISON					 					11		
+/*=========================================*/
+/* TechStatusBM                                                                  */
+/*=========================================*/
+
+#define TECHSTATUSBM_INAKTIV            0
+#define TECHSTATUSBM_AKTIV	           1					
+
+/*=========================================*/
+/* BmStatus                                                                  */
+/*=========================================*/
+
+#define BMSTATUS_AKTIV	             0
+#define BMSTATUS_VORLAUFIG	1					
+
+/*==================================*/
+/* Tarifierungsebene                                      */
+/*==================================*/
+
+#define ELP       1
+#define DECK    2
+#define VOBJ     3
+
+/*==================================*/
+/* Berechnungsgruppe                                  */
+/*==================================*/
+
+#define TARIFIERUNG_VOR_STEUER   1
+#define TARIFIERUNG_NACH_STEUER  2
+#define TARIFIERUNG_SPEZIAL      3
+
+/*===============================================*/
+/* SelbstbehaltTyp                                                                    */
+/* siehe Tabelle MVA_InTab_Az_SelbstbehaltTyp_BASIS_E */
+/*==============================================*/
+
+#define SB_BETRAG  11                    
+#define SB_PROZENT 12                    
+#define SB_PROZENT_MINDESTBETRAG 13      
+#define SB_PROZENT_MAXIMALBETRAG 14      
+#define SB_PROZENT_MINBETRAG_MAXBETRAG 15 
+
+/*==============================================*/
+/*  Dynamik                                                                             */
+/*==============================================*/
+
+// Erhöhungsbasis bei Dynamik
+#define DYN_ERHOEHUNGSBASIS_VSU_MV 1
+#define DYN_ERHOEHUNGSBASIS_PRAEMIE_MV 2
+#define DYN_ERHOEHUNGSBASIS_VSU_UND_PRAEMIE_MV 3
+
+// Indextyp
+#define DYN_INDEXTYP_INDEXWERTE_MV 1
+#define DYN_INDEXTYP_STEIGERUNGSWERT_PROZ_MV 2
+#define DYN_INDEXTYP_STEIGERUNGSWERTE_VS_ABS_SB_PROZ_PR_PROZ_MV 3
+
+// Indexart
+#define DYN_INDEXART_VERBRAUCHERPREISINDEX_MV 1
+#define DYN_INDEXART_GLASPREISINDEX_MV 2
+#define DYN_INDEXART_RENTENANPASSUNGSSATZ_MV 5
+#define DYN_INDEXART_PRAEMIENANPASSUNGSSATZ_HAFTPFLICHT_MV 6
+#define DYN_INDEXART_PRAEMIENANPASSUNGSINDEX_MV 7
+#define DYN_INDEXART_BAUKOSTENINDEX_MV 8
+
+#define STATUSANPASSUNG_DURCHFUEHRBAR_MV 		0
+#define STATUSANPASSUNG_MAX_VSU_ERREICHT_MV 	1
+
+// Index_Anpassungsart
+#define AKTUELL_MAX_MV		 1
+#define INDEX_STANDARD_MV	 5
+#define AKTUELL_OPT_MV		 2
+#define JAHRESSPRUNG_MAX_MV	 3
+#define JAHRESSPRUNG_OPT_MV	 4
+
+// VAK_Typ
+#define VAKTYP_TREUEBONUS       41
+
+// Einstufungsgrund
+#define EINSTUFUNGSGRUND_AUSL_VERS 1
+#define EINSTUFUNGSGRUND_KULANZ 2
+#define EINSTUFUNGSGRUND_VOR_VTR_LKW 3
+#define EINSTUFUNGSGRUND_GRUNDSTUFE 4
+#define EINSTUFUNGSGRUND_VTR_WECHSEL 5
+#define EINSTUFUNGSGRUND_ANRECHNUNG 15
+#define EINSTUFUNGSGRUND_ANGLEICHUNG_VK_KH 21
+
+
+/*====================================================================*/
+/* Schnittstellenmethodenschluessel                                   */      
+/*====================================================================*/
+
+// Schaden
+#define SNTMETHODE_BM_UMSTUFUNG						150010
+#define SNTMETHODE_SCHADENSIMULATION				150020
+  
+#endif /* #ifndef MVA_INC_FORM_CODES_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="11NSEVRE6OKK84VSJ8V9MRDQST" sortkey="1000" structural="false">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte</pm:namespace>
+  <pm:name>BeitragsTyp</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">PremiumType (Prem)</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">PremiumType (Prem)</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="compactcomponent">
+      <pm:type guid="ZZZPM3PMT0000000DNC0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BeitragsTyp</pm:type>
+    </pm:objectfilter>
+  </pm:objectfilters>
+  <pm:folders>
+    <pm:folder guid="6D7BO2KCJN9DS46N063MNO2O66" sortkey="50" structural="false">
+      <pm:name>Vorlagen</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:label>
+      <pm:description>
+        <pm:stringval encoding="none" culture="de-DE">Vorlagen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Templates</pm:stringval>
+      </pm:description>
+      <pm:objecttypes inherited="false">
+        <pm:objecttype>compactcomponent</pm:objecttype>
+      </pm:objecttypes>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="true" objecttype="compactcomponent">
+          <pm:type guid="ZZZPM3PMT0000000DNC0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BeitragsTyp</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object guid="ZZZPM3CC00000000BX30000T76">BtrVrlg_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC00000000HYG0000T76">PremTmpl_ACHMEA_BASIS</pm:object>
+        <pm:object guid="ZZZPM3CC00000000V551000AM8">PremTmpl_Achmea_Baseline</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

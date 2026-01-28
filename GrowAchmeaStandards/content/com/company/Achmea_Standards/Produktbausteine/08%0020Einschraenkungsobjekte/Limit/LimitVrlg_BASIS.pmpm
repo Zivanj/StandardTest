@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000LWZ0000AM8" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::08%0020Einschraenkungsobjekte::Limit</pm:namespace>
+  <pm:name>LimitVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000NWZ0000AM8" pmid="NWZ0000AM8">
+      <pm:name>LimitVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000LWZ0000AM8" pmid="LWZ0000AM8" sealed="false" sortkey="0" visibility="external">
+          <pm:name>LimitVrlg_BASIS</pm:name>
+          <pm:notice encoding="none"><![CDATA[20150416 R51SP5-004 Interfacecheck for lateralobjects in commercial line ob business. (added method!)
+]]></pm:notice>
+          <pm:type guid="ZZZPM3PMT00000009070000SPB">com::company::TechnischesSchema::Produktbausteintypen::Limit</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="QJFLC99OJP9DD4NTJ4BBPRJI16" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>BearbeitungsKnz</pm:name>
+              <pm:notice encoding="none"><![CDATA[Das BearbeitungsKnz steuert, wie mit diesem Objekt 
+im Bestandssystem umgegangen werden kann.
+
+Folgende Werte sind zulässig:
+
+0 nicht definiert
+1 manuell ein- und ausschliessbar, Werte änderbar
+2 manuell ein- und ausschliessbar, Werte nicht änderbar
+3 nicht manuell ein- und ausschliessbar, Werte änderbar
+4 nicht manuell ein- und ausschliessbar, Werte nicht änderbar]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>0</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>1</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>2</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>3</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>4</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="7JVSB91BT5N4J49GE1N8OB7BKG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="1C0A6HHI8N84Q4O2C5OTHK96R5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="TMQFBJ05FG7T44VD8U6NTM8M9N" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="46UG02E8BNDSS47UASR23DEDQ3" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="03GPEC5CNPHT14SHT85KL4CS2K" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="7S63CRVTEIJC5476MH317IEVTI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>5</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="OUDTCS8SRDBTN43MKRTKLJRD6U" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LimitAbsolut</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "LimitAbsolut" gibt den Abolutbetrag des Limits an
+    
+Verwendung
+    
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „LimitAbsolut" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung "LIMIT_AM".
+    Das SAP-Datenelemtne hat die Bezeichnung "ABDALIMIT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="1OOGEGDCGVPK045R7LNJOB6DN6" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LimitAngabe</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+   Das Merkmal "LimitAngabe" gibt an, ob das Limit rleativ oder
+   absolut angegeben wird. Der Wertebereich ist eingeschränkt durch
+   die interne Tabelle "InTab_Az_LimitAngabe_BASIS_E".
+   Gültige Werte sind:
+  (1)  relativ
+  (2) absolut
+
+Verwendung
+  Gemäß Merkmal "LimitAngabe" wird bestimmt, ob
+   "LimitAbsolut" oder "LimitRelativ" der maßgebliche
+   Wert ist.
+
+msg-PM / FSPM-Schnittstelle
+   Das Merkmal "LimitAngabe" wird gemappt und persistiert.
+   Der SAP-Feldname hat die Bezeichnung "LIMITAMDEF_CD".
+   Das SAP-Datenelement hat die Bezeichnung "/PM0/ABDALIMIT".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000C5K0000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_LimitAngabe_BASIS_S</pm:table>
+                      <pm:column guid="7PJSDBCASSL5K451C6RMSICJ02">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>2</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="67PS3QDPN7USQ4VKBFMRKLPI3V" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LimitBezug</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "LimitBezug" gibt an, auf welche Bezugsgröße sich
+	das Limit bezieht.
+    Die Einschränkung erfolgt über die interene Tabelle 
+    "InTab_Az_LimitBezug_BASIS_E". Die folgenden Aufzählungswerte sind 
+    gültig:
+
+    (1)    Summe
+    (2)    Schaden
+    
+Verwendung
+    "LimitBezug" gibt an, ob sich das Limit auf die Versicherungssumme
+    oder den Schaden bezieht.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „LimitBezug" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung "REFERENCE_CD".
+    Das SAP-Datenelement hat die Bezeichung "/PM0/ABDALIMIT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000D5K0000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_LimitBezug_BASIS_E</pm:table>
+                      <pm:column guid="SRHT5KCBE645T4PED3T6G9DPQH">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="U3O8SP0KDKSDP4IBI40F1J1IML" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LimitRelativ</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "LimitRelativ" gibt den Prozentsatz des Limits an.
+    Die Einschränkung erfolgt als  Bereich 0..100.0. 
+    
+
+Verwendung
+    Das Merkmal "LimitRelativ" gibt den Prozentsatz des Limits an.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „LimitRelativ" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung "LIMIT_VL".
+    Das SAP-Datenelement hat die Bezeichnung  "/PM0/ABDALIMIT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>100.0</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="OSI8V8G92L2SR4T131NVBL8OVI" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LimitTyp</pm:name>
+              <pm:notice encoding="none"><![CDATA[ Definiition
+Das Merkmal "LimtTyp" gibt den Typ des Limits an.
+Die Einschränkung erfolgt über die interne Tabelle
+"InTab_AZ_LimitTyp_BASIS_E". Zugelassene Werte sind:
+
+(1)  Einzelschaden
+(2) Jahresschaden
+(3) Tagesschaden
+(4) Laufzeitschaden
+
+Verwendung
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „LimitTyp" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung "LIMITTYPE_CD".
+    Das SAP-Datenelement hat die Bezeichnung  "PM0/ABDALIMIT".
+
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvaluesfromtable>
+                      <pm:table guid="ZZZPM3ITAB000000E5K0000AM8">com::company::Achmea_Standards::Konstanten::Tabellen::InTab_Az_LimitTyp_BASIS_E</pm:table>
+                      <pm:column guid="US6K05RMEN85O4F28UJJRUM4RL">key</pm:column>
+                    </pm:validvaluesfromtable>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="S634MN14E3CSP4URV716G00F1B" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Maximalbetrag</pm:name>
+              <pm:notice encoding="none"><![CDATA[Definition
+Das Merkmal "Maximalbetrag" bezeichnet den maximalen Betrag ds Limits. 
+
+Verwendung
+   Bei relativer Angabe des Limits kann dieses durch den  Maximalbetrag
+   absolut beschränkt werden. 	
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Maximalbetrag" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung "MAXLIMIT_AM".
+    Das SAP-Datenelement hat die Bezeichnung "/PM0/ABDALIMIT".]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="5QG316RBM3HTL4HO91PACOOJQT" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL00000000B51000AM8" sortkey="0">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>LimitVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

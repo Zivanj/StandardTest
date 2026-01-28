@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC0000000093H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::12%0020Plausi::PlausiTyp</pm:namespace>
+  <pm:name>PlausiTypeTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000B3H0000T76" pmid="B3H0000T76">
+      <pm:name>PlausiTypeTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM0000000093H0000T76" pmid="93H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>PlausiTypeTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000PY30000T76">com::company::Achmea_Standards::Produktbausteine::12%0020Plausi::PlausiTyp::PlausiTypVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000TA32000SPM">com::company::TechnischesSchema::Produktbausteintypen::PlausiTyp</pm:type>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PlausiTypeTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000MFI0000AM8" isnullable="false" nrdims="0" pmid="MFI0000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_PreOfferingCheck</pm:name>
+  <pm:notice encoding="none"><![CDATA[Description:
+Interface method on the History Root  to run checks if e.g. Coverage(Bundles) can be offered
+In a loop on the Sales Product is SalesProduct.vtm_PreOfferingCheck called.
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="ignore"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h"
+
+//Externe Pfade
+extern path pathVkprod
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_PreOfferingCheck
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+
+//Objekte
+
+//Attribute, Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+
+//interne Variablen
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{			
+	this.Methodenschluessel = SNTMETHODE_PREOFFERING
+	
+
+	this.MethodenschluesselOriginal = this.Methodenschluessel
+		
+	loop ( this, pathVkprod )
+	{
+		rc = pathVkprod.vtm_SchnittstellenCheck.exec [extRoot = this]
+		
+		//Set bQuoteSelectionVariable to True
+		rc =  pathVkprod.vtm_PreOfferingCheck.exec
+						[ extRoot		= this
+						]
+						
+		rc = pathVkprod.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]					
+	}
+
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+#import "incStdMethodsBottom_ACHMEA.h"
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

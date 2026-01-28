@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="4PUBH5EKFH0TH4K3NB5M2HUSPF" sortkey="460" structural="false">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik</pm:namespace>
+  <pm:name>Nutzerfunktionen</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Nutzerfunktionen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">User Exits</pm:stringval>
+  </pm:label>
+  <pm:description>
+    <pm:stringval encoding="none" culture="de-DE">Nutzerfunktionen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">User Exits</pm:stringval>
+  </pm:description>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>userexit</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

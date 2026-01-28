@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM0000000ZG0000T76" isnullable="false" nrdims="0" pmid="0ZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::Vkprod</pm:namespace>
+  <pm:name>cm_Vkprod_AenderungVertrag</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Bearbeitet die nachschüssige Ueberschusszuteilung auf Verkaufsproduktebene 
+Festlegung des Fortschreibungszeitraums (Auslesen Aenderungsdatum und Aenderungsdatum2)
+Aufruf der Methode am Produkt (s.u.)
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine	
+		 
+Verwendete Methoden mit Name/Klasse:
+vtm_UebZuteilungNachschuessig            Produkt
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathProdBasis
+extern path pathProd
+
+
+//Externe Objekte
+extern object extRoot
+extern object extVkprod
+
+//Versicherungstechnische Methoden
+data int vtm_AenderungVertrag
+
+//Objekte
+
+//Attribute Merkmale
+data int Status
+data string VertragsNr
+
+//interne Variablen
+bool l_bVertragsNrGefunden = FALSE
+
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+loop( this, pathProdBasis )
+{
+    // Falls ein Bündel eine Ebene tiefer hängt, Methode an
+    // Bündel aufrufen  
+   if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL)
+	{
+		loop (pathProdBasis, pathProd) //am Vertrag
+		{
+   		if (pathProd.VertragsNr != extRoot.VertragsNr &&
+			    extRoot.VertragsNr != VERTRAGSNR_NICHT_BELEGT )
+   		{
+      		continue
+  			}
+	
+			l_bVertragsNrGefunden = TRUE
+		}
+		rc = pathProdBasis.vtm_AenderungVertrag.exec //Methode am Bündel aufrufen
+            [ extRoot	 = extRoot
+            , extVkprod	 = this
+            ]
+	
+    }
+    else // Es handelt sich um ein Produkt
+    {
+        if( pathProdBasis.VertragsNr != extRoot.VertragsNr
+        &&	extRoot.VertragsNr != VERTRAGSNR_NICHT_BELEGT )
+        {
+            continue
+        }
+        
+        l_bVertragsNrGefunden = TRUE
+        
+        // Falls Vertrag storniert, keine Bearbeitung
+        if( pathProdBasis.Status == TECHN_STATUS_STORNIERT )
+        {
+            continue
+        }
+        
+        if( exists( pathProdBasis.vtm_AenderungVertrag, * ) )
+        {
+            rc = pathProdBasis.vtm_AenderungVertrag.exec
+            [ extRoot	 = extRoot
+            , extVkprod	 = this
+            ]
+        }
+    }
+}
+
+// Wenn Vertrag nicht gefunden wird erfolgt eine Fehlermeldung
+
+if ( l_bVertragsNrGefunden == FALSE )
+{
+    Error_fachlich = TRUE
+    sNachrichtenklasse = MSG_ERRORCLASS
+    ErrorVar1 = extRoot.VertragsNr
+    
+    error.text = BASIS_TEXT_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN
+    error( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+    return( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

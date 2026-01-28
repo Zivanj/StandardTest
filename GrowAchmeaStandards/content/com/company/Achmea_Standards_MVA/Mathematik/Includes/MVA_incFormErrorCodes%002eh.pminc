@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000UBC0000AM9" pmid="UBC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Includes</pm:namespace>
+  <pm:name>MVA_incFormErrorCodes.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[Das Include enthält alle #defines für das Fehlerhandling.
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[/*              to be include in: StdInc.h                           */
+
+#ifndef MVA_INC_FORM_ERROR_CODES_H_INCLUDED
+#define MVA_INC_FORM_ERROR_CODES_H_INCLUDED
+
+//#define MVA_ERRORCLASS		"/MVA/AMR_PM_ERRORS"
+
+/*====================================================================*/
+/* insert exceptioncodes set by your formulas                                                                     */
+/*====================================================================*/
+
+// Fehlermeldungen nur KFZ - in MVA_ERRORCLASS	"/MVA/AMR_PM_ERRORS"
+// 0 - 100
+#define MVA_FORM_ERR_TK_REGIONALKLASSE				1
+#define MVA_TEXT_ERR_TK_REGIONALKLASSE \
+"Für die Regionalklasse %1 existiert kein Tarifierungskürzel"
+
+#define MVA_FORM_ERR_TK_STAERKEMERKMAL				2
+#define MVA_TEXT_ERR_TK_STAERKEMERKMAL \
+"Für das Stärkemerkmal(%2 = %1) existiert kein Tarifierungskürzel"
+
+#define MVA_FORM_ERR_TK_TARIFGRUPPE					3
+#define MVA_TEXT_ERR_TK_TARIFGRUPPE \
+"Für die Tarifgruppe %1 existiert kein Tarifierungskürzel"
+
+#define MVA_FORM_ERR_PRAEMIENSATZ_FEHLERHAFT			4
+#define MVA_TEXT_ERR_PRAEMIENSATZ_FEHLERHAFT \
+"Prämiensatz nicht eindeutig ermittelbar - WKZ.TG.RK.SM - %1" 
+
+#define MVA_FORM_ERR_TK_TYPKLASSE				                5
+#define MVA_TEXT_ERR_TK_TYPKLASSE \
+"Für die Typklasse %1 existiert kein Tarifierungskürzel"
+
+#define MVA_FORM_ERR_TK_BETRIEBSART					6
+#define MVA_TEXT_ERR_TK_BETRIEBSART \
+"Für die Betriebsart %1 existiert kein Tarifierungskürzel"
+
+#define MVA_FORM_ERR_TARIFIERUNG_MANUELL_VDZ        7
+#define MVA_TEXT_ERR_TARIFIERUNG_MANUELL_VDZ  \
+"Bitte Vertragsteil %1 prämienfrei stellen oder manuell tarifieren."
+
+#define MVA_FORM_ERR_PRAEMIENBERECHNUNG_REGEL_FEHLT                             8
+#define MVA_TEXT_ERR_PRAEMIENBERECHNUNG_REGEL_FEHLT \
+"Es konnte keine Regel für die Prämienberechnung für %1 gefunden werden."
+
+#define MVA_FORM_ERR_SB_ANGEPASST                             9
+#define MVA_TEXT_ERR_SB_ANGEPASST \
+"Selbstbehalt (%1) an Deckungsschlüssel (%2) angepasst"
+
+// Start - Die folgenden defines gehören in die Basis
+#define MVA_FORM_ERR_INDEXTAB_NICHT_DEFINIERT 10
+#define MVA_TEXT_ERR_INDEXTAB_NICHT_DEFINIERT "Die Indextabelle zum Anpassungsbaustein %1 wurde nicht eingetragen."
+
+#define MVA_FORM_ERR_INDEXWERT_NICHT_GEFUNDEN   11
+#define MVA_TEXT_ERR_INDEXWERT_NICHT_GEFUNDEN   "Fuer das Jahr (%1) wurde kein Indexwert gefunden."
+
+#define MVA_FORM_ERR_UNGUELTIGER_INDEXWERT 	12
+#define MVA_TEXT_ERR_UNGUELTIGER_INDEXWERT 	"Indexwert in Indextabelle darf nicht 0 sein."
+// Ende 
+
+#define MVA_FORM_ERR_BONUSMALUS_STATUS    13
+#define MVA_TEXT_ERR_BONUSMALUS_STATUS    "BonusMalus %1 am %2 ist auf %3 gesetzt."
+
+#define MVA_FORM_ERR_BONUSMALUS_RELEVANZ   14
+#define MVA_TEXT_ERR_BONUSMALUS_RELEVANZ   "BonusMalus %1 am %2  ist nicht relevant"
+
+
+#define MVA_FORM_ERR_BONUSMALUS_MODEL     16
+#define MVA_TEXT_ERR_BONUSMALUS_MODEL   "Im BonusMalus %1 am %2  ist Praemien- und/oder Stufungsmodell nicht korrekt"
+
+#define MVA_FORM_ERR_BONUSMALUS_FEHLT      17
+#define MVA_TEXT_ERR_BONUSMALUS_FEHLT    "BonusMalus am %1 fehlt."
+
+#define MVA_FORM_ERR_OBJEKTTYP_UNGUELTIG		18
+#define MVA_TEXT_ERR_OBJEKTTYP_UNGUELTIG \
+"Objekt oder Merkmal %1 ist nicht gültig"
+
+
+#define MVA_FORM_ERR_EIN_DECKUNGSTYP		19
+#define MVA_TEXT_ERR_EIN_DECKUNGSTYP \
+"Es darf nur ein DeckungsTyp-Objekt ausgewählt werden."
+
+#define MVA_FORM_ERR_VOBJ_NATIONALCODE		20
+#define MVA_TEXT_ERR_VOBJ_NATIONALCODE \
+"Der Nationalcode ist nicht gefüllt."
+
+#define MVA_FORM_ERR_BM_BONUSMALUS_INAKTIV	 21
+#define MVA_TEXT_ERR_BM_BONUSMALUS_INAKTIV \
+"Das BonusMalus-Objekt für den Vertragteil (%1) ist inaktiv."
+
+#define MVA_FORM_ERR_BM_PRAEMIENSATZ_NICHT_VORHANDEN 22
+#define MVA_TEXT_ERR_BM_PRAEMIENSATZ_NICHT_VORHANDEN \
+"%1: Prämiensatz für die Prämiestufe %2 konnte nicht gefunden werden."
+
+
+// Indexwertprüfung
+#define MVA_FORM_ERR_ANPASSUNGSINDEX_PRAEMIE_FEHLT	23
+#define MVA_TEXT_ERR_ANPASSUNGSINDEX_PRAEMIE_FEHLT	"Die Anpassung ist nicht durchführbar, da Anpassungsindex fehlt"
+
+
+#define MVA_FORM_ERR_NICHT_EINDEUTIG 					24
+#define MVA_TEXT_ERR_NICHT_EINDEUTIG \
+"Einträge nicht eindeutig in Tabelle %1 für Key = %2"
+
+#define MVA_FORM_ERR_UMWANDLUNG_IN_NUM					25
+#define MVA_TEXT_ERR_UMWANDLUNG_IN_NUM \
+"String %1 kann nicht in numerischen Wert umgewandelt werden"
+
+#define MVA_FORM_ERR_MERKMALSWERT_FEHLT				26
+#define MVA_TEXT_ERR_MERKMALSWERT_FEHLT \
+"Am Objekt %1 fehlt der Wert für %2 "
+
+#define MVA_FORM_ERR_TARIFIERUNGSMERKMAL_FEHLT		27
+#define MVA_TEXT_ERR_TARIFIERUNGSMERKMAL_FEHLT \
+"Es sind für das Produkt %1 keine Tarifierungsmerkmale festgelegt"
+
+
+#define MVA_FORM_ERR_EINHEIT_UNGUELTIG					30
+#define MVA_TEXT_ERR_EINHEIT_UNGUELTIG \
+"Prämienfaktor-Einheit hat ungültigen Wert : %1"
+
+#define MVA_FORM_ERR_EINTRAG_IN_TABELLE				31
+#define MVA_TEXT_ERR_EINTRAG_IN_TABELLE \
+"Kein Eintrag in Tabelle %1 für %2"
+
+#define MVA_FORM_ERR_DATUM_FALSCH						32
+#define MVA_TEXT_ERR_DATUM_FALSCH \
+"Falsches Datum : %1"
+
+#define MVA_FORM_ERR_FALSCHEN_INHALT					33
+#define MVA_TEXT_ERR_FALSCHEN_INHALT \
+"Merkmal %1 hat falschen Inhalt %2"
+
+#define MVA_FORM_ERR_BMSTUFUNG_BZ_NICHT_ERMITTELT 	34
+#define MVA_TEXT_ERR_BMSTUFUNG_BZ_NICHT_ERMITTELT 	"Der Beobachtungszeitraum konnte nicht ermittelt werden."
+
+#define MVA_FORM_ERR_BMSTUFUNG_UT_NICHT_ERMITTELT 	35
+#define MVA_TEXT_ERR_BMSTUFUNG_UT_NICHT_ERMITTELT 	"Unterbrechungstage konnten nicht ermittelt werden."
+
+#define MVA_FORM_ERR_BMSTUFUNG_BMVZ_UNGUELTIGE_WERTE 	36
+#define MVA_TEXT_ERR_BMSTUFUNG_BMVZ_UNGUELTIGE_WERTE 	"BM-Vertragszuordnung enthält ungültige Werte."
+
+#define MVA_FORM_ERR_BMSTUFUNG_BMVZ_KEIN_GUELTIG_BIS 	37
+#define MVA_TEXT_ERR_BMSTUFUNG_BMVZ_KEIN_GUELTIG_BIS 	"BM-Vertragszuordnung: GültigBis-Datum nicht gesetzt."
+
+#define MVA_FORM_ERR_BMSTUFUNG_CL_NICHT_ERMITTELT 	38
+#define MVA_TEXT_ERR_BMSTUFUNG_CL_NICHT_ERMITTELT 	"Die Schadenanzahl konnte nicht ermittelt werden."
+
+#define MVA_FORM_ERR_BMSTUFUNG_CL_UNGUELTIGE_WERTE 	39
+#define MVA_TEXT_ERR_BMSTUFUNG_CL_UNGUELTIGE_WERTE 	"Das Schaden-Objekt enthält ungültige Werte."
+
+#define MVA_FORM_ERR_BMSTUFUNG_BR_UNGUELTIGE_WERTE 	40
+#define MVA_TEXT_ERR_BMSTUFUNG_BR_UNGUELTIGE_WERTE "Das Bonusretter-Objekt enthält ungültige Werte."
+
+#define MVA_FORM_ERR_BMSTUFUNG_DATEN_UNVOLLSTAENDIG      41
+#define MVA_TEXT_ERR_BMSTUFUNG_DATEN_UNVOLLSTAENDIG  	 "Daten für die BM-Umstufung sind unvollständig."
+
+#define MVA_FORM_ERR_BMSTUFUNG_PRAEMIENSTUFE_FEHLERHAFT	 42
+#define MVA_TEXT_ERR_BMSTUFUNG_PRAEMIENSTUFE_FEHLERHAFT  "Prämienstufe ist nicht eindeutig ermittelbar - %1" 
+
+#define MVA_FORM_ERR_BMSTUFUNG_MAX_SCHAEDEN_FEHLERHAFT	 43
+#define MVA_TEXT_ERR_BMSTUFUNG_MAX_SCHAEDEN_FEHLERHAFT   "Maximale Schadenanzahl ist nicht eindeutig ermittelbar - %1" 
+
+#define MVA_FORM_ERR_BM_PRAEMIENSTUFE_UNGUELTIG        	 44
+#define MVA_TEXT_ERR_BM_PRAEMIENSTUFE_UNGUELTIG          "Die ID der Prämienstufe (%1) ist ungültig." 
+
+#define MVA_FORM_ERR_AMTL_KNZ_UNGUELTIGER_WERT 	45
+#define MVA_TEXT_ERR_AMTL_KNZ_UNGUELTIGER_WERT "Amtliches Kennzeichen ist nicht gesetzt."
+
+#define MVA_FORM_ERR_WKNZ_VOBJ_AMTLKZ          46
+#define MVA_TEXT_ERR_WKNZ_VOBJ_AMTLKZ \
+"Das amtliche Kennzeichen der VTOs im Wechselkennzeichen muß identisch sein."
+
+#define MVA_FORM_ERR_TARIFIERUNG_FEHLGESCHLAGEN				47
+#define MVA_TEXT_ERR_TARIFIERUNG_FEHLGESCHLAGEN \
+"Tarifierung für %1 fehlgeschlagen, weil Merkmal %2 = %3."
+
+#define MVA_FORM_ERR_VE_VORVERSICHERER_GROESSER_VB_FOLGEVERTRAG				48
+#define MVA_TEXT_ERR_VE_VORVERSICHERER_GROESSER_VB_FOLGEVERTRAG \
+"Versicherungsende %1 des Vorv. ist größer als neuer Versicherungsbeginn %2."
+
+#define MVA_FORM_ERR_SCHADENSIMULATION_OFFSET_OBERGRENZE 				49
+#define MVA_TEXT_ERR_SCHADENSIMULATION_OFFSET_OBERGRENZE \
+"Der Wertebereich für die Schadensimulation beträgt [-%1,+%2]."
+
+
+
+#endif /* #ifndef MVA_INC_FORM_ERROR_CODES_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

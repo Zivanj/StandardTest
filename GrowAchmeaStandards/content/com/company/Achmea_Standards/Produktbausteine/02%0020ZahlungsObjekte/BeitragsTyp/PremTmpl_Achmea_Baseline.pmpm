@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000V551000AM8" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte::BeitragsTyp</pm:namespace>
+  <pm:name>PremTmpl_Achmea_Baseline</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000W551000AM8" pmid="W551000AM8">
+      <pm:name>PremTmpl_Achmea_Baseline</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000V551000AM8" pmid="V551000AM8" sealed="false" sortkey="none" visibility="none">
+          <pm:name>PremTmpl_Achmea_Baseline</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000BX30000T76">com::company::Achmea_Standards::Produktbausteine::02%0020ZahlungsObjekte::BeitragsTyp::BtrVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT0000000DNC0000SPM">com::company::TechnischesSchema::Produktbausteintypen::BeitragsTyp</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TGI9U8KRAL7LV45PRBGKASVLGA" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AcquisitionAdjustment</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="783K8BV1R7Q434DCICC75HIAOM" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AcquisitionAdjustmentInputFactor</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>1.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="QV3PSV5CE5GC74AR66U4Q5KI1D" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AcquisitionPremium</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7I8T464NQM2TJ4NS5BPCOUIQE6" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ActionDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TLU6H31VHPA5146QSAGLK4HODD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ActionDiscountPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0O49JHV8Q36DK4M0JPBB5M6E2E" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>AdministrationCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Administration costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Adminsitration Costs is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Administration Costs.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="UVIUQ9ITGR9C54U6T765L1QT77" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>BasePremium</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="R23I0N52HONCD4FDQ6T2ITP7EK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>BasePremiumAdjusted</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="4U0OCG81I7KKT4DQRATRC3SGCG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CollectivityDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7EBVNNHCCL95S4OQ8IC4FQRH1V" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CollectivityDiscountPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="1N7EFIV2T09KU490D89ETC7PA5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommercialAdjustment</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7VJAS7NTSVLS2498I680ODD9TO" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommercialAdjustmentInput</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>1.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="02CDVTJC8VLKH403QHM62VHF6D" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommercialCorrection</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7I1GJIPS8B14I468A7VD41TJKB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommercialCorrectionInputFactor</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>1.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="P8L6A6PP1UQTF4E92Q6E9EMIUO" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Commission</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0KCR3SD5SHET64UF9522TDGOTU" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommissionInputAmount</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="OB7AKL5ENFC554HMC8KOOQISRT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>CommissionInputPercentage</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="53NUK7BEAGDDD4R8RI7GQUIPUC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ConversionCorrection</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="P1IOAABH49R5G4AKUUSGJDE3PN" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>DiscountBasePremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="ULLE4QJU6QPSH4802OGHP50C21" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>HandlingCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Handling costs</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Handling costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Handling Costs is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Handling Costs.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="T8LVRO6QCI7C248DDBDO0UHSTO" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Interest</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Interest</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Interest is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Interest.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="1PVR4EGCFVALP4LV3PE6V1KSQP" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Loss</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Loss</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">The derivation of the loss (average claim amount) per Elementary Product is done via a Single Value Table</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="2NHAANQNUFQKH4NAUPIPT3OIPQ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LoyaltyDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="SVDKR383OSRLU4BI7HJLBUUNSL" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LoyaltyDiscountPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="O78NGLNSOBD5D4KJTIK55JKFR7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>MinimumPremiumAdjustment</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="SHLJ1B75HA6DK49MSV6MDP61G1" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PackageDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="46P06IPOBSGL046L1T228P7R62" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PackageDiscountPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="UE5IJ115NKOK54PKLSG3I3VT89" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PaymentTermDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="OGBB8JFIR3LDO4RPBM0ROVAVA0" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PreventionDiscount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="PRI4OQ1EDLT5C492744TU1SBLB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PreventionDiscountPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="OMT6UA1POCUTP4M5TMRMLHIQCG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProductionPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Production premium</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The Production Premium is calculated using the following steps, all defined and executed on Production level:
+Order	Step				Calculated from/with
+1	Loss (Average Claim Amount)	Risk Analysis
+2	Technical Risk Adjustment	Loss
+3	Risk Premium			Step 1 + Step 2
+4	Handling Costs			Risk Premium
+5	Interest			Risk Premium
+6	Administration Costs		Risk Premium
+7	Return on Production		Risk Premium
+8	Production Premium		Step 3 + … + Step 7]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="SPHLL7BFJENSO45QDGT62IEQKV" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PropositionCosts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="UD4H6GDDM74LN4PGH8M1S8KJB7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PropositionCostsInput</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0NR8PBGRCDMDS4B19KJMD0GDH5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>PropositionPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition prämie</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition premium</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[This element is the Discount Base Premium corrected with mentioned discounts;
+•	Collectivity Discount 
+•	Action / Campaign Discount
+•	Payment Term Discount
+giving the Proposition Premium.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="05T1TM96LNKTG49JQ4Q65ST5OK" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RetentionDiscount</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="U3TGTRBJMK9KK4O4I54F41ICNE" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RetentionDiscountPremium</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="18VHPVHSGL2494FEQ00TGJLN02" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ReturnOnProduction</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Return on production</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The derivation of the factor used for Return on Production  is done via a Single Value Table
+The derived factor is multiplied by the Risk Premium to calculate the value of Return on Production.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0MC7F3H3PP9KC4KUEGAQ7R1PJU" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RiskAdjustment</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="7USUIGHLJTVT74HQC57QUNHN50" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RiskAdjustmentInputAmount</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="RHR4PLD1BUB5H4Q3DRGRQ3LD6N" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RiskAdjustmentInputFactor</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>1.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TINHOKBSO82DM4H7N4UQEBMSN7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RiskPremiumAdjusted</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="O24EMQN03NPD94H83JRK0L6UA1" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>StartersDiscount</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="5F2D9VQ3ITITV4V6VN79U4NR2F" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>StartersDiscountPremium</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="SS93RENBD1NTG4MTTNSTFP90F5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>SupplementForDiscounts</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[For each elementary product there can be a factor for PropositionCosts in the tariff structure.
+These are determined in the corresponding Combination Table .
+
+The correct value is derived from these tables by using:
+·	Premium Version Date (of the Product)
+·	Abbreviation (of the Product)
+·	Abbreviation (of the Elementary Product)]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="SB5LU65TTMPT94VD9C0UO5SE6G" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>SupplementForDiscountsInput</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="2IEIO1UVFQMDK4GD30DI7CG29Q" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>TechnicalRiskAdjustment</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Technical risk adjustment</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[The technical risk adjustment is calculated by multiplying several rating factors.
+Some rating factors are currently used for every Elementary Product, whereas most are Product/Elementary Product specific.
+
+The following formula is used for the calculation:
+<Technical Risk Adjustment>	= CorrectionFactor (Distribution Label)
+				* CorrectionFactor (Deductible Amount), if applicable
+				* product/elementary product specific CorrectionFactor(s)
+				* <Client Risk Index>, if applicable
+				* <General Premium Index>
+				* <Loss>
+				- <Loss>
+
+The Client Risk Index and the General Premium Index are provided on Elementary Product.
+The correction factor of the deductible amount and the client risk index are applicable for almost all elementary products, but not for all.
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>0.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000000X551000AM8" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000002751000AM8" readonly="false" sortkey="2">
+                  <pm:name>Output</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AcquisitionAdjustment</pm:attribute>
+                    <pm:attribute>AcquisitionPremium</pm:attribute>
+                    <pm:attribute>ActionDiscount</pm:attribute>
+                    <pm:attribute>ActionDiscountPremium</pm:attribute>
+                    <pm:attribute>AdministrationCosts</pm:attribute>
+                    <pm:attribute>BasePremium</pm:attribute>
+                    <pm:attribute>BasePremiumAdjusted</pm:attribute>
+                    <pm:attribute>CollectivityDiscount</pm:attribute>
+                    <pm:attribute>CollectivityDiscountPremium</pm:attribute>
+                    <pm:attribute>CommercialAdjustment</pm:attribute>
+                    <pm:attribute>CommercialCorrection</pm:attribute>
+                    <pm:attribute>Commission</pm:attribute>
+                    <pm:attribute>ConversionCorrection</pm:attribute>
+                    <pm:attribute>DiscountBasePremium</pm:attribute>
+                    <pm:attribute>HandlingCosts</pm:attribute>
+                    <pm:attribute>Interest</pm:attribute>
+                    <pm:attribute>Loss</pm:attribute>
+                    <pm:attribute>LoyaltyDiscount</pm:attribute>
+                    <pm:attribute>LoyaltyDiscountPremium</pm:attribute>
+                    <pm:attribute>MinimumPremiumAdjustment</pm:attribute>
+                    <pm:attribute>PackageDiscount</pm:attribute>
+                    <pm:attribute>PackageDiscountPremium</pm:attribute>
+                    <pm:attribute>PaymentTermDiscount</pm:attribute>
+                    <pm:attribute>PreventionDiscount</pm:attribute>
+                    <pm:attribute>PreventionDiscountPremium</pm:attribute>
+                    <pm:attribute>ProductionPremium</pm:attribute>
+                    <pm:attribute>PropositionCosts</pm:attribute>
+                    <pm:attribute>PropositionPremium</pm:attribute>
+                    <pm:attribute>RetentionDiscount</pm:attribute>
+                    <pm:attribute>RetentionDiscountPremium</pm:attribute>
+                    <pm:attribute>ReturnOnProduction</pm:attribute>
+                    <pm:attribute>RiskAdjustment</pm:attribute>
+                    <pm:attribute>RiskPremiumAdjusted</pm:attribute>
+                    <pm:attribute>StartersDiscount</pm:attribute>
+                    <pm:attribute>StartersDiscountPremium</pm:attribute>
+                    <pm:attribute>SupplementForDiscounts</pm:attribute>
+                    <pm:attribute>TechnicalRiskAdjustment</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL00000001751000AM8" readonly="false" sortkey="1">
+                  <pm:name>Input</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>AcquisitionAdjustmentInputFactor</pm:attribute>
+                    <pm:attribute>CommercialAdjustmentInput</pm:attribute>
+                    <pm:attribute>CommercialCorrectionInputFactor</pm:attribute>
+                    <pm:attribute>CommissionInputAmount</pm:attribute>
+                    <pm:attribute>CommissionInputPercentage</pm:attribute>
+                    <pm:attribute>PropositionCostsInput</pm:attribute>
+                    <pm:attribute>RiskAdjustmentInputAmount</pm:attribute>
+                    <pm:attribute>RiskAdjustmentInputFactor</pm:attribute>
+                    <pm:attribute>SupplementForDiscountsInput</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PremTmpl_Achmea_Baseline</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

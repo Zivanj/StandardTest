@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000Q140000T76" isnullable="false" nrdims="0" pmid="Q140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_UmhaengenVertragAuskunft</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Umbau der Vertragsstände zur Vorbereitung des Aufrufes einer neuen Schnittstellenmethode.
+Kommt nur zur Anwendung, wenn FS-PM vor dem Aufruf einer Schnittstellenmethode keine 
+Vertragsstände (Objektbaum) übergibt.
+Dies ist derzeit nur beim Sammelaufruf Auskunft (daher der Name der Methode) und beim
+gebündelten Fortschreibungsaufruf der Fall.
+Die Methode eignet sich aber auch hervorragend zu internen Testzwecken, nämlich immer
+dann, wenn in einem Testfall mehrere Methoden in Folge aufgerufen werden sollen (etwa zur
+Simulation eines Bearbeitungszyklus). Dies entspricht der ursprünglichen Intention dieser Art
+von Methode.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+iLoescheBewegungen				integer
+
+Verwendete Methoden mit Name/Klasse:
+vtm_UmhaengenVertragAuskunft	Produkt
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprodAlt
+extern path pathVkprodNeu
+extern path pathProd
+
+// externe Objekte
+extern object extRoot
+extern object extVkprodAlt
+
+// Attribute und Merkmale
+data int Status
+
+// Versicherungstechnische Methoden
+data int vtm_UmhaengenVertragAuskunft
+
+// Objekte
+object objCopyVkprod
+object objNewRel
+
+// Interne Variable
+int h_Anzahl
+int i
+		
+string h_RelNameVkprodAlt
+string h_RelName
+string h_ObjKlasse
+string h_tail
+
+pmproductmodule		Quelle
+pmproductmodule		Ziel
+pmproductrelation	Relation
+
+#define ALT		"alt"
+#define COPY	"COPY"
+
+/**********************************************************************/
+/* Verarbeitung                                                       */
+/**********************************************************************/
+
+// Name der Beziehung zum "alten" Verkaufsprodukt ermitteln
+Quelle = new pmproductmodule(this)
+
+h_Anzahl = Quelle.ForwardRelationList.iLength
+
+for(i = 0, i < h_Anzahl, i++)
+{
+	Relation	= Quelle.ForwardRelationList.GetAt( i )
+	Ziel		= Relation.TargetProductModule
+
+	h_RelName	= Relation.sName
+	h_ObjKlasse	= Ziel.sClassName
+  
+	if(h_ObjKlasse == OKLASSE_VERKAUFSPRODUKT)
+	{
+		h_tail = StringTail(h_RelName, 3)
+		
+		if(h_tail == ALT)
+		{
+			h_RelNameVkprodAlt = h_RelName  
+		}
+	}
+}
+
+// Vorhandenes "altes" Verkaufsprodukt loeschen
+loop(this, pathVkprodAlt)
+{
+	deletetree(pathVkprodAlt)
+}
+
+loop(this, pathVkprodNeu)
+{
+	// Kopie des neuen Verkaufsproduktes erstellen
+	objCopyVkprod	= copyobject(pathVkprodNeu)
+	
+	// Name fuer neues Objekt festlegen
+	SetObjectName(objCopyVkprod,
+		ToString(COPY, GetObjectName(pathVkprodNeu)))
+		
+	// Bearbeitungen auf Produktebene
+	loop(pathVkprodNeu, pathProd)
+	{
+		if(exists(pathProd.vtm_UmhaengenVertragAuskunft, *))
+		{
+			if(pathProd.Status == TECHN_STATUS_STORNIERT)
+			{
+				deletetree(pathProd)
+			}
+			else
+			{
+				rc = pathProd.vtm_UmhaengenVertragAuskunft.exec
+						[extRoot = this
+						,extVkprodAlt			= objCopyVkprod
+						,iLoescheBewegungen	= iLoescheBewegungen
+						]
+			}
+		}
+	}
+
+	// Kopiertes Verkaufsprodukt als "altes" Verkaufsprodukt an Root haengen
+	objNewRel = connect(this, objCopyVkprod, h_RelNameVkprodAlt)
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

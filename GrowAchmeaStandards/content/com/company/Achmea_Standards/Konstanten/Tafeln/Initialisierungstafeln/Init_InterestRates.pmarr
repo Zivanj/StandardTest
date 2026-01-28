@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:array xmlns:pm="http://www.msg.de/msgpm/data/2011" datatype="float" dataversion="1912" guid="ZZZPM3ARR0000000JD51000AM8" isnullable="false" nrdims="2" abstract="false" final="false" pmid="JD51000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tafeln::Initialisierungstafeln</pm:namespace>
+  <pm:name>Init_InterestRates</pm:name>
+  <pm:value>
+    <pm:dimentries>
+      <pm:dimentry>1</pm:dimentry>
+      <pm:dimentry>4</pm:dimentry>
+    </pm:dimentries>
+    <pm:floatvals>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+      <pm:floatval>0.0</pm:floatval>
+    </pm:floatvals>
+  </pm:value>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">TF_Init_Zinssaetze</pm:stringval>
+  </pm:label>
+  <pm:notice encoding="none"><![CDATA[Creation of Array: 
+
+Column 1: ID
+Column 2: Valid_From
+Column 3: Valid_to
+Column 4: Interest rate
+]]></pm:notice>
+</pm:array>

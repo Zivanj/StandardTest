@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC000000002X30000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::DeckungsTyp</pm:namespace>
+  <pm:name>DeckVrlg_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV00000004X30000T76" pmid="4X30000T76">
+      <pm:name>DeckVrlg_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM000000002X30000T76" pmid="2X30000T76" sealed="false" sortkey="0" visibility="external">
+          <pm:name>DeckVrlg_BASIS</pm:name>
+          <pm:type guid="ZZZPM3PMT0000000IUA0000SPM">com::company::TechnischesSchema::Produktbausteintypen::DeckungsTyp</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="0NDVJEVB7QGKN4A9OM5A4NBSVG" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Bezeichnung</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="QS01LUIQOA64F476INCN0BJC4B" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Identifikationsattribut</pm:name>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="mlstring" final="false" guid="UJ0TIOCU89PD5402SV47NJ9L9F" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>KurzBezeichnung</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>16</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="0GO8RTH0ESETG4BM36V75OIT74" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>LOB_cd</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>2</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="1000NM1VBMDDB4464PN5QQIUDR" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>ProduktbausteinID</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:minmaxstringlength>
+                      <pm:min>0</pm:min>
+                      <pm:max>50</pm:max>
+                    </pm:minmaxstringlength>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="47991V5VB10SL4DAF8O2B41M57" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RatingCode</pm:name>
+              <pm:notice encoding="none"><![CDATA[RatingCode is filled with an abbreviation of the SubCoverageCategory concerned.
+It can be used for deriving premiums, terms & conditions, plausi's etc.]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="string" final="false" guid="QAD1KIKE9H6SA4F6ULAGOSJCVB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>RefModell_Suffix</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">BASIS</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LL</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LP</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LM</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">LG</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:stringval encoding="none">MV</pm:stringval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">BASIS</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="RM1A3NI9IOFCR4NAT6FO0PR33G" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Reihenfolge</pm:name>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:integerval>0</pm:integerval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:integerval>999</pm:integerval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>0</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:productattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000024A00000AM8" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:attributes>
+                <pm:attribute>RatingCode</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:productattributefolders>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="R4HAFJ2CUEI4F41J5USA3V36AE" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Beginn</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Start date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Beginn</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Beginn" gibt den Versicherungsbeginn für den 
+    DeckungsTyp-Baustein an.
+
+Verwendung
+    Das Beginndatum der Deckung wird im Format TT.MM.JJJJ eingegeben.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Beginn" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „BEGIN_DT".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="2K73RSMLD6IK247I0ACSQGPFTA" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Deckungsart</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Subcoverage Type</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Deckungsart</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Deckungsart" definiert die Art der Deckung bzw. die Art
+    der Leistung. Die Deckungsart ist im Rahmen eines Deckungs-
+    konzeptes die kleinste Einheit. Die Einschränkung erfolgt über die interne 
+    Tabelle "InTab_Az_Deckungsart_LP". Es kann sich dabei um eine
+    Grunddeckung oder eine Erweiterungsdeckung handeln. Jede
+    Deckungsart ist genau einer Deckungsklasse zugeordnet.
+    Mögliche Deckungsklassen sind:
+
+            Versicherte Leistungen
+            Versicherte Sachen
+            Versicherte Kosten
+            Versicherte Gefahren und Schäden
+            Erweiterung der Außenversicherung
+            Abweichende Entschädigungsgrenzen
+
+Verwendung
+    Das Merkmal "Deckungsart" wird z. Zt. nicht verwendet, kann aber für die 
+    Tarifierung herangezogen werden. Für die Deckungsart sind folgenden
+    Nummernkreise definiert:
+
+        000-099 für Unfall,
+        100-199 für Sach, 
+        200-299 für Haftpflicht
+
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Deckungsartt" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „COVCPCOTP_CD".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="date" final="false" guid="3M0JO781JUJC54QKUUIVSEMJBT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>Ende</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">End date</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Ende</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "Ende" gibt das Versicherungsende für den 
+    DeckungsTyp-Baustein an.
+
+Verwendung
+    Das Endedatum der Deckung wird im Format TT.MM.JJJJ eingegeben.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „Ende" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „END_DT".
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:dateval>18000101</pm:dateval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:dateval>29980322</pm:dateval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0TVNT9O8U34TS4OFJ8N9LFN3PQ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>VSU</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Insured sum</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Versicherungssumme</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none"><![CDATA[Definition
+    Das Merkmal "VSU" enthält die Versicherungssumme des DeckungsTyp-
+    Bausteins.
+
+Verwendung
+    Die im Versicherungsvertrag vereinbarte Summe ist die im Schadensfall ver-
+    einbarte Höchstentschädigung.
+
+msg.PM / FSPM-Schnittstelle
+    Das Merkmal „VSU" wird gemappt und persistiert.
+    Der SAP-Feldname hat die Bezeichnung „INSAMOUNT_AM".
+
+]]></pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL00000005X30000T76" readonly="false" sortkey="0">
+              <pm:name>FS-PM Standard</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL00000006X30000T76" readonly="false" sortkey="1">
+                  <pm:name>Vertragsdaten</pm:name>
+                  <pm:attributes>
+                    <pm:attribute>Beginn</pm:attribute>
+                    <pm:attribute>Ende</pm:attribute>
+                    <pm:attribute>VSU</pm:attribute>
+                  </pm:attributes>
+                </pm:folder>
+              </pm:folders>
+              <pm:attributes>
+                <pm:attribute>Deckungsart</pm:attribute>
+              </pm:attributes>
+            </pm:folder>
+          </pm:contractattributefolders>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="3ISJPSOIQG4LB4POB0ED8FH1SB" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_Plausis_Check</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000M5E0000SPM">com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000M5E0000SPM">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Allgemein::fm_MethodOverwrite_Integer</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="OO0AFLGOKTFTP4MD3G9M5V19JF" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="external">
+              <pm:name>vtm_SchnittstellenCheck</pm:name>
+              <pm:defaultfunction guid="ZZZPM3FUNC000000F040000T76">com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ZZZPM3FUNC000000F040000T76">
+                    <pm:name>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden::Schnittstellenpruefung::fm_Schnittstelle_Check_BASIS</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:methodfolders>
+            <pm:folder guid="ZZZPM3FOL0000000N040000T76" sortkey="1">
+              <pm:name>Hilfsmethoden</pm:name>
+              <pm:methods>
+                <pm:method>vtm_SchnittstellenCheck</pm:method>
+              </pm:methods>
+            </pm:folder>
+            <pm:folder guid="ZZZPM3FOL0000000M040000T76" sortkey="0">
+              <pm:name>Plausis</pm:name>
+              <pm:methods>
+                <pm:method>vtm_Plausis_Check</pm:method>
+              </pm:methods>
+            </pm:folder>
+          </pm:methodfolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>DeckVrlg_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

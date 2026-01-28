@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="string" dataversion="2012" final="false" guid="ZZZPM3FORM000000G040000T76" isnullable="false" nrdims="0" pmid="G040000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden::Schnittstellenpruefung</pm:namespace>
+  <pm:name>cm_SelektiereSchnittstellentabelle_Default</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Die Tabelle mit der Schnittstellendefinition wird ermittelt.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+
+//Externe Objekte
+
+//Versicherungstechnische Methoden
+
+//Objekte
+
+//Attribute, Merkmale
+
+//interne Variable
+string h_Tabellenname = "InTab_SchnittstellenDefinition_BASIS_S"
+
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+Res = h_Tabellenname
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000B140000T76" isnullable="false" nrdims="0" pmid="B140000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Schnittstellenmethoden::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_SetzeAenderungstermine</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Methode zum Füllen der Merkmale Aenderungstermin und Aenderungstermin2 am Produkt
+sowie am Verkaufsprodukt.
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+datAenderungstermin	/ date
+datAenderungstermin2	/ date
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+extern path pathVkprodNeu
+extern path pathVkprodAlt
+extern path pathProdBasis
+extern path pathProd
+
+//Attribute und Merkmale
+data date	Aenderungsdatum
+data date	Aenderungsdatum2
+data string VertragsNr
+
+//Objekte
+ 
+//externe Objekte
+
+//interne Variable
+bool l_bVertragsNrGefunden = FALSE
+
+// versicherungstechnische Methoden 
+
+/**********************************************************************/
+/* Verarbeitung                                                       */
+/**********************************************************************/
+
+this.VertragsNr = sVertragsNr
+
+loop( this, pathVkprodNeu )
+{
+    pathVkprodNeu.Aenderungsdatum = datAenderungsdatum
+    pathVkprodNeu.Aenderungsdatum2 = datAenderungsdatum2
+    
+    loop( pathVkprodNeu, pathProdBasis )
+    {
+        if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKT )
+        {
+            if ( pathProdBasis.VertragsNr == this.VertragsNr
+            ||	this.VertragsNr == VERTRAGSNR_NICHT_BELEGT )
+            {
+                pathProdBasis.Aenderungsdatum = datAenderungsdatum
+                pathProdBasis.Aenderungsdatum2 = datAenderungsdatum2
+                l_bVertragsNrGefunden = TRUE
+                
+            }
+        }
+        
+        if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL )
+        {
+            loop( pathProdBasis, pathProd )
+            {
+                if ( pathProd.VertragsNr == this.VertragsNr
+                ||	this.VertragsNr == VERTRAGSNR_NICHT_BELEGT )
+                {
+                    pathProd.Aenderungsdatum = datAenderungsdatum
+                    pathProd.Aenderungsdatum2 = datAenderungsdatum2
+                    l_bVertragsNrGefunden = TRUE
+                    
+                }
+            }
+            
+            
+        }
+    }
+    
+}
+
+// Wenn Vertrag nicht gefunden wird erfolgt eine Fehlermeldung
+
+if ( l_bVertragsNrGefunden == FALSE )
+{
+    Error_fachlich = TRUE
+    sNachrichtenklasse = MSG_ERRORCLASS
+    ErrorVar1 = this.VertragsNr
+    
+    error.text = BASIS_TEXT_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN
+    error( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+    return( BASIS_FORM_ERR_VERTRAGSNUMMER_NICHT_GEFUNDEN )
+}
+
+loop( this, pathVkprodAlt )
+{
+    pathVkprodAlt.Aenderungsdatum = datAenderungsdatum
+    pathVkprodAlt.Aenderungsdatum2 = datAenderungsdatum2
+    
+    loop( pathVkprodAlt, pathProdBasis )
+    {
+        if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKT )
+        {
+            
+            if ( pathProdBasis.VertragsNr == this.VertragsNr
+            ||	this.VertragsNr == VERTRAGSNR_NICHT_BELEGT )
+            {
+                pathProdBasis.Aenderungsdatum = datAenderungsdatum
+                pathProdBasis.Aenderungsdatum2 = datAenderungsdatum2
+                
+            }
+        }
+        
+        if( GetObjectBaseType( pathProdBasis ) == OKLASSE_PRODUKTBUENDEL )
+        {
+            loop( pathProdBasis, pathProd )
+            {
+                if ( pathProd.VertragsNr == this.VertragsNr 
+						||	this.VertragsNr == VERTRAGSNR_NICHT_BELEGT)
+                
+                {
+                    pathProd.Aenderungsdatum = datAenderungsdatum
+                    pathProd.Aenderungsdatum2 = datAenderungsdatum2
+                                     
+                }
+            }
+            
+            
+        }
+        
+        
+        
+    }
+    
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

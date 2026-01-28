@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="true" final="false" guid="ZZZPM3CC00000000A2H0000T76" sealed="false" sortkey="none" visibility="none" dataversion="2009">
+  <pm:namespace>com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarprodukt</pm:namespace>
+  <pm:name>ElpTmpl_ACHMEA_BASIS</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="ZZZPM3CCV0000000C2H0000T76" pmid="C2H0000T76">
+      <pm:name>ElpTmpl_ACHMEA_BASIS</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="true" final="false" guid="ZZZPM3PM00000000A2H0000T76" pmid="A2H0000T76" sealed="false" sortkey="none" visibility="none">
+          <pm:name>ElpTmpl_ACHMEA_BASIS</pm:name>
+          <pm:extends>
+            <pm:base guid="ZZZPM3CC00000000VW30000T76">com::company::Achmea_Standards::Produktbausteine::01%0020HauptachsenObjekte::Elementarprodukt::ElpVrlg_BASIS</pm:base>
+          </pm:extends>
+          <pm:type guid="ZZZPM3PMT00000006Y90000SPM">com::company::TechnischesSchema::Produktbausteintypen::Elementarprodukt</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="6CKCNA87LE5KO49LC44H02AM81" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>InitialBMPercentage</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="TM199CVF1PKK649GQ9LDCVQ95L" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>PropositionCostsFactor</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Proposition kosten faktor</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Proposition costs factor</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">In this attribute the derived Proposition Costs factor is stored.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="1G42QUO9379DF4D5FFR3HLL84N" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="external" autosetcalcresult="false">
+              <pm:name>SmartPricingFactor</pm:name>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="6HBLFKCS4D0DE4IH5T2D3LOMPH" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>SupplementForDiscountsFactor</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Supplement for discounts factor</pm:stringval>
+              </pm:label>
+              <pm:notice encoding="none">In this attribute the derived Supplement For Discounts factor is stored.</pm:notice>
+              <pm:valuecheckrule>
+                <pm:allexceptnull/>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:contractattributefolders>
+            <pm:folder guid="ZZZPM3FOL0000043N7H0000T76" readonly="false" sortkey="0">
+              <pm:name>Customer</pm:name>
+              <pm:folders>
+                <pm:folder guid="ZZZPM3FOL0000000Q7H0000T76" readonly="false" sortkey="5">
+                  <pm:name>Product Data</pm:name>
+                </pm:folder>
+                <pm:folder guid="ZZZPM3FOL0000043P7H0000T76" readonly="false" sortkey="1">
+                  <pm:name>Contract Data</pm:name>
+                  <pm:folders>
+                    <pm:folder guid="ZZZPM3FOL0000000L8H0000T76" readonly="false" sortkey="2">
+                      <pm:name>CostFactors</pm:name>
+                      <pm:folders>
+                        <pm:folder guid="ZZZPM3FOL0000000M8H0000T76" readonly="false" sortkey="3">
+                          <pm:name>ElemProduct</pm:name>
+                          <pm:attributes>
+                            <pm:attribute>SmartPricingFactor</pm:attribute>
+                          </pm:attributes>
+                        </pm:folder>
+                        <pm:folder guid="ZZZPM3FOL0000000N8H0000T76" readonly="false" sortkey="4">
+                          <pm:name>Proposition</pm:name>
+                          <pm:attributes>
+                            <pm:attribute>InitialBMPercentage</pm:attribute>
+                            <pm:attribute>PropositionCostsFactor</pm:attribute>
+                            <pm:attribute>SupplementForDiscountsFactor</pm:attribute>
+                          </pm:attributes>
+                        </pm:folder>
+                      </pm:folders>
+                    </pm:folder>
+                  </pm:folders>
+                </pm:folder>
+              </pm:folders>
+            </pm:folder>
+          </pm:contractattributefolders>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>ElpTmpl_ACHMEA_BASIS</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000N900000AM8" isnullable="false" nrdims="0" pmid="N900000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::InterfaceMethods::HistoryRoot</pm:namespace>
+  <pm:name>cm_Root_Rating</pm:name>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="ignore" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="ignore"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h"
+
+//Externe Pfade
+extern path pathVkprod
+
+//Externe Objekte
+extern object extRoot
+
+//Versicherungstechnische Methoden
+data int vtm_Tarifierung
+data int vtm_SchnittstellenCheck
+data int vtm_SchnittstellenCheckBewegungen
+
+//Objekte
+
+//Attribute, Merkmale
+data int Methodenschluessel
+data int MethodenschluesselOriginal
+data string Geschaeftsprozess
+
+//interne Variablen
+boolean lb_Calculate
+ 
+/*********************************************************************/
+/* Verarbeitung                                                      */
+/*********************************************************************/
+
+// Kennzeichnung dieser Methode als Schnittstellen-Methode
+interface_method = TRUE
+
+if (bErrorFound == FALSE)
+{
+	if (!exists(this.Geschaeftsprozess))
+		lb_Calculate   = TRUE
+	else
+	{
+		switch ( this.Geschaeftsprozess )
+		{
+		    case "N1":	lb_Calculate  = FALSE 	// NewBusiness Only Accptance Exl Premium Calculation Incl TermsConditions
+		    break
+		    case "A1":	lb_Calculate  = FALSE 	// Change Only Accptance Exl Premium Calculation  Incl TermsConditions
+		    break
+
+		    default:
+		    //"N3"	--> NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"N2"	--> NewBusiness Incl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"N" 	-->	NewBusiness Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"A3"	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Excl TermsConditions
+			//"A2"	--> Change Incl Acceptance Incl Premium Calculation Incl TermsConditions
+			//"A" 	--> Change Incl Plausi Excl Acceptance Incl Premium Calculation Incl TermsConditions
+		    lb_Calculate   = TRUE
+		}
+	}
+		
+	if ( lb_Calculate ) 
+	{	
+		this.Methodenschluessel = SNTMETHODE_TARIFIERUNG
+		this.MethodenschluesselOriginal = this.Methodenschluessel
+			
+		loop ( this, pathVkprod )
+		{
+			rc = pathVkprod.vtm_SchnittstellenCheck.exec [extRoot = this]
+		
+			rc = pathVkprod.vtm_Tarifierung.exec
+							[ extRoot		= this,
+							bQuoteSelectionEnabled = false
+							]
+							
+			rc = pathVkprod.vtm_SchnittstellenCheckBewegungen.exec [extRoot = this]					
+		}
+	}
+
+	Res = RC_OK
+}
+else
+{
+	Res = RC_NOK
+}
+
+#import "incStdMethodsBottom_ACHMEA.h"
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

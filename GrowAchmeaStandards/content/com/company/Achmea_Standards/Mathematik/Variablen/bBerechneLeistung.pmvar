@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:variable xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="boolean" dataversion="1912" final="false" guid="ZZZPM3VAR0000000M210000SPB" isnullable="false" nrdims="0" pmid="M210000SPB" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Variablen</pm:namespace>
+  <pm:name>bBerechneLeistung</pm:name>
+  <pm:notice encoding="none"><![CDATA[Diese Variable steuert in den Leistungsmethoden, ob der Status und LVStatus des Vertrages und der Vertragsteile überprüft und geändert oder nicht beachtet werden soll.
+
+TRUE: Status wird nicht berücksichtigt, reine Leistungsberechnung
+FALSE: Status wird gesetzt
+]]></pm:notice>
+</pm:variable>

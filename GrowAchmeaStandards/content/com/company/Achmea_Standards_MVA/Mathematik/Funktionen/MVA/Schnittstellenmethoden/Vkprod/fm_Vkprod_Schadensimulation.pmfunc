@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC000000U506000MVA" pmid="U506000MVA" abstract="false" cachesize="unbounded" cachingmode="disabled" datatype="integer" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Funktionen::MVA::Schnittstellenmethoden::Vkprod</pm:namespace>
+  <pm:name>fm_Vkprod_Schadensimulation</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM000000M506000MVA">com::company::Achmea_Standards_MVA::Mathematik::Formeln::MVA::Schnittstellenmethoden::Vkprod::cm_Vkprod_Schadensimulation</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+</pm:function>

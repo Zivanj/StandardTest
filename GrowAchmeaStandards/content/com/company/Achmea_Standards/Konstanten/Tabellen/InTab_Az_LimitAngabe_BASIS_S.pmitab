@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000C5K0000AM8" abstract="false" final="false" pmid="C5K0000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_LimitAngabe_BASIS_S</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="7PJSDBCASSL5K451C6RMSICJ02" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="5VQR5P6HICDTF45BH2KES4NJ0S" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="6PJ3I4EE0ODT544TG9PVI1IEHP" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="RCJJETDBRIODS40N9L9IT7LRIV" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="P0NUNIRIH88KT4FECO97V3DFEB" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0EAPFAD5BEFTS4LB4OQOEHGGNH" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0HV63JO4HQQD44GLOJ035JFMNQ" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="6TNFA3KR6DVDP4NTBU8M0KMC85" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="3AO8MTT9PU5414SRNLGR8VJBII" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="QTH9IUTB37AD14MQ42JJNKQ68J" sortkey="0">
+    <pm:name>PK_InTab_Az_LimitAngabe_BASIS_S</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Die Spalte key dieser Tabelle gibt an, in welcher Form das Limit gegeben ist.
+
+Typ und Nummernbereich:
+S
+
+NUMC3
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">relativ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">absolut</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Relative</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Absolute</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">relativ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">absolut</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">Relative</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Absolute</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="ZZZPM3FUNC0000007B51000SPM" pmid="7B51000SPM" abstract="false" cachesize="unbounded" cachingmode="disabled" datatype="integer" final="false" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Funktionen::Methoden::Steuerungsmethoden</pm:namespace>
+  <pm:name>fm_ErzeugeNeueInstanz</pm:name>
+  <pm:baseformula guid="ZZZPM3FORM000000F4A1000SPM">com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden::cm_ErzeugeNeueInstanz</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+  <pm:assignments>
+    <pm:assignment type="formula">
+      <pm:descriptor datatype="integer" isnullable="false" nrdims="0" guid="ZZZPM3VAR0000000LPX0000SPM">
+        <pm:name>com::company::Achmea_Standards::Mathematik::Variablen::iInstanzErzeugen</pm:name>
+      </pm:descriptor>
+      <pm:element guid="ZZZPM3FORM000000F4A1000SPM">com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden::cm_ErzeugeNeueInstanz</pm:element>
+    </pm:assignment>
+  </pm:assignments>
+</pm:function>

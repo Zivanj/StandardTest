@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000009ZG0000T76" isnullable="false" nrdims="0" pmid="9ZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Allgemein</pm:namespace>
+  <pm:name>c_RC_OK</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+liefert als Ergebnis RC_OK
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+keine
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStd_BASIS.h"
+
+Res = RC_OK
+
+#import "incStdBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

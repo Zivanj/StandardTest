@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000VBC0000AM9" pmid="VBC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Mathematik::Includes</pm:namespace>
+  <pm:name>MVA_incPlausiCodes.h</pm:name>
+  <pm:notice encoding="none"><![CDATA[Das Include enthält #defines für das Plausihandling.
+]]></pm:notice>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[/*              to be include in: StdInc.h               */
+#ifndef MVA_INC_PLAUSI_CODES_H_INCLUDED
+#define MVA_INC_PLAUSI_CODES_H_INCLUDED
+
+//#define MVA_PLAUSIBILITYCLASS	 "/MVA/AMR_PM_PLAUSIS"	
+
+// Plausimeldungen
+
+#define MVA_FORM_PLAUSI_ELP_AUSSCHLUSS	"001"
+#define MVA_TEXT_PLAUSI_ELP_AUSSCHLUSS \
+"Es muss entweder %1 oder %2 ausgewählt werden"
+
+#define MVA_FORM_PLAUSI_ANZAHL_ELP_MIN	"002"
+#define MVA_TEXT_PLAUSI_ANZAHL_ELP_MIN \
+"Produkt %1 muss mindestens %2 Elementarprodukt(e) eingeschlossen haben"
+
+#define MVA_FORM_PLAUSI_HAUPTFAELLIGKEIT	"003"
+#define MVA_TEXT_PLAUSI_HAUPTFAELLIGKEIT \
+"Hauptfälligkeit bei Produkt %1 muss %2 sein"
+
+#define MVA_FORM_PLAUSI_DAUER_GRENZWERTE	"004"
+#define MVA_TEXT_PLAUSI_DAUER_GRENZWERTE \
+"Die Dauer (%4) des Vertrags (%1) ist unzulässig. Minimum: (%2); Maximum: (%3)"
+
+#define MVA_FORM_PLAUSI_ZAHLBEITRAG_GRENZWERTE	 "005"
+#define MVA_TEXT_PLAUSI_ZAHLBEITRAG_GRENZWERTE \
+"Zahlbeitrag (%4) des Vertragsteils (%1) ist unzulässig. Minimum: (%2); Maximum: (%3)"
+
+#define MVA_FORM_PLAUSI_RELATION_VS_ZU_VS	 "006"
+#define MVA_TEXT_PLAUSI_RELATION_VS_ZU_VS \
+"Versicherungssumme (%4) von %1 ist unzulässig. Minimum in Prozent:(%2); Maximum in Prozent:(%3)"
+
+#define MVA_FORM_PLAUSI_VSUM_GRENZWERTE	 "007"
+#define MVA_TEXT_PLAUSI_VSUM_GRENZWERTE \
+"Die Versicherungssumme (%4) des Vertrags (%1) ist unzulässig. Minimum: (%2); Maximum: (%3)"
+
+#define MVA_FORM_PLAUSI_VSUM_DECKUNG_GRENZWERTE	 "008"
+#define MVA_TEXT_PLAUSI_VSUM_DECKUNG_GRENZWERTE \
+"Die Versicherungssumme (%4) der Deckung (%1) ist unzulässig. Minimum: (%2); Maximum: (%3)"
+
+#define MVA_FORM_PLAUSI_KHT_BEDINGUNG	 "009"
+#define MVA_TEXT_PLAUSI_KHT_BEDINGUNG \
+"Deckung für KHT (%1) ist ohne Deckungen für Invalidität und Tod unzulässig"
+
+#define MVA_FORM_PLAUSI_VSUM_SCHRITT	 "010"
+#define MVA_TEXT_PLAUSI_VSUM_SCHRITT \
+"Die Versicherungssumme (%3) des Objekts (%1) ist unzulässig. Intervallschritt: (%2)"
+
+#define MVA_FORM_PLAUSI_ELP_WKZMANUELL	 "011"
+#define MVA_TEXT_PLAUSI_ELP_WKZMANUELL \
+"Für den Vertragsteil (%1) mit WKZ (%2) muss ein manueller Tarifbeitrag eingeben werden"
+
+#define MVA_FORM_PLAUSI_VOBJ_FRONTSCHEIBE	 "012"
+#define MVA_TEXT_PLAUSI_VOBJ_FRONTSCHEIBE \
+"Für das Risikoobjekt (%1) muss die Anzahl der Frontscheiben eingeben werden"
+
+#define MVA_FORM_PLAUSI_PROD_AUSSCHLUSSELP	 "013"
+#define MVA_TEXT_PLAUSI_PROD_AUSSCHLUSSELP \
+"Die Elementarprodukte (%1) und (%2) sind am gleichen Produkt unzulässig"
+
+#define MVA_FORM_PLAUSI_ZUNA_MAX	 "014"
+#define MVA_TEXT_PLAUSI_ZUNA_MAX \
+"Der %1 (%2) am Elementarprodukt %3 ist unzulässig. Maximum: (%4)"
+
+#define MVA_FORM_PLAUSI_VOBJ_TARIFGRUPPE	 "015"
+#define MVA_TEXT_PLAUSI_VOBJ_TARIFGRUPPE \
+ "Tarifgruppe (%3) am %1 (WKZ %2) ist nicht erlaubt. Sie wurde mit <Normal> ersetzt."
+
+#define MVA_FORM_PLAUSI_VOBJ_KURZKENNZEICHEN            "016"
+#define MVA_TEXT_PLAUSI_VOBJ_KURZKENNZEICHEN \
+"Kurzzeitkennzeichen ausschließlich mit KH policieren."
+
+#define MVA_FORM_PLAUSI_VOBJ_WKZTARIFIERUNG           "017"
+#define MVA_TEXT_PLAUSI_VOBJ_WKZTARIFIERUNG \
+"Bei WKZ(%1) ist Eingabe der Tarifierung-WKZ nicht erlaubt"
+
+#define MVA_FORM_PLAUSI_VOBJ_KZK_RISIKOART	 "018"
+#define MVA_TEXT_PLAUSI_VOBJ_KZK_RISIKOART \
+ "Kurzzeitkennzeichen: gesetzliche Deckung wurde eingetragen."
+
+#define MVA_FORM_PLAUSI_VOBJ_AUSSCHLUSS_BA	 "019"
+#define MVA_TEXT_PLAUSI_VOBJ_AUSSCHLUSS_BA \
+ "Position %1 (WKZ %2) ist bei Betriebsart(%3) nicht erlaubt"
+
+#define MVA_FORM_PLAUSI_VOBJ_NEUWERT           "020"
+#define MVA_TEXT_PLAUSI_VOBJ_NEUWERT \
+"Bei WKZ(%1) und Kasko muss Neuwert > 0 eingegeben werden"
+
+#define MVA_FORM_PLAUSI_VOBJ_ABSTELLPLATZ          "021"
+#define MVA_TEXT_PLAUSI_VOBJ_ABSTELLPLATZ \
+"Abstellplatz-Eingabe ist bei WKZ(%1) erforderlich"
+
+#define MVA_FORM_PLAUSI_VOBJ_FAHRLEISTUNG          "022"
+#define MVA_TEXT_PLAUSI_VOBJ_FAHRLEISTUNG \
+"Fahrleistung-Eingabe ist bei WKZ(%1)  erfordelich"
+
+#define MVA_FORM_PLAUSI_VOBJ_NUTZERKREIS          "023"
+#define MVA_TEXT_PLAUSI_VOBJ_NUTZERKREIS \
+"Nutzerkreis-Eingabe ist bei WKZ(%1) erforderlich"
+
+#define MVA_FORM_PLAUSI_VOBJ_WOHNEIGENTUM          "024"
+#define MVA_TEXT_PLAUSI_VOBJ_WOHNEIGENTUM \
+"Angabe Wohneigentum fehlt. Kein selbstb.Wohneigentum maschinell eingestellt"
+
+#define MVA_FORM_PLAUSI_VOBJ_FST                "025"
+#define MVA_TEXT_PLAUSI_VOBJ_FST \
+"Bei WKZ(%1) muss Fahrsicherheitstraining ausgeschaltet werden"
+
+#define MVA_FORM_PLAUSI_VOBJ_WA                 "026"
+#define MVA_TEXT_PLAUSI_VOBJ_WA \
+"Bei WKZ(%1) muss Werksangehöriger ausgeschaltet werden"
+
+#define MVA_FORM_PLAUSI_VOBJ_ABS                "027"
+#define MVA_TEXT_PLAUSI_VOBJ_ABS \
+"Bei WKZ(%1) muss ABS ausgeschaltet werden"
+
+#define MVA_FORM_PLAUSI_VOBJ_GEBURTSJAHRE          "028"
+#define MVA_TEXT_PLAUSI_VOBJ_GEBURTSJAHRE \
+"Bei WKZ(%1) muss ein Geburtsjahr jüngster Fahrer eingegeben werden. Mindestalter ist 17"
+
+#define MVA_FORM_PLAUSI_VOBJ_NO_ABSTELLPLATZ          "029"
+#define MVA_TEXT_PLAUSI_VOBJ_NO_ABSTELLPLATZ \
+"Abstellplatz-Eingabe ist bei WKZ(%1) nicht erlaubt"
+
+#define MVA_FORM_PLAUSI_VOBJ_NO_FAHRLEISTUNG          "030"
+#define MVA_TEXT_PLAUSI_VOBJ_NO_FAHRLEISTUNG \
+"Fahrleistung-Eingabe ist bei WKZ(%1)  nicht erlaubt"
+
+#define MVA_FORM_PLAUSI_VOBJ_NO_NUTZERKREIS          "031"
+#define MVA_TEXT_PLAUSI_VOBJ_NO_NUTZERKREIS \
+"Nutzerkreis-Eingabe ist bei WKZ(%1) nicht erlaubt"
+
+#define MVA_FORM_PLAUSI_POS_BEI_VK_TK          "032"
+#define MVA_TEXT_PLAUSI_POS_BEI_VK_TK \
+"Positionen (WKZ %1) gleichzeitig an Vollkasko und Teilkasko nicht erlaubt."
+
+#define MVA_FORM_PLAUSI_POS_MITVERSICHERT          "033"
+#define MVA_TEXT_PLAUSI_POS_MITVERSICHERT \
+"Position (WKZ %1) ohne eine von Positionen (%2) nicht erlaubt."
+
+#define MVA_FORM_PLAUSI_ANZAHL_POS_MIN	"034"
+#define MVA_TEXT_PLAUSI_ANZAHL_POS_MIN \
+"Vertragsteil %1 muss mindestens %2 Position(en) eingeschlossen haben"
+
+#define MVA_FORM_PLAUSI_PLATZANZAHL_MIN             "035"
+#define MVA_TEXT_PLAUSI_PLATZANZAHL_MIN \
+"Am Risikoobjekt %1 ist PlatzAnzahl-Eingabe (%2) unzulässig. Minimum: (%3)"
+
+#define MVA_FORM_PLAUSI_VOBJ_AUSSCHLUSS_SBRIEF        "036"
+#define MVA_TEXT_PLAUSI_VOBJ_AUSSCHLUSS_SBRIEF \
+"Im Vertragsteil %1 bei WKZ %2 ist AusschlussSchutzbrief ungültig"
+
+#define MVA_FORM_PLAUSI_TKL_ERMITTELT          "037"
+#define MVA_TEXT_PLAUSI_TKL_ERMITTELT \
+"Am %1 ermittelte TKL(%2) und manuelle TKL(%3) vorhanden.Bitte prüfen"
+
+#define MVA_FORM_PLAUSI_PFLICHT_POS_KASKO          "038"
+#define MVA_TEXT_PLAUSI_PFLICHT_POS_KASKO \
+"Positionen (WKZ %1) sind bei Vollkasko oder Teilkasko zuzuordnen"
+
+#define MVA_FORM_PLAUSI_VOBJ_NO_WOHNEIGENTUM          "039"
+#define MVA_TEXT_PLAUSI_VOBJ_NO_WOHNEIGENTUM \
+"Wohneigentum-Eingabe unzulässig - Keine Eingabe maschinell eingestellt"
+
+#define MVA_FORM_PLAUSI_DECKUNG_MANUELL	            "040"
+#define MVA_TEXT_PLAUSI_DECKUNG_MANUELL \
+"Im Vertragsteil %1 mit Deckungsart %2 ist ein manueller Tarifbeitrag einzugeben"
+
+#define MVA_FORM_PLAUSI_VOBJ_ERWERBSDATUM          "041"
+#define MVA_TEXT_PLAUSI_VOBJ_ERWERBSDATUM \
+"Das Erwerbsdatum muss erfasst werden."
+
+#define MVA_FORM_PLAUSI_VOBJ_AMTLKZ          "042"
+#define MVA_TEXT_PLAUSI_VOBJ_AMTLKZ \
+"Das amtliche Kennzeichen der VTOs im Wechselkennzeichen muß identisch sein "
+
+#define MVA_FORM_PLAUSI_ANZAHL_FZG_IM_WKZ	"043"
+#define MVA_TEXT_PLAUSI_ANZAHL_FZG_IM_WKZ \
+"Im Vertrag %1 dürfen maximal %2 Fahrzeuge im Wechselkennzeichen versichert werden"
+
+// Beginn - Neu für Insassenunfall - droegec - 20090421
+
+#define MVA_FORM_PLAUSI_NICHT_INV_VORHANDEN	 "044"
+#define MVA_TEXT_PLAUSI_NICHT_INV_VORHANDEN \
+"Deckung für %1 ist nur zusammen mit Invalidität zulässig."
+
+#define MVA_FORM_PLAUSI_HK_BEDINGUNG_INV_TOD	 "045"
+#define MVA_TEXT_PLAUSI_HK_BEDINGUNG_INV_TOD \
+"Die VSU (%2) für %1 darf die Summe für Invalidität (%3) und Tod (%4) nicht überschreiten."
+
+#define MVA_FORM_PLAUSI_PK_BEDINGUNG	 "046"
+#define MVA_TEXT_PLAUSI_PK_BEDINGUNG \
+"%1: Personenkasko-Deckung ist ohne Invalidität und Tod unzulässig."
+
+
+#define MVA_FORM_PLAUSI_PK_BEDINGUNG_MIN	 "047"
+#define MVA_TEXT_PLAUSI_PK_BEDINGUNG_MIN \
+"Die gemeinsame VSU für Personenkasko, Invalidität und Tod beträgt mindestens %1 Euro." 
+
+#define MVA_FORM_PLAUSI_MERKMALSWERT_FEHLT				"048"
+#define MVA_TEXT_PLAUSI_MERKMALSWERT_FEHLT \
+"Am Objekt %1 fehlt der Wert für %2 "
+
+// #define MVA_FORM_PLAUSI_HK_BEDINGUNG	 "044"
+// #define MVA_TEXT_PLAUSI_HK_BEDINGUNG \
+// "Deckung für Heilkosten (%1) ist ohne die Deckung für Invalidität unzulässig."
+
+#define MVA_FORM_PLAUSI_BM_BONUSMALUS_INAKTIV	 "050"
+#define MVA_TEXT_PLAUSI_BM_BONUSMALUS_INAKTIV \
+"Das BonusMalus-Objekt für den Vertragteil (%1) ist inaktiv."
+
+#define MVA_FORM_PLAUSI_VERTRAGSTEIL_FEHLT       "051"
+#define MVA_TEXT_PLAUSI_VERTRAGSTEIL_FEHLT   \
+"Es ist kein gültiger Vertragsteil vorhanden."
+
+#define MVA_FORM_PLAUSI_BONUSMALUS_FEHLT      "052"
+#define MVA_TEXT_PLAUSI_BONUSMALUS_FEHLT    "BonusMalus am %1 %2 fehlt."
+
+
+// Ende 
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* 
+#ifndef MVA_INC_PLAUSI_CODES_H_INCLUDED */
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC00000007CC0000AM9" pmid="7CC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incACHMEAFormVariousCodes.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef STDINC_ACHMEA_FORMVARIOUSCODES_H_INCLUDED
+#define STDINC_ACHMEA_FORMVARIOUSCODES_H_INCLUDED
+
+/*===================================================================*/
+/* insert various codes                                              */
+/*===================================================================*/
+
+#include "incACHMEAFormCodes.h"
+/**********************************/
+#include "incSAPFormClasses_BASIS.h"
+
+
+/*===================================================================*/
+#endif /* #ifndef STDINC_ACHMEA_FORMVARIOUSCODES_H_INCLUDED */]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

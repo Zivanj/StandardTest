@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000BW30000T76" abstract="false" final="false" pmid="BW30000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Az_Methodenschluessel_BASIS_E</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="QQFEJMSCCT0CA44H270NP00E0Q" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>key</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="3B730EO9IV8DJ4HORKDGA3TOA3" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="SNV5CO6HCEESE4R69HQMB2E1I7" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="1ODGS62J5P5DD49SI1SBLREDIU" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>shortname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0KPDH6JSPMNLD4MGMIDCCFJTUM" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_DEU</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="0K3EBGC6DM4D247BCP37F9R56S" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_ENG</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="16H47T39VTTSM4IMV6P5CIOFTG" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>longname_NLD</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:virtualtablecolumns>
+    <pm:virtualtablecolumn datatype="string" guid="RNF49BDK3GBD44PBIIAB2MM11M" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>shortname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>shortname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+    <pm:virtualtablecolumn datatype="string" guid="P11EP9LCMUC524PJJGC1R71L77" isnullable="true" nrdims="0" sortkey="0">
+      <pm:name>longname</pm:name>
+      <pm:columnmap keytype="culture">
+        <pm:columnmapentries>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">de-DE</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_DEU</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">en-US</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_ENG</pm:column>
+          </pm:columnmapentry>
+          <pm:columnmapentry>
+            <pm:keyvalue>
+              <pm:stringval encoding="none">nl-NL</pm:stringval>
+            </pm:keyvalue>
+            <pm:column>longname_NLD</pm:column>
+          </pm:columnmapentry>
+        </pm:columnmapentries>
+      </pm:columnmap>
+    </pm:virtualtablecolumn>
+  </pm:virtualtablecolumns>
+  <pm:primarykey guid="4SUOM157RN0SM4UDNM37LKV1O6" sortkey="0">
+    <pm:name>PK_InTab_Az_Methodenschluessel_BASIS_E</pm:name>
+    <pm:columns>
+      <pm:column>key</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Methodenschluessel für die Schnittstellenmethoden
+Typ und Nummernbereich:
+E	700 000 - 999 999
+NUMC6
+
+]]></pm:notice>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>0</pm:integerval>
+        <pm:integerval>110010</pm:integerval>
+        <pm:integerval>110020</pm:integerval>
+        <pm:integerval>210010</pm:integerval>
+        <pm:integerval>210020</pm:integerval>
+        <pm:integerval>210030</pm:integerval>
+        <pm:integerval>210040</pm:integerval>
+        <pm:integerval>210050</pm:integerval>
+        <pm:integerval>210060</pm:integerval>
+        <pm:integerval>210070</pm:integerval>
+        <pm:integerval>210090</pm:integerval>
+        <pm:integerval>210100</pm:integerval>
+        <pm:integerval>210110</pm:integerval>
+        <pm:integerval>210120</pm:integerval>
+        <pm:integerval>210130</pm:integerval>
+        <pm:integerval>210140</pm:integerval>
+        <pm:integerval>210160</pm:integerval>
+        <pm:integerval>210170</pm:integerval>
+        <pm:integerval>210200</pm:integerval>
+        <pm:integerval>210240</pm:integerval>
+        <pm:integerval>210250</pm:integerval>
+        <pm:integerval>210260</pm:integerval>
+        <pm:integerval>210290</pm:integerval>
+        <pm:integerval>210300</pm:integerval>
+        <pm:integerval>210310</pm:integerval>
+        <pm:integerval>210330</pm:integerval>
+        <pm:integerval>210340</pm:integerval>
+        <pm:integerval>310010</pm:integerval>
+        <pm:integerval>310020</pm:integerval>
+        <pm:integerval>310030</pm:integerval>
+        <pm:integerval>310040</pm:integerval>
+        <pm:integerval>310050</pm:integerval>
+        <pm:integerval>310060</pm:integerval>
+        <pm:integerval>310070</pm:integerval>
+        <pm:integerval>310080</pm:integerval>
+        <pm:integerval>310090</pm:integerval>
+        <pm:integerval>310100</pm:integerval>
+        <pm:integerval>310110</pm:integerval>
+        <pm:integerval>310120</pm:integerval>
+        <pm:integerval>310130</pm:integerval>
+        <pm:integerval>310140</pm:integerval>
+        <pm:integerval>310150</pm:integerval>
+        <pm:integerval>310160</pm:integerval>
+        <pm:integerval>310170</pm:integerval>
+        <pm:integerval>310180</pm:integerval>
+        <pm:integerval>310190</pm:integerval>
+        <pm:integerval>310200</pm:integerval>
+        <pm:integerval>310210</pm:integerval>
+        <pm:integerval>310220</pm:integerval>
+        <pm:integerval>410010</pm:integerval>
+        <pm:integerval>410020</pm:integerval>
+        <pm:integerval>410030</pm:integerval>
+        <pm:integerval>410040</pm:integerval>
+        <pm:integerval>410050</pm:integerval>
+        <pm:integerval>410060</pm:integerval>
+        <pm:integerval>410070</pm:integerval>
+        <pm:integerval>410080</pm:integerval>
+        <pm:integerval>410090</pm:integerval>
+        <pm:integerval>410100</pm:integerval>
+        <pm:integerval>410110</pm:integerval>
+        <pm:integerval>510010</pm:integerval>
+        <pm:integerval>510030</pm:integerval>
+        <pm:integerval>510040</pm:integerval>
+        <pm:integerval>510050</pm:integerval>
+        <pm:integerval>510060</pm:integerval>
+        <pm:integerval>510070</pm:integerval>
+        <pm:integerval>600000</pm:integerval>
+        <pm:integerval>150010</pm:integerval>
+        <pm:integerval>150020</pm:integerval>
+        <pm:integerval>700000</pm:integerval>
+        <pm:integerval>700010</pm:integerval>
+        <pm:integerval>910010</pm:integerval>
+        <pm:integerval>930010</pm:integerval>
+        <pm:integerval>930020</pm:integerval>
+        <pm:integerval>910020</pm:integerval>
+        <pm:integerval>910030</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NICHT_BELEGT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TARIFIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MIGRATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_AUFSCHUBZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_GARANTIEZEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_LEISTUNGSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_PRAEMIENZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_RISIKOZUSCHLAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABLAUF_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_DYNAMIK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_AUSSCHUETTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_UMSTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERANLAGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NEUE_ANPASSUNGSSTUFE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG_UND_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILAUSZAHLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_NACHSCHUESSIG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PRAEMIENZERLEGUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BILANZWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_VERZINSUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INITIALISIERE_VERTRAG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NACHSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VORSCHUESSIGE_BEARBEITUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG_MELDEWERTE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BEITRAGSFREISTELLUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ERHOEHUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_INKASSONEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_KONSTRUKTIVNEU</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_POLICENDARLEHEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SHIFT_SWITCH</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TEILRUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UEBVERWENDUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WIEDERINKRAFTSETZUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_ERHOEHUNG_LEISTUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_PRAEMIENZAHLUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZUZAHLUNG_ZUR_REDUKTION_VERSICHERUNGSDAUER</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_EINSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSSCHLUSS_VERTRAGSTEIL</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ENTNAHME_GEBUEHREN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ABRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ANRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AENDERUNG_OPTIONSPHASE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_VERLAENGERUNGSOPTION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMEHTODE_ANPASSUNG_AENDERN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BERUFSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HEIRAT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_REAKTIVIERUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RUECKKAUF</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_TOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_UNFALLTOD</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ARBEITSUNFAEHIGKEIT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BABYKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FAMILIENHOSPIZKARENZ</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_LEISTUNGSBERECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_STORNO</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_AUSKUNFT</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_FONDS_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_MODELLRECHNUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_HOCHRECHNUNG_GARANTIESUMME</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_WERTSTAND</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_ZINSEN</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PLAUSIS_CHECK</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_BM_UMSTUFUNG</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_SCHADENSIMULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_QUOTATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_PREOFFERING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_RECALCULATION</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_COMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHODE_NONCOMMERCIALCHANGE</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_REBALANCING</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">SNTMETHOD_MONTHLYUPDATE</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

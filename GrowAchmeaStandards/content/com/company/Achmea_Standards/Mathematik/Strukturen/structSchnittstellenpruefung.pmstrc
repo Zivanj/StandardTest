@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:structure xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3STRC0000003WL5000SPM" pmid="3WL5000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Strukturen</pm:namespace>
+  <pm:name>structSchnittstellenpruefung</pm:name>
+  <pm:fields>
+    <pm:field abstract="false" datatype="integer" final="false" guid="SJU3V14DKDTL94I8DIDELOSI94" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>iMethodenschluessel</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="integer" final="false" guid="2DC47L1KG3HSS4G52M29D2AP6J" isnullable="false" nrdims="0" sealed="false" sortkey="1" visibility="content">
+      <pm:name>iEbene</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="string" final="false" guid="5D1VIF288NRC34BEJQDPK7PFLJ" isnullable="false" nrdims="0" sealed="false" sortkey="2" visibility="content">
+      <pm:name>sKlasse</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="integer" final="false" guid="0S3O0V2FGHJSE4FV6431AJPUVI" isnullable="false" nrdims="0" sealed="false" sortkey="3" visibility="content">
+      <pm:name>iIn</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="integer" final="false" guid="49PI7OECB88414R013198Q3JHJ" isnullable="false" nrdims="0" sealed="false" sortkey="4" visibility="content">
+      <pm:name>iNew</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="integer" final="false" guid="S85O0GAAISO494PBB03O7AQ23J" isnullable="false" nrdims="0" sealed="false" sortkey="5" visibility="content">
+      <pm:name>iChanged</pm:name>
+    </pm:field>
+    <pm:field abstract="false" datatype="integer" final="false" guid="UAIJS9IOPO4S24H7UVECBIR4FN" isnullable="false" nrdims="0" sealed="false" sortkey="6" visibility="content">
+      <pm:name>iDeleted</pm:name>
+    </pm:field>
+  </pm:fields>
+</pm:structure>

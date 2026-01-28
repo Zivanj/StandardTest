@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM000000F4A1000SPM" isnullable="false" nrdims="0" pmid="F4A1000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Methoden::Steuerungsmethoden</pm:namespace>
+  <pm:name>cm_ErzeugeNeueInstanz</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Erzeugt eine neue Instanz einschließlich der darunterliegenden Objekt. Nur für nicht-gemappte Klassen zulässig.
+ 
+Eingabeparameter mit Bezeichnung/Datentyp:
+sObjectClass												string
+sObjectName                                        string
+sRelName                                             string
+		 
+Verwendete Methoden mit Name/Klasse:
+vtm_KomplettiereOnjektbaum
+
+Verwendete Formeln:
+c_SetVTMessage
+
+Verwendete Funktionen:
+keine
+
+
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+
+//Externe Pfade
+
+//Externe Objekte
+extern object extParent
+
+//Versicherungstechnische Methoden
+
+//Merkmale/Attribute
+
+//Objekte
+object obj_new
+
+//interne Variablen
+int    i
+int    h_Anz
+int h_MinCard
+int h_MaxCard
+
+string RelName
+string ObjKlasse
+string ObjName
+
+	
+pmproductmodule Quelle
+pmproductmodule Ziel
+pmproductrelation Relation
+
+/* ============================================= */
+/* Verarbeitung									  */
+/* ============================================= */
+
+// Verwendung nur für nicht-gemappte Klassen zulässig
+
+try BLOCK_ERZEUGEN
+{
+	obj_new = new(sObjectClass 
+					,sObjectName 
+					,extParent
+					,sRelName)
+
+	SetObjectName(obj_new,
+				ToString(GetObjectBaseName(obj_new),"_",
+		 				 GetObjectID(obj_new)))
+  
+}
+
+catch BLOCK_ERZEUGEN
+{
+	Error_fachlich = TRUE
+	sNachrichtenklasse = MSG_ERRORCLASS
+	ErrorVar1 = sObjectName  
+	ErrorVar2 = sObjectClass 
+
+	error.text = BASIS_TEXT_ERR_INSTANZ_ERZEUGUNG
+	error(BASIS_FORM_ERR_INSTANZ_ERZEUGUNG)
+	return(BASIS_FORM_ERR_INSTANZ_ERZEUGUNG)
+}
+
+Quelle = new pmproductmodule( obj_new )
+
+//Ermitteln der Anzahl der Vorwärtsbeziehungen
+h_Anz = Quelle.ForwardRelationList.iLength
+
+/* ====================== */
+/* Erzeuge Lateralobjekte */
+/* ====================== */
+
+for (i=0, i<h_Anz, i++)
+{
+	Relation  = Quelle.ForwardRelationList.GetAt( i )
+	Ziel      = Relation.TargetProductModule
+	RelName   = Relation.sName
+	ObjKlasse = Ziel.sClassName
+	ObjName   = Ziel.sName
+  
+	h_MinCard = Relation.iMinCard
+	h_MaxCard = Relation.iMaxCard
+
+  	rc = iInstanzErzeugen
+					[extParent = obj_new
+					,sObjectClass = ObjKlasse 
+	    			,sObjectName = ObjName 
+					,sRelName    = RelName
+					]
+}
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_BASIS.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

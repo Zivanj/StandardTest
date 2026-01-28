@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="boolean" dataversion="2012" final="false" guid="ZZZPM3FORM000000IF32000SPM" isnullable="false" nrdims="0" pmid="IF32000SPM" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Plausis</pm:namespace>
+  <pm:name>cm_Check_Benutzergruppe</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Formel zur Prüfung, ob eine Plausibiltät gemäß Aufrufparameter sBenutzergruppe relevant ist.
+
+In einer Schleife über alle Tafeleinträge der dem Merkmal PlausiTyp.Benutzergruppe zugeordneten
+Tafel wird geprüft, ob ein Tafeleintrag mit dem Aufrufparameter sBenutzergruppe übereinstimmt oder 
+ein Tafeleintrag "ALLE" ist. Falls ja, dann ist die Plausibiltät gemäß Benutzergruppe relevant.
+
+Verwendete globale Variablen mit Bezeichnung/Datentyp/Verwendung:
+sBenutzergruppe		string		Aufrufparameter
+
+Verwendete Methoden mit Name/Klasse:
+        
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="true" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="ignore" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="ignore" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h" 
+
+//Externe Pfade
+
+//Externe Objekte
+extern object extPlausi
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+data string Benutzergruppe[*,*]
+
+//Objekte
+
+//interne Variablen
+int Laenge = 0
+int i = 0
+bool PlausiIsRelevant = FALSE
+
+/*********************************************************************/
+/* Processing                                                        */
+/*********************************************************************/
+
+Laenge = Limit(extPlausi.Benutzergruppe, 1)
+for(i=0, i<Laenge, i++)
+{
+	if(sBenutzergruppe == extPlausi.Benutzergruppe(i, 0) ||
+		extPlausi.Benutzergruppe(i,0) == "ALLE")
+	{
+		PlausiIsRelevant = TRUE
+    break
+	}
+}
+	
+Res = PlausiIsRelevant 
+#import "incStdMethodsBottom_BASIS.h"]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

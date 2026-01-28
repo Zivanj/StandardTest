@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="integer" dataversion="2012" final="false" guid="ZZZPM3FORM0000004ZG0000T76" isnullable="false" nrdims="0" pmid="4ZG0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Messages</pm:namespace>
+  <pm:name>c_SetPlausiMessage</pm:name>
+  <pm:notice encoding="none"><![CDATA[Fachliche Beschreibung:
+Aufbereitung der Plausimeldung in der Error-Box
+
+Eingabeparameter mit Bezeichnung/Datentyp:
+sTextIntern					string
+sLevel					string
+sNummer					string
+sKlasse					string
+sVar1						string
+sVar2						string
+sVar3						string
+sVar4						string
+
+Verwendete Methoden mit Name/Klasse:
+keine
+
+Verwendete Formeln:
+keine
+
+Verwendete Funktionen:
+keine
+
+
+  
+
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_BASIS.h"
+ 
+//Externe Pfade
+
+//Externe Objekte
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+data string Variable1
+data string Variable2
+data string Variable3
+data string Variable4
+data string TextIntern
+data string Nachrichtenklasse
+data string Instanzname
+data string Merkmalsname
+data string Fehlerlevel
+data string Fehlernummer
+
+//Objekte
+
+//interne Variablen
+	          
+int LaufendePlausiNr = 1
+string local_sInstanceName = ""
+string local_sMarkName = ""
+message plausi_message
+
+/*********************************************************************/
+/* Verarbeitung                                                        */
+/*********************************************************************/
+
+/* Get the last message number */
+
+while(GetNextMessage(MSG_PLAUSIBILITYMAILBOX) != NULL)
+    LaufendePlausiNr = LaufendePlausiNr + 1 
+
+	/* Create the Plausi-Message */ 
+plausi_message= CreateMessage(MSG_PLAUSIBILITYMAILBOX,LaufendePlausiNr)
+RenameMessage (plausi_message, sTextIntern)
+
+try sInstanceName{
+	local_sInstanceName = sInstanceName
+}
+catch(pmexception e, sInstanceName){
+}
+
+try sMarkName{
+	local_sMarkName = sMarkName
+}
+catch(pmexception e, sMarkName){
+}
+
+plausi_message.Fehlerlevel       = sLevel
+plausi_message.Fehlernummer      = sNummer
+plausi_message.Nachrichtenklasse = sKlasse
+plausi_message.Instanzname 		 = local_sInstanceName
+plausi_message.Merkmalsname      = local_sMarkName
+plausi_message.Variable1         = sVar1   
+plausi_message.Variable2         = sVar2   
+plausi_message.Variable3         = sVar3   
+plausi_message.Variable4         = sVar4
+plausi_message.TextIntern        = MakeString(sTextIntern, sVar1, sVar2, sVar3, sVar4)
+     
+Res = RC_OK
+
+#import "incCatchErrorMessage_BASIS.txt"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

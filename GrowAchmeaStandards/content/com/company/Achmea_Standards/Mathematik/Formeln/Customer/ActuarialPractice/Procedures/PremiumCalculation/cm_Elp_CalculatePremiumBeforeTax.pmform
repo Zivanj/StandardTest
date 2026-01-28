@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="2012" final="false" guid="ZZZPM3FORM000000E6H0000T76" isnullable="false" nrdims="0" pmid="E6H0000T76" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Formeln::Customer::ActuarialPractice::Procedures::PremiumCalculation</pm:namespace>
+  <pm:name>cm_Elp_CalculatePremiumBeforeTax</pm:name>
+  <pm:notice encoding="none"><![CDATA[Description:
+Calculates the premium before tax by adding up the market premium and commission costs.
+The market premium itself is the sum of PreDiscountPremium and Proposition Discount. 
+The commission costs are calculated by multiplying the looked up commission factor with the market premium.
+
+Result:
+float
+
+Input parameters:
+ sRatingCodeProd Rating Code of the product which has to be looked up
+]]></pm:notice>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="false">
+        <pm:validationseverities arrayassignmentswithoutresize="warning" assignmentsinconditions="warning" deprecatedfeatures="ignore" implicitlydeclaredmembers="error" missingsemicolons="ignore" multipleresultassignments="warning" unusedsymbols="warning"/>
+      </pm:m10options>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#import "incStdMethods_ACHMEA.h"
+
+//Externe Pfade
+
+//Externe Objekte
+extern object extBtr
+
+//Versicherungstechnische Methoden
+
+//Attribute Merkmale
+data int Zahlungsrhythmus
+
+//data float Tarifbeitrag2_jaehrlich
+data float ZahlbeitragVorSteuern
+data float Zahlbeitrag
+data float BruttoBeitrag
+data float JahresBruttoBeitrag
+data float JahresZahlbeitragVorSteuern
+data float MarketPremium
+data float DauerFaktor
+
+
+//interne Variablen
+int li_Zahlungsrhythmus
+float lf_Zahlungsrhythmus_skaliert
+float lf_JahresZahlbeitragVorSteuern
+float lf_ZahlbeitragVorSteuern
+float lf_MarketPremium
+float lf_PremiumBeforeTax
+
+
+
+/*********************************************************************/
+/* Processing                                                      */
+/*********************************************************************/
+
+li_Zahlungsrhythmus = extBtr.Zahlungsrhythmus
+
+//One-Time Payment is scaled with the duration of the one-time payment if(li_Zahlungsrhythmus == 0)
+if(li_Zahlungsrhythmus == 0)
+{
+	lf_Zahlungsrhythmus_skaliert = 1/extBtr.DauerFaktor
+}
+else
+{
+	lf_Zahlungsrhythmus_skaliert = li_Zahlungsrhythmus
+}
+
+
+
+// Get the MarketPremium
+lf_MarketPremium = extBtr.MarketPremium
+
+// Set the PremiumBeforeTax 
+lf_PremiumBeforeTax = lf_MarketPremium
+
+
+/* Fill the Standard Field JahresZahlbeitragVorSteuern */
+lf_JahresZahlbeitragVorSteuern = lf_PremiumBeforeTax 
+extBtr.JahresZahlbeitragVorSteuern = lf_JahresZahlbeitragVorSteuern
+
+/* Set Gross Premium based on yearly payment frequency */
+extBtr.JahresBruttoBeitrag = extBtr.JahresZahlbeitragVorSteuern
+
+
+/* Calculate Zahlbeitrag based on payment frequency */
+lf_ZahlbeitragVorSteuern = extBtr.JahresZahlbeitragVorSteuern / lf_Zahlungsrhythmus_skaliert
+lf_ZahlbeitragVorSteuern = rnd(lf_ZahlbeitragVorSteuern, 2)
+
+
+extBtr.ZahlbeitragVorSteuern = lf_ZahlbeitragVorSteuern
+
+/* Set Zahlbeitrag, if tax will be calulated, they will be added in Berechne_Steuern */
+extBtr.Zahlbeitrag = lf_ZahlbeitragVorSteuern
+
+/* Bruttobeitrag setzen */
+extBtr.BruttoBeitrag = extBtr.ZahlbeitragVorSteuern
+
+Res = RC_OK
+
+#import "incStdMethodsBottom_ACHMEA.h"
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

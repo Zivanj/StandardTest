@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1912" guid="OE0P2GGPULMLS4K6Q7JRKO1F2K" sortkey="510" structural="true">
+  <pm:namespace>com::company::Achmea_Standards_MVA::Produktbausteine</pm:namespace>
+  <pm:name>20 BonusMalusObjekte</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactcomponent</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000GCC0000AM9" pmid="GCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPFormErrorCodes_BASIS_Obsolet.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#ifndef INC_FORM_ERROR_CODES_BASIS_OBSOLET
+#define INC_FORM_ERROR_CODES_BASIS_OBSOLET
+
+/*====================================================================*/
+/* Obsolet mit Release 5.0           
+/*====================================================================*/
+#define BASIS_FORM_ERR_T_GREATER_N                       502
+#define BASIS_TEXT_ERR_T_GREATER_N                       "Beginndatum %1 liegt nicht vor Endedatum %2"
+
+#define BASIS_FORM_ERR_TEILZAHLUNGSDAUER_ZU_GROSS        505
+#define BASIS_TEXT_ERR_TEILZAHLUNGSDAUER_ZU_GROSS        "Versicherungsdauer Teilzahlung zu gross an: %1 Max/Ist: %2"
+
+#define BASIS_FORM_ERR_OBJEKTZAHL_REL_FALSCH             506
+#define BASIS_TEXT_ERR_OBJEKTZAHL_REL_FALSCH             "Objektzahl falsch von %1 zu %2 . Anzahl Soll/Ist: %3"
+
+#define BASIS_FORM_ERR_PRAEMIENSTEUERSATZ_NICHT_GEFUNDEN      515
+#define BASIS_TEXT_ERR_PRAEMIENSTEUERSATZ_NICHT_GEFUNDEN	     "Kein eindeutiger Praemiensteuersatz gefunden."
+
+#define BASIS_FORM_ERR_KEIN_BEITRAGSTYP    524
+#define BASIS_TEXT_ERR_KEIN_BEITRAGSTYP    "Praemienbaustein fehlt am Objekt %1" 
+
+#endif 
+
+]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

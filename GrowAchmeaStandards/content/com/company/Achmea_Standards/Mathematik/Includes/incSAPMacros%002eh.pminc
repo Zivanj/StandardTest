@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1912" final="false" guid="ZZZPM3INC0000000LCC0000AM9" pmid="LCC0000AM9" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Mathematik::Includes</pm:namespace>
+  <pm:name>incSAPMacros.h</pm:name>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#define NO_POOL     float test \
+                    test = random
+                    
+#define INT_TO_BOOL(_i_,_b_) \
+{ \
+if(_i_==1) \
+_b_ = TRUE \
+else \
+_b_ = FALSE \
+}
+
+#define BOOL_TO_INT(_b_,_i_) \
+{ \
+_i_=-1 \
+if(_b_==TRUE) \
+_i_ = 1 \
+if(_b_==FALSE) \
+_i_ = 0 \
+}                    ]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

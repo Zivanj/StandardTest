@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="2309" guid="ZZZPM3ITAB000000F451000AM8" abstract="false" final="false" pmid="F451000AM8" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>com::company::Achmea_Standards::Konstanten::Tabellen</pm:namespace>
+  <pm:name>InTab_Messages_Error_ACHMEA</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="0S948FOFL2MKP4EOPRT1OH6R59" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>ID</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="R89USR1IC9M4N4AR9RRH4L3BGO" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>MESSAGE_CLASS</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="3610OUB0I265I4ENVA1U3EN7QT" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>TEXT</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="string" guid="USR1S2HVA3VC44D8PEET647ITR" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>CODE</pm:name>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="2DL3DP5GNIKTL4EDQT18F4OONM" sortkey="0">
+    <pm:name>PK_InTab_Messages_Error_ACHMEA</pm:name>
+    <pm:columns>
+      <pm:column>ID</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>600</pm:integerval>
+        <pm:integerval>601</pm:integerval>
+        <pm:integerval>602</pm:integerval>
+        <pm:integerval>603</pm:integerval>
+        <pm:integerval>604</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">ZFPM_ABR_PM_ERROR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZFPM_ABR_PM_ERROR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZFPM_ABR_PM_ERROR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZFPM_ABR_PM_ERROR</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">ZFPM_ABR_PM_ERROR</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false">The default branch of a switch statement for %1 with value %2 was reached.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">The value of attribute %1 is missing.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Multiple results on table select for table %1. Single result elemet is required. Selection criteras are %2 %3 %4</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">Select on table %1 failed.</pm:stringval>
+        <pm:stringval encoding="none" isnull="false">No Table Name specified in attribute %1.</pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:stringvals>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+        <pm:stringval encoding="none" isnull="false"></pm:stringval>
+      </pm:stringvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>
